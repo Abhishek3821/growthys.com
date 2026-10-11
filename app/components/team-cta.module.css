@@ -1,0 +1,138 @@
+.section {
+  overflow: hidden;
+  background: #fff8ec;
+  color: #151613;
+}
+
+.stage {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 400px;
+  aspect-ratio: 100 / 76;
+  margin-inline: auto;
+}
+
+.portraits {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.portrait {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 14.5%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: clamp(10px, 1.8cqw, 22px);
+  background: #d8dfd0;
+  transform: translate(-50%, -50%) rotate(var(--rotation));
+  box-shadow: 0 8px 20px rgb(74 53 30 / 7%);
+}
+
+/* Crop one portrait from the existing four-column, two-row image atlas. */
+.portraitImage {
+  position: absolute;
+  display: block;
+  width: 400%;
+  max-width: none;
+  height: 200%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 61%;
+  margin-inline: auto;
+  padding-top: 36cqw;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.stars {
+  color: #eab44c;
+  font-size: clamp(13px, 1.65cqw, 20px);
+  letter-spacing: .12em;
+  line-height: 1;
+}
+
+.eyebrow {
+  margin: 7px 0 20px;
+  color: #858479;
+  font-size: clamp(10px, 1.05cqw, 13px);
+  line-height: 1.4;
+}
+
+.content h2 {
+  margin: 0;
+  font-size: clamp(28px, 4.4cqw, 56px);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.content h2 span {
+  display: block;
+  margin-top: 3px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+.description {
+  max-width: 500px;
+  margin: 22px auto 0;
+  color: #87867b;
+  font-size: clamp(13px, 1.3cqw, 16px);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 5px 6px 5px 20px;
+  border-radius: 999px;
+  background: #11130f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+.button > span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #393b35;
+}
+
+.button svg { width: 18px; height: 18px; }
+.button:hover { background: #36572e; transform: translateY(-2px); }
+.button:focus-visible { outline: 3px solid #718a46; outline-offset: 5px; }
+
+@media (max-width: 600px) {
+  .stage { min-height: 430px; }
+  .content { width: 66%; padding-top: 37cqw; padding-bottom: 54px; }
+  .eyebrow { margin-bottom: 14px; }
+  .content h2 { font-size: clamp(26px, 6.6cqw, 38px); }
+  .description { margin-top: 15px; font-size: 12px; line-height: 1.55; }
+  .button { margin-top: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}

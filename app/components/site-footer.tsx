@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, type FormEvent } from "react";
 import monuments from "../../public/images/footer/indian-monuments.webp";
+import growthysLogo from "../../public/images/footer/growthys-logo.jpeg";
 import styles from "./site-footer.module.css";
 
 const linkGroups = [
@@ -10,17 +11,6 @@ const linkGroups = [
   { title: "Customer Care", links: [{ label: "FAQs", href: "#faq" }, { label: "Shipping & Delivery" }, { label: "Size & Care Guide" }, { label: "Track Your Order" }] },
   { title: "Company Links", links: [{ label: "Help & Support", href: "#faq" }, { label: "Privacy Policy" }, { label: "Terms & Conditions" }, { label: "Contact Us", href: "#contact" }] },
 ];
-
-function BrandEmblem() {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
-      <circle cx="32" cy="32" r="28" fill="#acc7c2" stroke="#a87855" strokeWidth="2" />
-      <circle cx="32" cy="32" r="24" stroke="#e8d6b8" strokeWidth="1.5" strokeDasharray="2 2" />
-      {[0, 60, 120, 180, 240, 300].map((angle) => <g key={angle} transform={`rotate(${angle} 32 32)`}><path d="M32 32c-9-7-12-15-6-18 5-2 10 7 6 18Z" fill="#d99a57" stroke="#8d6049" /><path d="M32 32c9-7 12-15 6-18-5-2-10 7-6 18Z" fill="#be6f59" stroke="#8d6049" /><circle cx="32" cy="9" r="2" fill="#f3d294" /></g>)}
-      <circle cx="32" cy="32" r="7" fill="#edc779" stroke="#875a45" /><circle cx="32" cy="32" r="3" fill="#a55e4a" />
-    </svg>
-  );
-}
 
 function SocialIcon({ name }: { name: "Pinterest" | "Instagram" | "Facebook" }) {
   return (
@@ -32,7 +22,13 @@ function SocialIcon({ name }: { name: "Pinterest" | "Instagram" | "Facebook" }) 
   );
 }
 
-export default function SiteFooter() {
+type SiteFooterProps = {
+  onHomePage?: boolean;
+  contactHref?: string;
+  faqHref?: string;
+};
+
+export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: SiteFooterProps) {
   const [showNotice, setShowNotice] = useState(false);
 
   function handleSubscribe(event: FormEvent<HTMLFormElement>) {
@@ -40,13 +36,22 @@ export default function SiteFooter() {
     setShowNotice(true);
   }
 
+  function resolveHref(href: string) {
+    if (href === "#contact" && contactHref) return contactHref;
+    if (href === "#faq" && faqHref) return faqHref;
+    if (onHomePage || !href.startsWith("#")) return href;
+    return href === "#contact" ? "#contact-inquiry" : `/${href}`;
+  }
+
   return (
-    <footer className={styles.footer} aria-label="Dhaaraa footer">
+    <footer className={styles.footer} aria-label="Growthys footer">
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <a href="/" className={styles.logo} aria-label="Dhaaraa home"><BrandEmblem /><span>dhaaraa</span></a>
-            <p>DHARAA is where tradition meets sustainability. We create organic cotton, silk, and linen sarees that honor India&apos;s weaving heritage while caring for you and the planet.</p>
+            <a href="/" className={styles.logo} aria-label="Growthys home">
+              <Image src={growthysLogo} alt="Growthys" className={styles.logoImage} sizes="320px" />
+            </a>
+            <p>Growthys brings ideas to life through thoughtful design and technology. We create digital experiences that help businesses connect, grow, and move forward.</p>
           </div>
           <div className={styles.newsletter}>
             <h2>Newsletter</h2>
@@ -58,26 +63,26 @@ export default function SiteFooter() {
               </div>
               {showNotice && <p className={styles.notice} role="status">Newsletter subscriptions are coming soon.</p>}
             </form>
-            <p>Stay connected with conscious fashion. Get updates on new collections, exclusive offers, and stories from our artisans.</p>
+            <p>Stay connected with Growthys. Get updates on our latest work, insights, and ideas in design and technology.</p>
           </div>
         </div>
         <div className={styles.navigation}>
           {linkGroups.map((group) => (
             <nav key={group.title} aria-label={`Footer ${group.title}`}>
               <h2>{group.title}</h2>
-              <ul>{group.links.map((link) => <li key={link.label}>{"href" in link ? <a href={link.href}>{link.label}</a> : <button type="button" disabled>{link.label}</button>}</li>)}</ul>
+              <ul>{group.links.map((link) => <li key={link.label}>{link.href ? <a href={resolveHref(link.href)}>{link.label}</a> : <button type="button" disabled>{link.label}</button>}</li>)}</ul>
             </nav>
           ))}
           <div className={styles.connect}>
             <h2>Connect With Us</h2>
-            <p>supportxxx@dharaa.com</p>
+            <p><a href={resolveHref("#contact")}>Contact Growthys</a></p>
             <p>+91 9XXXX XXX25</p>
             <div className={styles.socials} aria-label="Social media">
               {(["Pinterest", "Instagram", "Facebook"] as const).map((name) => <button type="button" key={name} aria-label={name} disabled><SocialIcon name={name} /></button>)}
             </div>
           </div>
         </div>
-        <p className={styles.copyright}>© 2026 DHARAA. All Rights Reserved.</p>
+        <p className={styles.copyright}>© 2026 Growthys. All Rights Reserved.</p>
       </div>
       <div className={styles.skyline} aria-hidden="true"><Image src={monuments} alt="" className={styles.monuments} sizes="100vw" /></div>
     </footer>

@@ -9,18 +9,23 @@ const questions = Array.from({ length: 4 }, (_, index) => ({
   answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.",
 }));
 
-export default function FaqSection() {
+type FaqSectionProps = {
+  items?: { id: number; question: string; answer: string }[];
+  eyebrow?: string;
+};
+
+export default function FaqSection({ items = questions, eyebrow = "Trusted by" }: FaqSectionProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section className={styles.section} id="faq" aria-labelledby="faq-heading">
       <div className={styles.container}>
         <header className={styles.header}>
-          <p>Trusted by</p>
+          <p>{eyebrow}</p>
           <h2 id="faq-heading">Frequently<span>Asked Questions</span></h2>
         </header>
         <div className={styles.questions}>
-          {questions.map((item, index) => {
+          {items.map((item, index) => {
             const open = openIndex === index;
             return (
               <article className={styles.questionCard} data-open={open} key={item.id}>

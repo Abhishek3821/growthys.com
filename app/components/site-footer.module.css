@@ -1,10 +1,9 @@
 .footer { width: 100%; overflow: hidden; padding-top: 52px; background: #fcf3ed; color: #77716e; }
 .container { max-width: 1384px; margin-inline: auto; padding-inline: 40px; }
 .top { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: clamp(48px, 8vw, 120px); padding-bottom: 28px; }
-.logo { display: inline-flex; align-items: center; gap: 24px; color: #964b3b; }
-.logo > svg { width: 72px; height: 72px; flex: 0 0 auto; filter: drop-shadow(0 2px 2px rgb(99 64 43 / 12%)); }
-.logo > span { position: relative; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 4.3vw, 66px); font-weight: 400; line-height: 1; letter-spacing: -.065em; }
-.logo > span::before { position: absolute; top: .24em; right: -.02em; left: .02em; height: 2px; background: currentColor; content: ""; }
+.logo { position: relative; display: block; width: 190px; max-width: 100%; aspect-ratio: 1; overflow: hidden; }
+/* Frame the supplied logo without its large outer white margins. */
+.logoImage { position: absolute; left: -31.313%; top: -36.364%; display: block; width: 161.617%; max-width: none; height: auto; mix-blend-mode: multiply; }
 .brand > p { max-width: 720px; margin: 16px 0 0; font-size: 14px; line-height: 1.5; letter-spacing: .005em; }
 .footer h2 { margin: 0 0 14px; color: #292522; font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; line-height: 1.3; }
 .newsletter { padding-top: 2px; }
@@ -35,8 +34,7 @@
   .top { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; }
   .container { padding-inline: 32px; }
   .navigation { gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.4fr); }
-  .logo { gap: 18px; }
-  .logo > svg { width: 64px; height: 64px; }
+  .logo { width: 170px; }
   .socials { gap: 10px; }
   .socials > button { width: 44px; height: 44px; padding: 10px; }
 }
@@ -57,8 +55,7 @@
   .container { padding-inline: 20px; }
   .navigation { gap: 28px 20px; }
   .footer h2 { font-size: 17px; }
-  .logo { gap: 14px; }
-  .logo > span { font-size: 46px; }
+  .logo { width: 160px; }
 }
 
 @media (prefers-reduced-motion: reduce) { .formRow > button { transition: none; } }

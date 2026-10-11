@@ -1,0 +1,78 @@
+.page { min-height: 100svh; padding: 18px 24px 24px; background: #e9eff4; color: #122c22; }
+.header { position: relative; display: flex; align-items: center; justify-content: center; min-height: 64px; max-width: 1600px; margin: 0 auto 24px; }
+.brand { position: absolute; left: 0; display: inline-flex; align-items: start; gap: 3px; font-size: 24px; font-weight: 600; letter-spacing: -.06em; }
+.brand span { margin-top: 3px; font-size: 10px; }
+.hero { position: relative; container-type: inline-size; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, .98fr); gap: 20px; width: 100%; max-width: 1600px; min-height: 620px; height: calc(100svh - 130px); max-height: 900px; margin-inline: auto; }
+.intro { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; padding-block: 12px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 7px; padding: 9px 14px; border-radius: 999px; background: #fff; font-size: 12px; font-weight: 600; }
+.eyebrow i { width: 6px; height: 6px; border-radius: 50%; background: #388867; }
+.heading { position: absolute; top: 12%; left: 0; margin: 0; font-size: clamp(45px, 5.3cqw, 85px); font-weight: 500; line-height: 1.06; letter-spacing: -.065em; }
+.heading > span { display: table; padding: 5px 24px 8px 0; border-radius: 0 24px 24px 0; background: #e9eff4; white-space: nowrap; }
+.heading .secondLine { margin-left: 8cqw; color: #1c623b; }
+.heading .thirdLine { margin-left: 5cqw; }
+.symbols { display: flex; gap: 12px; margin-top: auto; padding-top: 200px; }
+.symbols span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; color: #368c6d; font-size: 23px; }
+.introBottom { margin-top: auto; }
+.introBottom p { max-width: 290px; margin: 0 0 24px; color: #73837b; font-size: clamp(12px, 1.1cqw, 16px); line-height: 1.6; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.primaryAction, .secondaryAction { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 11px 23px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+.primaryAction { background: #088454; color: #fff; }
+.primaryAction:hover { background: #076d46; }
+.secondaryAction { border: 1px solid #dce5e4; background: #fff; color: #317159; }
+.secondaryAction:hover { background: #f4faf6; }
+.featureCard, .communityCard { position: relative; isolation: isolate; min-width: 0; overflow: hidden; border-radius: 24px; background: #98ad95; }
+.photo { z-index: -2; object-fit: cover; object-position: 60% center; }
+.featureCard::after, .communityCard::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(11 46 26 / 10%), transparent 45%, rgb(9 37 25 / 37%)); content: ""; }
+.imageTag, .moodTag, .communityTag { position: absolute; padding: 10px 14px; border-radius: 999px; background: rgb(46 80 59 / 55%); color: #fff; font-size: 12px; backdrop-filter: blur(10px); }
+.imageTag { top: 24px; left: 24px; }
+.moodTag { top: 80px; left: 85px; }
+.imageChips { position: absolute; right: 20px; bottom: 20px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.imageChips span { padding: 9px 12px; border-radius: 999px; background: #e6f0ea; color: #2e5039; font-size: 11px; }
+.offerings { display: flex; flex-direction: column; min-width: 0; scroll-margin-top: 24px; }
+.offeringCopy { padding: 34px 10px 30px; }
+.offeringCopy h2 { margin: 0 0 22px; font-size: clamp(28px, 3.1cqw, 48px); font-weight: 500; line-height: 1.05; letter-spacing: -.055em; }
+.offeringCopy p { max-width: 280px; margin: 0; color: #73837b; font-size: clamp(13px, 1.1cqw, 17px); line-height: 1.6; }
+.communityCard { display: block; flex: 1; min-height: 290px; }
+.communityCard .photo { object-position: center; }
+.communityTag { top: 16px; left: 16px; background: #eff8f0; color: #2e5039; }
+.page a:focus-visible { outline: 3px solid #17865c; outline-offset: 5px; }
+@media (max-width: 1200px) {
+  .header { flex-direction: column; gap: 18px; }
+  .brand { position: static; align-self: flex-start; }
+  .hero { gap: 14px; height: calc(100svh - 170px); }
+  .heading { font-size: 5.4cqw; }
+  .offeringCopy { padding-inline: 4px; }
+}
+@media (max-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); height: auto; min-height: 0; }
+  .intro, .featureCard { min-height: 620px; }
+  .heading { top: 75px; font-size: 7.2cqw; }
+  .offerings { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 2fr; gap: 16px; margin-top: 12px; }
+  .offeringCopy h2 { font-size: 34px; }
+  .communityCard { min-height: 320px; }
+}
+@media (max-width: 700px) {
+  .page { padding: 16px 20px 32px; }
+  .header { flex-direction: row; justify-content: space-between; gap: 12px; min-height: 46px; margin-bottom: 32px; }
+  .header .brand { display: none; }
+  .header :global(.hero-nav-slot) { width: 46px; min-height: 46px; }
+  .hero { display: flex; flex-direction: column; gap: 28px; height: auto; min-height: 0; max-height: none; }
+  .hero > * { flex-shrink: 0; }
+  .intro { min-height: 0; padding: 0; }
+  .heading { position: static; margin-top: 22px; font-size: clamp(32px, 10cqw, 58px); line-height: 1.12; }
+  .heading > span { padding: 0; border-radius: 0; background: transparent; }
+  .heading .secondLine { margin: 6px 0 6px 10cqw; }
+  .heading .thirdLine { margin-left: 0; }
+  .symbols { margin: 22px 0 18px; padding: 0; gap: 10px; }
+  .introBottom { margin-top: 0; width: 100%; }
+  .introBottom p { max-width: 440px; margin-bottom: 20px; font-size: 15px; line-height: 1.65; }
+  .actions { gap: 12px; }
+  .primaryAction, .secondaryAction { min-height: 48px; padding-inline: 24px; font-size: 14px; }
+  .featureCard { width: 100%; min-height: 0; aspect-ratio: 4 / 4.5; }
+  .imageChips { right: 14px; bottom: 18px; }
+  .offerings { display: flex; gap: 24px; margin-top: 8px; }
+  .offeringCopy { padding: 0; }
+  .offeringCopy h2 { margin-bottom: 16px; font-size: clamp(32px, 9cqw, 42px); line-height: 1.1; }
+  .offeringCopy p { max-width: 440px; font-size: 15px; line-height: 1.65; }
+  .communityCard { flex: none; width: 100%; min-height: 0; aspect-ratio: 4 / 4.3; }
+}

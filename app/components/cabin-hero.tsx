@@ -85,7 +85,7 @@ export default function CabinHero() {
       </div>
       <div className="hero-shade" aria-hidden="true" />
       <header className="hero-header">
-        <a className="wordmark" href="#home" aria-label="Cabin and Wild home" onClick={() => setActiveStory(0)}>CABIN<span>&amp;</span>WILD</a>
+        <a className="wordmark" href="#home" aria-label="Growthys home" onClick={() => setActiveStory(0)}>Growthys</a>
         <Navbar />
       </header>
       <div className="hero-story" aria-live="polite" aria-atomic="true">

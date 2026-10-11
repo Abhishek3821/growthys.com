@@ -1,0 +1,52 @@
+.section { padding: 72px 40px 88px; background: #faf5e9; color: #fff; }
+.gallery { display: grid; grid-template-columns: 1.05fr 1.35fr 1.95fr; gap: 26px; width: 100%; max-width: 1320px; height: clamp(440px, 43vw, 600px); margin-inline: auto; }
+.leftColumn, .rightColumn, .bottomRow { display: grid; min-width: 0; min-height: 0; gap: 26px; }
+.leftColumn { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.rightColumn { grid-template-rows: 1.2fr 1fr; }
+.bottomRow { grid-template-columns: .8fr 1.45fr; }
+.card { position: relative; isolation: isolate; min-width: 0; min-height: 0; overflow: hidden; border-radius: 30px; background: #526647; }
+.card img { z-index: -2; object-fit: cover; transition: transform 600ms ease; }
+.card::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(14 29 13 / 5%) 40%, rgb(14 29 13 / 15%) 60%, rgb(9 24 9 / 72%) 100%); content: ""; }
+.wildlife { border-top-left-radius: 64px; }
+.wildlife img { object-position: 52% center; }
+.village img { object-position: 50% center; }
+.mountains img { object-position: 50% 58%; }
+.waterfall img { object-position: 48% center; }
+.rating { position: absolute; top: 24px; left: 24px; display: inline-flex; align-items: center; justify-content: center; min-width: 32px; padding: 4px 7px; border-radius: 999px; background: #fff; color: #58604f; font-size: 10px; font-weight: 600; line-height: 1; box-shadow: 0 2px 8px rgb(0 0 0 / 8%); }
+.caption { position: absolute; right: 18px; bottom: 24px; left: 24px; text-shadow: 0 1px 8px rgb(0 0 0 / 30%); }
+.caption h3 { margin: 0 0 4px; font-size: clamp(22px, 2.5vw, 36px); font-weight: 600; line-height: 1; letter-spacing: -.035em; }
+.caption p { margin: 0; font-size: clamp(11px, 1.15vw, 16px); font-weight: 400; line-height: 1.3; text-wrap: pretty; }
+.waterfall .caption { right: 12px; left: 18px; }
+.waterfall .rating { left: 18px; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card:hover img { transform: scale(1.045); }
+}
+@media (max-width: 1100px) {
+  .section { padding: 56px 24px 72px; }
+  .gallery, .leftColumn, .rightColumn, .bottomRow { gap: 18px; }
+  .card { border-radius: 24px; }
+  .wildlife { border-top-left-radius: 48px; }
+  .rating { top: 18px; left: 18px; }
+  .caption { right: 12px; bottom: 20px; left: 18px; }
+}
+@media (max-width: 800px) {
+  .gallery { grid-template-columns: 1fr 1.25fr; height: auto; gap: 20px; }
+  .leftColumn, .village { min-height: 520px; }
+  .rightColumn { grid-column: 1 / -1; min-height: 480px; }
+  .bottomRow { grid-template-columns: 1fr 1.5fr; }
+  .caption h3 { font-size: 28px; }
+  .caption p { font-size: 14px; }
+}
+@media (max-width: 520px) {
+  .section { padding: 40px 16px 56px; }
+  .gallery { display: flex; flex-direction: column; gap: 16px; }
+  .leftColumn { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 1fr; min-height: 0; height: 230px; gap: 14px; }
+  .village { min-height: 0; aspect-ratio: 1.05; }
+  .rightColumn { min-height: 0; height: 440px; gap: 16px; }
+  .bottomRow { gap: 14px; }
+  .caption { bottom: 18px; left: 16px; }
+  .caption h3 { font-size: 26px; }
+  .caption p { font-size: 12px; }
+  .rating { top: 16px; left: 16px; }
+  .waterfall .caption, .waterfall .rating { left: 16px; }
+}
