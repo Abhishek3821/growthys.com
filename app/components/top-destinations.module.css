@@ -1,0 +1,135 @@
+.section {
+  min-width: 0;
+  width: 100%;
+  padding: clamp(26px, 3.6vw, 54px) 5.5% clamp(28px, 4vw, 60px);
+  background: #ececf1;
+  color: #292e2b;
+}
+
+.container { max-width: 1300px; min-width: 0; margin-inline: auto; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: clamp(24px, 3.2vw, 40px);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: clamp(18px, 2.4vw, 32px);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -.025em;
+}
+
+.header p {
+  width: 50%;
+  max-width: 630px;
+  margin: 0;
+  font-size: clamp(11px, 1.5vw, 17px);
+  line-height: 1.3;
+}
+
+.viewport {
+  --visible: 4;
+  --gap: clamp(12px, 1.6vw, 24px);
+  overflow: hidden;
+  border-radius: clamp(14px, 1.8vw, 22px);
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.viewport:active { cursor: grabbing; }
+.viewport:focus-visible { outline: 2px solid #283d52; outline-offset: 5px; }
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  transform: translateX(calc(-1 * var(--position) * (100% + var(--gap)) / var(--visible)));
+}
+
+.animated { transition: transform 450ms cubic-bezier(.22, .68, .28, 1); }
+
+.card {
+  position: relative;
+  isolation: isolate;
+  flex: 0 0 calc((100% - (var(--visible) - 1) * var(--gap)) / var(--visible));
+  min-width: 0;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: clamp(14px, 1.8vw, 22px);
+  background: #a3b4bf;
+  color: #fff;
+}
+
+.photo { object-fit: cover; pointer-events: none; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 36%, rgb(0 0 0 / 8%) 50%, rgb(0 0 0 / 84%) 100%); pointer-events: none; }
+
+.price {
+  position: absolute;
+  top: clamp(14px, 2vw, 25px);
+  right: clamp(12px, 1.6vw, 22px);
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgb(247 249 250 / 82%);
+  color: #354451;
+  font-size: clamp(8px, 1.05vw, 12px);
+  line-height: 1;
+}
+
+.price strong { font-weight: 600; }
+
+.details {
+  position: absolute;
+  left: clamp(12px, 1.7vw, 22px);
+  right: clamp(10px, 1.4vw, 20px);
+  bottom: clamp(14px, 2vw, 26px);
+}
+
+.details h3 { margin: 0 0 5px; font-size: clamp(13px, 1.8vw, 24px); line-height: 1.15; font-weight: 600; }
+.meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; font-size: clamp(8px, 1.05vw, 13px); line-height: 1.3; }
+.rating { white-space: nowrap; }
+.rating > span { color: #f4d54f; }
+.location { display: flex; align-items: baseline; gap: 6px; margin: 4px 0 0; font-size: clamp(8px, 1.05vw, 13px); line-height: 1.3; color: #e0e6e4; }
+.location > span { font-size: 13px; }
+
+.footer { display: flex; align-items: center; justify-content: space-between; margin-top: clamp(20px, 3vw, 32px); gap: 20px; }
+.viewMore { border: 0; border-radius: 999px; padding: 9px 19px; background: #283d52; color: #fff; font-size: clamp(10px, 1.1vw, 14px); line-height: 1; cursor: pointer; }
+.viewMore:hover { background: #3c556c; }
+.controls { display: flex; gap: 10px; }
+.controls button { display: grid; place-items: center; width: clamp(24px, 3.3vw, 40px); height: clamp(24px, 3.3vw, 40px); padding: 0; border: 1px solid #65706f; border-radius: 50%; background: transparent; color: #525d5c; cursor: pointer; }
+.controls svg { width: 70%; height: 70%; }
+.controls button:hover { background: #dfe3e8; }
+.controls button:disabled, .viewMore:disabled { cursor: default; }
+.footer button:focus-visible { outline: 2px solid #283d52; outline-offset: 4px; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 640px) {
+  .section { padding: 36px 24px; }
+  .header { flex-direction: column; gap: 12px; }
+  .header h2 { font-size: 23px; }
+  .header p { width: 100%; font-size: 14px; line-height: 1.5; }
+  .viewport { --visible: 2; --gap: 14px; }
+  .details h3 { font-size: 17px; }
+  .meta, .location { font-size: 10px; }
+  .price { font-size: 10px; }
+  .controls button { width: 36px; height: 36px; }
+  .viewMore { font-size: 12px; padding: 11px 21px; }
+}
+
+@media (max-width: 420px) {
+  .viewport { --visible: 1; }
+  .card { aspect-ratio: 4 / 5; }
+  .details { left: 20px; right: 20px; bottom: 22px; }
+  .details h3 { font-size: 23px; margin-bottom: 8px; }
+  .meta, .location { font-size: 12px; }
+  .price { top: 20px; right: 20px; font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated { transition: none; }
+}

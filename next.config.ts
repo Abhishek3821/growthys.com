@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
-      "*.css": {
+      // Preserve Next.js CSS Module processing for component styles.
+      "app/globals.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },

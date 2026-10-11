@@ -1,0 +1,64 @@
+.footer { width: 100%; overflow: hidden; padding-top: 52px; background: #fcf3ed; color: #77716e; }
+.container { max-width: 1384px; margin-inline: auto; padding-inline: 40px; }
+.top { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: clamp(48px, 8vw, 120px); padding-bottom: 28px; }
+.logo { display: inline-flex; align-items: center; gap: 24px; color: #964b3b; }
+.logo > svg { width: 72px; height: 72px; flex: 0 0 auto; filter: drop-shadow(0 2px 2px rgb(99 64 43 / 12%)); }
+.logo > span { position: relative; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 4.3vw, 66px); font-weight: 400; line-height: 1; letter-spacing: -.065em; }
+.logo > span::before { position: absolute; top: .24em; right: -.02em; left: .02em; height: 2px; background: currentColor; content: ""; }
+.brand > p { max-width: 720px; margin: 16px 0 0; font-size: 14px; line-height: 1.5; letter-spacing: .005em; }
+.footer h2 { margin: 0 0 14px; color: #292522; font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; line-height: 1.3; }
+.newsletter { padding-top: 2px; }
+.formRow { display: flex; min-height: 46px; }
+.formRow input { width: 100%; min-width: 0; padding: 12px; border: 1px solid #e7ddd6; border-right: 0; border-radius: 0; background: #fff; color: #483c36; font: inherit; font-size: 14px; line-height: 1.4; }
+.formRow input::placeholder { color: #908985; opacity: 1; }
+.formRow input:focus-visible { outline: 2px solid #ac6a56; outline-offset: -2px; }
+.formRow > button { flex: 0 0 auto; padding: 12px 22px; border: 1px solid #934b3d; background: #964d3d; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 180ms ease; }
+.formRow > button:hover { background: #7f3d30; }
+.newsletter > p { margin: 12px 0 0; font-size: 14px; line-height: 1.5; }
+.newsletter .notice { margin: 8px 0 0; color: #934b3d; font-size: 13px; line-height: 1.4; }
+.navigation { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.65fr); gap: 40px; padding: 26px 0 24px; border-top: 1px solid #ecdfd6; border-bottom: 1px solid #ecdfd6; }
+.navigation ul { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.navigation li { font-size: 14px; line-height: 1.4; }
+.navigation li button { padding: 0; border: 0; background: transparent; font: inherit; text-align: left; opacity: 1; cursor: default; }
+.navigation a:hover { color: #964b3b; text-decoration: underline; text-underline-offset: 3px; }
+.connect > p { margin: 0 0 10px; font-size: 14px; line-height: 1.4; overflow-wrap: anywhere; }
+.socials { display: flex; gap: 14px; margin-top: 18px; }
+.socials > button { display: grid; place-items: center; width: 54px; height: 54px; padding: 15px; border: 0; border-radius: 50%; background: #fff; color: #984d3b; opacity: 1; cursor: default; }
+.socials svg { width: 24px; height: 24px; }
+.footer a:focus-visible, .formRow > button:focus-visible { outline: 2px solid #964b3b; outline-offset: 4px; }
+.copyright { margin: 22px 0 0; text-align: center; font-size: 14px; line-height: 1.5; }
+.skyline { width: 100%; margin-top: -8px; overflow: hidden; pointer-events: none; }
+.monuments { display: block; width: 100%; height: clamp(200px, 23vw, 380px); object-fit: fill; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+@media (max-width: 1000px) {
+  .top { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; }
+  .container { padding-inline: 32px; }
+  .navigation { gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.4fr); }
+  .logo { gap: 18px; }
+  .logo > svg { width: 64px; height: 64px; }
+  .socials { gap: 10px; }
+  .socials > button { width: 44px; height: 44px; padding: 10px; }
+}
+
+@media (max-width: 760px) {
+  .footer { padding-top: 40px; }
+  .container { padding-inline: 24px; }
+  .top { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .brand > p { max-width: 60ch; }
+  .newsletter { max-width: 480px; }
+  .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; padding-block: 28px; }
+  .copyright { margin-top: 24px; font-size: 12px; }
+  .skyline { margin-top: 28px; }
+  .monuments { width: 100%; min-width: 760px; height: 210px; margin-left: min(0px, calc((100vw - 760px) / 2)); }
+}
+
+@media (max-width: 380px) {
+  .container { padding-inline: 20px; }
+  .navigation { gap: 28px 20px; }
+  .footer h2 { font-size: 17px; }
+  .logo { gap: 14px; }
+  .logo > span { font-size: 46px; }
+}
+
+@media (prefers-reduced-motion: reduce) { .formRow > button { transition: none; } }

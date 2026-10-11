@@ -1,0 +1,85 @@
+.section {
+  width: 100%;
+  padding: 48px clamp(24px, 5vw, 80px) 80px;
+  background: #fafaf9;
+  color: #292c29;
+  scroll-margin-top: 24px;
+}
+
+.container { container-type: inline-size; max-width: 1384px; margin-inline: auto; }
+.header { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); align-items: end; gap: 5cqw; margin-bottom: 40px; }
+.eyebrow { margin: 0 0 12px; color: #7e9058; font-size: clamp(11px, 1.2cqw, 15px); font-weight: 600; letter-spacing: .045em; line-height: 1.2; text-transform: uppercase; }
+.header h2 { margin: 0; font-size: clamp(32px, 4.7cqw, 66px); font-weight: 400; line-height: 1.1; letter-spacing: -.055em; }
+.header h2 > span { display: block; }
+.freedom { position: relative; display: inline-block; }
+.freedom > svg { position: absolute; left: -1%; bottom: -.25em; width: 108%; height: .38em; color: #a3b18e; pointer-events: none; }
+.headerAction { max-width: 440px; padding-bottom: 2px; }
+.headerAction > p { max-width: 39ch; margin: 0 0 20px; font-size: clamp(13px, 1.4cqw, 18px); line-height: 1.25; letter-spacing: -.02em; text-wrap: pretty; }
+.demoButton { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: min(100%, 340px); min-height: 52px; padding: 3px 3px 3px 20px; border: 1px solid #3a3b38; border-radius: 999px; background: linear-gradient(#434440, #171816); color: #fff; font-size: 14px; line-height: 1.2; opacity: 1; cursor: default; }
+.demoButton > span { display: grid; place-items: center; width: 58px; height: 44px; flex: 0 0 auto; border-radius: 999px; background: #fafaf9; color: #30332f; }
+.demoButton svg { width: 22px; height: 22px; }
+
+.cards { display: flex; gap: clamp(8px, 1cqw, 16px); height: clamp(280px, 36.9cqw, 512px); }
+.card { position: relative; isolation: isolate; flex: 1 1 0; min-width: 0; overflow: hidden; border-radius: clamp(20px, 2.8cqw, 32px); background: #9d9c8d; color: #fff; transition: flex-grow 650ms cubic-bezier(.22, 1, .36, 1); }
+.card[data-active="true"] { flex-grow: 4.2; }
+.cardImage { z-index: -2; object-fit: cover; object-position: center; }
+.card[data-plan="personal"] .cardImage { object-position: 65% center; }
+.shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgb(38 31 25 / 19%), transparent 74%); pointer-events: none; }
+.card[data-plan="business"] .shade { background: linear-gradient(90deg, rgb(98 49 4 / 30%), transparent 80%); }
+.card[data-plan="freelance"] .shade { background: linear-gradient(90deg, rgb(12 32 18 / 28%), transparent 80%); }
+.planSelector { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; background: transparent; color: #fff; cursor: pointer; }
+.planSelector > span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-90deg); font-size: clamp(24px, 3cqw, 40px); font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
+.planSelector:hover { background: rgb(255 255 255 / 7%); }
+.planSelector:focus-visible { outline: 2px solid #fff; outline-offset: -8px; border-radius: inherit; }
+.details { position: absolute; inset: 0; animation: reveal 450ms 140ms ease both; }
+.planCopy { position: absolute; top: clamp(20px, 2.6cqw, 36px); left: clamp(20px, 2.6cqw, 36px); width: min(45%, 390px); }
+.planCopy h3 { margin: 0 0 12px; font-size: clamp(24px, 2.9cqw, 40px); font-weight: 500; line-height: 1.1; letter-spacing: -.04em; }
+.planCopy p { margin: 0; max-width: 29ch; font-size: clamp(13px, 1.45cqw, 20px); line-height: 1.2; letter-spacing: -.02em; }
+.nextButton { position: absolute; right: -1px; bottom: -1px; display: grid; place-items: center; width: clamp(50px, 6.4cqw, 80px); height: clamp(50px, 6.4cqw, 80px); padding: 12px; border: 8px solid #fafaf9; border-radius: 50%; background: #292c29; color: #fff; cursor: pointer; transition: background-color 180ms ease; }
+.nextButton svg { width: 26px; height: 26px; }
+.nextButton:hover { background: #50594a; }
+.nextButton:focus-visible { outline: 2px solid #91a374; outline-offset: -5px; }
+
+.summary { position: absolute; bottom: clamp(20px, 2.6cqw, 36px); left: clamp(20px, 2.6cqw, 36px); width: clamp(170px, 24cqw, 332px); padding: clamp(14px, 1.7cqw, 24px); border: 1px solid rgb(255 255 255 / 50%); border-radius: clamp(18px, 2.6cqw, 30px); background: #fff; color: #292c29; box-shadow: 0 12px 28px rgb(50 38 21 / 8%); }
+.summary h4 { margin: 0 0 8px; font-size: clamp(18px, 2cqw, 28px); font-weight: 500; line-height: 1.15; letter-spacing: -.035em; }
+.summary p { margin: 0; color: #62685e; font-size: clamp(12px, 1.15cqw, 16px); line-height: 1.4; text-wrap: pretty; }
+
+@keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .planCopy p { font-size: 12px; line-height: 1.2; }
+}
+
+@media (max-width: 760px) {
+  .section { padding: 40px 24px 56px; }
+  .header { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-bottom: 28px; }
+  .header h2 { max-width: 18ch; font-size: clamp(32px, 7cqw, 44px); }
+  .headerAction > p { max-width: 42ch; font-size: 15px; line-height: 1.4; margin-bottom: 16px; }
+  .demoButton { min-height: 48px; width: min(100%, 300px); }
+  .demoButton > span { height: 40px; }
+  .cards { flex-direction: column; gap: 12px; height: auto; }
+  .card { flex: none; height: 76px; min-height: 76px; border-radius: 22px; transition: height 550ms cubic-bezier(.22, 1, .36, 1); }
+  .card[data-active="true"] { flex: none; height: 440px; }
+  .planSelector > span { left: 24px; transform: translateY(-50%); font-size: 26px; }
+  .planSelector::after { position: absolute; top: 50%; right: 24px; width: 10px; height: 10px; border-right: 1.5px solid; border-bottom: 1.5px solid; transform: translateY(-75%) rotate(45deg); content: ""; }
+  .card[data-plan="personal"] .cardImage { object-position: 65% center; }
+  .shade { background: linear-gradient(180deg, rgb(42 34 25 / 34%), transparent 60%), linear-gradient(90deg, rgb(42 34 25 / 14%), transparent); }
+  .planCopy { top: 24px; left: 24px; width: min(75%, 300px); }
+  .planCopy h3 { font-size: 28px; }
+  .planCopy p { font-size: 15px; line-height: 1.35; }
+  .summary { bottom: 24px; left: 24px; width: 210px; padding: 18px; border-radius: 22px; }
+  .summary h4 { font-size: 21px; }
+  .summary p { font-size: 14px; }
+  .nextButton { width: 62px; height: 62px; border-width: 7px; }
+}
+
+@media (max-width: 400px) {
+  .section { padding-inline: 16px; }
+  .planCopy { left: 20px; }
+  .summary { left: 20px; width: 190px; padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .nextButton { transition: none; }
+  .details { animation: none; }
+}
