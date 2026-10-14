@@ -1,0 +1,16 @@
+.section { background: #fff; padding: 0 4% 65px; }
+.panel { position: relative; isolation: isolate; display: grid; grid-template-columns: 66% 34%; max-width: 1400px; margin: auto; }
+.panel::before { content: ''; position: absolute; inset: 0 0 0 47%; background: #2c3743; z-index: -1; }
+.visuals { padding: 52px 30px 40px 0; min-width: 0; }
+.photos { display: grid; grid-template-columns: 1fr 1.1fr; gap: 18px; }
+.photo { position: relative; aspect-ratio: 1 / 1.08; overflow: hidden; border-radius: 18px; background: #e5e4df; }
+.photo img { object-position: center 35%; }
+.caption { border-left: 3px solid #efa178; margin: 40px 0 0 9%; padding-left: 20px; max-width: 310px; font-size: 13px; line-height: 1.8; font-weight: 500; color: #99a0a3; }
+.content { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 55px 45px 55px 28px; color: #fff; }
+.eyebrow { font-size: 12px; font-weight: 650; margin-bottom: 12px; color: #ebeff1; }
+.content h2 { font-size: clamp(28px, 3vw, 44px); font-weight: 750; line-height: 1.1; letter-spacing: -.025em; }
+.description { margin-top: 28px; max-width: 250px; color: #d2d9dc; font-size: 13px; line-height: 1.7; }
+.avatars { display: flex; gap: 13px; margin-top: 38px; }
+.avatar { display: block; width: 45px; height: 45px; border: 2px solid #f5f2e9; border-radius: 50%; background-color: #e4e2d9; background-image: url('/images/testimonial-portraits.webp'); background-size: 400% 200%; background-repeat: no-repeat; }
+@media (max-width: 1000px) { .visuals { padding: 40px 20px 35px 0; }.photos { gap: 12px; }.content { padding: 40px 25px 40px 15px; }.description { font-size: 12px; }.caption { font-size: 12px; max-width: 270px; }.avatars { gap: 9px; }.avatar { width: 36px; height: 36px; } }
+@media (max-width: 767px) { .section { padding: 0 20px 40px; }.panel { grid-template-columns: 1fr; }.panel::before { display: none; }.visuals { padding: 0; }.photos { gap: 12px; }.photo { border-radius: 12px; aspect-ratio: 3/4; }.caption { margin: 25px 10px 30px; padding-left: 16px; max-width: 330px; font-size: 13px; }.content { background: #2c3743; padding: 35px 28px; }.content h2 { font-size: 36px; }.description { max-width: 360px; font-size: 13px; margin-top: 22px; }.avatars { margin-top: 28px; gap: 12px; }.avatar { width: 42px; height: 42px; } }

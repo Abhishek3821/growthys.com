@@ -1,0 +1,10 @@
+# Design tools showcase artwork
+
+Asset: `public/images/website-design/design-tools-showcase.png`
+
+Created using the built-in imagegen tool as one decorative five-panel illustration for the section below Our Class on `/website-design`.
+
+Final prompt:
+
+Wide website illustration banner, aspect ratio 2.55:1, on a very pale cool white background with subtle soft pale blue gradients and fine diagonal texture near lower left. Five separate front-facing rounded vertical rectangular panels arranged in one symmetrical horizontal row, all vertically centered, narrow consistent gaps. Exact composition: first panel short, second medium-tall, central third tallest and slightly wider, fourth medium-tall matching second, fifth short matching first. Heights about 48%,72%,94%,72%,48% of canvas height, collectively occupying 94% canvas width. Panels have generously rounded corners. First, third and fifth panels vivid electric violet blue (#5141f3), second and fourth panels very dark midnight navy (#11102d). Inside panels are charming colourful polished 3D clay-render graphic design objects. Panel 1: a small floating analytics dashboard with bright orange yellow bar chart and red blue yellow pie chart. Panel 2: a large tilted rainbow colour wheel and eyedropper. Panel 3: a friendly miniature designer wearing headphones and yellow shirt, holding an oversized black fountain pen pointing diagonally down left, surrounded by a sweeping pink purple ribbon, floating colourful swatches and small typographic design tool icons. Panel 4: a long floating vertical violet tool palette with yellow triangle, pink circle, green type tool symbol, pen nib and eyedropper. Panel 5: a small lavender desktop monitor with overlapping orange type selection icon, circular rainbow picker and purple play triangle. Soft dimensional shadows, tactile materials, detailed colourful objects. No headings, no words, no logos, no watermark, no buttons or prices, no photographic elements. This is a single decorative illustration, not a webpage screenshot.
+

@@ -1,4 +1,4 @@
-import styles from "./management-section.module.css";
+import styles from "./management-section.styles";
 
 const benefits = [
   {

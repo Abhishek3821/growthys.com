@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import portraits from "../../public/images/testimonial-portraits.webp";
-import styles from "./team-cta.module.css";
+import styles from "./team-cta.styles";
 
 const portraitOrder = [5, 2, 0, 7, 4, 6, 1, 5, 3, 7, 2];
 

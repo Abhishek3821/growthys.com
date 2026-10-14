@@ -1,0 +1,13 @@
+.section { background: #fff; padding: 0 4% 65px; color: #293033; }
+.grid { display: grid; grid-template-columns: 42% 58%; grid-template-rows: clamp(220px, 22vw, 310px) clamp(280px, 28vw, 390px); max-width: 1400px; margin: 0 auto; }
+.introduction { display: flex; flex-direction: column; justify-content: center; padding: 32px clamp(30px, 5vw, 85px); }
+.eyebrow { color: #ed936e; font-size: 13px; font-weight: 700; margin-bottom: 15px; }
+.introduction h2 { font-size: clamp(32px, 3.3vw, 48px); line-height: 1.1; letter-spacing: -.025em; font-weight: 750; }
+.celebration, .collaboration { position: relative; overflow: hidden; min-width: 0; min-height: 0; background: #e4e6e1; }
+.celebration img { object-position: center 38%; }
+.collaboration img { object-position: center 45%; }
+.details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(25px, 4vw, 65px); align-content: center; padding: 45px clamp(30px, 4vw, 70px); }
+.accent { display: block; background: #ff9d78; width: 55px; height: 4px; margin-bottom: 25px; }
+.textColumn p { max-width: 235px; color: #92999b; font-size: 14px; font-weight: 500; line-height: 1.75; }
+@media (max-width: 900px) { .details { gap: 25px; padding: 35px 30px; }.textColumn p { font-size: 12px; }.introduction { padding: 30px; }.accent { margin-bottom: 20px; } }
+@media (max-width: 767px) { .section { padding: 0 20px 40px; }.grid { grid-template-columns: 1fr; grid-template-rows: auto; }.introduction { padding: 28px 20px 35px; }.introduction h2 { font-size: 38px; }.celebration { height: 240px; }.collaboration { height: 300px; }.details { padding: 35px 20px 15px; gap: 25px; }.textColumn p { font-size: 13px; }.accent { width: 45px; margin-bottom: 18px; } }

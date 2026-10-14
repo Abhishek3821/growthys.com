@@ -5,7 +5,7 @@ import { useState } from "react";
 import personalImage from "../../public/images/banking/personal.webp";
 import businessImage from "../../public/images/banking/business.webp";
 import freelanceImage from "../../public/images/banking/freelance.webp";
-import styles from "./banking-section.module.css";
+import styles from "./banking-section.styles";
 
 const plans = [
   {

@@ -6,7 +6,7 @@ import elNido from "../../public/images/destinations/el-nido.webp";
 import baguio from "../../public/images/destinations/baguio.webp";
 import siargao from "../../public/images/destinations/siargao.webp";
 import vigan from "../../public/images/destinations/vigan.webp";
-import styles from "./top-destinations.module.css";
+import styles from "./top-destinations.styles";
 
 const destinations = [
   { name: "El Nido", image: elNido, alt: "Turquoise water surrounded by El Nido's limestone cliffs", price: "4,999", category: "Beach paradise", rating: "4.8", reviews: "1.2k", location: "Palawan, Region", color: "#fb525b" },

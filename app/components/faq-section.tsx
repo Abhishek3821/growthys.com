@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./faq-section.module.css";
+import styles from "./faq-section.styles";
 
 const questions = Array.from({ length: 4 }, (_, index) => ({
   id: index,

@@ -1,17 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { blogPosts } from "../data/blog-posts";
 import portraits from "../../public/images/testimonial-portraits.webp";
-import styles from "./blog-feed.module.css";
+import styles from "./blog-feed.styles";
 
 const dateFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
-const flashNews = [
-  { title: "Time slowly fades where moss grows", image: "/images/blogs/nature-return.webp" },
-  { title: "The weight of light in endless fields", image: "/images/blogs/seeds-whisper.webp" },
-  { title: "What the fire gently leaves behind", image: "/images/blogs/stone-stories.webp" },
-  { title: "A meadow quietly built from memory", image: "/images/blogs/mountain-breath.webp" },
-  { title: "How the desert softly dreams of rain", image: "/images/blogs/earth-listening.webp" },
-];
+const flashNews = blogPosts;
 
 const authors = [
   { name: "Laura Bennett", detail: "Editor & author", articles: 16, portrait: 1 },
@@ -51,7 +46,8 @@ export default function BlogFeed() {
         <div className={styles.layout}>
           <div className={styles.posts}>
             {blogPosts.map((post) => (
-              <article className={styles.post} key={post.id} id={`post-${post.id}`}>
+              <article className={`${styles.post} relative`} key={post.id} id={`post-${post.id}`}>
+                <Link href={`/blogs/${post.id}`} aria-label={`Read ${post.title}`} className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#587a5a]" />
                 <div className={styles.postImage}>
                   <Image src={post.image} alt={post.imageAlt} fill sizes="(max-width: 600px) 100vw, (max-width: 1000px) 45vw, 33vw" />
                 </div>
@@ -72,8 +68,9 @@ export default function BlogFeed() {
             <section className={styles.sidebarSection} aria-labelledby="flash-news-heading">
               <h2 id="flash-news-heading" className={styles.sidebarHeading}>Flash news</h2>
               <div className={styles.newsList}>
-                {flashNews.map((news) => (
-                  <article className={styles.newsItem} key={news.title}>
+                {flashNews.map((news, index) => (
+                  <article className={`${styles.newsItem} relative`} key={news.title}>
+                    <Link href={`/blogs/${blogPosts[index].id}`} aria-label={`Read ${blogPosts[index].title}`} className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#587a5a]" />
                     <div><h3>{news.title}</h3><p><span aria-hidden="true">•</span> Jun 18, 2026</p></div>
                     <div className={styles.newsImage}><Image src={news.image} alt="" fill sizes="80px" /></div>
                   </article>

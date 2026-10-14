@@ -3,7 +3,7 @@ import strategy from "../../public/images/insights/article-strategy.webp";
 import growth from "../../public/images/insights/article-growth.webp";
 import operations from "../../public/images/insights/article-operations.webp";
 import workflow from "../../public/images/insights/article-workflow.webp";
-import styles from "./insights-articles.module.css";
+import styles from "./insights-articles.styles";
 
 const articles = [
   {

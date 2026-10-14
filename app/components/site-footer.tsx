@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, type FormEvent } from "react";
 import monuments from "../../public/images/footer/indian-monuments.webp";
 import growthysLogo from "../../public/images/footer/growthys-logo.jpeg";
-import styles from "./site-footer.module.css";
+import styles from "./site-footer.styles";
 
 const linkGroups = [
   { title: "Quick Links", links: [{ label: "Home", href: "/" }, { label: "Shop Sarees" }, { label: "About Us" }] },

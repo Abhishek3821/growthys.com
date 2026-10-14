@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ecommerceImage from "../../public/images/ecommerce-solutions.webp";
-import styles from "./ecommerce-solutions.module.css";
+import styles from "./ecommerce-solutions.styles";
 
 const benefits = [
   "Conversion-focused mobile-first UI/UX engineering reducing checkout friction.",

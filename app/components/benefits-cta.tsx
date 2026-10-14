@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import styles from "./benefits-cta.module.css";
+import styles from "./benefits-cta.styles";
 
 export default function BenefitsCta() {
   const [showNotice, setShowNotice] = useState(false);

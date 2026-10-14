@@ -8,7 +8,7 @@ import coast from "../../public/images/travel-deck/azure-coast.webp";
 import map from "../../public/images/travel-deck/world-map.webp";
 import beach from "../../public/images/destinations/siargao.webp";
 import island from "../../public/images/destinations/el-nido.webp";
-import styles from "./travel-card-carousel.module.css";
+import styles from "./travel-card-carousel.styles";
 
 const destinations = [
   { name: "Golden Dunes", location: "Namibia, Namib Desert", image: dunes, description: "Explore golden sand dunes, drifting desert trails and quiet horizons. A timeless escape into the wilderness.", distance: "2190 M", temperature: "32°C", rating: "4.8", price: "€1320" },

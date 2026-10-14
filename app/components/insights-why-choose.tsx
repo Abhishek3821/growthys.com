@@ -1,4 +1,4 @@
-import styles from "./insights-why-choose.module.css";
+import styles from "./insights-why-choose.styles";
 
 const features = [
   {

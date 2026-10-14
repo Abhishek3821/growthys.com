@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import styles from "./process-section.module.css";
+import styles from "./process-section.styles";
 
 const steps = [
   { title: "Discover", description: "Understand goals, users and the problem deeply.", color: "#4bc9a7", light: "#6dd7bc", icon: "search" },

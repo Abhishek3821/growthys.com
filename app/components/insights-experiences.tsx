@@ -5,7 +5,7 @@ import village from "../../public/images/insights/experience-village.webp";
 import mountains from "../../public/images/insights/experience-mountains.webp";
 import waterfall from "../../public/images/insights/experience-waterfall.webp";
 import hills from "../../public/images/insights/experience-hills.webp";
-import styles from "./insights-experiences.module.css";
+import styles from "./insights-experiences.styles";
 
 type ExperienceCardProps = {
   image: StaticImageData;

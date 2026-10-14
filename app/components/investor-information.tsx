@@ -5,7 +5,7 @@ import { useRef, useState, type KeyboardEvent } from "react";
 import quickLinksImage from "../../public/images/investors/quick-links.webp";
 import financialsImage from "../../public/images/investors/financials.webp";
 import newsImage from "../../public/images/investors/news-events.webp";
-import styles from "./investor-information.module.css";
+import styles from "./investor-information.styles";
 
 const categories = [
   {

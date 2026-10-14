@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import styles from "./contact-details.module.css";
+import styles from "./contact-details.styles";
 
 // Contact values follow the supplied design and remain placeholders.
 const contactCards = [

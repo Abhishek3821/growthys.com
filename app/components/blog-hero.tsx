@@ -6,7 +6,7 @@ import { useState, type FormEvent } from "react";
 import Navbar from "./navbar";
 import fox from "../../public/images/blogs/arctic-fox.webp";
 import mountain from "../../public/images/blogs/mountain-dream.webp";
-import styles from "./blog-hero.module.css";
+import styles from "./blog-hero.styles";
 
 export default function BlogHero() {
   const [subscribeNotice, setSubscribeNotice] = useState(false);
@@ -43,7 +43,8 @@ export default function BlogHero() {
         </div>
 
         <div className={styles.stories}>
-          <article className={styles.featured}>
+          <article className={`${styles.featured} relative`}>
+            <Link href="/blogs/unnamed-wild" aria-label="Read Returning to the unnamed wild beyond the maps" className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
             <div className={styles.featuredCopy}>
               <span className={styles.category}><i aria-hidden="true" /> Lifestyle</span>
               <h2>Returning to the unnamed wild beyond the maps</h2>
@@ -51,7 +52,7 @@ export default function BlogHero() {
               <div className={styles.featuredMeta}>
                 <div className={styles.authorRow}>
                   <span className={styles.author}><span className={styles.avatar} aria-hidden="true">G</span> Growthys</span>
-                  <span>6 min read</span>
+                  <span>2 min read</span>
                 </div>
                 <div className={styles.tags} aria-label="Article topics"><span>Wildness</span><span>Nature</span><span>Stillness</span><span>Technology</span><span>Mindfulness</span></div>
               </div>
@@ -61,14 +62,15 @@ export default function BlogHero() {
             </div>
           </article>
 
-          <article className={styles.sideStory}>
+          <article className={`${styles.sideStory} relative`}>
+            <Link href="/blogs/machines-dream" aria-label="Read When machines begin to dream of trees" className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
             <div className={styles.sideImage}>
               <Image src={mountain} alt="A distant mountain glowing coral pink above blue ridges at dawn" fill placeholder="blur" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 35vw, 25vw" />
             </div>
             <div className={styles.sideCopy}>
               <h2>When machines begin to dream of trees</h2>
               <p>A calm space for ideas that move in nature — part reflection, part possibility. Where technology and the living world meet.</p>
-              <span className={styles.sideMeta}>4 min read <span aria-hidden="true">·</span> Journal</span>
+              <span className={styles.sideMeta}>2 min read <span aria-hidden="true">·</span> Journal</span>
             </div>
           </article>
         </div>

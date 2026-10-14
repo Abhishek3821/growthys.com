@@ -1,6 +1,6 @@
 import Image from "next/image";
 import travelPhoto from "../../public/images/travel-partner.webp";
-import styles from "./travel-partner.module.css";
+import styles from "./travel-partner.styles";
 
 const benefits = [
   { icon: "price", lines: ["Best Price", "Guarantee"] },

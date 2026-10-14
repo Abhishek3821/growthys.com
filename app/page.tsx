@@ -1,3 +1,5 @@
+
+import siteStyles from "./site-styles";
 ﻿import CabinHero from "./components/cabin-hero";
 
 import IntelligentExperiences from "./components/intelligent-experiences";
@@ -15,7 +17,7 @@ import SiteFooter from "./components/site-footer";
 export default function Home() {
   return (
     <>
-    <main className="home-stage">
+    <main className={siteStyles["home-stage"]}>
       <CabinHero />
       <IntelligentExperiences />
       <PackagesSection />

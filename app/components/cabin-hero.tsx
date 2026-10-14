@@ -1,5 +1,7 @@
 "use client";
 
+import siteStyles from "../site-styles";
+
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";
@@ -38,7 +40,7 @@ const stories = [
 ];
 
 function Arrow({ down = false }: { down?: boolean }) {
-  return <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style={down ? { transform: "rotate(180deg)" } : undefined}><path d="M12 21V3m-4 4 4-4 4 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+  return <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={down ? "[transform:rotate(180deg)]" : undefined}><path d="M12 21V3m-4 4 4-4 4 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
 export default function CabinHero() {
@@ -66,12 +68,12 @@ export default function CabinHero() {
   }
 
   return (
-    <section className="cabin-hero" id="home" aria-label="Cabin and Wild — unique wilderness stays">
-      <div className="hero-background">
+    <section className={siteStyles["cabin-hero"]} id="home" aria-label="Cabin and Wild — unique wilderness stays">
+      <div className={siteStyles["hero-background"]}>
         {stories.map((item, index) => (
           <Image
             key={item.number}
-            className={`hero-image${activeStory === index ? " hero-image-active" : ""}`}
+            className={siteStyles["hero-image"] + (activeStory === index ? (" " + siteStyles["hero-image-active"]) : ("")) + ""}
             src={item.image}
             alt={activeStory === index ? item.imageAlt : ""}
             aria-hidden={activeStory !== index}
@@ -83,35 +85,35 @@ export default function CabinHero() {
           />
         ))}
       </div>
-      <div className="hero-shade" aria-hidden="true" />
-      <header className="hero-header">
-        <a className="wordmark" href="#home" aria-label="Growthys home" onClick={() => setActiveStory(0)}>Growthys</a>
+      <div className={siteStyles["hero-shade"]} aria-hidden="true" />
+      <header className={siteStyles["hero-header"]}>
+        <a className={siteStyles["wordmark"]} href="#home" aria-label="Growthys home" onClick={() => setActiveStory(0)}>Growthys</a>
         <Navbar />
       </header>
-      <div className="hero-story" aria-live="polite" aria-atomic="true">
-        <div className="story-copy" key={activeStory}>
-          <p className="story-eyebrow">Unique stays {story.number}</p>
-          <h1 className="story-title">{story.title.map((line) => <span key={line}>{line}</span>)}</h1>
+      <div className={siteStyles["hero-story"]} aria-live="polite" aria-atomic="true">
+        <div className={siteStyles["story-copy"]} key={activeStory}>
+          <p className={siteStyles["story-eyebrow"]}>Unique stays {story.number}</p>
+          <h1 className={siteStyles["story-title"]}>{story.title.map((line) => <span key={line}>{line}</span>)}</h1>
         </div>
-        <p className="hero-description story-copy" id="about" key={`description-${story.number}`}>
+        <p className={siteStyles["hero-description"] + " " + siteStyles["story-copy"]} id="about" key={`description-${story.number}`}>
           {story.description.map((line) => <span key={line}>{line}</span>)}
         </p>
       </div>
-      <div className="story-controls" aria-label="Featured story controls">
-        <button className="round-button" type="button" aria-label="Previous story" onClick={() => changeStory(-1)}><Arrow /></button>
-        <button className="round-button" type="button" aria-label="Next story" onClick={() => changeStory(1)}><Arrow down /></button>
+      <div className={siteStyles["story-controls"]} aria-label="Featured story controls">
+        <button className={siteStyles["round-button"]} type="button" aria-label="Previous story" onClick={() => changeStory(-1)}><Arrow /></button>
+        <button className={siteStyles["round-button"]} type="button" aria-label="Next story" onClick={() => changeStory(1)}><Arrow down /></button>
       </div>
-      <nav className="hero-index" id="index" aria-label="Story index">
-        <p className="index-label">Index</p>
-        <div className="index-list">
-          {stories.map((item, index) => <button className="index-item" key={item.number} type="button" aria-current={activeStory === index ? "true" : undefined} onClick={() => setActiveStory(index)}><span className="index-number">0{index + 1}</span><span className="index-title">{item.index}</span></button>)}
+      <nav className={siteStyles["hero-index"]} id="index" aria-label="Story index">
+        <p className={siteStyles["index-label"]}>Index</p>
+        <div className={siteStyles["index-list"]}>
+          {stories.map((item, index) => <button className={siteStyles["index-item"]} key={item.number} type="button" aria-current={activeStory === index ? "true" : undefined} onClick={() => setActiveStory(index)}><span className={siteStyles["index-number"]}>0{index + 1}</span><span className={siteStyles["index-title"]}>{item.index}</span></button>)}
         </div>
       </nav>
-      <footer className="hero-footer">
-        <p className="cover-location" id="cover-location">{story.caption}</p>
-        <div className="social-links" aria-label="Share this page">
-          <button type="button" className="round-button" aria-label="Share on Facebook" onClick={() => share("facebook")}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.1 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2A22 22 0 0 0 15 3c-2.5 0-4.2 1.5-4.2 4.3v2.3H8v3.2h2.8V21z" /></svg></button>
-          <button type="button" className="round-button" aria-label="Share on Twitter" onClick={() => share("twitter")}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 6.1a7.4 7.4 0 0 1-2.1.6 3.7 3.7 0 0 0 1.6-2 7.4 7.4 0 0 1-2.3.9A3.6 3.6 0 0 0 12 8.9a10.3 10.3 0 0 1-7.5-3.8 3.6 3.6 0 0 0 1.1 4.8 3.6 3.6 0 0 1-1.6-.4v.1c0 1.7 1.2 3.2 2.9 3.5a3.7 3.7 0 0 1-1.6.1 3.6 3.6 0 0 0 3.4 2.5A7.3 7.3 0 0 1 4.2 17H3.3a10.3 10.3 0 0 0 5.6 1.7c6.7 0 10.4-5.6 10.4-10.4v-.5A7.4 7.4 0 0 0 21 6.1z" /></svg></button>
+      <footer className={siteStyles["hero-footer"]}>
+        <p className={siteStyles["cover-location"]} id="cover-location">{story.caption}</p>
+        <div className={siteStyles["social-links"]} aria-label="Share this page">
+          <button type="button" className={siteStyles["round-button"]} aria-label="Share on Facebook" onClick={() => share("facebook")}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.1 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2A22 22 0 0 0 15 3c-2.5 0-4.2 1.5-4.2 4.3v2.3H8v3.2h2.8V21z" /></svg></button>
+          <button type="button" className={siteStyles["round-button"]} aria-label="Share on Twitter" onClick={() => share("twitter")}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 6.1a7.4 7.4 0 0 1-2.1.6 3.7 3.7 0 0 0 1.6-2 7.4 7.4 0 0 1-2.3.9A3.6 3.6 0 0 0 12 8.9a10.3 10.3 0 0 1-7.5-3.8 3.6 3.6 0 0 0 1.1 4.8 3.6 3.6 0 0 1-1.6-.4v.1c0 1.7 1.2 3.2 2.9 3.5a3.7 3.7 0 0 1-1.6.1 3.6 3.6 0 0 0 3.4 2.5A7.3 7.3 0 0 1 4.2 17H3.3a10.3 10.3 0 0 0 5.6 1.7c6.7 0 10.4-5.6 10.4-10.4v-.5A7.4 7.4 0 0 0 21 6.1z" /></svg></button>
         </div>
       </footer>
     </section>

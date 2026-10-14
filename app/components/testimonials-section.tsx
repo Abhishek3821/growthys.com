@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import portraits from "../../public/images/testimonial-portraits.webp";
-import styles from "./testimonials-section.module.css";
+import styles from "./testimonials-section.styles";
 
 const columns = [
   { offset: 8.9, portraits: [0, 5] },

@@ -1,5 +1,5 @@
 import TravelIcon from "./travel-icons";
-import styles from "./why-choose-us.module.css";
+import styles from "./why-choose-us.styles";
 
 const stats = [
   { icon: "smile", value: "12k", lines: ["Happy and Satisfied", "Travelers"] },

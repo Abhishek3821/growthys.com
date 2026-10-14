@@ -1,6 +1,6 @@
 import Image from "next/image";
 import packagesArtwork from "../../public/images/github-packages.webp";
-import styles from "./packages-section.module.css";
+import styles from "./packages-section.styles";
 
 export default function PackagesSection() {
   return (

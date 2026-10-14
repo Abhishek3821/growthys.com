@@ -2,7 +2,7 @@ import Image from "next/image";
 import topazArtwork from "../../public/images/intelligent-experiences/topaz.webp";
 import cobaltArtwork from "../../public/images/intelligent-experiences/cobalt.webp";
 import asterArtwork from "../../public/images/intelligent-experiences/aster.webp";
-import styles from "./intelligent-experiences.module.css";
+import styles from "./intelligent-experiences.styles";
 
 const experiences = [
   {

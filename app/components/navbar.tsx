@@ -1,45 +1,84 @@
 "use client";
 
+import siteStyles from "../site-styles";
+
 import Link from "next/link";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 const links = [
-  { label: "Services", href: "#services" },
   { label: "Company overview", href: "/insights" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact", href: "/contact" },
 ];
 
-export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "/" : "/contact" }: { onHomePage?: boolean; currentPage?: "/" | "/contact" | "/insights" | "/blogs" }) {
+const services = [
+  "Performance Marketing", "Web Development", "Website Design", "App Development",
+  "Digital Marketing", "Search Engine Optimization (SEO)", "E-Commerce Solutions",
+  "HRMS Software", "CRM & Management Software", "Social Media Marketing",
+  "Graphic Designing", "UI/UX Design", "CMS Design", "Content Marketing", "Ecommerce Marketing",
+];
+
+const servicePages: Record<string, "/performance-marketing" | "/website-design" | "/digital-marketing" | "/e-commerce-solutions" | "/crm-management-software" | "/graphic-designing" | "/cms-design" | "/ecommerce-marketing" | "/web-development" | "/app-development" | "/search-engine-optimization" | "/hrms-software" | "/social-media-marketing" | "/ui-ux-design" | "/content-marketing"> = {
+  "Performance Marketing": "/performance-marketing",
+  "Website Design": "/website-design",
+  "Digital Marketing": "/digital-marketing",
+  "E-Commerce Solutions": "/e-commerce-solutions",
+  "CRM & Management Software": "/crm-management-software",
+  "Graphic Designing": "/graphic-designing",
+  "CMS Design": "/cms-design",
+  "Ecommerce Marketing": "/ecommerce-marketing",
+  "Web Development": "/web-development",
+  "App Development": "/app-development",
+  "Search Engine Optimization (SEO)": "/search-engine-optimization",
+  "HRMS Software": "/hrms-software",
+  "Social Media Marketing": "/social-media-marketing",
+  "UI/UX Design": "/ui-ux-design",
+  "Content Marketing": "/content-marketing",
+};
+
+export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "/" : "/contact" }: { onHomePage?: boolean; currentPage?: "/" | "/contact" | "/insights" | "/blogs" | "/performance-marketing" | "/website-design" | "/digital-marketing" | "/e-commerce-solutions" | "/crm-management-software" | "/graphic-designing" | "/cms-design" | "/ecommerce-marketing" | "/web-development" | "/app-development" | "/search-engine-optimization" | "/hrms-software" | "/social-media-marketing" | "/ui-ux-design" | "/content-marketing" }) {
   const slotRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const servicesRef = useRef<HTMLButtonElement>(null);
   const menuId = useId();
+  const servicesId = useId();
   const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
+  function closeMenus() {
+    setMenuOpen(false);
+    setServicesOpen(false);
+  }
 
   useEffect(() => {
     setPortalRoot(document.body);
   }, []);
 
   useEffect(() => {
-    if (!menuOpen) return;
+    if (!menuOpen && !servicesOpen) return;
 
     function onPointerDown(event: PointerEvent) {
-      if (!navRef.current?.contains(event.target as Node)) setMenuOpen(false);
+      if (!navRef.current?.contains(event.target as Node)) closeMenus();
     }
 
     function onKeyDown(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
-      setMenuOpen(false);
-      toggleRef.current?.focus();
+      if (servicesOpen) {
+        setServicesOpen(false);
+        servicesRef.current?.focus();
+      } else {
+        setMenuOpen(false);
+        toggleRef.current?.focus();
+      }
     }
 
     const mobile = window.matchMedia("(max-width: 700px)");
     function onViewportChange() {
-      if (!mobile.matches) setMenuOpen(false);
+      closeMenus();
     }
 
     document.addEventListener("pointerdown", onPointerDown);
@@ -50,7 +89,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
       document.removeEventListener("keydown", onKeyDown);
       mobile.removeEventListener("change", onViewportChange);
     };
-  }, [menuOpen]);
+  }, [menuOpen, servicesOpen]);
 
   useLayoutEffect(() => {
     if (!portalRoot) return;
@@ -79,7 +118,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
       nav.style.setProperty("--nav-top", `${Math.max(17, initialTop - currentY)}px`);
       nav.dataset.scrolled = String(currentY > 80);
 
-      if (currentY <= 24 || nav.dataset.menuOpen === "true" || nav.contains(document.activeElement)) {
+      if (currentY <= 24 || nav.dataset.menuOpen === "true" || nav.dataset.servicesOpen === "true" || nav.contains(document.activeElement)) {
         setHidden(false);
       } else if (delta > 0 && currentY > 100 && currentY - directionStart >= 10) {
         setHidden(true);
@@ -118,34 +157,52 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
   const navigation = (
     <nav
       ref={navRef}
-      className={`hero-nav${portalRoot ? " hero-nav-floating" : ""}`}
+      className={siteStyles["hero-nav"] + (portalRoot ? (" " + siteStyles["hero-nav-floating"]) : ("")) + (currentPage === "/performance-marketing" || currentPage === "/crm-management-software" || currentPage === "/ecommerce-marketing" ? " [&_a.hero-nav-brand]:text-white!" : "")}
       aria-label="Main navigation"
       data-hidden={hidden}
       data-menu-open={menuOpen}
+      data-services-open={servicesOpen}
       data-home-page={onHomePage}
       inert={hidden}
       onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setMenuOpen(false);
+        if (!event.currentTarget.contains(event.relatedTarget)) closeMenus();
       }}
     >
-      <Link href="/#home" className="hero-nav-brand" aria-label="Growthys home" onClick={() => setMenuOpen(false)}>Growthys</Link>
+      <Link href="/#home" className={"hero-nav-brand"} aria-label="Growthys home" onClick={closeMenus}>Growthys</Link>
       <button
         ref={toggleRef}
-        className="hero-nav-toggle"
+        className={siteStyles["hero-nav-toggle"]}
         type="button"
         aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={menuOpen}
         aria-controls={menuId}
         onClick={() => {
           setHidden(false);
+          setServicesOpen(false);
           setMenuOpen((open) => !open);
         }}
       >
         <span /><span /><span />
       </button>
-      <div className="hero-nav-links" id={menuId}>
+      <div className={siteStyles["hero-nav-links"]} id={menuId}>
+        <div className={siteStyles["hero-nav-services"]}>
+          <button ref={servicesRef} type="button" className={siteStyles["hero-nav-services-toggle"]} aria-expanded={servicesOpen} aria-controls={servicesId} onClick={() => { setHidden(false); setServicesOpen((open) => !open); }}>
+            Services <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          </button>
+          <ul id={servicesId} className={siteStyles["hero-nav-services-list"]} hidden={!servicesOpen} aria-label="Our services">
+            {services.map((service) => (
+              <li key={service}>
+                {servicePages[service] ? (
+                  <Link href={servicePages[service]} className="min-h-0! rounded-[10px]! p-0! whitespace-normal!" aria-current={currentPage === servicePages[service] ? "page" : undefined} onClick={closeMenus}>
+                    <span>{service}</span>
+                  </Link>
+                ) : <span>{service}</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
         {links.map((link) => (
-          <Link key={link.href} href={!onHomePage && link.href.startsWith("#") ? `/${link.href}` : link.href} aria-current={link.href === currentPage ? "page" : undefined} onClick={() => setMenuOpen(false)}>
+          <Link key={link.href} href={!onHomePage && link.href.startsWith("#") ? `/${link.href}` : link.href} aria-current={link.href === currentPage ? "page" : undefined} onClick={closeMenus}>
             {link.label}
           </Link>
         ))}
@@ -155,7 +212,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
 
   // Keep the header's space while escaping hero clipping and stacking contexts.
   return (
-    <div ref={slotRef} className="hero-nav-slot">
+    <div ref={slotRef} className={siteStyles["hero-nav-slot"]}>
       {portalRoot ? createPortal(navigation, portalRoot) : navigation}
     </div>
   );

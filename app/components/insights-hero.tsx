@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "./navbar";
 import meditation from "../../public/images/insights/meditation.webp";
 import community from "../../public/images/insights/community.webp";
-import styles from "./insights-hero.module.css";
+import styles from "./insights-hero.styles";
 
 export default function InsightsHero() {
   return (
