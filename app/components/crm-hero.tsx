@@ -6,7 +6,7 @@ export default function CrmHero() {
   return (
     <div className="min-h-svh bg-[#0c0c0c] p-3 text-[#101010] sm:p-4 lg:p-5">
       <header className="relative mx-auto mb-4 flex min-h-16 max-w-[1800px] items-start justify-center text-white min-[701px]:max-[1200px]:min-h-[110px]">
-        <Link href="/" aria-label="Growthys home" className="absolute left-3 top-2 text-2xl font-semibold tracking-[-0.055em] min-[701px]:max-[1200px]:top-[70px] max-[700px]:hidden">Growthys<span className="ml-1 align-top text-xs">®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/crm-management-software" />
       </header>
 

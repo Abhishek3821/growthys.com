@@ -7,7 +7,7 @@ export default function AppDevelopmentHero() {
   return (
     <div className={styles.hero}>
       <header className={styles.header}>
-        <Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/app-development" />
       </header>
       <section aria-labelledby="app-development-heading" className={styles.content}>

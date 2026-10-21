@@ -3,18 +3,18 @@ import styles from "./management-section.styles";
 const benefits = [
   {
     icon: "results",
-    title: "Resultados garantidos",
-    description: "Negociadores na mediação com credores, fornecedores e fundos de investimento.",
+    title: "E-Commerce & Startups",
+    description: "SEO, shopping ads, and go-to-market campaigns that help digital marketing company clients find customers and grow sales fast.",
   },
   {
     icon: "experience",
-    title: "Experiência comprovada",
-    description: "Executivos com histórico comprovado na recuperação de negócios complexos.",
+    title: "Healthcare & Education",
+    description: "Patient acquisition, admission funnels, and CRM & management software integration that turn enquiries into real conversions.",
   },
   {
     icon: "strategy",
-    title: "Gestão estratégica",
-    description: "Estratégias formuladas por especialistas em finanças corporativas e governança.",
+    title: "Real Estate & B2B",
+    description: "Lead-generation landing pages, local SEO, and IT support services company in India-grade systems for long sales cycles and serious buyers.",
   },
 ] as const;
 
@@ -44,15 +44,15 @@ function ManagementIcon({ name }: { name: (typeof benefits)[number]["icon"] }) {
 
 export default function ManagementSection() {
   return (
-    <section className={styles.section} id="approach" lang="pt-BR" aria-labelledby="management-heading">
+    <section className={styles.section} id="approach" aria-labelledby="management-heading">
       <div className={styles.container}>
         <div className={styles.intro}>
           <h2 id="management-heading">
-            <span className={styles.accent}>Gestão</span>
-            <span><strong className={styles.accent}>completa</strong> feita</span>
-            <span>para você</span>
+            <span className={styles.accent}>Industries</span>
+            <span><strong className={styles.accent}>We</strong></span>
+            <span>Serve</span>
           </h2>
-          <button className={styles.arrowButton} type="button" aria-label="Saiba mais sobre nossa gestão" disabled>
+          <button className={styles.arrowButton} type="button" aria-label="Learn more about industries we serve" disabled>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

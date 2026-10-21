@@ -10,24 +10,24 @@ import styles from "./banking-section.styles";
 const plans = [
   {
     name: "Personal",
-    summaryTitle: "Bank your way.",
-    summaryText: "Spend, save and manage your money in one place.",
+    summaryTitle: "Grow your way.",
+    summaryText: "Build visibility, leads, and brand presence in one place.",
     image: personalImage,
-    description: "The all-in-one plan for banking, saving, investing, and travel. Home or away, local or global — move freely between countries and currencies.",
+    description: "The all-in-one plan for startups and solo founders. SEO, website, and social media — home or away, local or global.",
   },
   {
     name: "Business",
-    summaryTitle: "Room to grow.",
-    summaryText: "Keep payments, team spending and business finances together.",
+    summaryTitle: "Business to grow.",
+    summaryText: "Keep marketing, sales systems, and business finances connected.",
     image: businessImage,
-    description: "A simpler way to run your business. Manage payments, cards and team expenses, all in one place.",
+    description: "A simpler way to run your company's digital growth. Manage campaigns, CRM, and team systems in one place.",
   },
   {
-    name: "Freelance",
+    name: "Enterprise",
     summaryTitle: "Work your way.",
-    summaryText: "Bring your projects, payments and everyday banking together.",
+    summaryText: "Bring projects, platforms, and enterprise growth together.",
     image: freelanceImage,
-    description: "Built for the way you work. Keep projects, payments and everyday spending together, wherever work takes you.",
+    description: "Built for the way large teams work. Keep IT services company in India operations, CRM & management software, and marketing aligned — wherever work takes you.",
   },
 ];
 
@@ -43,27 +43,27 @@ export default function BankingSection() {
       <div className={styles.container}>
         <header className={styles.header}>
           <div>
-            <p className={styles.eyebrow}>Digital Banking</p>
+            <p className={styles.eyebrow}>Growth Plans</p>
             <h2 id="banking-heading">
-              <span>Discover the <span className={styles.freedom}>freedom<svg viewBox="0 0 200 24" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 19C39 2 119 2 130 8c8 5-21 10-25 12 35-10 64-14 92-11" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" /></svg></span></span>
-              <span>of banking on your terms</span>
+              <span>Discover The <span className={styles.freedom}>Freedom<svg viewBox="0 0 200 24" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 19C39 2 119 2 130 8c8 5-21 10-25 12 35-10 64-14 92-11" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" /></svg></span></span>
+              <span>of Growing on Your Terms</span>
             </h2>
           </div>
           <div className={styles.headerAction}>
-            <p>Get business banking, card, bill pay, travel, and reimbursements — all in one scalable solution</p>
-            <button className={styles.demoButton} type="button" disabled>Get Demo Account <span><Arrow /></span></button>
+            <p>Get SEO, ads, web development, CRM & management software, and HRMS software development — all in one scalable partnership.</p>
+            <button className={styles.demoButton} type="button" disabled>Get Growth Plan <span><Arrow /></span></button>
           </div>
         </header>
 
-        <div className={styles.cards} aria-label="Banking plans">
+        <div className={styles.cards} aria-label="Growth plans">
           {plans.map((plan, index) => {
             const active = index === activePlan;
             const nextIndex = (index + 1) % plans.length;
             return (
-              <article className={styles.card} data-active={active} data-plan={plan.name.toLowerCase()} key={plan.name}>
+              <article className={styles.card} data-active={active} data-plan={index === 2 ? "freelance" : plan.name.toLowerCase()} key={plan.name}>
                 <Image src={plan.image} alt="" fill placeholder="blur" sizes="(max-width: 760px) 94vw, (max-width: 1544px) 60vw, 920px" className={styles.cardImage} />
                 <div className={styles.shade} />
-                {!active && <button className={styles.planSelector} type="button" aria-label={`Show ${plan.name} banking`} aria-expanded={false} aria-controls={`banking-${index}`} onClick={() => setActivePlan(index)}><span>{plan.name}</span></button>}
+                {!active && <button className={styles.planSelector} type="button" aria-label={`Show ${plan.name} plan`} aria-expanded={false} aria-controls={`banking-${index}`} onClick={() => setActivePlan(index)}><span>{plan.name}</span></button>}
                 <div className={styles.details} id={`banking-${index}`} hidden={!active}>
                   <div className={styles.planCopy}><h3>{plan.name}</h3><p>{plan.description}</p></div>
                   <div className={styles.summary}>
@@ -71,7 +71,7 @@ export default function BankingSection() {
                     <p>{plan.summaryText}</p>
                   </div>
                 </div>
-                {active && <button className={styles.nextButton} type="button" aria-label={`Show ${plans[nextIndex].name} banking`} onClick={() => setActivePlan(nextIndex)}><Arrow /></button>}
+                {active && <button className={styles.nextButton} type="button" aria-label={`Show ${plans[nextIndex].name} plan`} onClick={() => setActivePlan(nextIndex)}><Arrow /></button>}
               </article>
             );
           })}

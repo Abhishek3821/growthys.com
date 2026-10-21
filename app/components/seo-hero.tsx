@@ -5,7 +5,7 @@ import styles from "./seo-hero.module.css";
 
 export default function SeoHero() {
   return <div className={styles.hero}>
-    <header className={styles.header}><Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link><Navbar onHomePage={false} currentPage="/search-engine-optimization" /></header>
+    <header className={styles.header}><Navbar onHomePage={false} currentPage="/search-engine-optimization" /></header>
     <section className={styles.layout} aria-labelledby="seo-heading">
       <div className={styles.copy}><h1 id="seo-heading">Top legal talent,<br />on <span>demand.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 4Q150 16 297 2M4 10Q160 18 295 8" fill="none" stroke="currentColor" strokeWidth="2" /></svg></span></h1><p>Legal departments of all sizes — from startups to Fortune 500s — use Lawtrades’ tech-enabled platform to hire world-class flexible legal talent and scale their outside counsel work.</p><div className={styles.actions}><Link href="/contact#contact-inquiry">Hire Talent</Link><Link href="/contact#contact-inquiry">Join the Network</Link></div></div>
       <div className={styles.artwork}>

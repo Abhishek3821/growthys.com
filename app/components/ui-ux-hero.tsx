@@ -5,7 +5,7 @@ import styles from "./ui-ux-hero.module.css";
 
 export default function UiUxHero() {
   return <div className={styles.hero}>
-    <header className={styles.header}><Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link><Navbar onHomePage={false} currentPage="/ui-ux-design" /></header>
+    <header className={styles.header}><Navbar onHomePage={false} currentPage="/ui-ux-design" /></header>
     <section className={styles.content} aria-labelledby="ui-ux-heading">
       <div className={styles.headingBlock}>
         <h1 id="ui-ux-heading"><span className={styles.firstLine}>WINTER <span className={styles.smile} aria-hidden="true">☺</span>UTFIT <span className={styles.chevrons} aria-hidden="true">▸▸▸▸</span></span><span className={styles.secondLine}>GIVE <svg viewBox="0 0 70 45" aria-hidden="true"><path d="M5 9v22c0 13 14 13 14 0V14c0-13 14-13 14 0v17c0 13 14 13 14 0V14c0-13 14-13 14 0v22" fill="none" stroke="currentColor" strokeWidth="7" strokeLinecap="round"/></svg> YOU SOME <span className={styles.warmth}><i aria-hidden="true"/>WARMTH</span></span><span className="sr-only">Winter outfit gives you some warmth.</span></h1>

@@ -9,7 +9,7 @@ export default function InsightsHero() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <Link href="/" className={styles.brand} aria-label="Growthys home">growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/insights" />
       </header>
 

@@ -5,7 +5,7 @@ import styles from "./content-marketing-hero.module.css";
 
 export default function ContentMarketingHero() {
   return <div className={styles.hero}>
-    <header className={styles.header}><Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link><Navbar onHomePage={false} currentPage="/content-marketing" /></header>
+    <header className={styles.header}><Navbar onHomePage={false} currentPage="/content-marketing" /></header>
     <section className={styles.content} aria-labelledby="content-marketing-heading">
       <h1 id="content-marketing-heading">URBAN STREETWEAR HUB</h1>
       <div className={styles.grid}>

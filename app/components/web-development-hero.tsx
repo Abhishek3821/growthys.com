@@ -8,7 +8,7 @@ export default function WebDevelopmentHero() {
     <div className={styles.hero}>
       <div className={styles.creamPanel} aria-hidden="true" />
       <header className={styles.header}>
-        <Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/web-development" />
       </header>
       <section aria-labelledby="web-development-heading" className={styles.content}>

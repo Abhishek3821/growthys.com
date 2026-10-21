@@ -43,12 +43,6 @@ export default function PerformanceMarketingPage() {
           <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_65%_32%,rgba(255,227,140,0.8),rgba(238,167,90,0.38)_35%,transparent_75%)] mix-blend-screen" />
 
           <header className="relative flex min-h-[50px] items-center justify-center">
-            <Link href="/" aria-label="Growthys home" className="absolute left-0 flex items-center gap-3 text-[25px] font-semibold tracking-[-0.06em] text-white view-01:top-[68px] view-09:hidden">
-              <span className="grid size-10 grid-cols-3 gap-[3px] rounded-xl bg-[#fffefa] p-[10px]" aria-hidden="true">
-                {Array.from({ length: 9 }, (_, index) => <i key={index} className="rounded-[1px] bg-[#d99c60]" />)}
-              </span>
-              Growthys
-            </Link>
             <Navbar onHomePage={false} currentPage="/performance-marketing" />
           </header>
 

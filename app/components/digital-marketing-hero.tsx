@@ -10,7 +10,7 @@ export default function DigitalMarketingHero() {
   return (
     <div className="min-h-svh bg-[#f8f7f2] px-5 pb-5 pt-4 text-black sm:px-7 lg:px-8">
       <header className="relative mx-auto mb-5 flex min-h-16 max-w-[1800px] items-start justify-center min-[701px]:max-[1200px]:min-h-[110px]">
-        <Link href="/" aria-label="Growthys home" className="absolute left-0 top-2 text-2xl font-semibold tracking-[-0.055em] min-[701px]:max-[1200px]:top-[70px] max-[700px]:hidden">Growthys<span className="ml-1 align-top text-xs">®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/digital-marketing" />
       </header>
 

@@ -19,7 +19,7 @@ export default function BlogHero() {
   return (
     <div className={styles.page}>
       <header className={styles.navigation}>
-        <Link href="/" className={styles.brand} aria-label="Growthys home">growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/blogs" />
       </header>
 

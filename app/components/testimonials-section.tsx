@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
             Trusted by leaders
             <span>from various industries</span>
           </h2>
-          <p>Learn why professionals trust our solutions to complete their customer journeys.</p>
+          <p>{"Learn why professionals trust Growthys — a professional IT solutions provider in India and full-service digital marketing company — to complete their customer journeys."}</p>
           <button className={styles.button} type="button" disabled>
             Read Success Stories
             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">

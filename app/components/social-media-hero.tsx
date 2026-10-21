@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Navbar from "./navbar";
-import Link from "next/link";
 import styles from "./social-media-hero.module.css";
 
 export default function SocialMediaHero() {
   return <div className={styles.hero}>
-    <header className={styles.header}><Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link><Navbar onHomePage={false} currentPage="/social-media-marketing" /></header>
+    <header className={styles.header}><Navbar onHomePage={false} currentPage="/social-media-marketing" /></header>
     <section className={styles.layout} aria-labelledby="social-media-heading">
       <div className={styles.copy}>
         <p className={styles.eyebrow}>HELLO, YOUR NEW<br/>HOME FOR SOCIAL <span aria-hidden="true">🏠</span></p>

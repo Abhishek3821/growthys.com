@@ -3,7 +3,9 @@
 import { useState, type FormEvent } from "react";
 import styles from "./benefits-cta.styles";
 
-export default function BenefitsCta() {
+type BenefitsCtaProps = { homepage?: boolean };
+
+export default function BenefitsCta({ homepage = false }: BenefitsCtaProps = {}) {
   const [showNotice, setShowNotice] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -16,11 +18,16 @@ export default function BenefitsCta() {
     <section className={styles.section} id="contact" aria-labelledby="benefits-cta-heading">
       <div className={styles.card}>
         <h2 id="benefits-cta-heading">
+          {homepage ? <>
+            <span>Join businesses across India getting</span>{" "}
+            <span><strong>90%+ engagement</strong> with their marketing</span>
+          </> : <>
           <span>Join teams around the world getting</span>{" "}
           <span><strong>90%+ engagement</strong> with their benefits</span>{" "}
           <span>programmes</span>
+          </>}
         </h2>
-        <p className={styles.description}>Get any benefit, in any country, and make it flexible, all without the painful admin. Budget-friendly. No hidden fees. No surprises.</p>
+        <p className={styles.description}>{homepage ? "Get SEO, ads, design, and software — in any combination, fully flexible, all without painful agency back-and-forth. Budget-friendly. No hidden fees. No surprises." : "Get any benefit, in any country, and make it flexible, all without the painful admin. Budget-friendly. No hidden fees. No surprises."}</p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.formRow}>
             <div className={styles.emailField}>
@@ -28,7 +35,7 @@ export default function BenefitsCta() {
               <label className={styles.srOnly} htmlFor="benefits-email">Your email address</label>
               <input id="benefits-email" name="email" type="email" autoComplete="email" placeholder="Enter your email" required aria-describedby="benefits-privacy" onChange={() => setShowNotice(false)} />
             </div>
-            <button className={styles.submitButton} type="submit">Get started</button>
+            <button className={styles.submitButton} type="submit">{homepage ? "Contact Us" : "Get started"}</button>
           </div>
           <p className={styles.privacy} id="benefits-privacy">By submitting you agree to our privacy policy.</p>
           {showNotice && <p className={styles.notice} role="status">Online sign-up is coming soon.</p>}

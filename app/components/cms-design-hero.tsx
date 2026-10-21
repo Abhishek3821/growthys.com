@@ -12,7 +12,7 @@ function FashionPhoto({ name, alt, small = false, notch = false }: { name: strin
 export default function CmsDesignHero() {
   return <div className={styles.hero}>
     <header className={styles.header}>
-      <Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link>
+
       <Navbar onHomePage={false} currentPage="/cms-design" />
     </header>
     <section aria-labelledby="cms-design-heading" className={styles.content}>

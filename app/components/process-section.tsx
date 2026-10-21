@@ -2,11 +2,11 @@ import type { CSSProperties } from "react";
 import styles from "./process-section.styles";
 
 const steps = [
-  { title: "Discover", description: "Understand goals, users and the problem deeply.", color: "#4bc9a7", light: "#6dd7bc", icon: "search" },
-  { title: "Define", description: "Analyze insights and define the right direction.", color: "#6d9cf6", light: "#8eb5ff", icon: "bulb" },
-  { title: "Design", description: "Create wireframes, flows and beautiful UI.", color: "#af88eb", light: "#c8a8f6", icon: "pen" },
-  { title: "Prototype", description: "Build interactive prototypes and test with users.", color: "#ff806e", light: "#ff9e8d", icon: "play" },
-  { title: "Deliver", description: "Refine, handoff and support for successful launch.", color: "#4bc9a7", light: "#6dd7bc", icon: "rocket" },
+  { title: "Discover", description: "Understand your business goals, target audience, and current market position deeply.", color: "#4bc9a7", light: "#6dd7bc", icon: "search" },
+  { title: "Define", description: "Analyze research insights and define the right marketing direction and KPIs.", color: "#6d9cf6", light: "#8eb5ff", icon: "bulb" },
+  { title: "Design", description: "Create campaign strategies, content plans, and creative concepts that fit your brand.", color: "#af88eb", light: "#c8a8f6", icon: "pen" },
+  { title: "Prototype", description: "Test campaigns and landing pages on a small scale before full launch.", color: "#ff806e", light: "#ff9e8d", icon: "play" },
+  { title: "Deliver", description: "Launch, refine, and support your campaigns for measurable long-term growth.", color: "#4bc9a7", light: "#6dd7bc", icon: "rocket" },
 ] as const;
 
 function ProcessIcon({ name }: { name: (typeof steps)[number]["icon"] }) {
@@ -26,8 +26,8 @@ export default function ProcessSection() {
     <section className={styles.section} id="our-process" aria-labelledby="process-heading">
       <div className={styles.container}>
         <header className={styles.header}>
-          <p>My Process</p>
-          <h2 id="process-heading">A thoughtful process for great results.</h2>
+          <p>MY PROCESS</p>
+          <h2 id="process-heading">A Thoughtful Process for Great Results</h2>
         </header>
         <ol className={styles.steps}>
           {steps.map((step, index) => (

@@ -19,7 +19,7 @@ function FeatureIcon({ kind }: { kind: (typeof features)[number]["icon"] }) {
 
 export default function HrmsHero() {
   return <div className={styles.hero}>
-    <header className={styles.header}><Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link><Navbar onHomePage={false} currentPage="/hrms-software" /></header>
+    <header className={styles.header}><Navbar onHomePage={false} currentPage="/hrms-software" /></header>
     <section className={styles.content} aria-labelledby="hrms-heading">
       <svg viewBox="0 0 230 420" className={styles.abstract} aria-hidden="true"><defs><pattern id="hrms-rings" width="85" height="85" patternUnits="userSpaceOnUse">{[12,22,32,42,52].map(r=><circle key={r} cx="42" cy="42" r={r} fill="none" stroke="#131616" strokeWidth="1.2"/>)}</pattern></defs><path d="M0 0C80 90 45 112 120 190S235 315 115 340 65 400 0 420Z" fill="#242827"/><path d="M0 0C80 90 45 112 120 190S235 315 115 340 65 400 0 420Z" fill="url(#hrms-rings)"/></svg>
       <span className={styles.dots} aria-hidden="true"/>

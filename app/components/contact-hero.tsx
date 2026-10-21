@@ -13,7 +13,7 @@ export default function ContactHero() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <Link className={styles.homeLink} href="/" aria-label="Growthys home">growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} />
       </header>
       <section className={styles.hero} aria-labelledby="contact-hero-heading">

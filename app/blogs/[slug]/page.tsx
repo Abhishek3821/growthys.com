@@ -24,7 +24,7 @@ export default async function BlogArticlePage({ params }: Props) {
   const related = blogArticles.filter(article => article.id !== post.id).slice(0, 3);
   return <>
     <div className={styles.page}>
-      <header className={styles.navigation}><Link href="/" className={styles.brand} aria-label="Growthys home">growthys<sup>®</sup></Link><Navbar onHomePage={false} currentPage="/blogs" /></header>
+      <header className={styles.navigation}><Navbar onHomePage={false} currentPage="/blogs" /></header>
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/blogs">← All articles</Link><span aria-hidden="true">/</span><span>{post.category}</span></nav>
         <article>

@@ -6,26 +6,26 @@ import styles from "./intelligent-experiences.styles";
 
 const experiences = [
   {
-    name: "Infosys Topaz",
+    name: "Growthys SEO Engine",
     artwork: topazArtwork,
     alt: "Colorful coral, orange and turquoise ribbons folded into a finely pleated sculpture",
-    description: "Infosys Topaz : Adapts best-in-class foundation models for your business, ensuring sustainable and successful AI programs tailored to your specific data and enterprise needs.",
+    description: "Growthys SEO adapts best-in-class search strategies for your business, ensuring sustainable rankings and successful organic growth tailored to your market and goals.",
     featured: false,
     href: null,
   },
   {
-    name: "Infosys Cobalt",
+    name: "Growthys Cloud & CRM",
     artwork: cobaltArtwork,
     alt: "Flowing lavender and blue data waves illuminated by sparkling points of light",
-    description: "Infosys Cobalt is a set of services, solutions, and platforms that acts as a force multiplier for cloud-powered enterprise transformation.",
+    description: "A set of services, solutions, and platforms that act as a force multiplier for your CRM & management software and cloud-powered business transformation.",
     featured: true,
-    href: "https://www.infosys.com/services/cloud-cobalt.html",
+    href: null,
   },
   {
-    name: "Infosys Aster",
+    name: "Growthys Marketing AI",
     artwork: asterArtwork,
     alt: "Translucent lavender glass ribbons curling into fluid loops with dark blue edges",
-    description: "Infosys Aster empower marketers with the superpower of AI to create memorable customer experiences, increase efficiency, and drive growth",
+    description: "Growthys Marketing AI empowers marketers with the superpower of automation to create memorable customer experiences, increase efficiency, and drive growth.",
     featured: false,
     href: null,
   },
@@ -46,8 +46,7 @@ export default function IntelligentExperiences() {
         <header className={styles.header}>
           <h2 id="intelligent-experiences-heading">Crafting <span>Intelligent</span> Experiences</h2>
           <p>
-            Whether you&apos;re building your own models, transforming your cloud strategy,
-            or amplifying your marketing efforts, data remains the biggest enabler of AI.
+            {"Whether you're building your brand from scratch, transforming your IT solutions company in India strategy, or amplifying your marketing efforts, data remains the biggest enabler of growth."}
           </p>
           <a className={styles.curiousButton} href="#experience-solutions">I’m Curious <ArrowUpRight /></a>
         </header>
@@ -64,7 +63,7 @@ export default function IntelligentExperiences() {
                 <h3>{experience.name}</h3>
                 <p>{experience.description}</p>
                 {experience.href && (
-                  <a className={styles.learnMore} href={experience.href} target="_blank" rel="noopener noreferrer" aria-label="Learn more about Infosys Cobalt (opens in a new tab)">Learn More <ArrowUpRight /></a>
+                  <a className={styles.learnMore} href={experience.href} aria-label="Learn more about Growthys Cloud & CRM">Learn More <ArrowUpRight /></a>
                 )}
               </div>
             </article>

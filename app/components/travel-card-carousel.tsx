@@ -11,16 +11,12 @@ import island from "../../public/images/destinations/el-nido.webp";
 import styles from "./travel-card-carousel.styles";
 
 const destinations = [
-  { name: "Golden Dunes", location: "Namibia, Namib Desert", image: dunes, description: "Explore golden sand dunes, drifting desert trails and quiet horizons. A timeless escape into the wilderness.", distance: "2190 M", temperature: "32°C", rating: "4.8", price: "€1320" },
-  { name: "Sunset Cliffs", location: "USA, California, Big Sur", image: cliffs, description: "Dramatic ocean cliffs and rose-colored skies meet the Pacific coast. A dreamy destination for slow evenings.", distance: "7960 M", temperature: "19°C", rating: "4.8", price: "€1670" },
-  { name: "Azure Coast", location: "France, Alpes-Côte d’Azur, Nice", image: coast, description: "A stunning Mediterranean coastline with crystal-clear waters and charming seaside towns. Perfect for relaxing vacations and scenic walks.", distance: "762 M", temperature: "22°C", rating: "4.9", price: "€1195" },
-  { name: "Royal Sand Bay", location: "Philippines, Siargao Island", image: beach, description: "Discover palm-lined shores and soft white sand, with turquoise lagoons and peaceful days beside the sea.", distance: "1320 M", temperature: "28°C", rating: "4.8", price: "€1770" },
-  { name: "Emerald Wild Island", location: "Philippines, Palawan, El Nido", image: island, description: "Lush green islands shelter hidden coves and blue lagoons. An unforgettable island escape surrounded by nature.", distance: "2460 M", temperature: "27°C", rating: "4.9", price: "€1480" },
+  { name: "SEO Services", location: "Organic Traffic", image: dunes, description: "Rank for searches that bring buyers. Technical SEO, content strategy, and local SEO for Gurugram, Delhi NCR, and pan-India businesses.", distance: "3–6 Months", temperature: "Organic Traffic", rating: "4.9", price: "3–6 Months" },
+  { name: "Performance Marketing", location: "ROAS", image: cliffs, description: "Paid campaigns built around leads and revenue. Google Search, Shopping, and Meta lead campaigns with weekly performance reporting.", distance: "30 Days", temperature: "ROAS", rating: "4.8", price: "30 Days" },
+  { name: "Web Design & Development", location: "Conversions", image: coast, description: "Responsive, fast, SEO-ready websites that look good and convert better. Built by the best design agency team inside Growthys.", distance: "4–8 Weeks", temperature: "Conversions", rating: "4.9", price: "4–8 Weeks" },
+  { name: "Software Development", location: "Custom Builds", image: beach, description: "Custom web and mobile applications built around your workflows. As a software development company, we deliver from idea to launch and beyond.", distance: "8–16 Weeks", temperature: "Custom Builds", rating: "4.8", price: "8–16 Weeks" },
+  { name: "CRM & HRMS Systems", location: "Automation", image: island, description: "Custom CRM & management software and HRMS software development that keep sales, support, attendance, and payroll in one connected system.", distance: "6–12 Weeks", temperature: "Automation", rating: "4.9", price: "6–12 Weeks" }
 ];
-
-function Plane() {
-  return <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m21.2 3.2-1.4-.4-5.5 5.5-9-2.3-1.8 1.8 7.4 3.8-4.2 4.2-3-.5-1.4 1.4 4 1.6 1.6 4 1.4-1.4-.5-3 4.2-4.2 3.8 7.4 1.8-1.8-2.3-9 5.5-5.5-.4-1.6Z" /></svg>;
-}
 
 export default function TravelCardCarousel() {
   const [activeIndex, setActiveIndex] = useState(2);
@@ -40,7 +36,7 @@ export default function TravelCardCarousel() {
     <section className={styles.section} id="travel-escapes" aria-labelledby="travel-escapes-heading" aria-roledescription="carousel">
       <Image className={styles.map} src={map} alt="" fill sizes="100vw" />
       <div className={styles.shade} />
-      <h2 className={styles.srOnly} id="travel-escapes-heading">Explore your next escape</h2>
+      <h2 className={styles.srOnly} id="travel-escapes-heading">Explore Next Growth Services</h2>
       <div className={styles.stage}>
         <div
           className={styles.deck}
@@ -74,13 +70,12 @@ export default function TravelCardCarousel() {
                   <h4>Description</h4>
                   <p className={styles.description}>{destination.description}</p>
                   <dl className={styles.stats}>
-                    <div><dt>Distance</dt><dd>{destination.distance}</dd></div>
-                    <div><dt>Temp</dt><dd>{destination.temperature}</dd></div>
+                    <div><dt>Timeline</dt><dd>{destination.distance}</dd></div>
+                    <div><dt>Focus</dt><dd>{destination.temperature}</dd></div>
                     <div><dt>Rating</dt><dd>{destination.rating}</dd></div>
                   </dl>
                   <div className={styles.cardFooter}>
-                    <div><p>Total Price</p><strong>{destination.price}</strong></div>
-                    <span className={styles.plane}><Plane /></span>
+                    <div><p>Timeline</p><strong>{destination.price}</strong></div>
                   </div>
                 </div>
               </article>

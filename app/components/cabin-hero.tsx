@@ -11,31 +11,34 @@ import lakesideCabin from "../../public/images/lakeside-cabin.webp";
 
 const stories = [
   {
-    number: "002",
-    title: ["Lost in", "the woods"],
-    index: "A cabin stay like no other",
-    description: ["A collection of one of a kind", "stays in the woods. From the simple", "and understated to unexpected grandeur."],
+    number: "001",
+    label: "Build",
+    title: ["Grow Your", "Business Faster"],
+    index: "Build Bold. Grow Smart.",
+    description: ["A digital marketing company turning attention into revenue — SEO, software, CRM, and HRMS under one roof."],
     image: forestCabin,
     imageAlt: "A timber cabin nestled in a lush forest, with a hiker in a mustard jacket walking toward it.",
-    caption: "Cover cabin / Wilderness hut, Australia",
+    caption: "Build Bold. Grow Smart.",
+  },
+  {
+    number: "002",
+    label: "Scale",
+    title: ["Technology", "Meets Marketing"],
+    index: "Marketing Meets Real Technology",
+    description: ["Growthys connects software development and digital marketing so your business grows without friction."],
+    image: mistyForest,
+    imageAlt: "A winding trail among towering moss-covered trees and ferns in a misty forest.",
+    caption: "Marketing Meets Real Technology",
   },
   {
     number: "003",
-    title: ["Into the", "unknown"],
-    index: "Unknown forests across the globe",
-    description: ["Follow the quiet trails", "through ancient forests and morning mist.", "Discover a world beyond the familiar."],
-    image: mistyForest,
-    imageAlt: "A winding trail among towering moss-covered trees and ferns in a misty forest.",
-    caption: "Into the unknown / Ancient forest trails",
-  },
-  {
-    number: "004",
-    title: ["A place", "of your own"],
-    index: "Starting your first remote cabin build",
-    description: ["Find a little space to call your own.", "A lakeside cabin, a slower rhythm,", "and room to dream beyond the everyday."],
+    label: "Rise",
+    title: ["Smarter Growth", "Starts Here"],
+    index: "Your Growth, Engineered Digitally",
+    description: ["An IT solutions company delivering SEO, CRM & management software, and HRMS software development."],
     image: lakesideCabin,
     imageAlt: "A warmly lit timber cabin beside a still mountain lake surrounded by evergreen forest.",
-    caption: "A place of your own / Lakeside cabin dreams",
+    caption: "Your Growth, Engineered Digitally",
   },
 ];
 
@@ -63,12 +66,12 @@ export default function CabinHero() {
     const url = encodeURIComponent(window.location.href);
     const destination = network === "facebook"
       ? `https://www.facebook.com/sharer/sharer.php?u=${url}`
-      : `https://twitter.com/intent/tweet?url=${url}&text=${encodeURIComponent("Lost in the woods — CABIN&WILD")}`;
+      : `https://twitter.com/intent/tweet?url=${url}&text=${encodeURIComponent("Best IT Company That Grow Your Business — Growthys")}`;
     window.open(destination, "_blank", "noopener,noreferrer,width=640,height=480");
   }
 
   return (
-    <section className={siteStyles["cabin-hero"]} id="home" aria-label="Cabin and Wild — unique wilderness stays">
+    <section className={siteStyles["cabin-hero"]} id="home" aria-label="Growthys — marketing and technology">
       <div className={siteStyles["hero-background"]}>
         {stories.map((item, index) => (
           <Image
@@ -87,12 +90,12 @@ export default function CabinHero() {
       </div>
       <div className={siteStyles["hero-shade"]} aria-hidden="true" />
       <header className={siteStyles["hero-header"]}>
-        <a className={siteStyles["wordmark"]} href="#home" aria-label="Growthys home" onClick={() => setActiveStory(0)}>Growthys</a>
+
         <Navbar />
       </header>
       <div className={siteStyles["hero-story"]} aria-live="polite" aria-atomic="true">
         <div className={siteStyles["story-copy"]} key={activeStory}>
-          <p className={siteStyles["story-eyebrow"]}>Unique stays {story.number}</p>
+          <p className={siteStyles["story-eyebrow"]}>{story.label} {story.number}</p>
           <h1 className={siteStyles["story-title"]}>{story.title.map((line) => <span key={line}>{line}</span>)}</h1>
         </div>
         <p className={siteStyles["hero-description"] + " " + siteStyles["story-copy"]} id="about" key={`description-${story.number}`}>
@@ -104,7 +107,7 @@ export default function CabinHero() {
         <button className={siteStyles["round-button"]} type="button" aria-label="Next story" onClick={() => changeStory(1)}><Arrow down /></button>
       </div>
       <nav className={siteStyles["hero-index"]} id="index" aria-label="Story index">
-        <p className={siteStyles["index-label"]}>Index</p>
+        <p className={siteStyles["index-label"]} aria-hidden="true">&nbsp;</p>
         <div className={siteStyles["index-list"]}>
           {stories.map((item, index) => <button className={siteStyles["index-item"]} key={item.number} type="button" aria-current={activeStory === index ? "true" : undefined} onClick={() => setActiveStory(index)}><span className={siteStyles["index-number"]}>0{index + 1}</span><span className={siteStyles["index-title"]}>{item.index}</span></button>)}
         </div>

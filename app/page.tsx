@@ -14,6 +14,13 @@ import FaqSection from "./components/faq-section";
 import BenefitsCta from "./components/benefits-cta";
 import SiteFooter from "./components/site-footer";
 
+import { homepageQuestions } from "./data/homepage-content";
+
+export const metadata = {
+  title: "Best IT Company That Grow Your Business | Growthys",
+  description: "A complete digital marketing company built for one purpose — turning attention into revenue. From SEO to software development, from CRM & management software to HRMS software development, Growthys connects marketing and technology so your business grows without friction.",
+};
+
 export default function Home() {
   return (
     <>
@@ -27,8 +34,8 @@ export default function Home() {
       <TravelCardCarousel />
       <ProcessSection />
       <InvestorInformation />
-      <BenefitsCta />
-      <FaqSection />
+      <BenefitsCta homepage />
+      <FaqSection items={homepageQuestions} eyebrow="Trusted by: Startups · D2C Brands · Clinics · Real Estate Firms · Manufacturers" />
     </main>
     <SiteFooter />
     </>

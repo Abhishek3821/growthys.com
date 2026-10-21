@@ -14,7 +14,7 @@ export default function GraphicDesigningHero() {
   return (
     <div className="min-h-svh overflow-hidden bg-[#fcf9f1] bg-[linear-gradient(rgba(210,102,117,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(210,102,117,0.10)_1px,transparent_1px)] bg-[length:32px_32px] px-5 pb-6 pt-4 text-[#833044] sm:px-8 lg:px-12">
       <header className="relative mx-auto mb-4 flex min-h-16 max-w-[1700px] items-start justify-center min-[701px]:max-[1200px]:min-h-[110px]">
-        <Link href="/" aria-label="Growthys home" className="absolute left-0 top-2 text-2xl font-semibold tracking-[-0.055em] min-[701px]:max-[1200px]:top-[70px] max-[700px]:hidden">Growthys<span className="ml-1 align-top text-xs">®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/graphic-designing" />
       </header>
 

@@ -3,6 +3,8 @@
 import siteStyles from "../site-styles";
 
 import Link from "next/link";
+import Image from "next/image";
+import logoStyles from "./navbar-logo.module.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
@@ -40,6 +42,7 @@ const servicePages: Record<string, "/performance-marketing" | "/website-design" 
 export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "/" : "/contact" }: { onHomePage?: boolean; currentPage?: "/" | "/contact" | "/insights" | "/blogs" | "/performance-marketing" | "/website-design" | "/digital-marketing" | "/e-commerce-solutions" | "/crm-management-software" | "/graphic-designing" | "/cms-design" | "/ecommerce-marketing" | "/web-development" | "/app-development" | "/search-engine-optimization" | "/hrms-software" | "/social-media-marketing" | "/ui-ux-design" | "/content-marketing" }) {
   const slotRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
+  const logoRef = useRef<HTMLAnchorElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const servicesRef = useRef<HTMLButtonElement>(null);
   const menuId = useId();
@@ -95,13 +98,9 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
     if (!portalRoot) return;
 
     let previousY = window.scrollY;
-    let directionStart = previousY;
-    let direction = 0;
     let initialTop = 17;
-    let frame: number | null = null;
 
     function update() {
-      frame = null;
       const nav = navRef.current;
       if (!nav) return;
 
@@ -109,21 +108,18 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
       const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
       const currentY = Math.max(0, Math.min(window.scrollY, maxY));
       const delta = currentY - previousY;
-      const nextDirection = Math.sign(delta);
-      if (nextDirection && nextDirection !== direction) {
-        directionStart = previousY;
-        direction = nextDirection;
-      }
-
       nav.style.setProperty("--nav-top", `${Math.max(17, initialTop - currentY)}px`);
+      logoRef.current?.style.setProperty("--logo-top", `${Math.max(17, initialTop - currentY)}px`);
       nav.dataset.scrolled = String(currentY > 80);
 
-      if (currentY <= 24 || nav.dataset.menuOpen === "true" || nav.dataset.servicesOpen === "true" || nav.contains(document.activeElement)) {
+      if (currentY === 0 || delta < 0) {
         setHidden(false);
-      } else if (delta > 0 && currentY > 100 && currentY - directionStart >= 10) {
+      } else if (delta > 0) {
+        // React immediately to direction changes, including near the page top.
+        // Close dropdowns so they cannot keep the navigation visible.
+        setMenuOpen(false);
+        setServicesOpen(false);
         setHidden(true);
-      } else if (delta < 0 && directionStart - currentY >= 8) {
-        setHidden(false);
       }
 
       previousY = currentY;
@@ -141,7 +137,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
     }
 
     function onScroll() {
-      if (frame === null) frame = window.requestAnimationFrame(update);
+      update();
     }
 
     measure();
@@ -150,11 +146,14 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", measure);
-      if (frame !== null) window.cancelAnimationFrame(frame);
     };
   }, [portalRoot]);
 
   const navigation = (
+    <>
+    <Link ref={logoRef} href="/" aria-label="Growthys home" className={logoStyles.logo} data-hidden={hidden} inert={hidden} onClick={closeMenus}>
+      <Image src="/images/brand/growthys-logo.png" alt="Growthys" width={900} height={251} sizes="(max-width: 700px) 145px, 180px" preload />
+    </Link>
     <nav
       ref={navRef}
       className={siteStyles["hero-nav"] + (portalRoot ? (" " + siteStyles["hero-nav-floating"]) : ("")) + (currentPage === "/performance-marketing" || currentPage === "/crm-management-software" || currentPage === "/ecommerce-marketing" ? " [&_a.hero-nav-brand]:text-white!" : "")}
@@ -168,7 +167,6 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
         if (!event.currentTarget.contains(event.relatedTarget)) closeMenus();
       }}
     >
-      <Link href="/#home" className={"hero-nav-brand"} aria-label="Growthys home" onClick={closeMenus}>Growthys</Link>
       <button
         ref={toggleRef}
         className={siteStyles["hero-nav-toggle"]}
@@ -208,6 +206,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
         ))}
       </div>
     </nav>
+    </>
   );
 
   // Keep the header's space while escaping hero clipping and stacking contexts.

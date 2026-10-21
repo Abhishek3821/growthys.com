@@ -9,22 +9,21 @@ export default function PackagesSection() {
         <div className={styles.content}>
           <span className={styles.badge}>New</span>
           <h2 id="packages-heading">
-            <span>Your packages,</span>
-            <span>at home with their</span>
-            <span>code</span>
+            <span>Customer Data,</span>
+            <span>Safe With</span>
+            <span>Our Brand</span>
           </h2>
           <p>
-            With GitHub Packages, you can safely publish and consume packages
-            within your organization or with the entire world.
+            {"With Growthys Analytics, you can safely collect, understand, and act on customer data — within your organisation or across every channel you run."}
           </p>
           <div className={styles.actions}>
-            <a className={styles.primaryButton} href="https://docs.github.com/en/packages/quickstart">
+            <a className={styles.primaryButton} href="/contact">
               Get started
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="m6 4 4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
-            <a className={styles.secondaryButton} href="https://github.com/pricing">See pricing</a>
+            <a className={styles.secondaryButton} href="#digital-banking">See pricing</a>
           </div>
         </div>
         <div className={styles.visual}>

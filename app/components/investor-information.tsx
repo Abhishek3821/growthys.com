@@ -9,28 +9,28 @@ import styles from "./investor-information.styles";
 
 const categories = [
   {
-    id: "quick-links", title: "Quick Links", image: quickLinksImage,
-    description: "A clear view of our business starts with the information that matters. Explore our strategy, company updates and investor insights to understand the ideas shaping our future. This space brings our story together, connecting business progress with the people, priorities and opportunities behind it.",
+    id: "quick-links", title: "One Partner for Marketing and Technology", image: quickLinksImage,
+    description: "Most businesses hire one agency for digital marketing and another for software development. Growthys handles both. As an IT solutions company in India and a digital marketing company, we build your website, CRM & management software, and campaigns — without the back-and-forth between vendors.",
   },
   {
-    id: "financials", title: "Financials and Filings", image: financialsImage,
-    description: "Financial reporting brings context to a company's journey. From annual performance to quarterly developments, a clear understanding of the numbers helps investors follow business priorities and long-term direction. This section focuses on financial results, reporting milestones and the disclosures that support informed conversations.",
+    id: "financials", title: "A Team You Can Trust", image: financialsImage,
+    description: "We are a reliable IT company in India with a proven track record across SEO, paid ads, web design, and HRMS software development. Our clients stay because we deliver what we promise — on time and within budget.",
   },
   {
-    id: "shareholders", title: "Shareholder's Services", image: quickLinksImage,
-    description: "Strong shareholder relationships begin with clear communication. This space focuses on the information and support shareholders need, from understanding important company updates to navigating common questions. A thoughtful approach to shareholder services helps make each interaction simpler, more accessible and easier to follow.",
+    id: "shareholders", title: "Strategy Backed by Real Data", image: quickLinksImage,
+    description: "No guesswork. Every campaign and every software development project starts with research — audience behavior, search trends, and competitor analysis. This is what makes us a professional IT solutions provider in India rather than just another agency.",
   },
   {
-    id: "news-events", title: "News & Events", image: newsImage,
-    description: "Every milestone adds a new chapter to our story. Follow the announcements, conversations and events that reflect our evolving business and the ideas driving it forward. From company news to investor-focused discussions, this space offers a closer look at the developments shaping what comes next.",
+    id: "news-events", title: "Local Presence, Pan-India Reach", image: newsImage,
+    description: "Based in Gurugram, Haryana, we serve clients across Delhi NCR and pan-India. Searching for an IT company in Gurugram, an IT company in Gaon (Gurgaon), or an IT company in Gurugram, Haryana? We're local, accessible, and we understand the market.",
   },
   {
-    id: "governance", title: "Corporate Governance", image: financialsImage,
-    description: "Good governance provides a foundation for thoughtful decisions and lasting relationships. Clear responsibilities, ethical conduct and accountable leadership help connect business ambitions with the interests of stakeholders. This section introduces the principles, policies and oversight that guide a responsible approach to building for the future.",
+    id: "governance", title: "Complete Services Under One Roof", image: financialsImage,
+    description: "From SEO and performance marketing to CRM & management software, HRMS software development, and best design agency-quality creative — we cover the full stack. As a software development company and IT consulting company, we support every stage of your growth.",
   },
   {
-    id: "shares", title: "Shares", image: newsImage,
-    description: "Understanding a company's ownership is part of understanding its journey. Share information brings together the context behind capital structure, shareholder participation and market disclosures. This space focuses on the details that help investors build a clearer picture of ownership and its connection to the wider business.",
+    id: "shares", title: "Transparent Reporting and Ongoing Support", image: newsImage,
+    description: "You see the same numbers we see. Monthly reports, clear KPIs, and honest updates — even when results are slow. Our IT support services company in India-style maintenance keeps your systems running long after launch.",
   },
 ];
 
@@ -56,9 +56,9 @@ export default function InvestorInformation() {
     <section className={styles.section} id="investor-information" aria-labelledby="investor-heading">
       <div className={styles.container}>
         <div className={styles.sidebar}>
-          <h2 id="investor-heading">Investor Information</h2>
-          <p className={styles.intro}>Explore our financial performance, regulatory filings, shareholder services, corporate governance practices, share details, and the latest news and events.</p>
-          <div className={styles.tabs} role="tablist" aria-label="Investor information categories" aria-orientation="vertical">
+          <h2 id="investor-heading">Why Choose Growthys</h2>
+          <p className={styles.intro}>Marketing, technology, and ongoing support from one team.</p>
+          <div className={styles.tabs} role="tablist" aria-label="Reasons to choose Growthys" aria-orientation="vertical">
             {categories.map((category, index) => (
               <button
                 key={category.id}

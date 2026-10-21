@@ -7,7 +7,7 @@ export default function EcommerceMarketingHero() {
   return (
     <div className={styles.hero}>
       <header className={styles.header}>
-        <Link href="/" aria-label="Growthys home" className={styles.brand}>Growthys<span>®</span></Link>
+
         <Navbar onHomePage={false} currentPage="/ecommerce-marketing" />
       </header>
       <section aria-labelledby="ecommerce-marketing-heading" className={styles.poster}>
