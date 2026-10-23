@@ -1,0 +1,91 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports; generated native dimensions recorded in ui-ux-design-image-sizes.json. Original PNGs preserved and prototype cutout alpha retained.",
+  "assets": [
+    {
+      "name": "design-workflow",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Portrait 3:4. A vertical sculptural stack progressing from simple user journey node map and wireframe screen through a refined final mobile interface and a developer component panel. Restrained lavender seamless backdrop. Leave left and right perimeter mostly calm for existing small annotation overlays. A beautiful tactile process study of research to handoff, no people, no clothing.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-114b1a69-ddc0-4920-b69a-6f2d9ea8c7d5.png"
+    },
+    {
+      "name": "saas-dashboard",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 SaaS onboarding and workspace dashboard shown on a thin desktop monitor, clean side navigation, three step checklist cards, a first-action highlight and restrained analytics widgets. Lavender studio background. Main monitor left-central and right 25 percent calm for an existing heading overlay. Distinct intuitive hierarchy, elegant professional product.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-6ca3b6db-09fd-4a49-aa2a-247753974683.png"
+    },
+    {
+      "name": "banking-app",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 mobile banking flow. Two premium smartphones with original banking app interfaces: recipient selection, a simple transfer summary and large clear confirmation check. Cobalt and ivory screens with lavender glass panels, lavender studio background, devices central/right and left 25 percent quiet for existing labels. No currency amounts, branding or readable text. Trustworthy, minimal visual structure.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-52d112ec-eb70-49d5-a3fe-4a62d302fe69.png"
+    },
+    {
+      "name": "checkout",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 e-commerce UX mockup. Tablet and mobile phone showing a three step checkout journey with elegant product thumbnail cards, shipping selection and an unambiguous payment confirmation check. Soft cream and lavender studio, tasteful blue and warm yellow actions. Precise editable-looking interface hierarchy, premium product render.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9d3015eb-dd60-4ab3-ba22-dd94b2ca3e83.png"
+    },
+    {
+      "name": "healthcare-booking",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 healthcare portal UI mockup, tablet displaying a clean appointment booking flow with realistic tiny doctor portraits, date calendar squares and selected time-slot pills, a phone confirmation screen beside it. Light periwinkle studio background, ivory interface and cobalt selected states, careful calm composition. No hospital scene, no medical claims, no fake text.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-4f0d2638-6cd3-4cfa-88c1-ca527d09a505.png"
+    },
+    {
+      "name": "travel-food",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 two complementary mobile app UX screens: one phone with travel search cards, destination thumbnail and simple booking progress; second phone with food order tracking, delivery map route and compact next-step timeline. Distinct beautiful app layouts, shared precise component language, cream lavender studio with warm yellow and cobalt highlights. No real brands, no crowded collage.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-8c7eec2f-6413-446b-ac01-018b1103cfda.png"
+    },
+    {
+      "name": "design-system",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Landscape 4:3 meticulously arranged design system workbench: one large tablet canvas with elegant cards, form controls, radio buttons, switches, spacing grids, colour chips and button variants as real UI components, alongside a small wireframe-to-finished-screen comparison. Ivory and cobalt, restrained lavender glass. Not a generic analytics dashboard. Leave lower right quiet for an existing overlay.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d98648d0-fbae-41f2-a7c1-1b0617cea4d2.png"
+    },
+    {
+      "name": "user-research",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Premium editorial UX research session in a contemporary Indian product design studio, landscape 4:3. Indian researcher listens to a participant testing a mobile prototype while a colleague takes notes; laptop shows a restrained user journey map and wireframes. Natural accurate hands and anatomy, thoughtful genuine expressions. Warm cream daylight with lavender and cobalt accents, refined photographic realism, subjects centred crop-safe, no legible text logo watermark.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-3f9a0458-691d-4310-9b0c-8ceee85d6223.png"
+    },
+    {
+      "name": "prototype-testing",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Portrait 3:4 true transparent cutout. An elegant upright smartphone showing a click-through prototype with highlighted touch target, connected second wireframe panel behind it, subtle cursor and refined confirmation check in frosted lavender glass. Keep all objects inside centre 70 percent. No ground or solid background, actual alpha transparency. Precise beautiful UI prototype study.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9dd0956e-3a3c-4d86-8bef-3a37f4bf8fa0.png"
+    },
+    {
+      "name": "design-workspace",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Exceptional editorial portrait 3:4 of an Indian UI designer reviewing a component library on a large monitor at a beautifully organised product design desk. Printed wireframes, sketchbook and tablet nearby, lavender garment and cobalt details in a soft ivory studio. Designer in three quarter view with screen visible, real correct hands, attentive candid expression, premium sunlight, no headphones or classroom setting, no readable text logos watermark. Centre crop-safe composition. Highest native detail requested4K.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d8b29e27-f257-4607-a867-5d46c8331568.png"
+    },
+    {
+      "name": "product-team",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Premium landscape 4:3 Indian product design team collaborating with a developer and client in a refined bright office. They review a tablet interactive prototype, laptop component specs and neat printed flow diagrams. Warm ivory environment, lavender and cobalt clothing accents, authentic thoughtful expressions, anatomically accurate hands. Premium detailed editorial photography, centre crop-safe, no legible text, no logos watermark, no cafe bakery or food. Highest native detail requested4K.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-006a90a4-5ece-4934-9323-5422090ff29d.png"
+    },
+    {
+      "name": "handoff",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: ui-mockup. Extraordinary premium UI/UX portfolio artwork with a coherent usable interface, precise realistic screen glass, satin aluminium hardware and subtle layered translucent component cards. Lavender, periwinkle, deep cobalt and warm yellow accents matching an existing lavender/blue/yellow design website. Polished minimalist product studio with soft shadows and fine material detail. No legible text, numbers, brands, logos or watermark; clean blank typographic bars instead of fake writing. Key subject centrally inside 65 percent with crop-safe margins. Highest possible native detail, requested 4K. Portrait 3:4 developer-ready handoff concept: two refined vertical UI artboards, visible spacing guide lines, one component grid and a subtle code-bracket shaped glass object beside organised specification cards. Ivory, cobalt and pale lavender on a quiet periwinkle studio background, super precise professional design-tool aesthetic. Crisp coherent spacing and component hierarchy.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-1a4f2c39-14f6-4749-a8c1-b329223d81ac.png"
+    }
+  ]
+}

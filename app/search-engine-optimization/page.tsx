@@ -1,3 +1,4 @@
+import { seoContent } from "../data/seo-content";
 import type { Metadata } from "next";
 import SeoHero from "../components/seo-hero";
 import SeoServices from "../components/seo-services";
@@ -10,7 +11,7 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "Search Engine Optimization | Growthys", description: "Explore SEO and digital marketing services with Growthys." };
+export const metadata: Metadata = { title: "Search Engine Optimization | Growthys", description: seoContent.hero.description };
 export default function SeoPage() {
   return (
     <>
@@ -22,8 +23,8 @@ export default function SeoPage() {
         <SeoCareServices />
         <SeoEducation />
         <SeoReasons />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta seo />
+        <FaqSection items={seoContent.faqs} eyebrow={seoContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

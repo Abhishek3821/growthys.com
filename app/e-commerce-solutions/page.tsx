@@ -1,3 +1,4 @@
+import { ecommerceContent } from "../data/ecommerce-content";
 import type { Metadata } from "next";
 import EcommerceHero from "../components/ecommerce-hero";
 import FitnessServiceCards from "../components/fitness-service-cards";
@@ -12,7 +13,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "E-Commerce Solutions | Growthys",
-  description: "Augmented reality and product visualisation solutions for your business. Explore immersive e-commerce experiences with Growthys.",
+  description: ecommerceContent.hero.description,
 };
 
 export default function EcommerceSolutionsPage() {
@@ -20,14 +21,14 @@ export default function EcommerceSolutionsPage() {
     <>
       <main className="bg-[#fffcf8]">
         <EcommerceHero />
-        <FitnessServiceCards />
-        <GymAmenities />
-        <SkincareStats />
-        <BrandingSteps />
+        <FitnessServiceCards ecommerce />
+        <GymAmenities ecommerce />
+        <SkincareStats ecommerce />
+        <BrandingSteps ecommerce />
         <EcommerceFeatureTabs />
-        <BlueInfographic />
-        <BenefitsCta />
-        <FaqSection />
+        <BlueInfographic ecommerce />
+        <BenefitsCta ecommerce />
+        <FaqSection items={ecommerceContent.faqs} eyebrow={ecommerceContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

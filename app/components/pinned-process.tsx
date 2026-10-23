@@ -1,12 +1,13 @@
+import { digitalMarketingReasons } from "../data/digital-marketing-content";
 import type { CSSProperties } from "react";
 
 const notes = [
-  { title: "Hero Section", description: "Address a key problem directly in the headline. Add a video demo for instant engagement.", paper: "#fff0e5", ink: "#b77e3f", pin: "#ff8750", pinLight: "#ffb58d", pinDark: "#ce5428", angle: "10deg" },
-  { title: "Advantages", description: "Showcase 3 main benefits of your product. Each benefit highlighted with a title and brief description.", paper: "#e8edff", ink: "#6c87ad", pin: "#447dff", pinLight: "#8cb7ff", pinDark: "#2548ce", angle: "-10deg" },
-  { title: "Apply Cases", description: "Show who benefits most from your product. Explain on one line how each audience type gains value — add some quick social proof.", paper: "#f5e5fc", ink: "#895296", pin: "#9a4ff5", pinLight: "#c08bff", pinDark: "#6d2bc7", angle: "11deg" },
-  { title: "Features", description: "List core functionalities clearly. Connect features to user advantages where possible.", paper: "#fff0e5", ink: "#b77e3f", pin: "#ff8750", pinLight: "#ffb58d", pinDark: "#ce5428", angle: "-8deg" },
-  { title: "Call to action", description: "CTA that speaks to the user and is personalized for the product’s niche.", paper: "#e8edff", ink: "#6c87ad", pin: "#447dff", pinLight: "#8cb7ff", pinDark: "#2548ce", angle: "15deg" },
-  { title: "Testimonials", description: "Include real faces, links for the product’s success stories, rating and even case studies. The more social proof you have, the better.", paper: "#f5e5fc", ink: "#895296", pin: "#9a4ff5", pinLight: "#c08bff", pinDark: "#6d2bc7", angle: "-13deg" },
+  { title: digitalMarketingReasons[0].title, description: digitalMarketingReasons[0].description, paper: "#fff0e5", ink: "#b77e3f", pin: "#ff8750", pinLight: "#ffb58d", pinDark: "#ce5428", angle: "10deg" },
+  { title: digitalMarketingReasons[1].title, description: digitalMarketingReasons[1].description, paper: "#e8edff", ink: "#6c87ad", pin: "#447dff", pinLight: "#8cb7ff", pinDark: "#2548ce", angle: "-10deg" },
+  { title: digitalMarketingReasons[2].title, description: digitalMarketingReasons[2].description, paper: "#f5e5fc", ink: "#895296", pin: "#9a4ff5", pinLight: "#c08bff", pinDark: "#6d2bc7", angle: "11deg" },
+  { title: digitalMarketingReasons[3].title, description: digitalMarketingReasons[3].description, paper: "#fff0e5", ink: "#b77e3f", pin: "#ff8750", pinLight: "#ffb58d", pinDark: "#ce5428", angle: "-8deg" },
+  { title: digitalMarketingReasons[4].title, description: digitalMarketingReasons[4].description, paper: "#e8edff", ink: "#6c87ad", pin: "#447dff", pinLight: "#8cb7ff", pinDark: "#2548ce", angle: "15deg" },
+  { title: digitalMarketingReasons[5].title, description: digitalMarketingReasons[5].description, paper: "#f5e5fc", ink: "#895296", pin: "#9a4ff5", pinLight: "#c08bff", pinDark: "#6d2bc7", angle: "-13deg" },
 ] as const;
 
 function Pushpin() {
@@ -23,7 +24,7 @@ function Pushpin() {
 export default function PinnedProcess() {
   return (
     <section aria-labelledby="pinned-process-heading" className="mx-auto max-w-[1800px] overflow-hidden bg-[#f5f5f4] px-4 py-12 sm:px-8 lg:py-16">
-      <h2 id="pinned-process-heading" className="sr-only">Six sections for a compelling page</h2>
+      <h2 id="pinned-process-heading" className="sr-only">Six Reasons Businesses Choose Growthys</h2>
       <div className="relative isolate mx-auto max-w-[1000px] px-2 pb-24 pt-4 sm:px-10 sm:pb-36">
         <div className="pointer-events-none absolute inset-0 -z-20 bg-[repeating-linear-gradient(180deg,transparent_0_46px,rgba(126,126,126,0.09)_47px,transparent_48px)] [mask-image:radial-gradient(ellipse_at_center,black_25%,transparent_75%)]" aria-hidden="true" />
         <svg viewBox="0 0 1000 1300" preserveAspectRatio="none" fill="none" className="pointer-events-none absolute inset-0 -z-10 size-full" aria-hidden="true">

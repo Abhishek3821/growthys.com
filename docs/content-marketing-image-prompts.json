@@ -1,0 +1,85 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports. Original generated dimensions recorded in content-marketing-image-sizes.json. PNG originals and transparent alpha preserved.",
+  "assets": [
+    {
+      "name": "editorial-hero",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Portrait 3:4 hero still life: a sculptural open editorial journal, layered article spreads, graphite pen and restrained orange ribbon, one tablet showing an elegant long-form article with a large abstract editorial photograph. Composed as a premium publishing campaign, not a generic desk. Upper left 30 percent quiet for existing label overlay, detailed sharp edges and luxurious materials.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-0ea0caa4-f6ca-4db8-9348-14a0de644ccd.png"
+    },
+    {
+      "name": "content-hub",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: ui-mockup. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Wide 16:9 content engine hero graphic: large landscape monitor displaying an exceptionally elegant editorial content hub with a feature article, three guide cards, keyword topic chips and subtle organic growth trend card. Printed magazine covers and a compact content calendar arranged alongside. Warm ivory studio architecture, bold graphite and orange editorial hierarchy. Upper right and lower left quiet for existing website overlays. No typography beyond blank abstract bars.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-f4eb100f-4050-4404-99ab-b0d815343bf2.png"
+    },
+    {
+      "name": "blogs",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Square service artwork for blogs and articles: beautifully stacked editorial article pages with one prominent open long-form layout, search magnifying lens, a graphite pen and small topic cards. One central focal stack, subtle orange tabs, soft cream backdrop. Sophisticated tactile publishing metaphor, no laptop required.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-1905605b-707a-402c-b505-745a86c355e1.png"
+    },
+    {
+      "name": "writer",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Premium editorial portrait 3:4 of an Indian content writer thoughtfully editing a researched long-form draft at a laptop, printed outlines, annotated blank article layouts and notebook at desk. Warm ivory agency office, burnt orange knit and sage accents, soft photographic daylight, accurate natural hands and anatomy, focused candid expression, centre crop-safe composition. No readable text logos watermark, no medical or classroom setting. Highest native 4K detail requested.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-71fc1572-e880-483f-ad52-09dbe7b819bf.png"
+    },
+    {
+      "name": "workflow",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Portrait 3:4 true transparent cutout of a premium tactile content production workflow: four vertically arranged connected floating ivory cards represent keyword research with magnifier, editorial calendar, writing with pen over article sheet, and performance graph. Graphite thin connectors, burnt orange accents and sage glass nodes, beautiful professional conceptual rendering, not toy-like. All objects inside centre 70 percent, no ground plane or background, real alpha transparency.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ce38deaf-5388-434d-880f-75d1d6e70b32.png"
+    },
+    {
+      "name": "content-illustration",
+      "width": 3840,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Square premium editorial illustration: sculptural open book and a thin laptop with article layout, a precise fountain pen, three floating publication cards and a small origami paper plane showing ideas becoming useful published content. Elegant mint green and ivory with orange highlights. True transparent background, all objects fully visible with generous margins, actual alpha transparency, no ground or backdrop.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-4db93ae1-843a-45b0-97bb-c7d5f7f0715f.png"
+    },
+    {
+      "name": "editorial-team",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Exceptional premium landscape 4:3 Indian editorial team and client collaborating on content strategy in a bright ivory studio. Writer, editor and strategist review article outlines, printed content calendar and laptop editorial hub, thoughtful natural expressions and correct hands. Restrained burnt orange and mint accents, natural premium photography, core action central crop-safe. No text logos watermark, no doctors or medical objects, no fashion posing. Highest native detail requested4K.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-921eb4e7-9eae-4e34-a51d-4722f08a0a59.png"
+    },
+    {
+      "name": "content-audit",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: productivity-visual. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Landscape 4:3 content audit and performance workbench: elegant laptop displaying an orderly article inventory with coloured status dots, a simple search trend line, small conversion bars, printed audit sheets, magnifying glass and a pencil. Ivory and graphite with precise orange highlight and sage secondary colour. Realistic coherent editorial analytics, no made-up numbers or legible words, premium studio rendering.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-cddb1b10-d820-4583-88e6-7bf1f0441ea5.png"
+    },
+    {
+      "name": "landing-pages",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: ui-mockup. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Square website copy and landing page service graphic: a polished upright browser artboard with strong headline blank bars, a clear orange call-to-action, one editorial lifestyle photograph and supporting benefit blocks; beside it a printed message hierarchy outline and a small cursor. Ivory seamless ground, coherent professional conversion-copy layout, compact centred composition, no readable typography.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-cc3c74e8-ea91-4112-9652-7095446c857e.png"
+    },
+    {
+      "name": "white-papers",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Square case studies and white papers service graphic: premium bound research report with sophisticated graphite and orange cover geometry, open case-study spread with a restrained pie chart, an orderly results summary sheet and a small magnifying lens. Tactile ivory paper and charcoal spine, mint accent, elegant studio still life, no written titles or readable metrics.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-efd3b23e-d01c-4901-be2a-20c7d18aa4c0.png"
+    },
+    {
+      "name": "email-newsletters",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: ui-mockup. Premium content marketing editorial visual, refined ivory paper, graphite ink, burnt orange and muted mint accents matching a cream/orange website. Beautiful macro paper grain, precise print layout, thoughtful soft daylight and realistic screen glass where appropriate. Original article layouts built from clean blank text bars and beautiful photos, no legible words, invented letters, logos or watermark. Core subject central 65 percent, crop safe margins. Highest native detail requested 4K. Square email sequences and newsletters service graphic: three staggered email editor panels showing beautiful ivory editorial layouts with a large feature photograph, blank headline bars and orange action buttons, a sculptural open envelope and thin connected sequence nodes. Refined mint and ivory ground, realistic crisp paper and glass detail, centred with breathing space. No readable text, no logos, no fake letters.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ddc4948d-d1b3-4fe1-a759-6f7708bbca1f.png"
+    }
+  ]
+}

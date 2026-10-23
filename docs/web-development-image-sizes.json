@@ -1,0 +1,68 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 897812,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\hero.webp"
+  },
+  {
+    "name": "success",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 828618,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\success.webp"
+  },
+  {
+    "name": "customer-experience",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 883062,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\customer-experience.webp"
+  },
+  {
+    "name": "team",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 978674,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\team.webp"
+  },
+  {
+    "name": "ui-planning",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 900640,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\ui-planning.webp"
+  },
+  {
+    "name": "testing",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 842806,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\web-development\\graphics\\testing.webp"
+  }
+]

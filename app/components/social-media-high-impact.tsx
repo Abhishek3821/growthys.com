@@ -1,12 +1,8 @@
+import { socialMediaContent } from "../data/social-media-content";
 import Link from "next/link";
 import styles from "./social-media-high-impact.module.css";
 
-const services = [
-  { title: "UI/UX Design", icon: "ui", description: "UI & UX design takes a holistic approach to enhancing the user experience based on business objectives and user perspectives." },
-  { title: "Graphic Design", icon: "graphic", description: "Create the visual identity of brands, messages and communications. Bring ideas, people and businesses together through design." },
-  { title: "Branding", icon: "branding", description: "Brand identity design refers to the creation of all the elements that help to create a recognisable brand image." },
-  { title: "Website Design", icon: "website", description: "A well-designed website provides a foundation for your brand, building trust and a perfect first impression for your audience." },
-];
+const services = socialMediaContent.why.items.map((item, index) => ({ ...item, icon: ["ui", "graphic", "branding", "website"][index] }));
 
 function DesignIcon({ kind }: { kind: string }) {
   return <svg viewBox="0 0 52 48" className={styles.icon} fill="none" aria-hidden="true">
@@ -21,8 +17,8 @@ export default function SocialMediaHighImpact() {
   return <section className={styles.section} aria-labelledby="social-high-impact-heading"><div className={styles.layout}>
     <header className={styles.intro}>
       <svg viewBox="0 0 35 35" className={styles.mark} aria-hidden="true"><rect x="3" y="3" width="12" height="12" fill="#f64b9b"/><rect x="16" y="16" width="12" height="12" fill="#68b9da"/></svg>
-      <h2 id="social-high-impact-heading">High-impact services<br/>to take your business<br/>to the next level</h2>
-      <p>Good customer service means consistently meeting customers’ expectations.</p>
+      <h2 id="social-high-impact-heading" aria-label={socialMediaContent.services.title}>High-Impact Services<br/>to Take Your Business<br/>to the Next Level</h2>
+      <p>{socialMediaContent.services.intro}</p>
       <Link href="#social-impact-services" className={styles.button}>Explore Services</Link>
     </header>
     <div id="social-impact-services" className={styles.cards}>{services.map(service=><article key={service.title} className={styles.card}><DesignIcon kind={service.icon}/><h3>{service.title}</h3><p>{service.description}</p></article>)}</div>

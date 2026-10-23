@@ -1,3 +1,4 @@
+import { ecommerceMarketingContent } from "../data/ecommerce-marketing-content";
 import type { Metadata } from "next";
 import EcommerceMarketingHero from "../components/ecommerce-marketing-hero";
 import EcommerceMarketingAbout from "../components/ecommerce-marketing-about";
@@ -12,7 +13,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Ecommerce Marketing | Growthys",
-  description: "Explore bold ecommerce marketing and creative brand experiences with Growthys.",
+  description: ecommerceMarketingContent.about.paragraphs[0],
 };
 
 export default function EcommerceMarketingPage() {
@@ -26,8 +27,8 @@ export default function EcommerceMarketingPage() {
         <EcommerceMarketingHobbies />
         <EcommerceMarketingEducation />
         <EcommerceMarketingVolunteer />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta ecommerceMarketing />
+        <FaqSection items={ecommerceMarketingContent.faqs} eyebrow={ecommerceMarketingContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

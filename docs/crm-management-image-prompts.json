@@ -1,0 +1,90 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K WebP exports are upscaled from generated originals. Original PNGs are preserved. Existing website layout, classes, image containers and image sizes are unchanged.",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-fcfc0fd7-4592-4edc-83d3-4dca8f53c840.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Premium CRM software website hero artwork, portrait 2:3 request maximum native detail 2560x3840. Refined sculptural laptop and upright glass customer relationship dashboard, several elegant customer avatar cards connected along a clear three-stage sales pipeline, one rising analytics curve, compact calendar and verified deal symbol. No shopping products, focus exclusively customer relationships and B2B sales. Bespoke luxury 3D illustration combining warm ivory ceramic, brushed charcoal metal, frosted blush glass and restrained pale yellow accents. Warm muted rose studio background harmonizing with white, black, coral and yellow website. Center key subject around upper 40 percent, keep bottom quarter dark rose with clear negative space for existing white text overlay; crop safe on all sides, no tiny clutter. Ultra refined raytraced lighting, beautiful tactile surfaces, immaculate edges, coherent visual hierarchy, editorial product photography craft. No words, no letters, no readable numbers, no logo, no watermark, no webpage layout."
+    },
+    {
+      "name": "support",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-eba7bbe2-5d5a-4828-9c36-34fa76aee006.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. One premium 3D CRM customer support illustration, portrait 2:3 request maximum native detail 2560x3840. A beautiful ivory headset surrounding a frosted glass customer profile card with simple friendly abstract avatar, two elegantly interlocking conversation bubbles and a tiny checked appointment badge. Refined warm ivory and charcoal materials with blush highlights on vivid sophisticated golden yellow studio background, matching a small yellow website contact card. Strong bold single composition readable at thumbnail scale, objects centered with ample crop-safe margin. Luxury studio lighting, physically plausible ceramic and satin aluminium, exquisite detail and controlled soft shadows. No text, lettering, logos or watermark."
+    },
+    {
+      "name": "security",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-f831a0b7-13be-4c3f-ab1f-d8f1688119ef.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Premium CRM data security and scalable business systems graphic, portrait 2:3 request native 2560x3840 detail. A stunning frosted glass shield and brushed silver lock protect a neatly arranged stack of translucent customer-profile cards and subtle cloud database cylinders, connected to three precise ascending growth blocks. Sophisticated icy blue and sage glass with restrained lime edge accents and ivory architectural plinths. Quiet airy blue studio background, luxurious cinematic daylight, immaculate raytraced reflections, finely detailed tactile surfaces. Top two thirds hold the complete subjects; bottom left has calm negative space for existing website overlay card. All objects inside crop-safe central 70 percent. No words, letters, logos, watermark, no mountain scenery, no excessive particles."
+    },
+    {
+      "name": "capture",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-f3d99558-c1ca-46c5-b23c-e6f5686c21eb.png",
+      "width": 3072,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. Two Indian sales professionals in their late twenties at an elegant desk reviewing a tablet with a clear simple CRM lead inbox and contact avatar cards. One gestures naturally to a new enquiry notification. Three-quarter editorial view with believable hands. Convey every enquiry captured in one place. Portrait 4:5 framing, request maximum native detail at 3072x3840. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "qualify",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-bb63f7c8-4c72-4e3c-850a-3bd991b077a1.png",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. A focused Indian sales analyst and colleague at a bright modern office desk sorting customer segments on a laptop screen with tasteful simplified CRM avatar cards and restrained lead score bars, no readable text. Convey prioritizing qualified leads. Landscape 4:3 framing, request maximum native detail at 3840x2880. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "pipeline",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-eb110400-0755-40b3-a603-05fa5dd6fd3f.png",
+      "width": 3072,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. An Indian business development professional in smart casual clothing, three-quarter view at a workstation, carefully reviewing a desktop CRM pipeline of neatly arranged contact cards in three columns. Screen and person both naturally visible with realistic perspective. Convey clear deal stages and follow-up management. Portrait 4:5 framing, request maximum native detail at 3072x3840. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "retain",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-34a8a752-1c61-4c33-b5d9-74522475965a.png",
+      "width": 3072,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. An Indian customer-success specialist with a discreet headset warmly listening during a client call, laptop displaying a restrained CRM customer timeline with contact avatar and check marks, no readable text. Natural thoughtful expression, authentic workspace. Convey customer retention and service history. Portrait 4:5 framing, request maximum native detail at 3072x3840. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "collaboration",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-e1d02161-ab1c-43c1-8ace-c32581003456.png",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. Three Indian colleagues from sales and customer support collaborating around one laptop in a calm modern meeting corner, one person taking concise notes, another pointing at a customer profile timeline. Natural candid conversation, realistic hands and proportions. Convey a shared view of every customer. Landscape 4:3 framing, request maximum native detail at 3840x2880. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "analytics",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-79abfaee-883b-4bec-b93c-8736d812a724.png",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: photorealistic-natural. Single luxury editorial business photograph for a CRM software website. Two Indian business professionals at an airy office table confidently reviewing a laptop CRM analytics dashboard with simple coherent pipeline bars and one ascending trend chart, no readable text, one person lightly points at the screen. Convey decisions based on sales performance and reliable reporting. Landscape 4:3 framing, request maximum native detail at 3840x2880. Warm ivory and sage office palette, subtle charcoal and muted coral accents, premium but authentic Indian business environment, beautiful soft window daylight, realistic skin texture, crisp linen and wood details, professional full-frame camera quality, shallow but controlled depth of field. Composition centered in crop-safe middle 65 percent to work in both portrait and square image containers. Screen shows abstract CRM interface with sensible contact cards only, no gibberish readable typography. No posed handshake, no stock-photo exaggerated smiles, no text overlay, logo, watermark, no architecture agency or fitness theme."
+    },
+    {
+      "name": "startups",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7ebac380-4957-46ad-a891-f699dd92ddc1.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Exceptional luxury editorial business portrait for CRM software customer-profile card. A confident Indian startup founder in her early thirties wearing an elegant charcoal overshirt over an ivory top, seated in a bright compact studio office, thoughtfully using a laptop to manage new customer leads. Minimal customer contact cards visible on angled laptop screen. Warm natural and authentic expression. Portrait 2:3 request native 2560x3840 detail. Subject face in upper third, waist-up framing, hands and device completely in frame. Keep the bottom 40 percent visually quiet and darker for existing white website copy overlay. subtle cool blue office accents, ivory and charcoal styling, sophisticated soft window light with delicate shadows, believable skin texture, authentic Indian business context, premium full-frame portrait photography, realistic anatomy and hands. Crop-safe center framing suitable for tall narrow cards and mobile. No text overlay, readable letters, logos or watermark, no celebratory posing, no banking branch, no unrelated home/family scene."
+    },
+    {
+      "name": "smes",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7c82049f-abae-4020-aa86-a26e07714091.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Exceptional luxury editorial business portrait for CRM software customer-profile card. An Indian small business owner in his late thirties in a refined light linen shirt, standing at the front desk of a tasteful boutique retail workspace, using a tablet to coordinate customer enquiries and orders. Shelves softly out of focus, tablet has simple contact avatars, genuine confident expression. Portrait 2:3 request native 2560x3840 detail. Subject face in upper third, waist-up framing, hands and device completely in frame. Keep the bottom 40 percent visually quiet and darker for existing white website copy overlay. subtle warm sage and lime accents, ivory and charcoal styling, sophisticated soft window light with delicate shadows, believable skin texture, authentic Indian business context, premium full-frame portrait photography, realistic anatomy and hands. Crop-safe center framing suitable for tall narrow cards and mobile. No text overlay, readable letters, logos or watermark, no celebratory posing, no banking branch, no unrelated home/family scene."
+    },
+    {
+      "name": "enterprises",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-4bea20b4-7a53-4a39-829a-babe57db9bc6.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Exceptional luxury editorial business portrait for CRM software customer-profile card. An experienced Indian enterprise operations leader, a woman in her early forties with a tailored dark blazer, reviewing a tablet with discreet CRM contact cards in a sophisticated modern office with glass meeting rooms softly blurred behind. Calm assured expression, competent and approachable. Portrait 2:3 request native 2560x3840 detail. Subject face in upper third, waist-up framing, hands and device completely in frame. Keep the bottom 40 percent visually quiet and darker for existing white website copy overlay. subtle pale steel blue accents, ivory and charcoal styling, sophisticated soft window light with delicate shadows, believable skin texture, authentic Indian business context, premium full-frame portrait photography, realistic anatomy and hands. Crop-safe center framing suitable for tall narrow cards and mobile. No text overlay, readable letters, logos or watermark, no celebratory posing, no banking branch, no unrelated home/family scene."
+    }
+  ]
+}

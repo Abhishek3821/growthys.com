@@ -38,9 +38,9 @@ export default function TeamCta({ href = "#contact-inquiry" }: { href?: string }
 
         <div className={styles.content}>
           <div className={styles.stars} aria-hidden="true">★★★★★</div>
-          <p className={styles.eyebrow}>Made for ambitious teams</p>
-          <h2 id="team-cta-heading">Ready to Power Up<span>Your Team?</span></h2>
-          <p className={styles.description}>Bring your ideas to life with smarter tools, better workflows, and a team that grows with you.</p>
+          <p className={styles.eyebrow}>Growthys stays by your side</p>
+          <h2 id="team-cta-heading">Built for Teams<span>With Big Plans</span></h2>
+          <p className={styles.description}>You bring the ambition, we bring the tools, the strategy, and the team that sticks around. From the first message to the final launch, Growthys stays by your side.</p>
           <a className={styles.button} href={href}>
             Get started
             <span aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg></span>

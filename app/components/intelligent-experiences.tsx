@@ -1,14 +1,14 @@
 import Image from "next/image";
-import topazArtwork from "../../public/images/intelligent-experiences/topaz.webp";
-import cobaltArtwork from "../../public/images/intelligent-experiences/cobalt.webp";
-import asterArtwork from "../../public/images/intelligent-experiences/aster.webp";
+import topazArtwork from "../../public/images/homepage/experience-seo.webp";
+import cobaltArtwork from "../../public/images/homepage/experience-crm.webp";
+import asterArtwork from "../../public/images/homepage/experience-ai.webp";
 import styles from "./intelligent-experiences.styles";
 
 const experiences = [
   {
     name: "Growthys SEO Engine",
     artwork: topazArtwork,
-    alt: "Colorful coral, orange and turquoise ribbons folded into a finely pleated sculpture",
+    alt: "An amber magnifying glass and rising teal trajectory over glass search results, illustrating organic search growth.",
     description: "Growthys SEO adapts best-in-class search strategies for your business, ensuring sustainable rankings and successful organic growth tailored to your market and goals.",
     featured: false,
     href: null,
@@ -16,7 +16,7 @@ const experiences = [
   {
     name: "Growthys Cloud & CRM",
     artwork: cobaltArtwork,
-    alt: "Flowing lavender and blue data waves illuminated by sparkling points of light",
+    alt: "A translucent lavender cloud connected to customer-data nodes, illustrating unified cloud and CRM systems.",
     description: "A set of services, solutions, and platforms that act as a force multiplier for your CRM & management software and cloud-powered business transformation.",
     featured: true,
     href: null,
@@ -24,7 +24,7 @@ const experiences = [
   {
     name: "Growthys Marketing AI",
     artwork: asterArtwork,
-    alt: "Translucent lavender glass ribbons curling into fluid loops with dark blue edges",
+    alt: "A flowing violet ribbon passing through glass workflow rings, illustrating marketing automation.",
     description: "Growthys Marketing AI empowers marketers with the superpower of automation to create memorable customer experiences, increase efficiency, and drive growth.",
     featured: false,
     href: null,

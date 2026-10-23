@@ -1,13 +1,7 @@
+import { performanceServices as services } from "../data/performance-marketing-content";
 import Link from "next/link";
 
-const services = [
-  { title: "Strategy & Planning", description: "Custom strategies built for your business goals.", icon: "strategy" },
-  { title: "Search Engine Optimization", description: "Rank higher and get found by the right audience.", icon: "search" },
-  { title: "Social Media Marketing", description: "Engage your audience and build your brand online.", icon: "social" },
-  { title: "Content Marketing", description: "Create content that attracts, educates & converts.", icon: "content" },
-  { title: "Paid Advertising", description: "High-performing ads that drive leads and sales.", icon: "advertising" },
-  { title: "Email Marketing", description: "Nurture leads and turn subscribers into customers.", icon: "email" },
-] as const;
+
 
 function ServiceIcon({ icon }: { icon: typeof services[number]["icon"] }) {
   return (
@@ -47,7 +41,7 @@ export default function MarketingServices() {
         <div>
           <p className="mb-2 text-xs font-bold tracking-[0.06em] text-[#8765c5]">WHAT WE DO</p>
           <h2 id="marketing-services-heading" className="text-[clamp(24px,2.5vw,36px)] font-semibold leading-tight tracking-[-0.035em] text-[#23232c]">
-            Marketing Services That Make an <span className="text-[#7854bb]">Impact</span>
+            Performance Services Built Around One Goal: <span className="text-[#7854bb]">Results</span>
           </h2>
         </div>
         <Link href="/#services" className="inline-flex min-h-11 items-center gap-3 text-xs font-bold tracking-[0.025em] text-[#7854bb] transition-colors hover:text-[#51308c] focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#7854bb]">

@@ -1,3 +1,4 @@
+import { ecommerceContent } from "../data/ecommerce-content";
 import Image from "next/image";
 
 function AmenityIcon({ name }: { name: "coach" | "medical" | "wifi" | "tracker" }) {
@@ -11,37 +12,37 @@ function AmenityIcon({ name }: { name: "coach" | "medical" | "wifi" | "tracker" 
   );
 }
 
-export default function GymAmenities() {
+export default function GymAmenities({ ecommerce = false }: { ecommerce?: boolean } = {}) {
   const tile = "flex min-w-0 items-center rounded-[18px] bg-[#232323] p-5 text-base leading-[1.2] tracking-[-0.035em] lg:p-5 xl:p-7 xl:text-xl";
 
   return (
     <section aria-labelledby="gym-amenities-heading" className="mx-auto max-w-[1800px] bg-[#fffcf8] px-5 pb-14 sm:px-7 lg:px-8 lg:pb-20">
-      <h2 id="gym-amenities-heading" className="sr-only">Gym facilities and amenities</h2>
+      <h2 id="gym-amenities-heading" className="sr-only">{ecommerce ? `${ecommerceContent.amenities.title}. ${ecommerceContent.amenities.description}` : "Gym facilities and amenities"}</h2>
       <div className="grid gap-4 rounded-[28px] bg-[#0c0c0c] p-4 text-white sm:grid-cols-2 lg:h-[clamp(480px,43vw,680px)] lg:grid-cols-3 lg:gap-5 lg:rounded-[34px] lg:p-5">
         <div className="order-2 grid min-h-[420px] grid-rows-3 gap-4 sm:order-1 lg:min-h-0 lg:gap-5">
-          <div className={`${tile} gap-4`}><AmenityIcon name="coach" /><p>Professional coaches each with at least 5 years of experience.</p></div>
-          <div className={`${tile} gap-4`}><AmenityIcon name="medical" /><p>The medical professional&apos;s office</p></div>
+          <div className={`${tile} gap-4`}><AmenityIcon name="coach" /><p>{ecommerce ? ecommerceContent.amenities.items[0] : "Professional coaches each with at least 5 years of experience."}</p></div>
+          <div className={`${tile} gap-4`}><AmenityIcon name="medical" /><p>{ecommerce ? ecommerceContent.amenities.items[1] : "The medical professional’s office"}</p></div>
           <div className="grid grid-cols-[0.9fr_1.2fr] gap-4 lg:gap-5">
-            <div className={`${tile} gap-2 px-3!`}><span className="text-[clamp(48px,4.8vw,76px)] font-semibold leading-none tracking-[-0.06em]">4</span><p>sports<br />zones</p></div>
-            <div className={tile}><p>A bar serving wholesome drinks.</p></div>
+            <div className={`${tile} gap-2 px-3!`}><span className="text-[clamp(48px,4.8vw,76px)] font-semibold leading-none tracking-[-0.06em]">{ecommerce ? "" : "4"}</span><p>{ecommerce ? ecommerceContent.amenities.items[2] : <>sports<br />zones</>}</p></div>
+            <div className={tile}><p>{ecommerce ? ecommerceContent.amenities.items[3] : "A bar serving wholesome drinks."}</p></div>
           </div>
         </div>
 
         <div className="relative order-1 isolate flex min-h-[450px] items-center justify-center overflow-hidden rounded-[20px] bg-[#38392e] sm:order-2 lg:min-h-0">
-          <Image src="/images/services/ecommerce-gym-interior.png" alt="An industrial gym with a weight bench, exercise equipment and warm window light" fill sizes="(max-width: 639px) 95vw, (max-width: 1023px) 45vw, 33vw" className="-z-20 object-cover" />
+          <Image src={ecommerce ? "/images/services/ecommerce-solutions/catalogue.webp" : "/images/services/ecommerce-gym-interior.png"} alt={ecommerce ? "Product catalogue with clothing, footwear and electronics connected to inventory and delivery" : "An industrial gym with a weight bench, exercise equipment and warm window light"} quality={ecommerce ? 95 : 75} fill sizes="(max-width: 639px) 95vw, (max-width: 1023px) 45vw, 33vw" className="-z-20 object-cover" />
           <div className="pointer-events-none absolute inset-0 -z-10 bg-black/15" aria-hidden="true" />
-          <span className="-translate-x-2 font-[Impact,Haettenschweiler,'Arial_Narrow',sans-serif] text-[clamp(200px,21vw,340px)] font-black leading-none tracking-[-0.09em] text-[#baff00]" aria-hidden="true">.T</span>
+          <span className="-translate-x-2 font-[Impact,Haettenschweiler,'Arial_Narrow',sans-serif] text-[clamp(200px,21vw,340px)] font-black leading-none tracking-[-0.09em] text-[#baff00]" aria-hidden="true">{ecommerce ? "G." : ".T"}</span>
         </div>
 
         <div className="order-3 grid min-h-[420px] grid-rows-3 gap-4 sm:col-span-2 lg:col-span-1 lg:min-h-0 lg:gap-5">
           <div className="grid grid-cols-2 gap-4 lg:gap-5">
-            <div className={`${tile} flex-col justify-center gap-3 text-center`}><AmenityIcon name="wifi" /><p>WI-FI Free</p></div>
-            <div className={`${tile} justify-center`}><p>Tanning<br />bed</p></div>
+            <div className={`${tile} flex-col justify-center gap-3 text-center`}><AmenityIcon name="wifi" /><p>{ecommerce ? "Fast, reliable hosting" : "WI-FI Free"}</p></div>
+            <div className={`${tile} justify-center`}><p>{ecommerce ? ecommerceContent.amenities.items[5] : <>Tanning<br />bed</>}</p></div>
           </div>
-          <div className={`${tile} gap-4`}><AmenityIcon name="tracker" /><p>Fitness trackers and smart analysis.</p></div>
+          <div className={`${tile} gap-4`}><AmenityIcon name="tracker" /><p>{ecommerce ? ecommerceContent.amenities.items[6] : "Fitness trackers and smart analysis."}</p></div>
           <div className="grid grid-cols-2 gap-4 lg:gap-5">
-            <div className={tile}><p>Various kinds of massage</p></div>
-            <div className={`${tile} justify-center px-2!`}><p className="whitespace-nowrap text-[clamp(32px,3vw,52px)] font-medium leading-none tracking-[-0.05em]">500M<sup className="text-[0.55em]">2</sup></p></div>
+            <div className={tile}><p>{ecommerce ? ecommerceContent.amenities.items[8] : "Various kinds of massage"}</p></div>
+            <div className={`${tile} justify-center px-2!`}><p aria-label={ecommerce ? ecommerceContent.amenities.items[7] : undefined} className="whitespace-nowrap text-[clamp(32px,3vw,52px)] font-medium leading-none tracking-[-0.05em]">{ecommerce ? <>500<sup className="text-[0.55em]">+</sup><span className="block whitespace-normal text-base leading-[1.2]">product variants supported</span></> : <>500M<sup className="text-[0.55em]">2</sup></>}</p></div>
           </div>
         </div>
       </div>

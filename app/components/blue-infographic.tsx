@@ -1,3 +1,4 @@
+import { ecommerceContent } from "../data/ecommerce-content";
 const items = [
   { icon: "person", corner: "-left-4 -top-4 rounded-tl-[54px] border-l-[18px] border-t-[18px]" },
   { icon: "briefcase", corner: "-right-4 -top-4 rounded-tr-[54px] border-r-[18px] border-t-[18px]" },
@@ -16,10 +17,10 @@ function InfographicIcon({ icon }: { icon: typeof items[number]["icon"] }) {
   );
 }
 
-export default function BlueInfographic() {
+export default function BlueInfographic({ ecommerce = false }: { ecommerce?: boolean } = {}) {
   return (
     <section aria-labelledby="blue-infographic-heading" className="mx-auto max-w-[1800px] overflow-hidden bg-white px-8 py-10 text-[#414141] sm:px-12 md:pb-10 md:pt-12 lg:px-16">
-      <h2 id="blue-infographic-heading" className="sr-only">Four-part infographic</h2>
+      <h2 id="blue-infographic-heading" className="sr-only">{ecommerce ? "E-Commerce essentials" : "Four-part infographic"}</h2>
       <ol className="mx-auto grid max-w-[1200px] gap-x-10 gap-y-8 md:grid-cols-2 lg:gap-x-12 lg:gap-y-10">
         {items.map((item, index) => (
           <li key={item.icon} className="relative isolate">
@@ -28,8 +29,8 @@ export default function BlueInfographic() {
               <span className={`pointer-events-none absolute -bottom-[13%] select-none font-[Arial,Helvetica,sans-serif] text-[clamp(170px,min(22vw,28svh),280px)] font-bold italic leading-none tracking-[-0.09em] text-transparent [-webkit-text-stroke:1.2px_#4386bd] ${index % 2 === 0 ? "-left-[5%]" : "-right-[3%]"}`} aria-hidden="true">{index + 1}</span>
               <span className={`absolute top-4 grid size-13 place-items-center rounded-full border-[3px] border-white bg-[linear-gradient(140deg,#3d69e5,#4261d9)] text-white shadow-[0_3px_6px_rgba(0,0,0,0.17)] ${index % 2 === 0 ? "right-4" : "left-4"}`}><InfographicIcon icon={item.icon} /></span>
               <div className={`relative z-10 mt-6 w-[68%] text-center ${index % 2 === 0 ? "ml-auto" : "mr-auto"}`}>
-                <h3 className="text-sm font-bold tracking-[0.025em] lg:text-lg">INFOGRAPHIC<span className="sr-only"> {index + 1}</span></h3>
-                <p className="mx-auto mt-3 max-w-[280px] text-xs leading-[1.3] text-[#999] lg:text-[15px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nibh euismod tincidunt ut laoreet.</p>
+                <h3 className="text-sm font-bold tracking-[0.025em] lg:text-lg">{ecommerce ? ecommerceContent.highlights[index].title : <>INFOGRAPHIC<span className="sr-only"> {index + 1}</span></>}</h3>
+                <p className="mx-auto mt-3 max-w-[280px] text-xs leading-[1.3] text-[#999] lg:text-[15px]">{ecommerce ? ecommerceContent.highlights[index].description : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nibh euismod tincidunt ut laoreet."}</p>
               </div>
             </article>
           </li>

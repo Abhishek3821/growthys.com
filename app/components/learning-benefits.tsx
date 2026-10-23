@@ -1,19 +1,20 @@
+import { websiteDesignBenefits } from "../data/website-design-content";
 import Image from "next/image";
 
 const benefits = [
-  { title: "Online Degrees", description: "Earn accredited degrees from the comfort of your home, opening doors to a world of possibilities.", icon: "degree", color: "bg-[#bd72ee]" },
-  { title: "Short Courses", description: "Enhance your skills with our concise and focused short courses, designed for quick and effective learning.", icon: "book", color: "bg-[#f58da9]" },
-  { title: "Training From Experts", description: "Immerse yourself in knowledge with industry experts guiding you through hands-on experiences.", icon: "expert", color: "bg-[#bd72ee]" },
-  { title: "1.5k+ Video Courses", description: "Dive into a vast library of over 1.5k video courses covering various subjects, offering a visual learning experience.", icon: "video", color: "bg-[#f58da9]" },
+  { title: websiteDesignBenefits[0].title, description: websiteDesignBenefits[0].description, icon: "degree", color: "bg-[#bd72ee]" },
+  { title: websiteDesignBenefits[1].title, description: websiteDesignBenefits[1].description, icon: "book", color: "bg-[#f58da9]" },
+  { title: websiteDesignBenefits[2].title, description: websiteDesignBenefits[2].description, icon: "expert", color: "bg-[#bd72ee]" },
+  { title: websiteDesignBenefits[3].title, description: websiteDesignBenefits[3].description, icon: "video", color: "bg-[#f58da9]" },
 ] as const;
 
 function BenefitIcon({ icon }: { icon: typeof benefits[number]["icon"] }) {
   return (
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="size-7 lg:size-8" aria-hidden="true">
-      {icon === "degree" && <><path d="m3 11 13-7 13 7-13 7-13-7Zm5 3v8c5 5 11 5 16 0v-8m5-3v12" /></>}
-      {icon === "book" && <><path d="M16 8c-4-3-8-3-12-2v19c4-1 8-1 12 2 4-3 8-3 12-2V6c-4-1-8-1-12 2Zm0 0v19" /></>}
-      {icon === "expert" && <><circle cx="16" cy="10" r="5" fill="currentColor" stroke="none" /><path d="M6 27v-3a10 10 0 0 1 20 0v3H6Z" fill="currentColor" stroke="none" /></>}
-      {icon === "video" && <path d="m12 7 14 9-14 9V7Z" fill="currentColor" stroke="none" />}
+      {icon === "degree" && <><circle cx="12" cy="10" r="4" /><path d="M4 27v-3a8 8 0 0 1 16 0v3H4Zm18-20a4 4 0 0 1 0 8m2 5a7 7 0 0 1 4 7" /></>}
+      {icon === "book" && <><rect x="4" y="7" width="24" height="21" rx="3" /><path d="M10 4v6m12-6v6M4 14h24m-17 7 4 4 7-7" /></>}
+      {icon === "expert" && <><path d="M5 5v22h23M10 21l6-6 5 3 7-10m-7 0h7v7" /></>}
+      {icon === "video" && <><path d="M5 18v-3a11 11 0 0 1 22 0v7a6 6 0 0 1-6 6h-4" /><rect x="3" y="15" width="6" height="9" rx="2" /><rect x="23" y="15" width="6" height="9" rx="2" /></>}
     </svg>
   );
 }
@@ -24,12 +25,12 @@ export default function LearningBenefits() {
       <div className="mx-auto grid max-w-[1400px] items-center gap-10 md:grid-cols-[1fr_1.05fr] md:gap-12 lg:gap-20">
         <div className="mx-auto w-full max-w-[570px] rounded-[30%] border-2 border-dashed border-[#d8c4df] p-2.5 sm:p-3.5">
           <div className="relative aspect-square overflow-hidden rounded-[29%] bg-[#e1c6f6]">
-            <Image src="/images/website-design/learning-students.png" alt="Four smiling students holding notebooks and textbooks against pink and purple backgrounds" fill sizes="(max-width: 767px) 90vw, (max-width: 1400px) 45vw, 570px" className="object-cover" />
+            <Image src="/images/website-design/graphics/design-development-team.webp" alt="An illustrative website design and development team collaborating on a project" fill quality={95} sizes="(max-width: 767px) 90vw, (max-width: 1400px) 45vw, 570px" className="object-cover" />
           </div>
         </div>
 
         <div>
-          <h2 id="learning-benefits-heading" className="max-w-[570px] text-[clamp(28px,2.9vw,44px)] font-semibold leading-[1.15] tracking-[-0.035em]"><span className="text-[#be81ba]">Benefits</span> From Our Online Learning</h2>
+          <h2 id="learning-benefits-heading" className="max-w-[570px] text-[clamp(28px,2.9vw,44px)] font-semibold leading-[1.15] tracking-[-0.035em]"><span className="text-[#be81ba]">Benefits</span> of Working With Growthys</h2>
           <ul className="mt-7 grid gap-6 lg:mt-8 lg:gap-7">
             {benefits.map((benefit) => (
               <li key={benefit.icon} className="flex items-start gap-4 lg:gap-5">

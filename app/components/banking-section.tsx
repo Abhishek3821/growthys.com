@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import personalImage from "../../public/images/banking/personal.webp";
-import businessImage from "../../public/images/banking/business.webp";
-import freelanceImage from "../../public/images/banking/freelance.webp";
+import personalImage from "../../public/images/homepage/plan-personal.webp";
+import businessImage from "../../public/images/homepage/plan-business.webp";
+import freelanceImage from "../../public/images/homepage/plan-enterprise.webp";
 import styles from "./banking-section.styles";
 
 const plans = [

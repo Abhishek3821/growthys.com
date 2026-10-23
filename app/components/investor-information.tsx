@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useRef, useState, type KeyboardEvent } from "react";
-import quickLinksImage from "../../public/images/investors/quick-links.webp";
-import financialsImage from "../../public/images/investors/financials.webp";
-import newsImage from "../../public/images/investors/news-events.webp";
+import quickLinksImage from "../../public/images/homepage/why-partnership.webp";
+import financialsImage from "../../public/images/homepage/why-team.webp";
+import newsImage from "../../public/images/homepage/why-india.webp";
 import styles from "./investor-information.styles";
 
 const categories = [
@@ -29,7 +29,7 @@ const categories = [
     description: "From SEO and performance marketing to CRM & management software, HRMS software development, and best design agency-quality creative — we cover the full stack. As a software development company and IT consulting company, we support every stage of your growth.",
   },
   {
-    id: "shares", title: "Transparent Reporting and Ongoing Support", image: newsImage,
+    id: "shares", title: "Transparent Reporting and Ongoing Support", image: quickLinksImage,
     description: "You see the same numbers we see. Monthly reports, clear KPIs, and honest updates — even when results are slow. Our IT support services company in India-style maintenance keeps your systems running long after launch.",
   },
 ];

@@ -1,0 +1,85 @@
+{
+  "tool": "Built-in image_gen",
+  "style": "Editorial paper collage and campaign mockups with coral, raspberry, lavender and cyan accents.",
+  "resolutionNote": "4K upscaled WebP exports. Original native dimensions are recorded separately. Original PNGs preserved, hero alpha retained.",
+  "assets": [
+    {
+      "name": "hero-social-studio",
+      "width": 3840,
+      "height": 3200,
+      "transparent": true,
+      "prompt": "Use case: ads-marketing. Hero cutout for social media marketing page. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. A striking three-quarter smartphone with a refined fashion reel mockup, framed by three staggered social post creative cards, a mini rising reach chart, a camera lens and tactile paper reaction bubbles. Bold contemporary visual storytelling. Portrait-oriented device centered in landscape 6:5 composition. True transparent background, no floor or solid backdrop. Keep lower left quiet for an existing reach overlay. Hero-quality precise reflections, nothing cropped.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-03fa3368-89b9-4976-a21d-fcd1cbcf1e07.png"
+    },
+    {
+      "name": "reel-campaign",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 3:4 campaign portfolio artwork: an elegant smartphone showing a full-length fashion editorial still of an Indian woman wearing a vivid coral outfit, overlaid play symbol, tasteful reel timeline, cropped film contact sheets behind it. Lavender and peach paper studio ground. This is a visual example of a fashion reel campaign, not a generic person portrait. Preserve face and limbs correctly, premium fashion photography and print finish.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-59c64436-9d11-4b41-8197-eae88935fa22.png"
+    },
+    {
+      "name": "linkedin-content",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Landscape 4:3 B2B social content system visual: tablet with a polished professional social feed containing a business portrait, article card and clean blank text rows, organised stack of editorial planning cards beside it, a neat abstract reach bar chart. White, cyan and cobalt paper layers with coral accents. No logos, no legible copy, no brand marks. Premium business publishing mockup.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-31764d92-f78a-449d-9b17-ce71bb51ecb7.png"
+    },
+    {
+      "name": "festive-carousel",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Landscape 4:3 festive home decor carousel campaign: three overlapping vertical social post mockups showing beautifully photographed contemporary Indian home decor with ceramic vases, festive marigold details and warm lamps. Each card has coherent elegant layout using blank graphic bars rather than text, small bookmark shapes imply saved posts. Raspberry and peach printed paper ground, editorial brand campaign art.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-cee1254d-0b78-4759-9294-0d499d773c4d.png"
+    },
+    {
+      "name": "creative-team",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Premium Indian social media creative team in a refined Gurugram style agency studio, portrait 3:4. Three colleagues reviewing a phone reel and a laptop content calendar beside printed coral lavender cyan campaign moodboards. Natural expressions, one designer holding a tablet, authentic anatomically correct hands and faces. Bright soft editorial daylight, vivid but tasteful colours from social campaign mockups. Central crop-safe composition, no readable text logos watermark, no school or therapy setting, exceptional photographic detail.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-928bb59a-f150-4872-95f8-937882518a0c.png"
+    },
+    {
+      "name": "discover",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Brand discovery: an editorial research moodboard with audience portrait contact sheets, a magnifying glass, colour swatches, blank competitor social feed cards, arranged thoughtfully on lavender paper. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ab036068-3fb6-49ff-8a29-bde5f0d4e6b1.png"
+    },
+    {
+      "name": "plan",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Content planning: a beautifully organised content calendar grid filled with miniature photo thumbnails and coloured blank schedule blocks, spiral planner and a few tangible sticky notes, peach and cyan paper layers. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-76cd4630-19d0-45ae-aebf-a650a094fbb9.png"
+    },
+    {
+      "name": "create",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Content production: a smartphone on a small filming stand, a camera lens, desktop reel editing timeline with bright thumbnail strips and a stylus over layered creative cards, raspberry and lavender studio papers. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-275cc933-b38a-4ba7-a305-506858dab5b7.png"
+    },
+    {
+      "name": "review",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Client approval: an elegant tablet displaying a social carousel preview with a large subtle check mark, two feedback comment bubbles and revision cards, tactile mint and coral accents with lavender paper. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9a42059b-2609-47fb-8bc1-23e61776e33d.png"
+    },
+    {
+      "name": "publish",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Publishing and community: a phone showing a cohesive social feed, scheduled clock dial, small reply bubbles and a paper-plane message form, crisp cyan and coral editorial paper layout. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-818bafcf-761e-4bfa-8f3c-ad905ded31ec.png"
+    },
+    {
+      "name": "measure",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: ads-marketing. Premium art-directed social media agency artwork, layered editorial paper collage blended with precise photographic product mockups, tasteful coral, raspberry, lavender, butter yellow and cyan drawn from a colourful social marketing website. Beautiful tactile printed paper, crisp screen glass, soft studio shadows, sophisticated deliberate composition rather than generic floating icons. No readable typography, no random letters, no logos or watermark. All key objects within central 65 percent for safe cropping, ample breathing space. Request highest native 4K detail. Portrait 2:3 process card illustration. Monthly measurement: a refined tablet with clear colourful reach bars, engagement line curve, doughnut and compact audience cards, a magnifying lens and printed monthly report sheet, lavender and butter yellow papers. No hands or people needed, crisp professional conceptual still life with digital interfaces and realistic layered print materials, focal subject centred vertically.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-112af26f-c09e-4205-a7c6-7b937447b94b.png"
+    }
+  ]
+}

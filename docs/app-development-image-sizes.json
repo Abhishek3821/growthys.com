@@ -1,0 +1,112 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 989336,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\hero.webp"
+  },
+  {
+    "name": "app-types",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1147876,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\app-types.webp"
+  },
+  {
+    "name": "discovery",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 923048,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\discovery.webp"
+  },
+  {
+    "name": "testing",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 934176,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\testing.webp"
+  },
+  {
+    "name": "product-planning",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1171414,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\product-planning.webp"
+  },
+  {
+    "name": "accounts",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 592976,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\accounts.webp"
+  },
+  {
+    "name": "payments",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 809546,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\payments.webp"
+  },
+  {
+    "name": "tracking",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 590856,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\tracking.webp"
+  },
+  {
+    "name": "offline",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 659644,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\offline.webp"
+  },
+  {
+    "name": "analytics",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 646994,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\app-development\\graphics\\analytics.webp"
+  }
+]

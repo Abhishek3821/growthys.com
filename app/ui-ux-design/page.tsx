@@ -1,3 +1,4 @@
+import { uiUxContent } from "../data/ui-ux-content";
 import type { Metadata } from "next";
 import UiUxHero from "../components/ui-ux-hero";
 import UiUxBenefits from "../components/ui-ux-benefits";
@@ -12,7 +13,7 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "UI/UX Design | Growthys", description: "Explore expressive UI/UX design and imaginative digital experiences with Growthys." };
+export const metadata: Metadata = { title: "UI/UX Design | Growthys", description: uiUxContent.hero.description };
 export default function UiUxDesignPage() {
   return (
     <>
@@ -26,8 +27,8 @@ export default function UiUxDesignPage() {
         <UiUxEveryday />
         <UiUxTennisCommunity />
         <UiUxTestimonials />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta uiUx />
+        <FaqSection items={uiUxContent.faqs} eyebrow={uiUxContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

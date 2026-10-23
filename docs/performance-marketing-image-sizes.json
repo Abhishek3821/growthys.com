@@ -1,0 +1,82 @@
+[
+  {
+    "name": "campaign-growth-hero",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 565746,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\campaign-growth-hero.webp"
+  },
+  {
+    "name": "growth-partner",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 404900,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\growth-partner.webp"
+  },
+  {
+    "name": "budget-optimization",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 320940,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\budget-optimization.webp"
+  },
+  {
+    "name": "lead-generation",
+    "originalWidth": 941,
+    "originalHeight": 1672,
+    "width": 2160,
+    "height": 3840,
+    "bytes": 600450,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\lead-generation.webp"
+  },
+  {
+    "name": "ecommerce-sales",
+    "originalWidth": 941,
+    "originalHeight": 1672,
+    "width": 2160,
+    "height": 3840,
+    "bytes": 656040,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\ecommerce-sales.webp"
+  },
+  {
+    "name": "app-signups",
+    "originalWidth": 941,
+    "originalHeight": 1672,
+    "width": 2160,
+    "height": 3840,
+    "bytes": 428666,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\app-signups.webp"
+  },
+  {
+    "name": "brand-awareness",
+    "originalWidth": 941,
+    "originalHeight": 1672,
+    "width": 2160,
+    "height": 3840,
+    "bytes": 492934,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\brand-awareness.webp"
+  },
+  {
+    "name": "campaign-challenges-atlas",
+    "originalWidth": 1774,
+    "originalHeight": 887,
+    "width": 3840,
+    "height": 1920,
+    "bytes": 566108,
+    "upscaled": true,
+    "output": "public\\images\\services\\performance-marketing\\campaign-challenges-atlas.webp"
+  }
+]

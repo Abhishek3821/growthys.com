@@ -1,3 +1,4 @@
+import { ecommerceContent } from "../data/ecommerce-content";
 import Image from "next/image";
 import type { CSSProperties } from "react";
 
@@ -8,17 +9,19 @@ const steps = [
   { title: "Delivery", description: "Providing a complete scalable identity.", image: "delivery", alt: "Three finished colourful app icons with distinct abstract brand marks", paper: "#fff0e9", ink: "#ec6719", note: "Complete file with all necessary formats", angle: "-12deg" },
 ] as const;
 
-export default function BrandingSteps() {
+export default function BrandingSteps({ ecommerce = false }: { ecommerce?: boolean } = {}) {
   return (
     <section aria-labelledby="branding-steps-heading" className="mx-auto max-w-[1800px] overflow-hidden bg-[#f5f5f5] px-5 py-12 text-[#242424] sm:px-7 lg:px-10 lg:py-16">
-      <h2 id="branding-steps-heading" className="sr-only">Our design process, from discovery to delivery</h2>
+      <h2 id="branding-steps-heading" className="sr-only">{ecommerce ? ecommerceContent.process.title : "Our design process, from discovery to delivery"}</h2>
       <div className="mx-auto max-w-[1500px]">
         <ol className="mx-auto grid max-w-[1100px] gap-6 md:grid-cols-2 lg:gap-10 xl:w-[calc(100%-260px)]">
-          {steps.map((step, index) => (
+          {steps.map((original, index) => {
+          const step = ecommerce ? { ...original, ...ecommerceContent.process.steps[index], note: ["Products, audience, and goals", "Store structure and integrations", "Checkout, speed, and mobile", "Ready to launch and grow"][index] } : original;
+          return (
             <li key={step.title} style={{ "--step-paper": step.paper, "--step-ink": step.ink, "--note-angle": step.angle } as CSSProperties} className="relative flex min-w-0 flex-col rounded-[26px] bg-white p-4 lg:rounded-[30px] lg:p-5">
               <p className="relative z-10 text-xs text-[#898989] lg:text-sm">Step {index + 1}</p>
               <div className="relative -mb-4 mt-1 aspect-[1.75] overflow-hidden rounded-xl">
-                <Image src={`/images/services/branding-steps/${step.image}.webp`} alt={step.alt} fill sizes="(max-width: 767px) 90vw, (max-width: 1279px) 45vw, 550px" className="object-contain" />
+                <Image src={ecommerce ? `/images/services/ecommerce-solutions/${step.image}.webp` : `/images/services/branding-steps/${step.image}.webp`} alt={ecommerce ? ["Product research notebook, audience insights and a magnifying glass for store discovery", "Connected product cards and checkout flows for planning an online store", "Mobile checkout testing, payment confirmation and store speed checks", "Completed online storefront, delivery parcel and launch confirmation"][index] : step.alt} quality={ecommerce ? 95 : 75} fill sizes="(max-width: 767px) 90vw, (max-width: 1279px) 45vw, 550px" className="object-contain" />
               </div>
               <div className="relative isolate mt-auto rounded-[12px] bg-[var(--step-paper)] px-5 pb-5 pt-4 lg:px-6 lg:pb-6">
                 <span className="absolute -top-7 left-0 -z-10 h-9 w-[65%] rounded-tl-[12px] bg-[var(--step-paper)] [clip-path:polygon(0_0,78%_0,100%_100%,0_100%)]" aria-hidden="true" />
@@ -31,7 +34,7 @@ export default function BrandingSteps() {
                 <p>{step.note}</p>
               </aside>
             </li>
-          ))}
+          ); })}
         </ol>
       </div>
     </section>

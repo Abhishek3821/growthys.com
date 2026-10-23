@@ -1,3 +1,4 @@
+import { contentMarketingContent } from "../data/content-marketing-content";
 import type { Metadata } from "next";
 import ContentMarketingHero from "../components/content-marketing-hero";
 import ContentMarketingAbout from "../components/content-marketing-about";
@@ -11,7 +12,7 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "Content Marketing | Growthys", description: "Discover bold storytelling and creative content marketing with Growthys." };
+export const metadata: Metadata = { title: "Content Marketing | Growthys", description: contentMarketingContent.hero.description };
 export default function ContentMarketingPage() {
   return (
     <>
@@ -24,8 +25,8 @@ export default function ContentMarketingPage() {
         <ContentMarketingCareSafety />
         <ContentMarketingSelectedWork />
         <ContentMarketingProducts />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta contentMarketing />
+        <FaqSection items={contentMarketingContent.faqs} eyebrow={contentMarketingContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

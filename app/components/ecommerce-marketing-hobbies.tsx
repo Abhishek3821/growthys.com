@@ -1,12 +1,13 @@
+import { ecommerceMarketingContent } from "../data/ecommerce-marketing-content";
 import Image from "next/image";
 import styles from "./ecommerce-marketing-hobbies.module.css";
 
-const hobbies = ["Reading", "Travel", "Photography", "Hiking", "Design", "Running", "Art", "Music", "Gardening"];
+const hobbies = ecommerceMarketingContent.love.items;
 const photos = [
-  { name: "garden", alt: "A woman relaxing in a lush tropical garden" },
-  { name: "exploring", alt: "A woman exploring a sunny rocky landscape" },
-  { name: "sunshine", alt: "A woman enjoying the sunshine beside a cactus" },
-  { name: "weekend", alt: "A relaxed moment on a sunlit wooden bench" },
+  { name: "product-page", alt: "Product page optimization with product details, colour options and a purchase button" },
+  { name: "cart-recovery", alt: "Abandoned cart recovery using automated email" },
+  { name: "ad-testing", alt: "Comparing product advertising creatives and audiences" },
+  { name: "revenue-analytics", alt: "Ecommerce dashboard measuring sales and completed orders" },
 ];
 
 export default function EcommerceMarketingHobbies() {
@@ -14,19 +15,19 @@ export default function EcommerceMarketingHobbies() {
     <section aria-labelledby="ecommerce-hobbies-heading" className={styles.section}>
       <div className={styles.poster}>
         <div className={styles.content}>
-          <h2 id="ecommerce-hobbies-heading">HOBBIES</h2>
-          <p className={styles.introduction}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <h2 id="ecommerce-hobbies-heading" aria-label={ecommerceMarketingContent.love.title}>WE LOVE</h2>
+          <p className={styles.introduction}>{ecommerceMarketingContent.love.title}</p>
           <div className={styles.description}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>{ecommerceMarketingContent.love.intro}</p>
+            <p>{ecommerceMarketingContent.perspective.takeaway}</p>
           </div>
           <div className={styles.interests}>
-            <ul aria-label="Hobbies and interests">{hobbies.map((hobby) => <li key={hobby}>{hobby}</li>)}</ul>
-            <p className={styles.verticalCopy}>PERSONAL INTERESTS<br />LIFE BEYOND THE WORK<br />HASU — VOL. 05</p>
+            <ul aria-label="The ecommerce marketing details we love">{hobbies.map((hobby) => <li key={hobby}>{hobby}</li>)}</ul>
+            <p className={styles.verticalCopy}>PRODUCT PAGES TO DELIVERY<br />DETAILS THAT DRIVE REVENUE<br />GROWTHYS — VOL. 05</p>
           </div>
         </div>
-        <div className={styles.photos}>{photos.map((photo) => <div key={photo.name} className={styles.photo}><Image src={`/images/ecommerce-marketing/hobbies/${photo.name}.webp`} alt={photo.alt} fill sizes="(max-width: 767px) 44vw, 26vw" className="object-cover" /></div>)}</div>
-        <div className={styles.footer} aria-hidden="true"><span>LET’S MAKE YOUR BRAND<br />IMPOSSIBLE TO IGNORE</span><span>DESIGNED TO LEAVE A MARK</span><span>HASU — 05</span></div>
+        <div className={styles.photos}>{photos.map((photo) => <div key={photo.name} className={styles.photo}><Image quality={95} src={`/images/ecommerce-marketing/graphics/${photo.name}.webp`} alt={photo.alt} fill sizes="(max-width: 767px) 44vw, 26vw" className="object-cover" /></div>)}</div>
+        <div className={styles.footer} aria-hidden="true"><span>LET’S MAKE YOUR STORE<br />IMPOSSIBLE TO IGNORE</span><span>BUILT FOR COMPLETED ORDERS</span><span>GROWTHYS — 05</span></div>
       </div>
     </section>
   );

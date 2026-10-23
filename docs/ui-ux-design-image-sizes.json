@@ -1,0 +1,134 @@
+[
+  {
+    "name": "design-workflow",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 478978,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\design-workflow.webp"
+  },
+  {
+    "name": "saas-dashboard",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 505400,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\saas-dashboard.webp"
+  },
+  {
+    "name": "banking-app",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 552500,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\banking-app.webp"
+  },
+  {
+    "name": "checkout",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 510172,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\checkout.webp"
+  },
+  {
+    "name": "healthcare-booking",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 524030,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\healthcare-booking.webp"
+  },
+  {
+    "name": "travel-food",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1117140,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\travel-food.webp"
+  },
+  {
+    "name": "design-system",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 746064,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\design-system.webp"
+  },
+  {
+    "name": "user-research",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 889962,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\user-research.webp"
+  },
+  {
+    "name": "prototype-testing",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 799704,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\prototype-testing.webp"
+  },
+  {
+    "name": "design-workspace",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1022626,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\design-workspace.webp"
+  },
+  {
+    "name": "product-team",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 967242,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\product-team.webp"
+  },
+  {
+    "name": "handoff",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 834196,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\ui-ux-design\\graphics\\handoff.webp"
+  }
+]

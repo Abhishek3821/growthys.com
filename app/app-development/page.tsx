@@ -1,3 +1,4 @@
+import { appDevelopmentContent } from "../data/app-development-content";
 import type { Metadata } from "next";
 import AppDevelopmentHero from "../components/app-development-hero";
 import AppDevelopmentApproach from "../components/app-development-approach";
@@ -12,7 +13,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "App Development | Growthys",
-  description: "Build impactful digital experiences with Growthys app development, strategy, and design.",
+  description: appDevelopmentContent.hero.description,
 };
 
 export default function AppDevelopmentPage() {
@@ -25,8 +26,8 @@ export default function AppDevelopmentPage() {
       <AppDevelopmentParkAbout />
       <AppDevelopmentPetCare />
       <AppDevelopmentGallery />
-      <BenefitsCta />
-      <FaqSection />
+      <BenefitsCta appDevelopment />
+      <FaqSection items={appDevelopmentContent.faqs} eyebrow={appDevelopmentContent.cta.trusted} />
     </main>
     <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" /></>
   );

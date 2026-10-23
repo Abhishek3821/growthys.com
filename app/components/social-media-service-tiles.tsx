@@ -1,3 +1,4 @@
+import { socialMediaContent } from "../data/social-media-content";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./social-media-service-tiles.module.css";
@@ -14,24 +15,24 @@ function TileIcon({ kind }: { kind: string }) {
 }
 
 const tiles = [
-  { name: "Audio experiences", image: "/images/digital-marketing/marquee/headphones.webp", kind: "", dark: true },
-  { name: "Project management", image: "/images/hrms-portfolio/architecture.webp", kind: "layout", dark: true },
-  { name: "Creative process", image: "", kind: "recycle", dark: false },
-  { name: "Brand ideas", image: "", kind: "diamond", dark: false },
-  { name: "Brand design", image: "/images/hrms-selected-projects/shopping-bag.webp", kind: "", dark: true },
-  { name: "Digital strategy", image: "", kind: "flag", dark: false },
-  { name: "Visual storytelling", image: "/images/website-design/zebras.webp", kind: "", dark: true },
-  { name: "Creative campaigns", image: "/images/hrms-portfolio/typewriter.webp", kind: "spark", dark: true },
+  { name: "Reels & Video", image: "/images/social-media/graphics/reel-campaign.webp", kind: "", dark: true },
+  { name: "Content Calendars", image: "/images/social-media/graphics/plan.webp", kind: "layout", dark: true },
+  { name: "Content Creation", image: "", kind: "recycle", dark: false },
+  { name: "Brand Voice", image: "", kind: "diamond", dark: false },
+  { name: "Carousel Design", image: "/images/social-media/graphics/festive-carousel.webp", kind: "", dark: true },
+  { name: "Platform Strategy", image: "", kind: "flag", dark: false },
+  { name: "Stories & Community", image: "/images/social-media/graphics/publish.webp", kind: "", dark: true },
+  { name: "Captions & Reporting", image: "/images/social-media/graphics/measure.webp", kind: "spark", dark: true },
 ];
 
 export default function SocialMediaServiceTiles() {
-  return <section className={styles.section} aria-labelledby="social-service-tiles-heading"><h2 id="social-service-tiles-heading" className="sr-only">Creative services and capabilities</h2><div className={styles.layout}>
+  return <section className={styles.section} aria-labelledby="social-service-tiles-heading"><h2 id="social-service-tiles-heading" className="sr-only">{socialMediaContent.services.capabilities}</h2><div className={styles.layout}>
     <div className={styles.serviceCards}>
-      <article className={styles.service}><span className={styles.serviceIcon}><TileIcon kind="service"/></span><h3>Service your solutions</h3><p>Useful solutions that bring your business goals, creative ideas and audience together through thoughtful design.</p><Link href="/contact#contact-inquiry">Get started</Link></article>
-      <article className={styles.service}><span className={styles.serviceIcon}><TileIcon kind="spark"/></span><h3>Projects, built together</h3><p>Explore a collaborative approach to content, digital experiences and visual communication for your brand.</p><Link href="/contact#contact-inquiry">Get started</Link></article>
+      <article className={styles.service}><span className={styles.serviceIcon}><TileIcon kind="service"/></span><h3>{socialMediaContent.services.solutions.title}</h3><p>{socialMediaContent.services.solutions.description}</p><Link href="/contact#contact-inquiry">Get started</Link></article>
+      <article className={styles.service}><span className={styles.serviceIcon}><TileIcon kind="spark"/></span><h3>{socialMediaContent.services.projects.title}</h3><p>{socialMediaContent.services.projects.description}</p><Link href="/contact#contact-inquiry">Get started</Link></article>
     </div>
     <ul className={styles.tiles}>{tiles.map(tile=><li key={tile.name} className={`${styles.tile} ${tile.dark ? styles.dark : ""}`}><Link href="/contact#contact-inquiry" aria-label={`Enquire about ${tile.name}`}>
-      {tile.image && <Image src={tile.image} alt="" fill sizes="(max-width:767px) 42vw, 12vw" className="object-cover"/>}
+      {tile.image && <Image quality={95} src={tile.image} alt="" fill sizes="(max-width:767px) 42vw, 12vw" className="object-cover"/>}
       {tile.kind && <span className={styles.tileIcon}><TileIcon kind={tile.kind}/></span>}
       <span className={styles.tileName}>{tile.name}</span>
     </Link></li>)}</ul>

@@ -1,3 +1,4 @@
+import { socialMediaContent } from "../data/social-media-content";
 import type { Metadata } from "next";
 import SocialMediaHero from "../components/social-media-hero";
 import SocialMediaCurriculum from "../components/social-media-curriculum";
@@ -12,7 +13,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Social Media Marketing | Growthys",
-  description: "Grow your brand through creative social media marketing with Growthys.",
+  description: socialMediaContent.hero.description,
 };
 
 export default function SocialMediaMarketingPage() {
@@ -26,8 +27,8 @@ export default function SocialMediaMarketingPage() {
         <SocialMediaServiceTiles />
         <SocialMediaAboutCare />
         <SocialMediaTravelArticles />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta socialMedia />
+        <FaqSection items={socialMediaContent.faqs} eyebrow={socialMediaContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useEffect, useState, type CSSProperties } from "react";
-import dunes from "../../public/images/travel-deck/golden-dunes.webp";
-import cliffs from "../../public/images/travel-deck/sunset-cliffs.webp";
-import coast from "../../public/images/travel-deck/azure-coast.webp";
-import map from "../../public/images/travel-deck/world-map.webp";
-import beach from "../../public/images/destinations/siargao.webp";
-import island from "../../public/images/destinations/el-nido.webp";
+import dunes from "../../public/images/homepage/service-seo.webp";
+import cliffs from "../../public/images/homepage/service-performance.webp";
+import coast from "../../public/images/homepage/service-web.webp";
+import map from "../../public/images/homepage/services-network.webp";
+import beach from "../../public/images/homepage/service-software.webp";
+import island from "../../public/images/homepage/service-crm-hrms.webp";
 import styles from "./travel-card-carousel.styles";
 
 const destinations = [

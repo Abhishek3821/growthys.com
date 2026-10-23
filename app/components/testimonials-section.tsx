@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import portraits from "../../public/images/testimonial-portraits.webp";
+import portraits from "../../public/images/homepage/industry-portraits.webp";
 import styles from "./testimonials-section.styles";
 
 const columns = [

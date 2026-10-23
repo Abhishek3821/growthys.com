@@ -3,11 +3,10 @@
 import { useState, type FormEvent } from "react";
 import styles from "./contact-details.styles";
 
-// Contact values follow the supplied design and remain placeholders.
 const contactCards = [
-  { icon: "phone", title: "(+654) 764 7654", description: "Have a question or an idea? Let's talk about your goals and find the right way forward.", target: "#contact-inquiry" },
-  { icon: "email", title: "mail@lawnc.com", description: "Tell us what you have in mind. Share a few details and start a conversation with our team.", target: "#contact-inquiry" },
-  { icon: "location", title: "London Eye, UK", description: "Great ideas can start anywhere. Find our location and plan your next conversation with us.", target: "#contact-location" },
+  { icon: "phone", title: "+91 9625663269", description: "Got a question, a rough idea, or a full brief? Doesn't matter. Reach out and we'll listen first.", target: "tel:+919625663269", action: "Call Us" },
+  { icon: "email", title: "growthysofficial@gmail.com", description: "Send an Email and our team will get back to you with a clear, honest response. No automated replies, no pushy follow-ups.", target: "mailto:growthysofficial@gmail.com", action: "Send an Email" },
+  { icon: "location", title: "Find Us in Gurugram", description: "Our office sits in the heart of Gurugram, Haryana. Drop by for a coffee and a conversation — or connect with us online if you're further away. Address: Gurugram, Haryana, India", target: "#contact-location", action: "View Location" },
 ] as const;
 
 function ContactIcon({ name }: { name: (typeof contactCards)[number]["icon"] }) {
@@ -41,31 +40,31 @@ export default function ContactDetails() {
               <div className={styles.icon}><ContactIcon name={card.icon} /></div>
               <h2>{card.title}</h2>
               <p>{card.description}</p>
-              <a className={styles.learnMore} href={card.target}><span aria-hidden="true">↗</span> Learn More</a>
+              <a className={styles.learnMore} href={card.target}><span aria-hidden="true">↗</span> {card.action}</a>
             </article>
           ))}
         </div>
         <div className={styles.lower}>
           <div className={styles.information}>
             <div className={styles.hours}>
-              <h2>Our Working Time</h2>
-              <p>Planning a conversation? Take a look at our working hours and choose a time that works for you.</p>
+              <h2>When We’re Around</h2>
+              <p>Pick a time that suits you. We keep our hours simple and our replies quick.</p>
               <ul>
-                <li><HoursIcon /><span>Monday–Friday: <strong>7AM–5PM</strong></span></li>
-                <li><HoursIcon /><span>Saturday: <strong>9AM–4PM</strong></span></li>
-                <li><HoursIcon closed /><span>Sunday: <strong>Holiday</strong></span></li>
+                <li><HoursIcon /><span>Monday–Saturday: <strong>From 10:00 AM IST</strong></span></li>
+                <li><HoursIcon /><span>Client Support: <strong>Available any time through your support portal</strong></span></li>
+                <li><HoursIcon closed /><span>Sunday: <strong>Closed — emails answered within 24 hours</strong></span></li>
               </ul>
             </div>
             <div className={styles.location} id="contact-location">
-              <h2>Location :</h2>
+              <h2>Gurugram, Haryana, India</h2>
               <div className={styles.map}>
-                <iframe title="Map showing London Eye, UK" src="https://maps.google.com/maps?q=London%20Eye%2C%20UK&z=13&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+                <iframe title="Map showing Gurugram, Haryana, India" src="https://maps.google.com/maps?q=Gurugram%2C%20Haryana%2C%20India&z=13&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
               </div>
             </div>
           </div>
           <div className={styles.inquiry} id="contact-inquiry">
-            <span className={styles.badge}>Contact Us</span>
-            <h2>Get In Touch !</h2>
+            <span className={styles.badge}>Big Results Begin With a Small Hello</span>
+            <h2>A Few Details, and We’re Off</h2>
             <form className={styles.form} onSubmit={handleSubmit} onChange={() => setShowNotice(false)}>
               <label htmlFor="inquiry-email">Email<input id="inquiry-email" name="email" type="email" autoComplete="email" placeholder="Email" required /></label>
               <label htmlFor="inquiry-name">Name<input id="inquiry-name" name="name" autoComplete="name" placeholder="Name" required maxLength={100} /></label>

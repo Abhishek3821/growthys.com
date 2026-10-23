@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./navbar";
-import coffeeImage from "../../public/images/contact/coffee-moment.webp";
-import productImage from "../../public/images/contact/espresso-maker.webp";
+import coffeeImage from "../../public/images/contact/graphics/conversation.webp";
+import productImage from "../../public/images/contact/graphics/communication.webp";
 import styles from "./contact-hero.styles";
 
 function Arrow() {
@@ -17,17 +17,17 @@ export default function ContactHero() {
         <Navbar onHomePage={false} />
       </header>
       <section className={styles.hero} aria-labelledby="contact-hero-heading">
-        <Image src={coffeeImage} alt="A warm cup of coffee being poured outdoors, ready for a conversation" fill preload placeholder="blur" sizes="100vw" className={styles.scene} />
+        <Image quality={95} src={coffeeImage} alt="Conceptual agency team discussing a project over coffee in a bright office" fill preload placeholder="blur" sizes="100vw" className={styles.scene} />
         <div className={styles.shade} />
         <div className={styles.panel}>
           <div className={styles.titleRow}>
-            <h1 id="contact-hero-heading">growthys<span className={styles.srOnly}> — Contact us</span></h1>
+            <h1 id="contact-hero-heading" aria-label="Let’s Start Something Worth Building">growthys<span className={styles.srOnly}> — Contact us</span></h1>
             <p className={styles.contactLabel}>CONTACT<span>US</span></p>
           </div>
           <div className={styles.introRow}>
-            <div className={styles.thumbnail}><Image src={coffeeImage} alt="" fill sizes="140px" className={styles.thumbnailImage} /></div>
+            <div className={styles.thumbnail}><Image quality={95} src={coffeeImage} alt="" fill sizes="140px" className={styles.thumbnailImage} /></div>
             <div className={styles.intro}>
-              <p>Good conversations lead to great things. Tell us what you have in mind—let&apos;s build it together.</p>
+              <p><strong>Let&apos;s Start Something Worth Building</strong><br/>Every project begins with a simple message. Tell us where you want your business to go, and we&apos;ll help you plan the route.</p>
               <div className={styles.actions}>
                 <a href="#contact-inquiry" className={styles.pill}>Let&apos;s talk</a>
                 <Link href="/" className={styles.pill}>Back home</Link>
@@ -39,10 +39,10 @@ export default function ContactHero() {
         <div className={styles.productWedge} aria-hidden="true">
           <div className={styles.productBackground}>
             <svg className={styles.contours} viewBox="0 0 600 600" fill="none"><path d="M700 20C280-140 330 230 100 250S-30 650 280 650M700 60C320-80 370 270 140 290S10 690 320 690M700 100C360-20 410 310 180 330S50 730 360 730M700 140C400 40 450 350 220 370S90 770 400 770M700 180C440 100 490 390 260 410S130 810 440 810" stroke="currentColor" strokeWidth="1.5" /></svg>
-            <Image src={productImage} alt="" fill sizes="(max-width: 700px) 55vw, 45vw" className={styles.product} />
+            <Image quality={95} src={productImage} alt="" fill sizes="(max-width: 700px) 55vw, 45vw" className={styles.product} />
           </div>
         </div>
-        <p className={styles.caption}>Good things start with a conversation.</p>
+        <p className={styles.caption}>Big Results Begin With a Small Hello</p>
       </section>
     </div>
   );

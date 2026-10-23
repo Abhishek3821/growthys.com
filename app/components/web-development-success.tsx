@@ -1,3 +1,4 @@
+import { webDevelopmentContent } from "../data/web-development-content";
 import Image from "next/image";
 import styles from "./web-development-success.module.css";
 
@@ -23,18 +24,18 @@ export default function WebDevelopmentSuccess() {
   return (
     <section aria-labelledby="web-success-heading" className={styles.section}>
       <div className={styles.container}>
-        <h2 id="web-success-heading">New Way of Success.</h2>
+        <h2 id="web-success-heading">{webDevelopmentContent.process.title}</h2>
         <div className={styles.diagram}>
           <ol className={styles.points}>
-            {points.map((point) => (
+            {points.map((point, index) => (
               <li key={point.number} className={styles.point}>
-                <div className={styles.pointCopy}><h3>{point.number}</h3><p>Lorem ipsum dolor sit amet, vel atqui signiferumque, graece verear eu quo. In pri minim delectus, mea ad malis persius consequat.</p></div>
+                <div className={styles.pointCopy}><h3>{point.number}</h3><p>{webDevelopmentContent.process.steps[index].description}</p></div>
                 <span className={styles.icon} style={{ backgroundColor: point.color }}><SuccessIcon kind={point.kind} /></span>
               </li>
             ))}
           </ol>
           <div className={styles.portrait}>
-            <Image src="/images/services/web-development-success.webp" alt="A smiling man in a white shirt looking at his smartphone" fill sizes="(max-width: 767px) 70vw, 35vw" className="object-contain object-bottom" />
+            <Image quality={95} src="/images/web-development/graphics/success.webp" alt="Website launch, performance checks and secure cloud support illustration" fill sizes="(max-width: 767px) 70vw, 35vw" className="object-contain object-bottom" />
           </div>
         </div>
       </div>

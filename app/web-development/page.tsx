@@ -1,3 +1,4 @@
+import { webDevelopmentContent } from "../data/web-development-content";
 import type { Metadata } from "next";
 import WebDevelopmentHero from "../components/web-development-hero";
 import WebDevelopmentWelcome from "../components/web-development-welcome";
@@ -13,7 +14,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Web Development | Growthys",
-  description: "Build your brand’s next digital experience with Growthys web development services.",
+  description: webDevelopmentContent.hero.description,
 };
 
 export default function WebDevelopmentPage() {
@@ -28,8 +29,8 @@ export default function WebDevelopmentPage() {
         <WebDevelopmentStrategy />
         <WebDevelopmentReviews />
         <WebDevelopmentOffers />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta webDevelopment />
+        <FaqSection items={webDevelopmentContent.faqs} eyebrow={webDevelopmentContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

@@ -1,8 +1,9 @@
-const offers = [
-  { name: "Planning", color: "#3067f2", kind: "pin" },
-  { name: "Collaboration", color: "#26278c", kind: "collaboration" },
-  { name: "Creative solutions", color: "#f39731", kind: "idea" },
-] as const;
+import { webDevelopmentContent } from "../data/web-development-content";
+const offers = webDevelopmentContent.offers.items.map((offer, index) => ({
+  ...offer,
+  color: ["#3067f2", "#26278c", "#f39731"][index],
+  kind: (["pin", "collaboration", "idea"] as const)[index],
+}));
 
 function OfferIcon({ kind }: { kind: (typeof offers)[number]["kind"] }) {
   return <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="size-6" aria-hidden="true">
@@ -19,7 +20,7 @@ export default function WebDevelopmentOffers() {
         <div className="grid items-center gap-6 md:grid-cols-[0.9fr_0.1fr_1fr] lg:gap-12">
           <h2 id="web-offers-heading" className="text-[clamp(36px,3.8vw,56px)] font-normal leading-[1.13] tracking-[-0.04em]">What<br />We Offer.</h2>
           <span aria-hidden="true" className="hidden self-start pt-2 text-3xl font-light leading-none text-[#538bc8] md:block">+</span>
-          <p className="max-w-[540px] text-xs leading-[1.5] md:justify-self-end lg:text-sm">Lorem ipsum dolor sit amet, vel atqui signiferumque, graece verear eu quo. In pri minim delectus, mea ad malis persius consequat. Nam vitae risus sapien, praesent vestibulum adipiscing sem.</p>
+          <p className="max-w-[540px] text-xs leading-[1.5] md:justify-self-end lg:text-sm">{webDevelopmentContent.offers.intro}</p>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-3 lg:mt-12 lg:gap-7">
           {offers.map((offer) => (
@@ -27,8 +28,8 @@ export default function WebDevelopmentOffers() {
               <div className="flex items-start gap-4 lg:gap-5">
                 <span style={{ color: offer.color }} className="grid size-11 shrink-0 place-items-center rounded-full bg-[#fffdf4]"><OfferIcon kind={offer.kind} /></span>
                 <div className="pt-2">
-                  <h3 className="font-[Georgia,'Times_New_Roman',serif] text-base font-normal leading-[1.15] lg:text-xl">LOREM IPSUM<br />DOLOR SIT<br />AMET<span className="sr-only"> — {offer.name}</span></h3>
-                  <p className="mt-7 max-w-[240px] text-xs leading-[1.65] text-[#fff6df]/80 lg:mt-9 lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <h3 className="font-[Georgia,'Times_New_Roman',serif] text-base font-normal leading-[1.15] lg:text-xl">{offer.name}</h3>
+                  <p className="mt-7 max-w-[240px] text-xs leading-[1.65] text-[#fff6df]/80 lg:mt-9 lg:text-sm">{offer.description}</p>
                 </div>
               </div>
             </article>

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "width": 3840,
+    "height": 2560,
+    "bytes": 765922,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\graphic-designing\\graphics\\hero.webp"
+  },
+  {
+    "name": "design-packages",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1173584,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\graphic-designing\\graphics\\design-packages.webp"
+  },
+  {
+    "name": "brand-system",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1350888,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\graphic-designing\\graphics\\brand-system.webp"
+  },
+  {
+    "name": "design-process",
+    "originalWidth": 1122,
+    "originalHeight": 1402,
+    "width": 3072,
+    "height": 3840,
+    "bytes": 1336506,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\graphic-designing\\graphics\\design-process.webp"
+  },
+  {
+    "name": "designer-collaboration",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 966008,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\graphic-designing\\graphics\\designer-collaboration.webp"
+  }
+]

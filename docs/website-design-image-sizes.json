@@ -1,0 +1,202 @@
+[
+  {
+    "name": "hero-brand-website",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 708682,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-brand-website.webp"
+  },
+  {
+    "name": "hero-wireframes",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 709402,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-wireframes.webp"
+  },
+  {
+    "name": "hero-typography",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1193848,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-typography.webp"
+  },
+  {
+    "name": "hero-mobile-design",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 701750,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-mobile-design.webp"
+  },
+  {
+    "name": "hero-components",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 667614,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-components.webp"
+  },
+  {
+    "name": "hero-responsive",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 761192,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-responsive.webp"
+  },
+  {
+    "name": "hero-color-system",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 906432,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-color-system.webp"
+  },
+  {
+    "name": "hero-design-studio",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 610252,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-design-studio.webp"
+  },
+  {
+    "name": "hero-launch",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 488968,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\hero-launch.webp"
+  },
+  {
+    "name": "process-discovery",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 580266,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\process-discovery.webp"
+  },
+  {
+    "name": "process-structure",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 373322,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\process-structure.webp"
+  },
+  {
+    "name": "process-launch",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 515978,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\process-launch.webp"
+  },
+  {
+    "name": "design-toolkit",
+    "originalWidth": 2001,
+    "originalHeight": 786,
+    "width": 3840,
+    "height": 1506,
+    "bytes": 663208,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\design-toolkit.webp"
+  },
+  {
+    "name": "brand-identity",
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "width": 3840,
+    "height": 2560,
+    "bytes": 941714,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\brand-identity.webp"
+  },
+  {
+    "name": "speed-seo",
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "width": 3840,
+    "height": 2560,
+    "bytes": 583430,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\speed-seo.webp"
+  },
+  {
+    "name": "mobile-first",
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "width": 3840,
+    "height": 2560,
+    "bytes": 522790,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\mobile-first.webp"
+  },
+  {
+    "name": "website-redesign",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 775968,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\website-redesign.webp"
+  },
+  {
+    "name": "ecommerce-design",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 805640,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\ecommerce-design.webp"
+  },
+  {
+    "name": "landing-page-design",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 680976,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\landing-page-design.webp"
+  },
+  {
+    "name": "design-development-team",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 993280,
+    "upscaled": true,
+    "output": "public\\images\\website-design\\graphics\\design-development-team.webp"
+  }
+]

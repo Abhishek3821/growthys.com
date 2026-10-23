@@ -6,7 +6,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Contact Us | Growthys",
-  description: "Have an idea or a project in mind? Start a conversation with Growthys.",
+  description: "Every project begins with a simple message. Tell us where you want your business to go, and we’ll help you plan the route.",
 };
 
 export default function ContactPage() {

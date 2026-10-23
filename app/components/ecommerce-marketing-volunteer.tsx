@@ -1,43 +1,40 @@
+import { ecommerceMarketingContent } from "../data/ecommerce-marketing-content";
 import Image from "next/image";
 import styles from "./ecommerce-marketing-volunteer.module.css";
 
-const works = [
-  { year: "2024", alt: "A woman beside a bright yellow sunflower in natural sunlight" },
-  { year: "2023", alt: "Three volunteers standing together outdoors" },
-  { year: "2022", alt: "A pale yellow flower against a sage green backdrop" },
-];
+const works = ecommerceMarketingContent.work.items.map((work, index) => ({ ...work, alt: ["Concept illustration of a full-funnel store rebuild and improved checkout", "Concept illustration of marketplace catalogue expansion across sales channels", "Concept illustration of email and SMS retention driving repeat purchases"][index] }));
 
 export default function EcommerceMarketingVolunteer() {
   return (
     <section aria-labelledby="ecommerce-volunteer-heading" className={styles.section}>
       <div className={styles.poster}>
         <div className={styles.content}>
-          <p className={styles.introduction}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p className={styles.introduction}>{ecommerceMarketingContent.reporting.title}</p>
           <div className={styles.description}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>{ecommerceMarketingContent.reporting.paragraphs[0]}</p>
+            <p>{ecommerceMarketingContent.reporting.paragraphs[1]}</p>
           </div>
-          <ul className={styles.tags} aria-label="Volunteer work interests"><li>Design</li><li>Support</li><li>Community</li></ul>
-          <h2 id="ecommerce-volunteer-heading">VOLUNTEER<br />WORK</h2>
+          <ul className={styles.tags} aria-label="Marketing reporting and client support">{ecommerceMarketingContent.reporting.items.map((item) => <li key={item}>{item}</li>)}</ul>
+          <h2 id="ecommerce-volunteer-heading">REAL<br />WORK</h2>
         </div>
         <div className={styles.works}>
           {works.map((work, index) => (
-            <article key={work.year} className={styles.work} aria-labelledby={`volunteer-work-${work.year}`}>
-              <p className={styles.verticalCopy}>VOLUNTEER EXPERIENCE<br />CREATIVE CONTRIBUTIONS<br />COMMUNITY &amp; CONNECTION</p>
+            <article key={work.title} className={styles.work} aria-labelledby={`volunteer-work-${index}`}>
+              <p className={styles.verticalCopy}>REAL WORK, REAL OUTCOMES<br />ECOMMERCE PROJECTS<br />BUILD, EXPAND &amp; RETAIN</p>
               <div className={styles.photo}>
                 <div className={styles.photoSheet} style={{ top: `${index * -100}%` }}>
-                  <Image src="/images/services/ecommerce-marketing-volunteer.webp" alt={work.alt} fill sizes="(max-width: 767px) 45vw, 25vw" className="object-cover" />
+                  <Image quality={95} src="/images/ecommerce-marketing/graphics/case-studies-sheet.webp" alt={work.alt} fill sizes="(max-width: 767px) 45vw, 25vw" className="object-cover" />
                 </div>
               </div>
               <div className={styles.workDetails}>
                 <p className={styles.year}>{work.year}</p>
-                <h3 id={`volunteer-work-${work.year}`}>WORK NAME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h3 id={`volunteer-work-${index}`}>{work.title}</h3>
+                <p>{work.description}</p>
               </div>
             </article>
           ))}
         </div>
-        <div className={styles.footer} aria-hidden="true"><span>LET’S MAKE YOUR BRAND<br />IMPOSSIBLE TO IGNORE</span><span>DESIGNED TO LEAVE A MARK</span><span>HASU — 07</span></div>
+        <div className={styles.footer} aria-hidden="true"><span>LET’S MAKE YOUR STORE<br />IMPOSSIBLE TO IGNORE</span><span>BUILT FOR COMPLETED ORDERS</span><span>GROWTHYS — 07</span></div>
       </div>
     </section>
   );

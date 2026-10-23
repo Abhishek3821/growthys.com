@@ -88,8 +88,8 @@ const styles = {
     "absolute",
     "[z-index:-2]",
     "[inset:0]",
-    "[background:linear-gradient(90deg,_rgb(9_15_8_/_20%),_transparent_50%,_rgb(8_12_7_/_36%)),_linear-gradient(180deg,_rgb(9_12_7_/_20%)_0%,_rgb(9_12_7_/_12%)_35%,_rgb(8_12_7_/_34%)_75%,_rgb(7_10_6_/_61%)_100%)]",
-    "view-09:[background:linear-gradient(180deg,_rgb(9_12_7_/_38%),_rgb(9_12_7_/_12%)_28%,_rgb(9_12_7_/_60%)_62%,_rgb(7_10_6_/_80%))]",
+    "[background:linear-gradient(90deg,_rgb(3_9_14_/_35%)_0%,_rgb(3_9_14_/_12%)_55%,_rgb(3_9_14_/_45%)_100%),_linear-gradient(180deg,_rgb(3_9_14_/_8%)_0%,_rgb(3_9_14_/_16%)_28%,_rgb(3_9_14_/_55%)_45%,_rgb(3_9_14_/_65%)_67%,_rgb(3_9_14_/_70%)_100%)]",
+    "view-09:[background:linear-gradient(180deg,_rgb(3_9_14_/_24%)_0%,_rgb(3_9_14_/_38%)_28%,_rgb(3_9_14_/_68%)_44%,_rgb(3_9_14_/_78%)_70%,_rgb(3_9_14_/_88%)_100%)]",
   ].join(" "),
   "hero-header": [
     "hero-header",

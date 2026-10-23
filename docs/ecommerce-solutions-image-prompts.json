@@ -1,0 +1,76 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "Generated originals are preserved. 4K WebP deliverables are upscaled exports, not native 4K generation.",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-67d36e83-3f87-4808-a8b6-19538a6a2267.png",
+      "width": 3840,
+      "height": 2560,
+      "prompt": "Use case: stylized-concept. Create one exceptionally refined premium e-commerce website hero graphic, landscape 3:2, request 3840x2560 maximum native detail. Isolated genuinely transparent background. Main sculptural composition positioned center-right, all objects fully visible with generous margins, suitable for object-contain in a dark charcoal website hero. A large elegant upright smartphone angled in three-quarter view with a beautifully crafted online fashion storefront on its screen, small clean thumbnail product cards, minimal interface with no readable text. In front of it a sleek shopping cart, folded premium clothing, a cream sneaker, a coral shopping bag and precisely crafted delivery parcels; floating glass checkout shield with a tiny checkmark and a restrained ascending analytics curve connects the commerce objects. Boutique editorial 3D art direction, tactile frosted glass, brushed aluminium, soft matte ceramic, rich lavender, icy blue and blush pink, subtle magenta rim lighting to harmonize with existing charcoal / pink / blue website. Realistic raytraced materials, immaculate edges, detailed surfaces, sophisticated depth and dimensional lighting, balanced spacious composition. This is artwork only, no webpage layout, no headings, no captions, no watermark, no logo, no VR headset, no gym imagery. No excessive little elements or messy particles. Preserve true alpha transparency."
+    },
+    {
+      "name": "catalogue",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-6adc7b33-d992-4230-873d-870df544c0e6.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Premium editorial 3D e-commerce catalogue and inventory illustration. Portrait 2:3 composition request 2560x3840 native detail. A sculptural floating online-store product catalogue with immaculate ivory cards showing a sneaker, neutral folded shirt, beauty bottle and headphones as distinct thumbnail objects, connected to elegant parcel shelves and a small inventory grid. Strong single central composition, viewed three-quarter, tactile ivory ceramic, muted sage, rich lime accents echoing a dark charcoal website section. Deep charcoal and olive studio backdrop with beautiful soft key light, precise raytraced detail, sophisticated polished art direction. The whole subject in central 70 percent with generous crop-safe space. No text, no labels, no brand names, no letters, no watermark, no gym, no people, no collage, no webpage screenshot."
+    },
+    {
+      "name": "operations",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7872075e-5f64-4f6b-8f6a-d4a334150041.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Premium cinematic 3D still life illustrating complete e-commerce store solutions for Indian sellers. Wide landscape 16:9, request native 3840x2160 detail. Elegant neatly arranged delivery parcels, a compact smartphone with a minimal shopping grid, secure payment shield, inventory blocks, and a flowing ribbon connecting order to delivery. Ivory stone stage, pale warm sage backdrop, lime and cream accents, brushed metal and frosted glass materials, exceptional fine surfaces and soft raytraced studio illumination. Refined luxury product photography combined with dimensional digital sculpture. One visually calm scene, all key objects center within crop-safe margins. No text, letters, logos, watermark, no human model, no spa scene, no country map with inaccurate borders."
+    },
+    {
+      "name": "features",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-00030384-32ed-46ae-a811-f07756d932f0.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Luxury 3D e-commerce product visualization, portrait 2:3 composition request 2560x3840 native detail. A sculptural upright glass smartphone showing a beautifully organized tiny product grid with tactile sneaker, cosmetic bottle and clothing thumbnails. In front a small secure-checkout shield and elegant tracked delivery parcel; floating subtle inventory cards form a graceful descending diagonal. Pastel blue studio background fading to soft lavender, coral and lilac glass, ivory ceramic, fine satin metal. A coherent airy, art-directed composition, exquisite realistic materials, crisp edges, physically plausible reflections, soft daylight shadows, clean expensive technology campaign aesthetic. Frame entire scene with generous top bottom side breathing room for existing portrait image crop. No text, no lettering, no logos, no watermark, no abstract spheres-only imagery."
+    },
+    {
+      "name": "growth",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9bb01ac9-fce7-462a-9d25-995263231ad2.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Premium 3D editorial e-commerce business growth visualization. Portrait 2:3, request native 2560x3840 detail. A refined tiny online boutique on a ceramic pedestal with shopping bags and delivery packages, connected to elegant translucent rising sales bars and a single smooth upward curve, an understated search magnifier and campaign target symbol. Strong center composition in crop-safe central 70 percent, no huge typography or numbers. Sophisticated pastel blue background with lilac and coral highlights, frosted glass, warm ivory ceramic, satin silver detailing. Luxury studio lighting, realistic ray tracing, clear visual hierarchy, exceptionally meticulous professional craft. No text, no logos, no watermark, no flat clipart, no confusing extra elements."
+    },
+    {
+      "name": "optimization",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-b085fc18-3546-4a51-91f2-307b4586cee6.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Premium 3D editorial illustration of fast mobile checkout and synchronized inventory. Portrait 2:3 request 2560x3840 native detail. A beautifully crafted floating smartphone shows a minimal checkout composed of elegant rounded blank UI lines and one checked payment confirmation, next to a luminous small speed ring, a precise inventory stack and two linked delivery parcels; a single thin loop visually connects the objects. Delightfully tactile but sophisticated product sculpture, frost glass, ivory ceramic, lilac, coral and icy blue on a soft powder blue studio background. Strong calm composition, complete objects centered with crop-safe generous margins, meticulous edges, believable light and shadows, luxury technology campaign quality. No text, no letters, no readable numbers, no logos, no watermark."
+    },
+    {
+      "name": "discovery",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ca5f662f-efe0-4ad1-afee-c61f392d94bf.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: stylized-concept. Single premium 3D e-commerce process illustration for the discovery step of a website, landscape 16:9 request 3840x2160 native detail. An elegant open notebook with tiny product-category sketches, a magnifying glass examining a small shopping bag, neat product swatches and a subtle audience target symbol. Communicate understanding products, buyers and business goals. Art direction: luxury tactile clay and ceramic with frosted glass accents and satin metal, warm ivory and peach with burnt orange accents. Seamless white studio background blending naturally into a white website card. Objects arranged centrally, visual mass in the middle 65 percent, generous whitespace on every side, no clipping, immaculate refined detail, realistic soft raytraced lighting, delicate contact shadows, delightful sculptural professional illustration. No headings, no text, no letters, no logos, no watermark, no webpage layout, no unrelated branding app icons. This is one illustration not a collage."
+    },
+    {
+      "name": "concepts",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d6981862-e134-4424-9b6b-48112dff74d4.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: stylized-concept. Single premium 3D e-commerce process illustration for the concepts step of a website, landscape 16:9 request 3840x2160 native detail. A sophisticated miniature e-commerce store wireframe assembled from blank product cards and linked checkout tiles, small parcel and shield symbols joined by precise flowing connection lines. Communicate store structure, user flow and payment/shipping integrations. Art direction: luxury tactile clay and ceramic with frosted glass accents and satin metal, icy pale blue with cyan accents. Seamless white studio background blending naturally into a white website card. Objects arranged centrally, visual mass in the middle 65 percent, generous whitespace on every side, no clipping, immaculate refined detail, realistic soft raytraced lighting, delicate contact shadows, delightful sculptural professional illustration. No headings, no text, no letters, no logos, no watermark, no webpage layout, no unrelated branding app icons. This is one illustration not a collage."
+    },
+    {
+      "name": "refinement",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-3423adcc-a5f8-4822-ae12-c70ef2f5e067.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: stylized-concept. Single premium 3D e-commerce process illustration for the refinement step of a website, landscape 16:9 request 3840x2160 native detail. An upright smartphone alongside a small floating checkout card with a clear checkmark, a precise speed gauge and an elegant tiny test magnifier. Communicate testing mobile browsing, secure checkout and performance before launch. Art direction: luxury tactile clay and ceramic with frosted glass accents and satin metal, pale lilac and violet with soft pink accents. Seamless white studio background blending naturally into a white website card. Objects arranged centrally, visual mass in the middle 65 percent, generous whitespace on every side, no clipping, immaculate refined detail, realistic soft raytraced lighting, delicate contact shadows, delightful sculptural professional illustration. No headings, no text, no letters, no logos, no watermark, no webpage layout, no unrelated branding app icons. This is one illustration not a collage."
+    },
+    {
+      "name": "delivery",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-c76c0f91-52d3-46ce-b07d-21a90fe05d3f.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: stylized-concept. Single premium 3D e-commerce process illustration for the delivery step of a website, landscape 16:9 request 3840x2160 native detail. A beautifully composed miniature storefront on a pedestal, a perfectly folded delivery parcel with a small ribbon, a simple checked launch badge and a smooth upward curve. Communicate launching a complete scalable online store ready for growth. Art direction: luxury tactile clay and ceramic with frosted glass accents and satin metal, warm ivory and peach with coral orange accents. Seamless white studio background blending naturally into a white website card. Objects arranged centrally, visual mass in the middle 65 percent, generous whitespace on every side, no clipping, immaculate refined detail, realistic soft raytraced lighting, delicate contact shadows, delightful sculptural professional illustration. No headings, no text, no letters, no logos, no watermark, no webpage layout, no unrelated branding app icons. This is one illustration not a collage."
+    }
+  ]
+}

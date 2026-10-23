@@ -1,0 +1,46 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports with preserved original PNGs. Original layout, typography, colours, CSS, image sizing and spacing retained. Decorative graphics replaced in their existing positions.",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-3eb5756a-b525-4f8a-a91f-20d22eacd167.png",
+      "width": 3840,
+      "height": 2560,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. One exceptionally art-directed graphic-design studio hero cutout, landscape 3:2 request maximum native detail at 3840x2560. Genuine transparent background. A sculptural creative workstation: large angled pen tablet displays an elegant abstract geometric brand mark in burgundy and soft lilac; a curved fan of perfectly matched colour swatches, beautiful ivory stationery with a consistent tiny geometric emblem, one premium blush packaging box, two floating social creative mockup cards, a precision stylus and a satin burgundy brush. Refined tactile paper, debossed details, glossy enamel and matte ceramic, exceptionally luxurious editorial 3D product illustration. Burgundy wine, warm ivory, blush peach, muted lavender, restrained olive accents complement an existing cream grid and burgundy website. Strong central-right composition, keep leftmost 15 percent empty, full objects inside crop-safe margins; subject bottom aligned. Beautiful soft studio key light, immaculate detail, nuanced material reflections and contact shadows. No candy cart, sweets, food or shopping cart, no words, no readable lettering, no logo brands, no watermark, no website layout. Preserve true alpha transparency."
+    },
+    {
+      "name": "design-packages",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ad265382-069a-4d50-a93e-479ebdb899fc.png",
+      "width": 2560,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: product-mockup. Premium graphic design service portfolio still life, portrait 2:3 request native detail 2560x3840. A beautifully arranged suite of custom brand assets: matching business cards, an editorial brochure, premium packaging boxes, a slim presentation deck, and a mobile social creative mockup. Every object uses the same tasteful abstract geometric flower emblem and coordinated burgundy, soft coral, ivory and lavender visual system. Highly refined luxury paper textures, blind debossing, precise print finishes, lightly angled sculptural arrangement on ivory pedestals against a warm muted blush studio background. Boutique design studio portfolio photography, physically plausible shadows, extraordinary crisp print detail, calm controlled composition, entirely inside center 70 percent for narrow portrait crop, no people. No readable words, no typography blocks larger than thin neutral lines, no trademarked logos, no watermark, no candy or food, no webpage layout."
+    },
+    {
+      "name": "brand-system",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-97fab840-4f46-4bf3-9d15-15905cc7cc6e.png",
+      "width": 2880,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: product-mockup. Luxury visual identity system presentation for an on-brand graphic design website section. Portrait 3:4 request maximum native detail 2880x3840. Art-directed overhead and slight three-quarter composition of matching brand style guide pages, a fan of perfectly coordinated colour chips, precisely aligned social media post templates, a small matching package and embossed business cards. All share one distinctive abstract burgundy geometric monogram-like emblem without letters. Warm ivory, rich burgundy, dusty blush, restrained muted lavender palette, beautiful cotton paper grain, clean print registration, subtle embossed foil accents, editorial fine-art studio lighting. Warm ivory tabletop backdrop, coherent refined professional brand system, no visual clutter, crop-safe center framing with margins. No humans, candy, unrelated screens, no readable text, no brand names, no watermarks, no webpage layout."
+    },
+    {
+      "name": "design-process",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-ff4a7b23-b22f-4ee2-b7cf-16a119304103.png",
+      "width": 3072,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: product-mockup. Exceptional close-up editorial photograph of a professional logo design process, portrait 4:5 request native 3072x3840 detail. A beautiful open ivory sketchbook with several carefully drawn original geometric logo concepts and precise construction grids in burgundy pencil; a dark burgundy precision pen rests diagonally next to a small printed final geometric emblem card and coordinated blush/lilac colour chips. One elegant stylus and a subtle corner of a drawing tablet. Carefully curated, highly realistic fine paper fibres, exact crisp construction lines, soft daylight, quiet shadows, deliberate professional design craftsmanship. Central crop-safe arrangement on a warm cream desk. No readable words or letters, no copied brand logos, no human hands, no watermark, no generic app icons, no candy."
+    },
+    {
+      "name": "designer-collaboration",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-395f3c5d-f7ae-49e4-9e7e-342038329a27.png",
+      "width": 2880,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: photorealistic-natural. Premium editorial portrait photograph of two Indian graphic designers, a woman and a man in their early thirties, thoughtfully collaborating in an elegant boutique creative studio. They are reviewing a printed brand identity guide, colour swatches and matching package samples across a tidy desk, with a pen tablet showing a simple original geometric emblem. Authentic engaged expressions, realistic hands and proportions, tasteful linen and charcoal clothing. Warm ivory and muted burgundy/coral accents, softly blurred studio shelves, beautiful natural window light, detailed skin and fabric, full-frame camera quality. Portrait 3:4 request native 2880x3840 detail, both faces and the brand materials centered within the middle 70 percent with generous crop-safe margins for a portrait website frame. No text overlay, no readable lettering, no trademarked logos, no watermark, no exaggerated stock photo handshake or posing, no CRM dashboards, no sweets."
+    }
+  ]
+}

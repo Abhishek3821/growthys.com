@@ -1,0 +1,112 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "width": 3840,
+    "height": 2560,
+    "bytes": 1184812,
+    "upscaled": true,
+    "hasAlpha": true,
+    "output": "public\\images\\services\\ecommerce-solutions\\hero.webp"
+  },
+  {
+    "name": "catalogue",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 610790,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\catalogue.webp"
+  },
+  {
+    "name": "operations",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 847122,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\operations.webp"
+  },
+  {
+    "name": "features",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 755226,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\features.webp"
+  },
+  {
+    "name": "growth",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 685570,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\growth.webp"
+  },
+  {
+    "name": "optimization",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 426674,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\optimization.webp"
+  },
+  {
+    "name": "discovery",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 637190,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\discovery.webp"
+  },
+  {
+    "name": "concepts",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 413704,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\concepts.webp"
+  },
+  {
+    "name": "refinement",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 336500,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\refinement.webp"
+  },
+  {
+    "name": "delivery",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 381594,
+    "upscaled": true,
+    "hasAlpha": false,
+    "output": "public\\images\\services\\ecommerce-solutions\\delivery.webp"
+  }
+]

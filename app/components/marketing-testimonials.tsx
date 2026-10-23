@@ -1,12 +1,11 @@
 "use client";
 
+import { performancePrinciples as testimonials } from "../data/performance-marketing-content";
+
+
 import { useId, useRef, useState } from "react";
 
-const testimonials = Array.from({ length: 5 }, (_, index) => ({
-  id: index,
-  quote: "Novara gave us clarity, confidence, and a plan that actually makes sense. We finally feel in control of our future.",
-  author: "James T.",
-}));
+
 
 function Arrow({ left = false }: { left?: boolean }) {
   return (
@@ -32,12 +31,12 @@ export default function MarketingTestimonials() {
   }
 
   return (
-    <div role="region" aria-roledescription="carousel" aria-label="Client testimonials" className="flex min-h-[440px] min-w-0 flex-col overflow-hidden rounded-[30px] bg-[#eaf5f7] text-[#103a50]">
+    <div role="region" aria-roledescription="carousel" aria-label="Our growth partnership" className="flex min-h-[440px] min-w-0 flex-col overflow-hidden rounded-[30px] bg-[#eaf5f7] text-[#103a50]">
       <div
         id={trackId}
         ref={trackRef}
         tabIndex={0}
-        aria-label="Testimonial cards. Use left and right arrow keys to navigate."
+        aria-label="Growth partnership cards. Use left and right arrow keys to navigate."
         className="flex min-w-0 flex-1 snap-x snap-mandatory overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-[#447482]"
         onScroll={(event) => {
           const track = event.currentTarget;
@@ -56,28 +55,28 @@ export default function MarketingTestimonials() {
           <figure key={testimonial.id} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${testimonials.length}`} className="w-full shrink-0 snap-start snap-always px-7 pb-4 pt-9 sm:px-9 lg:px-8">
             <span className="block h-12 font-serif text-[76px] leading-none" aria-hidden="true">“</span>
             <blockquote className="mt-4 text-[clamp(22px,2vw,28px)] leading-[1.43] tracking-[-0.035em]">
-              &quot;{testimonial.quote}&quot;
+              {testimonial.quote}
             </blockquote>
             <figcaption className="mt-6 text-base text-[#587582]">— {testimonial.author}</figcaption>
           </figure>
         ))}
       </div>
       <div className="flex items-center justify-between gap-1 px-7 pb-8 pt-7 sm:px-9 lg:px-5">
-        <button type="button" onClick={() => goTo(activeIndex - 1)} aria-label="Previous testimonial" aria-controls={trackId} className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-[#d6eff2] text-[#6c9aa5] transition-colors hover:bg-[#bde3e8] hover:text-[#103a50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#447482]">
+        <button type="button" onClick={() => goTo(activeIndex - 1)} aria-label="Previous principle" aria-controls={trackId} className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-[#d6eff2] text-[#6c9aa5] transition-colors hover:bg-[#bde3e8] hover:text-[#103a50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#447482]">
           <Arrow left />
         </button>
-        <div className="flex items-center" aria-label="Choose a testimonial">
+        <div className="flex items-center" aria-label="Choose a principle">
           {testimonials.map((testimonial, index) => (
-            <button key={testimonial.id} type="button" onClick={() => goTo(index)} aria-label={`Go to testimonial ${index + 1}`} aria-current={activeIndex === index ? "true" : undefined} aria-controls={trackId} className="grid min-h-11 w-5 cursor-pointer place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-[#447482]">
+            <button key={testimonial.id} type="button" onClick={() => goTo(index)} aria-label={`Go to principle ${index + 1}`} aria-current={activeIndex === index ? "true" : undefined} aria-controls={trackId} className="grid min-h-11 w-5 cursor-pointer place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-[#447482]">
               <span className={`size-2 rounded-full transition-colors ${activeIndex === index ? "bg-[#103a50]" : "bg-[#b8d9df]"}`} />
             </button>
           ))}
         </div>
-        <button type="button" onClick={() => goTo(activeIndex + 1)} aria-label="Next testimonial" aria-controls={trackId} className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-[#d6eff2] text-[#6c9aa5] transition-colors hover:bg-[#bde3e8] hover:text-[#103a50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#447482]">
+        <button type="button" onClick={() => goTo(activeIndex + 1)} aria-label="Next principle" aria-controls={trackId} className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-[#d6eff2] text-[#6c9aa5] transition-colors hover:bg-[#bde3e8] hover:text-[#103a50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#447482]">
           <Arrow />
         </button>
       </div>
-      <p className="sr-only" aria-live="polite" aria-atomic="true">Testimonial {activeIndex + 1} of {testimonials.length}</p>
+      <p className="sr-only" aria-live="polite" aria-atomic="true">Principle {activeIndex + 1} of {testimonials.length}</p>
     </div>
   );
 }

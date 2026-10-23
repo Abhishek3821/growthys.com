@@ -1,0 +1,146 @@
+{
+  "mode": "built-in image_gen",
+  "resolutionNote": "Original generated images are below 4K. Final WebP exports use Lanczos3 upscaling to the dimensions listed; these are not native 4K or 8K images.",
+  "assets": [
+    {
+      "name": "hero-brand-website",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. A slim desktop monitor on a sculptural desk displaying a sophisticated brand website with generous white space, abstract product photography and carefully aligned content blocks. No lettering.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-2bd3e8f6-b414-4b7c-8f0f-24e2aee41e51.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-wireframes",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. A website designer's hands arranging physical wireframe sheets on a tidy table, pencil, simple paper component cards, overhead editorial photograph.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-31983c84-f04e-4ce9-9632-0745920385f8.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-typography",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. Macro still life of elegant blank typographic layout specimen sheets, precise grid lines, a polished metal ruler and subtle paper texture. Abstract black geometric letter-like forms only, no words.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-a689f9fb-3841-4472-ba4a-64011125388d.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-mobile-design",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. A beautiful modern smartphone on a minimal stone pedestal displaying a mobile-first website with clear image hierarchy, abstract navigation marks and a large simple action button, no text.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-82ab430b-fa1c-44d8-ac94-ed8adc3f8d42.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-components",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. Tactile modular website interface components made of frosted glass and matte white panels: small buttons, toggles, cards, a subtle cursor, arranged as an elegant restrained studio still life.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-fb54dfb9-db69-4bb0-9c87-7f0db569e6f0.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-responsive",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. Desktop display, tablet and smartphone showing the same coordinated elegant website composition adapted to their different screen widths. Sleek black frames, photoreal glass, no letters.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-37dbe002-44a6-4262-aa18-c533fd24fc53.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-color-system",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. Beautiful overhead art director desk with a fan of grayscale brand swatches, blank layout cards and a chrome stylus, precise professional website brand system.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-42ce1898-a255-4d9e-a0d0-571eb138d13b.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-design-studio",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. A candid Indian web designer working at a tall desktop display showing a minimal website layout grid, medium portrait from behind and side, beautiful natural window light, realistic hands and studio materials.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-3454e438-81f0-45f6-8c3d-1f6792beccc3.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "hero-launch",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 composition for an existing grayscale image collage; monochrome black, white and silver; refined editorial design studio aesthetic, strong tonal depth, centered subject with generous safe margins for cropping. A sculptural browser panel with a simple white completion check, a dark pointer and a rising minimal three-dimensional curve, elegant photoreal product still life representing a successful website launch.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-436b1426-2357-4e5b-b425-b10cb765396f.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "process-discovery",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 16:9; ivory and muted lavender with subtle warm amber accents matching the existing purple design cards; clean studio scene, centered compact composition, all key objects within middle 75 percent. Discovery and strategy: a carefully arranged website sitemap made of frosted lavender cards linked by fine paths, audience avatar discs, an open research notebook and silver pen. Clear idea of research before design.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-bc74beb3-9df0-4310-9bf3-54a742fe453b.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "process-structure",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 16:9; ivory and muted lavender with subtle warm amber accents matching the existing purple design cards; clean studio scene, centered compact composition, all key objects within middle 75 percent. Design and structure: an elegant large floating browser canvas with aligned website wireframe modules, a small brand colour palette, cursor and grid, beautiful tactile frosted glass and matte panels.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-74e4a45f-3d44-4370-91c9-c1795a583fc5.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "process-launch",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 16:9; ivory and muted lavender with subtle warm amber accents matching the existing purple design cards; clean studio scene, centered compact composition, all key objects within middle 75 percent. Development and launch: premium laptop with a finished abstract responsive website, a small glass deployment check, simple code bracket symbols as physical sculptures and a subtle upward arrow. No code text.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-ea5e7812-b9b6-4014-9ce2-c8475cd4c70a.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "design-toolkit",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 2.55:1 wide composition, designed to fit an existing horizontal image banner exactly. Five sophisticated adjacent lavender/navy studio vignettes seamlessly balanced across the image. Left to right: interface design canvas with vector nodes for Figma; stylus and colour wheel for Adobe Photoshop and Illustrator; floating responsive website panels for Webflow; browser publishing panel and content blocks for WordPress; connected atomic and code-bracket sculptures for React and Next.js. No logos or words. Premium detailed photorealistic 3D materials, elegant soft light, no page layout or added border.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-8cbbc50b-26de-496d-9067-0d09b2ebb994.png",
+      "width": 3840,
+      "height": 1506
+    },
+    {
+      "name": "brand-identity",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 3:2. Premium photorealistic 3D editorial still life on warm white: a slim desktop browser with an elegant custom brand website, coordinated muted lavender/amber colour swatches and visual identity cards, silver stylus. Cohesive brand identity across website colours, typography and layouts. No words or logos. Generous 10% safe margin.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-985eb474-2e28-4c60-8e3f-cb88f1504244.png",
+      "width": 3840,
+      "height": 2560
+    },
+    {
+      "name": "speed-seo",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 3:2. Premium photorealistic 3D editorial still life on warm white: a minimalist browser with a fast-loading abstract website, an elegant lavender speedometer with needle on the fast side, small magnifying glass and neatly structured connected page blocks, a subtle warm gold check. Clear concept of fast website performance and search visibility, not advertising. No words or numbers. Generous 10% safe margin.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-88553a1b-3828-4e30-abe3-073b3b1b75a6.png",
+      "width": 3840,
+      "height": 2560
+    },
+    {
+      "name": "mobile-first",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 3:2. Premium photorealistic 3D editorial still life on warm white: prominent upright smartphone with an elegantly structured website, smaller tablet and desktop behind it showing coordinated responsive versions. Clear buttons and abstract image blocks, restrained pale blue and lavender accents, beautifully realistic glass and metal. Mobile-first website design. No words or logos. Generous 10% safe margin.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-e3f1b6e8-181e-4989-a51a-b9c33860b04e.png",
+      "width": 3840,
+      "height": 2560
+    },
+    {
+      "name": "website-redesign",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Portrait 3:4 high-end photographic render: elegant desktop monitor in a modern design studio showing a refined airy website beside translucent older disordered wireframe panels dissolving into a clean organized layout. Website improvement and clarity. Soft teal and warm neutral atmosphere matching existing service image tiles. Key monitor in upper 65%, lower 25% quiet dark surface for existing white text overlay. No words or logos.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-2282296c-2d51-4fb2-89fd-410e1f4ab61d.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "ecommerce-design",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 16:9 high-end commercial product photograph: premium laptop and smartphone showing a coherent ecommerce product collection, sculptural neutral product bottles and parcel on desk, minimalist shopping interface and checkout check. Elegant soft teal and ivory studio atmosphere. Main objects in upper 65%, lower 30% quiet darker table for existing white text overlay. No words, numbers or logos.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-a6c83860-7763-46cc-93e8-a4b2a06214f3.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "landing-page-design",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Landscape 16:9 high-end commercial product photograph: floating browser displaying a clear single-purpose landing page with a large photographic hero, one warm amber action button and simple contact form blocks, a subtle cursor moving toward the form. Elegant teal, muted lavender and ivory studio materials. Objects upper 65%, lower 30% quiet darker surface for existing white text overlay. No words or logos.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-6ad8cc1b-fe5d-4293-8ace-578bff28213e.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "design-development-team",
+      "prompt": "Use case: ads-marketing. Generate a premium raster image for an existing Growthys Website Design service page, not a whole webpage design. Highest available resolution, 4K requested. Exceptional commercial photography/photorealistic 3D art direction, precise realistic materials, subtle studio shadows, restrained compositions with obvious relevance to website design. No readable text, no gibberish code or lettering, no logos, no watermarks, no claimed results, no outer card frame. Square commercial editorial photograph of a small diverse Indian website design and development team of four adults collaborating around a laptop and large monitor in a bright contemporary studio. Display shows real-looking abstract website layout grid without text. Natural smiles, convincing hands, professional casual clothes, soft lavender and dusty pink set accents matching existing benefits section. Subjects grouped inside central 70 percent to survive an existing rounded-square mask. Extremely polished photography, natural skin texture, soft daylight. No students, books, school, logos, lettering or watermarks.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-4e40899d-accd-455d-85a6-dcc70cd4e2f2.png",
+      "width": 3840,
+      "height": 3840
+    }
+  ]
+}

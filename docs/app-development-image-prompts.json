@@ -1,0 +1,94 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports; generated source dimensions are recorded in app-development-image-sizes.json. Original PNGs preserved. Transparent artwork retains alpha.",
+  "assets": [
+    {
+      "name": "hero",
+      "width": 3840,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: product-mockup. Exceptional luxury mobile app development hero image, square request native maximum 3840x3840 detail. Two elegant smartphones in a carefully composed three-quarter studio arrangement show an original coherent mobile business app: refined ivory interface, warm coral primary action, subtle teal accents, product/service thumbnail cards, small calendar and account sections, clean blank lines rather than text. One phone standing, second slightly angled beside it, subtle glass interface cards imply smooth interaction. Warm cream and muted peach architectural studio backdrop matching a white/orange website. Outstanding tactile product photography with satin aluminium and frosted glass, exquisite precise reflections and soft window shadows. Put devices in upper central 70 percent, leave bottom right calm for an existing white rating card overlay. No words, readable numbers, brands, logos, watermark, no desktop computers or collage.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-494724a4-494d-4fd8-b924-f44ccaecf697.png"
+    },
+    {
+      "name": "app-types",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Premium isolated mobile app ecosystem illustration, portrait 3:4 request maximum native 2880x3840 detail. Genuinely transparent background. One elegant upright smartphone showing an original ivory and teal business app UI with blank rounded rows, surrounded by six refined small ceramic symbols: shopping bag, appointment calendar, field location pin, two connected customer avatars, service checkmark and staff dashboard. A single slender frosted teal ribbon links them coherently. Tactile ivory ceramic, mint and pale teal glass with muted coral and blush accents matching a soft pastel web section. Complete composition entirely within crop-safe central 70 percent with generous margins, sophisticated soft raytraced lighting, precise beautiful materials. No readable text, logos, watermark, no candy, no park imagery, no opaque backdrop or ground plane.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d96ba315-e759-455e-9ad7-851c0b4cb594.png"
+    },
+    {
+      "name": "discovery",
+      "width": 2880,
+      "height": 3840,
+      "transparent": false,
+      "scene": "Two Indian app designers in a calm modern studio mapping a mobile app user journey using an open notebook, neatly arranged phone-screen wireframe cards and a laptop. A woman designer points naturally at a wireframe while her colleague thoughtfully reviews it. Realistic attentive expressions.",
+      "prompt": "Use case: photorealistic-natural. Premium editorial mobile app development photograph. Two Indian app designers in a calm modern studio mapping a mobile app user journey using an open notebook, neatly arranged phone-screen wireframe cards and a laptop. A woman designer points naturally at a wireframe while her colleague thoughtfully reviews it. Realistic attentive expressions. Portrait 3:4 composition request maximum native 2880x3840 detail. Warm ivory studio with restrained muted coral, pale mint and teal accents, tasteful linen and neutral clothing, beautiful natural window light, professional full-frame camera quality, detailed skin and fabric, believable hands and devices. Faces and relevant phones kept inside central 70 percent crop-safe frame. Screens show coherent abstract mobile UI, no readable gibberish text. No text overlays, logos, watermarks, handshakes, exaggerated stock smiles, furniture product focus or pet-care theme.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-1abe386e-ad35-42e2-b68f-cba9799e89e6.png"
+    },
+    {
+      "name": "testing",
+      "width": 2880,
+      "height": 3840,
+      "transparent": false,
+      "scene": "Two Indian mobile software engineers carefully testing the same original app on a smartphone and tablet next to a laptop with a discreet code editor. Devices show consistent clean ivory mobile UI with coral and teal accents. One checks a live mobile interaction while the other watches.",
+      "prompt": "Use case: photorealistic-natural. Premium editorial mobile app development photograph. Two Indian mobile software engineers carefully testing the same original app on a smartphone and tablet next to a laptop with a discreet code editor. Devices show consistent clean ivory mobile UI with coral and teal accents. One checks a live mobile interaction while the other watches. Portrait 3:4 composition request maximum native 2880x3840 detail. Warm ivory studio with restrained muted coral, pale mint and teal accents, tasteful linen and neutral clothing, beautiful natural window light, professional full-frame camera quality, detailed skin and fabric, believable hands and devices. Faces and relevant phones kept inside central 70 percent crop-safe frame. Screens show coherent abstract mobile UI, no readable gibberish text. No text overlays, logos, watermarks, handshakes, exaggerated stock smiles, furniture product focus or pet-care theme.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-c2d049e6-d340-4c84-ab22-a4cea4c2dd34.png"
+    },
+    {
+      "name": "product-planning",
+      "width": 3840,
+      "height": 3840,
+      "transparent": false,
+      "scene": "An Indian startup founder and a mobile app product designer discussing a thoughtfully scoped app project over paper phone wireframes and a tablet showing a refined original app prototype. One person makes notes while the other explains a screen flow, authentic engaged collaboration.",
+      "prompt": "Use case: photorealistic-natural. Premium editorial mobile app development photograph. An Indian startup founder and a mobile app product designer discussing a thoughtfully scoped app project over paper phone wireframes and a tablet showing a refined original app prototype. One person makes notes while the other explains a screen flow, authentic engaged collaboration. Square composition request maximum native 3840x3840 detail. Warm ivory studio with restrained muted coral, pale mint and teal accents, tasteful linen and neutral clothing, beautiful natural window light, professional full-frame camera quality, detailed skin and fabric, believable hands and devices. Faces and relevant phones kept inside central 70 percent crop-safe frame. Screens show coherent abstract mobile UI, no readable gibberish text. No text overlays, logos, watermarks, handshakes, exaggerated stock smiles, furniture product focus or pet-care theme.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-210a1d4f-9ef4-4c92-9e6c-95dd07005c81.png"
+    },
+    {
+      "name": "accounts",
+      "scene": "An elegant upright smartphone shows a beautiful simple account sign-in interface of blank rounded input rows and a small avatar, protected by a precisely crafted security shield and satin metal lock. Communicate safe accounts and encrypted sessions.",
+      "width": 3840,
+      "height": 2880,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Single exceptionally polished mobile app feature illustration, landscape 4:3 request native maximum 3840x2880 detail. Genuinely transparent background, preserve alpha. An elegant upright smartphone shows a beautiful simple account sign-in interface of blank rounded input rows and a small avatar, protected by a precisely crafted security shield and satin metal lock. Communicate safe accounts and encrypted sessions. Boutique tactile product sculpture, warm ivory ceramic, frosted pale teal and blush glass, restrained coral accents and fine satin metal, sophisticated professional 3D editorial craft. Strong calm composition, all complete objects inside middle 65 percent with generous breathing space for existing website card crops and rounded image frames. Exquisite raytraced studio lighting, sharp precise edges, fine surface details, soft controlled shadows on objects only. No words, readable numbers, logos, watermark, no people, no amusement park, no opaque floor or backdrop. These five feature illustrations should form a cohesive premium icon family.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-82bc268b-9515-4e7e-99be-c4827bd8f48a.png"
+    },
+    {
+      "name": "payments",
+      "scene": "A premium smartphone shows a clean confirmed checkout with one large precise checkmark, alongside a refined blank payment card and a small receipt without text. Communicate secure mobile payments and smooth checkout.",
+      "width": 3840,
+      "height": 2880,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Single exceptionally polished mobile app feature illustration, landscape 4:3 request native maximum 3840x2880 detail. Genuinely transparent background, preserve alpha. A premium smartphone shows a clean confirmed checkout with one large precise checkmark, alongside a refined blank payment card and a small receipt without text. Communicate secure mobile payments and smooth checkout. Boutique tactile product sculpture, warm ivory ceramic, frosted pale teal and blush glass, restrained coral accents and fine satin metal, sophisticated professional 3D editorial craft. Strong calm composition, all complete objects inside middle 65 percent with generous breathing space for existing website card crops and rounded image frames. Exquisite raytraced studio lighting, sharp precise edges, fine surface details, soft controlled shadows on objects only. No words, readable numbers, logos, watermark, no people, no amusement park, no opaque floor or backdrop. These five feature illustrations should form a cohesive premium icon family.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-3bcb752e-beb7-40d8-88ed-e498780e4876.png"
+    },
+    {
+      "name": "tracking",
+      "scene": "A refined smartphone shows a clean map route of a few elegant lines between two location pins, alongside a small delivery parcel and a compact live-status badge. Communicate real-time order and service tracking.",
+      "width": 3840,
+      "height": 2880,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Single exceptionally polished mobile app feature illustration, landscape 4:3 request native maximum 3840x2880 detail. Genuinely transparent background, preserve alpha. A refined smartphone shows a clean map route of a few elegant lines between two location pins, alongside a small delivery parcel and a compact live-status badge. Communicate real-time order and service tracking. Boutique tactile product sculpture, warm ivory ceramic, frosted pale teal and blush glass, restrained coral accents and fine satin metal, sophisticated professional 3D editorial craft. Strong calm composition, all complete objects inside middle 65 percent with generous breathing space for existing website card crops and rounded image frames. Exquisite raytraced studio lighting, sharp precise edges, fine surface details, soft controlled shadows on objects only. No words, readable numbers, logos, watermark, no people, no amusement park, no opaque floor or backdrop. These five feature illustrations should form a cohesive premium icon family.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-52a7c318-d8cd-45ab-81f2-68c2dfd8631c.png"
+    },
+    {
+      "name": "offline",
+      "scene": "An elegant smartphone shows a simple functional mobile screen with a small offline cloud symbol; a graceful sync loop joins a cloud node and a checked local data card. Communicate an app working without internet and safely syncing later.",
+      "width": 3840,
+      "height": 2880,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Single exceptionally polished mobile app feature illustration, landscape 4:3 request native maximum 3840x2880 detail. Genuinely transparent background, preserve alpha. An elegant smartphone shows a simple functional mobile screen with a small offline cloud symbol; a graceful sync loop joins a cloud node and a checked local data card. Communicate an app working without internet and safely syncing later. Boutique tactile product sculpture, warm ivory ceramic, frosted pale teal and blush glass, restrained coral accents and fine satin metal, sophisticated professional 3D editorial craft. Strong calm composition, all complete objects inside middle 65 percent with generous breathing space for existing website card crops and rounded image frames. Exquisite raytraced studio lighting, sharp precise edges, fine surface details, soft controlled shadows on objects only. No words, readable numbers, logos, watermark, no people, no amusement park, no opaque floor or backdrop. These five feature illustrations should form a cohesive premium icon family.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7a9ab2dc-3530-4f67-949a-2ddd6e09d2b0.png"
+    },
+    {
+      "name": "analytics",
+      "scene": "A carefully crafted tablet-style mobile dashboard screen shows three coherent performance bars and one smooth user activity curve, beside subtle small user-flow nodes and a precision magnifying glass. Communicate understanding app usage and improving retention.",
+      "width": 3840,
+      "height": 2880,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Single exceptionally polished mobile app feature illustration, landscape 4:3 request native maximum 3840x2880 detail. Genuinely transparent background, preserve alpha. A carefully crafted tablet-style mobile dashboard screen shows three coherent performance bars and one smooth user activity curve, beside subtle small user-flow nodes and a precision magnifying glass. Communicate understanding app usage and improving retention. Boutique tactile product sculpture, warm ivory ceramic, frosted pale teal and blush glass, restrained coral accents and fine satin metal, sophisticated professional 3D editorial craft. Strong calm composition, all complete objects inside middle 65 percent with generous breathing space for existing website card crops and rounded image frames. Exquisite raytraced studio lighting, sharp precise edges, fine surface details, soft controlled shadows on objects only. No words, readable numbers, logos, watermark, no people, no amusement park, no opaque floor or backdrop. These five feature illustrations should form a cohesive premium icon family.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-2e483e04-7da9-4051-afe3-2cf75a4f63a4.png"
+    }
+  ]
+}

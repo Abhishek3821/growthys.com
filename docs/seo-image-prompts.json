@@ -1,0 +1,69 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports; original native dimensions are recorded separately, and generated PNG originals are preserved.",
+  "assets": [
+    {
+      "name": "search-rankings",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Premium SEO search rankings visual for a tall website hero image slot, portrait 3:4 requested highest native detail 2880x3840. A sculptural desktop browser search results panel with refined raised result cards and one highlighted organic result, glass magnifying lens, rising ranking steps and small upward arrow. Precise elegant product rendering, ivory ceramic, muted forest green and mint glass, subtle graphite edges. Cream studio background. Subject centered with 15 percent quiet margins so cropping is safe. Sophisticated tactile details, extraordinary finish. No readable words or numbers, no brands, no watermarks. Not an advertising dashboard, clearly organic search discovery.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d843c243-9307-42b1-be47-70d1808fced8.png"
+    },
+    {
+      "name": "keyword-research",
+      "width": 3840,
+      "height": 2880,
+      "prompt": "Use case: stylized-concept. Premium organic search keyword research visual for landscape website hero slot 4:3 request highest native detail 3840x2880. Sculptural browser search bar above an orderly cluster of query cards connected to a target page, a large clear magnifying lens, one intent-focused highlighted card. Ivory ceramic, sage glass, graphite metal outlines, clean light cream studio background, exquisite microtexture soft shadows. Central 65 percent composition with generous crop margins. No readable words, letters, brands, numbers, watermark. Polished editorial 3D visual rather than flat generic icons.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-90e0a7d1-8975-4509-8455-8f41a4a2fde7.png"
+    },
+    {
+      "name": "strategy",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Premium editorial portrait 3:4 2880x3840 maximum native detail. An Indian female SEO strategist in a deep forest green blouse working thoughtfully at a laptop in a refined warm cream office, laptop in foreground shows abstract organic search dashboard with clean query rows and ranking curves, subtle printed keyword mapping sheets on desk. Natural realistic human hands and skin, beautiful daylight, soft dark green background accents, premium business photography. Center subject and laptop within middle 70 percent for crop safety. No readable text, logos, watermark, law or medical elements.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-301c607d-5141-43a6-8ed0-bde8fe6b6c80.png"
+    },
+    {
+      "name": "technical-audit",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Premium editorial portrait 3:4 requested maximum native detail 2880x3840. Two Indian technical SEO specialists examining a monitor with a coherent site audit interface: page speed circular indicator, crawl tree and a few diagnostic rows, no readable text or metrics. One points at a printed website sitemap beside a laptop, beautiful warm ivory office, muted green and soft lilac accents, candid thoughtful collaboration. Real hands anatomically accurate, exquisite natural light, professional authentic photography. Core action in central 65 percent for portrait cropping. No brands, doctors, medical objects, watermark.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7f5ec98e-f255-45e0-a107-1dc4a2d420b5.png"
+    },
+    {
+      "name": "authority-content",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Portrait 3:4 premium editorial SEO content strategy and ethical outreach photograph requested native maximum detail 2880x3840. Indian content editor and marketing colleague at desk reviewing an editorial calendar, printed article outlines and laptop with abstract connected content page cards. Warm cream contemporary studio, muted sage and soft lavender touches, natural thoughtful expression, real anatomically correct hands, luxurious natural daylight with detailed skin and fabric. Central crop-safe subjects and documents. No readable words, logos, watermark, medical items.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-a839c72f-bf0f-4664-b178-88a845cefd46.png"
+    },
+    {
+      "name": "audit-strategy",
+      "width": 3840,
+      "height": 2016,
+      "prompt": "Use case: stylized-concept. Premium SEO audit strategy service graphic, wide 1.9:1 native maximum detail 3840x2016. A sculptural browser site page with neat diagnostic checks beside a magnifying lens and small rising organic trend curve. Ivory ceramic, forest green and pale sage frosted glass, tiny warm gold accent matching cream green website. Soft cream seamless background and immaculate studio shadows, refined tactile material. Compose entire subject inside middle 65 percent with 15 percent margins. No text numbers logos or watermarks.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-54cff5c6-bdb8-41b7-9dfc-94fef048adb9.png"
+    },
+    {
+      "name": "local-maps",
+      "width": 3840,
+      "height": 2016,
+      "prompt": "Use case: stylized-concept. Premium local and maps SEO service graphic wide 1.9:1 request native maximum 3840x2016. Elegant miniature city map tile with three simple storefront facades, one large sculptural forest green location pin, a small browser local search result card with blank ivory rows. Frosted sage glass roads and ceramic buildings, warm gold accent, cream seamless studio ground, exquisite sharp tactile architectural details, soft shadows. Entire composition centrally within 65 percent and ample crop margins. No text labels numbers logos watermark.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7b679fa8-67b2-49dc-8d73-eeca74f43815.png"
+    },
+    {
+      "name": "ecommerce-seo",
+      "width": 3840,
+      "height": 2016,
+      "prompt": "Use case: stylized-concept. Premium e-commerce organic search optimization service graphic wide 1.9:1 request highest native detail 3840x2016. Sculptural online product category browser with orderly ceramic product tiles, a small refined shopping bag and magnifying lens, subtle connected schema nodes. Ivory ceramic and deep green satin metal, pale sage glass and restrained warm gold accent. Warm cream studio ground, exact realistic 3D materials and superb soft light. Core subjects centered within 65 percent with crop safety. No typography numbers brands logos or watermark.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-f81edeef-9b56-4dc7-ae44-09f64304cb87.png"
+    },
+    {
+      "name": "seo-team",
+      "width": 2880,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Exceptional premium business editorial photography portrait 3:4 requested highest native detail 2880x3840. Small Indian SEO team of a developer, content strategist and analyst collaboratively reviewing organic search performance on a large monitor and laptop in a Gurugram style contemporary studio office. Dashboard has simple trend charts and abstract search result rows, no legible text. Refined cream space with muted lavender clothing and sage accents, real anatomically accurate hands, professional warm daylight, natural attentive expressions, no one looking at camera. Center crop-safe composition, crisp editorial quality, no brands watermark school medical or legal objects.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-66778dec-700e-4374-bc76-4409e4b1625e.png"
+    }
+  ]
+}

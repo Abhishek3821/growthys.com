@@ -1,11 +1,7 @@
+import { performanceProcess as metrics } from "../data/performance-marketing-content";
 import Link from "next/link";
 
-const metrics = [
-  { value: "250+", label: "Projects Completed", icon: "rocket" },
-  { value: "98%", label: "Client Satisfaction", icon: "smile" },
-  { value: "3.5X", label: "Average ROI Growth", icon: "growth" },
-  { value: "120%", label: "Revenue Growth", icon: "revenue" },
-] as const;
+
 
 function ResultIcon({ icon }: { icon: typeof metrics[number]["icon"] }) {
   return (
@@ -31,15 +27,15 @@ export default function MarketingResults() {
   return (
     <section aria-labelledby="marketing-results-heading" className="mx-auto mb-6 grid max-w-[1800px] gap-9 bg-[linear-gradient(105deg,#1c193e_0%,#252052_52%,#393080_100%)] px-6 py-8 text-white sm:px-9 lg:grid-cols-[minmax(240px,1.5fr)_minmax(0,3.5fr)] lg:items-center lg:gap-8 lg:px-10 lg:py-9">
       <div>
-        <p className="mb-3 text-[10px] font-semibold tracking-[0.08em] text-[#c0b3de]">REAL STRATEGIES.</p>
+        <p className="mb-3 text-[10px] font-semibold tracking-[0.08em] text-[#c0b3de]">OUR PROCESS</p>
         <h2 id="marketing-results-heading" className="text-[clamp(28px,2.8vw,42px)] font-semibold leading-[1.08] tracking-[-0.025em]">
-          Real Results<br />for Real Growth
+          How We Run<br />Performance Campaigns
         </h2>
         <p className="mt-3 max-w-[310px] text-xs leading-relaxed text-[#e1dcef] sm:text-sm">
-          We combine creativity, data, and technology to deliver measurable growth for your business.
+          Audit, launch, optimize, and scale — with clear targets and tracking at every step.
         </p>
-        <Link href="/contact#contact-inquiry" aria-label="Request our case studies through the contact form" className="mt-4 inline-flex min-h-11 items-center gap-3 rounded-sm border border-[#a89acb] px-5 py-2 text-[11px] font-semibold tracking-[0.025em] transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#eed49b]">
-          SEE OUR CASE STUDIES <span aria-hidden="true" className="text-base">→</span>
+        <Link href="/contact#contact-inquiry" aria-label="Book a performance marketing strategy call" className="mt-4 inline-flex min-h-11 items-center gap-3 rounded-sm border border-[#a89acb] px-5 py-2 text-[11px] font-semibold tracking-[0.025em] transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#eed49b]">
+          BOOK A STRATEGY CALL <span aria-hidden="true" className="text-base">→</span>
         </Link>
       </div>
       <dl className="grid grid-cols-2 gap-y-8 sm:grid-cols-4 sm:gap-y-0">

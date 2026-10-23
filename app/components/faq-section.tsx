@@ -10,7 +10,7 @@ const questions = Array.from({ length: 4 }, (_, index) => ({
 }));
 
 type FaqSectionProps = {
-  items?: { id: number; question: string; answer: string }[];
+  items?: readonly { readonly id: number; readonly question: string; readonly answer: string }[];
   eyebrow?: string;
 };
 

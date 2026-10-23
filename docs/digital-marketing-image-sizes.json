@@ -1,0 +1,233 @@
+[
+  {
+    "name": "campaign-creative-hero",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 952982,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\campaign-creative-hero.webp"
+  },
+  {
+    "name": "business-results",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1121106,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\business-results.webp"
+  },
+  {
+    "name": "adaptive-strategy",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1913038,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\adaptive-strategy.webp"
+  },
+  {
+    "name": "lasting-growth",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1348284,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\lasting-growth.webp"
+  },
+  {
+    "name": "service-seo",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1438846,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-seo.webp"
+  },
+  {
+    "name": "service-conversion",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1153510,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-conversion.webp"
+  },
+  {
+    "name": "service-social",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1546364,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-social.webp"
+  },
+  {
+    "name": "service-paid-ads",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1773184,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-paid-ads.webp"
+  },
+  {
+    "name": "service-pr",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 2087834,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-pr.webp"
+  },
+  {
+    "name": "service-promotions",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1491214,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-promotions.webp"
+  },
+  {
+    "name": "service-analytics",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1940584,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-analytics.webp"
+  },
+  {
+    "name": "service-brand-trust",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1657120,
+    "transparent": true,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\service-brand-trust.webp"
+  },
+  {
+    "name": "blog-seo",
+    "originalWidth": 1586,
+    "originalHeight": 992,
+    "width": 3840,
+    "height": 2400,
+    "bytes": 1266886,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\blog-seo.webp"
+  },
+  {
+    "name": "blog-ad-spend",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1056608,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\blog-ad-spend.webp"
+  },
+  {
+    "name": "blog-social-trends",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 820354,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\blog-social-trends.webp"
+  },
+  {
+    "name": "insight-foundations",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 561372,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\insight-foundations.webp"
+  },
+  {
+    "name": "insight-what-works",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 937752,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\insight-what-works.webp"
+  },
+  {
+    "name": "process-research",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1150950,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\process-research.webp"
+  },
+  {
+    "name": "process-planning",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1735522,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\process-planning.webp"
+  },
+  {
+    "name": "process-optimization",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1164402,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\process-optimization.webp"
+  },
+  {
+    "name": "process-reporting",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1020900,
+    "transparent": false,
+    "upscaled": true,
+    "output": "public\\images\\digital-marketing\\graphics\\process-reporting.webp"
+  }
+]

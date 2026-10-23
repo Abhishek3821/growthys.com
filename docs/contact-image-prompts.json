@@ -1,0 +1,21 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports. Original PNGs preserved. Conceptual agency scene, not a photograph of an actual Growthys office. Closing office time was not supplied.",
+  "assets": [
+    {
+      "name": "conversation",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: photorealistic-natural. Premium website contact hero photograph landscape 16:9 maximum native detail requested 4K. Candid Indian creative agency team and business founder at a refined warm ivory and sage office meeting table, relaxed thoughtful conversation over coffee, laptop with abstract project wireframes and notebook. Soft afternoon daylight, greenery and subtle contemporary Gurugram skyline through large windows. This is a conceptual agency collaboration scene, not a claim of an actual office. Main people and table action centred toward right half, upper left quiet for existing white heading panel and lower right unobtrusive for triangular graphic overlay. Real anatomically accurate hands, authentic expressions, exquisite editorial business photography. No readable words, brand logos, watermark.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-2db38b60-6cba-436b-a168-29eecff9af8a.png"
+    },
+    {
+      "name": "communication",
+      "width": 3840,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Premium contact-us communication graphic true transparent background square highest native detail requested4K. Sophisticated tactile arrangement of an ivory open envelope with blank message card, sage green telephone handset, a small chat bubble and a warm ceramic coffee cup, subtle brass detail. Photorealistic soft material rendering, muted olive sage, ivory and warm tan palette fitting an existing green cream contact page. Compact focal objects clustered in lower right quadrant with generous transparent space upper left because this will be shown within an existing diagonal triangular crop. All objects complete, refined realistic product lighting, no text numbers logos watermark, no solid background.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7a53180c-e69f-4646-b32e-e86e3b6af190.png"
+    }
+  ]
+}

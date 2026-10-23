@@ -1,0 +1,54 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K upscaled WebP exports with preserved generated original PNGs. Transparent cutouts preserve alpha. Existing layout, CSS, image container sizes and palette are retained. Existing technology icons were redrawn as web-development symbols in their original slots.",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-54a451ed-bdf5-43ec-93af-029b4b1bc4a9.png",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Exceptional premium web development website hero cutout. Portrait 3:4 request maximum native detail 2880x3840. Genuinely transparent background, no opaque ground or backdrop. Elegant central sculptural laptop with a beautifully composed modern business website on screen, a slim upright smartphone and tablet showing the same responsive layout, a precision code-bracket symbol, a small security shield and a restrained performance gauge. Interface uses tasteful blue, ivory and navy with abstract image blocks and clean blank lines, no readable text. Refined luxury product photography combined with tactile professional 3D illustration: satin aluminium, warm ivory ceramic and frosted cobalt glass, subtle orange and pale yellow accents matching an existing royal-blue/cream website. All complete objects centered in lower two thirds, generous top and side breathing room, clean crisp alpha edges, realistic soft studio illumination, fine textures, physically plausible reflections. Bold confident arrangement readable at hero scale. No people, no shopping cart, no words, no logos, no watermark, no webpage layout outside the devices."
+    },
+    {
+      "name": "success",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-2be1d97a-2be6-4882-837c-03cd5aeffdde.png",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Premium isolated 3D web development launch and ongoing support illustration. Portrait 3:4 request native 2880x3840 detail. Genuinely transparent background. An elegant upright browser window with an immaculate responsive website preview, a confident large checkmark, a small speed gauge and one compact cloud connected to a secure database. A tasteful upward curve suggests a website ready to grow. Tactile ivory ceramic, satin silver, frosted cobalt glass, navy detailing and restrained orange/yellow highlights, harmonizing with a cream website and blue/orange circle decorations. Singular coherent central composition, all objects fully visible within middle 70 percent, bottom aligned with generous margins, beautiful raytraced studio lighting and crisp detailed materials. No people, no readable text, no logos, no watermark, no oversized background panel or floor, preserve actual alpha transparency."
+    },
+    {
+      "name": "customer-experience",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9658d089-2a2f-4804-860e-a5c6af94d237.png",
+      "width": 2880,
+      "height": 3840,
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Exceptional premium 3D web development customer experience illustration, portrait 3:4 request native 2880x3840 detail. Genuine transparent background. A refined smartphone in three-quarter view displays a calm elegant responsive business website with ivory and blue sections, a simple enquiry form of blank lines and a blue checkmark; beside it a small frosted conversation bubble with a simple positive smile symbol, a discreet speed ring and security shield. Communicate a fast trustworthy website that turns visitors into enquiries. Warm ivory, satin aluminium, blue and navy glass with restrained pale yellow and orange accents. Premium tactile product art direction, realistic fine material surfaces, beautiful studio illumination, crisp transparent edges. Centered complete objects in middle 70 percent, bottom aligned, generous breathing room. No customer portraits, no star scores, no fake testimonials, no readable text, no logos, no watermark, no opaque background or ground plane."
+    },
+    {
+      "name": "team",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-9440dbfc-b960-4f80-91b3-523d6df47e00.png",
+      "width": 3840,
+      "height": 3840,
+      "transparent": false,
+      "prompt": "Use case: photorealistic-natural. Luxury editorial web development studio photograph for a professional Indian software development company website. Three Indian web development professionals, a woman UI designer and two engineers, thoughtfully collaborating around a laptop showing a clean modern responsive business website and a second subtle screen with a tidy code editor. Authentic natural expressions and hands, a real productive team moment, not posed celebration. Square composition request maximum native 3840x3840 detail. Sophisticated airy warm ivory office with subtle cobalt blue and navy accents, soft natural window daylight, realistic skin textures and believable hands, precise fabric and wood detail, premium full-frame camera quality and controlled depth of field. Composition must keep faces and relevant devices entirely within central 70 percent crop-safe area for existing website image containers. Screens show coherent abstract web UI with blank lines, no readable gibberish, no real brands. No text overlay, no logos, no watermark, no handshakes, no sales charts, no generic marketing meeting, no festive posing."
+    },
+    {
+      "name": "ui-planning",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-5db46bbd-6585-479f-9454-c4664943b349.png",
+      "width": 3840,
+      "height": 2880,
+      "transparent": false,
+      "prompt": "Use case: photorealistic-natural. Luxury editorial web development studio photograph for a professional Indian software development company website. Two Indian web design professionals in their early thirties reviewing low-fidelity website wireframes, a neatly organized sitemap and colour swatches on a desk, alongside a laptop displaying a polished responsive page. One points naturally at a wireframe while the other makes notes. Communicate business discovery and thoughtful UX planning. Landscape 4:3 request maximum native 3840x2880 detail. Sophisticated airy warm ivory office with subtle cobalt blue and navy accents, soft natural window daylight, realistic skin textures and believable hands, precise fabric and wood detail, premium full-frame camera quality and controlled depth of field. Composition must keep faces and relevant devices entirely within central 70 percent crop-safe area for existing website image containers. Screens show coherent abstract web UI with blank lines, no readable gibberish, no real brands. No text overlay, no logos, no watermark, no handshakes, no sales charts, no generic marketing meeting, no festive posing."
+    },
+    {
+      "name": "testing",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-2a54e2cf-6053-4052-bd4a-52387f33aa1f.png",
+      "width": 3840,
+      "height": 2880,
+      "transparent": false,
+      "prompt": "Use case: photorealistic-natural. Luxury editorial web development studio photograph for a professional Indian software development company website. Two Indian software engineers carefully testing a business website across a desktop monitor, a tablet and a smartphone, all displaying clearly consistent responsive layouts. A discreet laptop code editor is visible, one engineer checks the phone while the other reviews the browser. Communicate clean development, quality assurance and reliable launches. Landscape 4:3 request maximum native 3840x2880 detail. Sophisticated airy warm ivory office with subtle cobalt blue and navy accents, soft natural window daylight, realistic skin textures and believable hands, precise fabric and wood detail, premium full-frame camera quality and controlled depth of field. Composition must keep faces and relevant devices entirely within central 70 percent crop-safe area for existing website image containers. Screens show coherent abstract web UI with blank lines, no readable gibberish, no real brands. No text overlay, no logos, no watermark, no handshakes, no sales charts, no generic marketing meeting, no festive posing."
+    }
+  ]
+}

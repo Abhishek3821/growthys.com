@@ -1,0 +1,122 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 531462,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\hero.webp"
+  },
+  {
+    "name": "support",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 455520,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\support.webp"
+  },
+  {
+    "name": "security",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 713548,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\security.webp"
+  },
+  {
+    "name": "capture",
+    "originalWidth": 1122,
+    "originalHeight": 1402,
+    "width": 3072,
+    "height": 3840,
+    "bytes": 939964,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\capture.webp"
+  },
+  {
+    "name": "qualify",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 892630,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\qualify.webp"
+  },
+  {
+    "name": "pipeline",
+    "originalWidth": 1122,
+    "originalHeight": 1402,
+    "width": 3072,
+    "height": 3840,
+    "bytes": 909420,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\pipeline.webp"
+  },
+  {
+    "name": "retain",
+    "originalWidth": 1122,
+    "originalHeight": 1402,
+    "width": 3072,
+    "height": 3840,
+    "bytes": 931338,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\retain.webp"
+  },
+  {
+    "name": "collaboration",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 832122,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\collaboration.webp"
+  },
+  {
+    "name": "analytics",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 861136,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\analytics.webp"
+  },
+  {
+    "name": "startups",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 684340,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\startups.webp"
+  },
+  {
+    "name": "smes",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 715160,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\smes.webp"
+  },
+  {
+    "name": "enterprises",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 523764,
+    "upscaled": true,
+    "output": "public\\images\\crm-management\\graphics\\enterprises.webp"
+  }
+]

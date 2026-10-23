@@ -1,5 +1,5 @@
 import Image from "next/image";
-import packagesArtwork from "../../public/images/github-packages.webp";
+import packagesArtwork from "../../public/images/homepage/analytics-security.webp";
 import styles from "./packages-section.styles";
 
 export default function PackagesSection() {
@@ -29,7 +29,7 @@ export default function PackagesSection() {
         <div className={styles.visual}>
           <Image
             src={packagesArtwork}
-            alt="GitHub Octocat surrounded by colorful purple, blue and pink three-dimensional shapes."
+            alt="A glass shield and teal lock protecting connected customer profiles and analytics."
             fill
             placeholder="blur"
             sizes="(max-width: 760px) 94vw, (max-width: 1544px) 44vw, 660px"

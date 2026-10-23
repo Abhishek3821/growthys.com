@@ -1,3 +1,4 @@
+import { digitalMarketingQuestions } from "../data/digital-marketing-content";
 import type { Metadata } from "next";
 import DigitalMarketingHero from "../components/digital-marketing-hero";
 import DriverBenefits from "../components/driver-benefits";
@@ -11,7 +12,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Digital Marketing | Growthys",
-  description: "Visual poetry. Discover creative digital marketing and compelling storytelling with Growthys.",
+  description: "Welcome to a growth journey built on data, creativity, and consistency. Discover how strategy turns attention into customers — not just likes.",
 };
 
 export default function DigitalMarketingPage() {
@@ -24,8 +25,8 @@ export default function DigitalMarketingPage() {
         <DigitalBlogShowcase />
         <TravelVideoShowcase />
         <PinnedProcess />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta digitalMarketing />
+        <FaqSection items={digitalMarketingQuestions} eyebrow="Trusted by: Startups · D2C Brands · Clinics · Real Estate Firms · Manufacturers" />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

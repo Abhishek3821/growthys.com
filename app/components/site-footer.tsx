@@ -1,15 +1,36 @@
 "use client";
 
 import Image from "next/image";
-import { useState, type FormEvent } from "react";
-import monuments from "../../public/images/footer/indian-monuments.webp";
+import Link from "next/link";
+import footerSkyline from "../../public/images/homepage/footer-india.webp";
 import growthysLogo from "../../public/images/footer/growthys-logo.jpeg";
 import styles from "./site-footer.styles";
 
 const linkGroups = [
-  { title: "Quick Links", links: [{ label: "Home", href: "/" }, { label: "Shop Sarees" }, { label: "About Us" }] },
-  { title: "Customer Care", links: [{ label: "FAQs", href: "#faq" }, { label: "Shipping & Delivery" }, { label: "Size & Care Guide" }, { label: "Track Your Order" }] },
-  { title: "Company Links", links: [{ label: "Help & Support", href: "#faq" }, { label: "Privacy Policy" }, { label: "Terms & Conditions" }, { label: "Contact Us", href: "#contact" }] },
+  { title: "Quick Links", links: [
+    { label: "Home", href: "/" },
+    { label: "Company overview", href: "/insights" },
+    { label: "Blogs", href: "/blogs" },
+    { label: "Contact", href: "/contact" },
+  ] },
+  { title: "Our Services", links: [
+    { label: "Performance Marketing", href: "/performance-marketing" },
+    { label: "Digital Marketing", href: "/digital-marketing" },
+    { label: "Search Engine Optimization (SEO)", href: "/search-engine-optimization" },
+    { label: "Social Media Marketing", href: "/social-media-marketing" },
+    { label: "Content Marketing", href: "/content-marketing" },
+    { label: "Ecommerce Marketing", href: "/ecommerce-marketing" },
+    { label: "Website Design", href: "/website-design" },
+    { label: "Web Development", href: "/web-development" },
+    { label: "App Development", href: "/app-development" },
+    { label: "UI/UX Design", href: "/ui-ux-design" },
+    { label: "Graphic Designing", href: "/graphic-designing" },
+    { label: "CMS Design", href: "/cms-design" },
+    { label: "E-Commerce Solutions", href: "/e-commerce-solutions" },
+    { label: "HRMS Software", href: "/hrms-software" },
+    { label: "CRM & Management Software", href: "/crm-management-software" },
+  ] },
+  { title: "Company Links", links: [{ label: "Help & Support", href: "/help-support" }, { label: "Privacy Policy", href: "/privacy-policy" }, { label: "Terms & Conditions", href: "/terms-conditions" }, { label: "Contact Us", href: "#contact" }] },
 ];
 
 function SocialIcon({ name }: { name: "Pinterest" | "Instagram" | "Facebook" }) {
@@ -29,13 +50,6 @@ type SiteFooterProps = {
 };
 
 export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: SiteFooterProps) {
-  const [showNotice, setShowNotice] = useState(false);
-
-  function handleSubscribe(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setShowNotice(true);
-  }
-
   function resolveHref(href: string) {
     if (href === "#contact" && contactHref) return contactHref;
     if (href === "#faq" && faqHref) return faqHref;
@@ -48,26 +62,20 @@ export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: 
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <a href="/" className={styles.logo} aria-label="Growthys home">
+            <Link href="/" className={styles.logo} aria-label="Growthys home">
               <Image src={growthysLogo} alt="Growthys" className={styles.logoImage} sizes="320px" />
-            </a>
-            <p>Growthys brings ideas to life through thoughtful design and technology. We create digital experiences that help businesses connect, grow, and move forward.</p>
+            </Link>
+            <p>A digital marketing company and IT solutions company in India, helping businesses grow with smart marketing, clean design, and reliable technology. Based in Gurugram, Haryana — serving clients across India and beyond.</p>
           </div>
           <div className={styles.newsletter}>
-            <h2>Newsletter</h2>
-            <form onSubmit={handleSubscribe}>
-              <label className={styles.srOnly} htmlFor="footer-newsletter-email">Newsletter email address</label>
-              <div className={styles.formRow}>
-                <input id="footer-newsletter-email" name="email" type="email" autoComplete="email" placeholder="Enter email address" required onChange={() => setShowNotice(false)} />
-                <button type="submit">Submit</button>
-              </div>
-              {showNotice && <p className={styles.notice} role="status">Newsletter subscriptions are coming soon.</p>}
-            </form>
-            <p>Stay connected with Growthys. Get updates on our latest work, insights, and ideas in design and technology.</p>
+            <h2>Follow Us</h2>
+            <div className={styles.socials} aria-label="Social media">
+              {(["Pinterest", "Instagram", "Facebook"] as const).map((name) => <button type="button" key={name} aria-label={name} disabled><SocialIcon name={name} /></button>)}
+            </div>
           </div>
         </div>
         <div className={styles.navigation}>
-          {linkGroups.map((group) => (
+          {linkGroups.filter((group) => group.title !== "Our Services").map((group) => (
             <nav key={group.title} aria-label={`Footer ${group.title}`}>
               <h2>{group.title}</h2>
               <ul>{group.links.map((link) => <li key={link.label}>{link.href ? <a href={resolveHref(link.href)}>{link.label}</a> : <button type="button" disabled>{link.label}</button>}</li>)}</ul>
@@ -75,16 +83,19 @@ export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: 
           ))}
           <div className={styles.connect}>
             <h2>Connect With Us</h2>
-            <p><a href={resolveHref("#contact")}>Contact Growthys</a></p>
-            <p>+91 9XXXX XXX25</p>
-            <div className={styles.socials} aria-label="Social media">
-              {(["Pinterest", "Instagram", "Facebook"] as const).map((name) => <button type="button" key={name} aria-label={name} disabled><SocialIcon name={name} /></button>)}
-            </div>
+            <p><span aria-hidden="true">📍</span> <Link href="/contact#contact-location">Gurugram, Haryana, India</Link></p>
+            <p><span aria-hidden="true">📧</span> <a href="mailto:growthysofficial@gmail.com">growthysofficial@gmail.com</a></p>
+            <p><span aria-hidden="true">📞</span> <a href="tel:+919625663269">+91 9625663269</a></p>
+            <p><span aria-hidden="true">💬</span> <a href="https://wa.me/919625663269" target="_blank" rel="noopener noreferrer">WhatsApp: +91 9625663269</a></p>
           </div>
+          <nav className={styles.services} aria-label="Footer Our Services">
+            <h2>Our Services</h2>
+            <ul>{linkGroups.find((group) => group.title === "Our Services")?.links.map((link) => <li key={link.label}><Link href={link.href!}>{link.label}</Link></li>)}</ul>
+          </nav>
         </div>
         <p className={styles.copyright}>© 2026 Growthys. All Rights Reserved.</p>
       </div>
-      <div className={styles.skyline} aria-hidden="true"><Image src={monuments} alt="" className={styles.monuments} sizes="100vw" /></div>
+      <div className={styles.skyline} aria-hidden="true"><Image src={footerSkyline} alt="" className={styles.monuments} sizes="100vw" /></div>
     </footer>
   );
 }

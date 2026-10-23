@@ -1,3 +1,4 @@
+import { websiteDesignQuestions } from "../data/website-design-content";
 import type { Metadata } from "next";
 import WebsiteDesignHero from "../components/website-design-hero";
 import DesignClasses from "../components/design-classes";
@@ -12,7 +13,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "Website Design | Growthys",
-  description: "Beyond color. Pure emotion. Discover thoughtful website design and timeless visual storytelling with Growthys.",
+  description: "Websites built to look beautiful, load fast, and turn visitors into customers.",
 };
 
 export default function WebsiteDesignPage() {
@@ -26,8 +27,8 @@ export default function WebsiteDesignPage() {
         <MindspaceSection />
         <TravelServiceShowcase />
         <LearningBenefits />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta websiteDesign />
+        <FaqSection items={websiteDesignQuestions} eyebrow="Trusted by: Startups · D2C Brands · Clinics · Real Estate Firms · Manufacturers" />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

@@ -1,3 +1,4 @@
+import { crmContent } from "../data/crm-content";
 import type { Metadata } from "next";
 import CrmHero from "../components/crm-hero";
 import CrmProcess from "../components/crm-process";
@@ -11,8 +12,8 @@ import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
-  title: "CRM & Management Software | Growthys",
-  description: "Explore CRM and management software solutions with Growthys. Start your journey with experiences built around your goals.",
+  title: "CRM Management Software | Growthys",
+  description: crmContent.hero.description,
 };
 
 export default function CrmManagementSoftwarePage() {
@@ -26,8 +27,8 @@ export default function CrmManagementSoftwarePage() {
         <CrmClientProfiles />
         <CrmCommitment />
         <CrmMarketDrivers />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta crm />
+        <FaqSection items={crmContent.faqs} eyebrow={crmContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

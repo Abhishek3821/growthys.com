@@ -1,0 +1,123 @@
+[
+  {
+    "name": "editorial-hero",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1615382,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\editorial-hero.webp"
+  },
+  {
+    "name": "content-hub",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 850908,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\content-hub.webp"
+  },
+  {
+    "name": "blogs",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1863058,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\blogs.webp"
+  },
+  {
+    "name": "writer",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 995618,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\writer.webp"
+  },
+  {
+    "name": "workflow",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 887512,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\workflow.webp"
+  },
+  {
+    "name": "content-illustration",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 2104056,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\content-illustration.webp"
+  },
+  {
+    "name": "editorial-team",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 973630,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\editorial-team.webp"
+  },
+  {
+    "name": "content-audit",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1170580,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\content-audit.webp"
+  },
+  {
+    "name": "landing-pages",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1368248,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\landing-pages.webp"
+  },
+  {
+    "name": "white-papers",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1768544,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\white-papers.webp"
+  },
+  {
+    "name": "email-newsletters",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1126090,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\content-marketing\\graphics\\email-newsletters.webp"
+  }
+]

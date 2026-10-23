@@ -1,0 +1,123 @@
+[
+  {
+    "name": "hero-social-studio",
+    "originalWidth": 1374,
+    "originalHeight": 1145,
+    "width": 3840,
+    "height": 3200,
+    "bytes": 1623304,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\hero-social-studio.webp"
+  },
+  {
+    "name": "reel-campaign",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1654740,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\reel-campaign.webp"
+  },
+  {
+    "name": "linkedin-content",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1295614,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\linkedin-content.webp"
+  },
+  {
+    "name": "festive-carousel",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 1326006,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\festive-carousel.webp"
+  },
+  {
+    "name": "creative-team",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1084836,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\creative-team.webp"
+  },
+  {
+    "name": "discover",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1617502,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\discover.webp"
+  },
+  {
+    "name": "plan",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1395596,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\plan.webp"
+  },
+  {
+    "name": "create",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1207786,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\create.webp"
+  },
+  {
+    "name": "review",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1272904,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\review.webp"
+  },
+  {
+    "name": "publish",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1564544,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\publish.webp"
+  },
+  {
+    "name": "measure",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 1275610,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\social-media\\graphics\\measure.webp"
+  }
+]

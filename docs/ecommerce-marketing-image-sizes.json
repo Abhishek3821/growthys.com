@@ -1,0 +1,136 @@
+[
+  {
+    "name": "hero",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 680948,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\hero.webp"
+  },
+  {
+    "name": "about",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 822884,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\about.webp"
+  },
+  {
+    "name": "performance",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 792608,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\performance.webp"
+  },
+  {
+    "name": "platforms",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 639686,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\platforms.webp"
+  },
+  {
+    "name": "growth-plan",
+    "originalWidth": 1024,
+    "originalHeight": 1536,
+    "width": 2560,
+    "height": 3840,
+    "bytes": 876720,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\growth-plan.webp"
+  },
+  {
+    "name": "product-page",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 921644,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\product-page.webp"
+  },
+  {
+    "name": "cart-recovery",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 879566,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\cart-recovery.webp"
+  },
+  {
+    "name": "ad-testing",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 986746,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\ad-testing.webp"
+  },
+  {
+    "name": "revenue-analytics",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 903530,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\revenue-analytics.webp"
+  },
+  {
+    "name": "store-rebuild",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 788502,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\store-rebuild.webp"
+  },
+  {
+    "name": "marketplace",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1037156,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\marketplace.webp"
+  },
+  {
+    "name": "retention",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 753258,
+    "upscaled": true,
+    "output": "public\\images\\ecommerce-marketing\\graphics\\retention.webp"
+  },
+  {
+    "name": "case-studies-sheet",
+    "width": 2560,
+    "height": 7680,
+    "bytes": 1523120,
+    "upscaled": true,
+    "atlas": true,
+    "parts": [
+      "store-rebuild",
+      "marketplace",
+      "retention"
+    ],
+    "output": "public\\images\\ecommerce-marketing\\graphics\\case-studies-sheet.webp"
+  }
+]

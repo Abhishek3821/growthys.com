@@ -1,13 +1,14 @@
 "use client";
 
 import siteStyles from "../site-styles";
+import styles from "./cabin-hero.module.css";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";
-import forestCabin from "../../public/images/forest-cabin.webp";
-import mistyForest from "../../public/images/misty-forest.webp";
-import lakesideCabin from "../../public/images/lakeside-cabin.webp";
+import forestStudio from "../../public/images/homepage/hero-forest-build-v8.webp";
+import woodlandStudio from "../../public/images/homepage/hero-forest-scale-v8.webp";
+import lakesideStudio from "../../public/images/homepage/hero-lakeside-rise-v8.webp";
 
 const stories = [
   {
@@ -16,8 +17,8 @@ const stories = [
     title: ["Grow Your", "Business Faster"],
     index: "Build Bold. Grow Smart.",
     description: ["A digital marketing company turning attention into revenue — SEO, software, CRM, and HRMS under one roof."],
-    image: forestCabin,
-    imageAlt: "A timber cabin nestled in a lush forest, with a hiker in a mustard jacket walking toward it.",
+    image: forestStudio,
+    imageAlt: "A warmly lit timber work studio among mossy evergreens, with a person approaching along the forest path.",
     caption: "Build Bold. Grow Smart.",
   },
   {
@@ -26,8 +27,8 @@ const stories = [
     title: ["Technology", "Meets Marketing"],
     index: "Marketing Meets Real Technology",
     description: ["Growthys connects software development and digital marketing so your business grows without friction."],
-    image: mistyForest,
-    imageAlt: "A winding trail among towering moss-covered trees and ferns in a misty forest.",
+    image: woodlandStudio,
+    imageAlt: "A fern-lined timber walkway leading through an ancient forest toward a warm glass-fronted studio.",
     caption: "Marketing Meets Real Technology",
   },
   {
@@ -36,8 +37,8 @@ const stories = [
     title: ["Smarter Growth", "Starts Here"],
     index: "Your Growth, Engineered Digitally",
     description: ["An IT solutions company delivering SEO, CRM & management software, and HRMS software development."],
-    image: lakesideCabin,
-    imageAlt: "A warmly lit timber cabin beside a still mountain lake surrounded by evergreen forest.",
+    image: lakesideStudio,
+    imageAlt: "A warm timber lakeside retreat with a small jetty, mountain reflections, and surrounding evergreen forest.",
     caption: "Your Growth, Engineered Digitally",
   },
 ];
@@ -71,8 +72,8 @@ export default function CabinHero() {
   }
 
   return (
-    <section className={siteStyles["cabin-hero"]} id="home" aria-label="Growthys — marketing and technology">
-      <div className={siteStyles["hero-background"]}>
+    <section className={`${siteStyles["cabin-hero"]} ${styles.hero}`} id="home" aria-label="Growthys — marketing and technology">
+      <div className={`${siteStyles["hero-background"]} ${styles.artwork}`}>
         {stories.map((item, index) => (
           <Image
             key={item.number}
@@ -84,6 +85,7 @@ export default function CabinHero() {
             preload={index === 0}
             loading={index === 0 ? undefined : "eager"}
             placeholder="blur"
+            quality={95}
             sizes="100vw"
           />
         ))}

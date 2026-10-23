@@ -1,3 +1,4 @@
+import { webDevelopmentContent } from "../data/web-development-content";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./navbar";
@@ -13,10 +14,10 @@ export default function WebDevelopmentHero() {
       </header>
       <section aria-labelledby="web-development-heading" className={styles.content}>
         <div className={styles.copy}>
-          <h1 id="web-development-heading">Marketing for<br />your Brand.</h1>
+          <h1 id="web-development-heading" aria-label={webDevelopmentContent.hero.title}>Websites Built<br />to Perform.</h1>
           <div className={styles.description}>
-            <p className={styles.descriptionTitle}>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet, at vel utinam signiferumque, graece verear.</p>
+            <p className={styles.descriptionTitle}>Not Just Look Good.</p>
+            <p>{webDevelopmentContent.hero.description}</p>
           </div>
         </div>
         <div className={styles.artwork}>
@@ -26,7 +27,7 @@ export default function WebDevelopmentHero() {
           <span className={`${styles.circle} ${styles.pale}`} aria-hidden="true" />
           <span className={styles.plus} aria-hidden="true">+</span>
           <div className={styles.portrait}>
-            <Image src="/images/services/web-development-laptop.webp" alt="A smiling man in a blue denim shirt working on a laptop" fill preload sizes="(max-width: 767px) 100vw, 65vw" className="object-contain object-bottom" />
+            <Image quality={95} src="/images/web-development/graphics/hero.webp" alt="Responsive laptop, tablet and mobile website with secure architecture and fast performance" fill preload sizes="(max-width: 767px) 100vw, 65vw" className="object-contain object-bottom" />
           </div>
         </div>
         <Link href="/contact#contact-inquiry" className={styles.startButton}>START WITH US<span aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="m8 5 5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span></Link>

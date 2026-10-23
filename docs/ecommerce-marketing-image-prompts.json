@@ -1,0 +1,90 @@
+{
+  "tool": "Built-in image_gen",
+  "resolutionNote": "4K WebP exports are upscaled from preserved generated original PNGs. Case study image sheet has three 2560px square panels (2560x7680) to preserve the existing image crop layout. Case images are conceptual illustrations.",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-c386892c-4ee5-43bf-9e1a-c93fad0789e6.png",
+      "width": 3840,
+      "height": 2160,
+      "prompt": "Use case: stylized-concept. Exceptional premium ecommerce marketing website hero, landscape 16:9 request maximum native 3840x2160 detail. Sculptural still life of an elegant laptop with a beautiful product catalogue showing neutral fashion, footwear and home goods, an upright smartphone with a restrained social advertising product card, two premium delivery parcels, a clear checkout checkmark and a single refined rising revenue chart. Strong central composition, all subjects in middle 70 percent safe for wide banner crop, calm edges. Luxury editorial 3D product visualization, tactile warm ivory ceramic, satin charcoal metal, frosted sage glass and muted olive accents, harmonious with an existing charcoal, cream and olive typography-led website. Light muted sage studio background, exquisite raytraced studio lighting, meticulous surfaces, physically believable reflections, beautifully balanced hierarchy. No words, numbers, logos, watermark, no fashion portrait, no webpage layout."
+    },
+    {
+      "name": "about",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-22d64557-1c7f-476b-b33a-c119033c3e64.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: photorealistic-natural. Luxury editorial business photograph for an ecommerce marketing website. Portrait 2:3 request native 2560x3840 detail. Two Indian ecommerce business professionals, a woman founder and a marketing specialist, thoughtfully reviewing an online store on a tablet alongside a laptop with a simple revenue chart. Beautiful calm creative workspace, tasteful folded apparel samples and a couple of unbranded delivery parcels provide ecommerce context. Natural intelligent expressions, realistic hands and proportions, detailed linen clothing and skin, soft window light, warm ivory, sage and charcoal palette, restrained olive accents. Center both faces and the tablet in middle 70 percent crop-safe frame. No readable text or numbers on screen, no logos, no watermark, no exaggerated stock poses."
+    },
+    {
+      "name": "performance",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d5a9e306-04ac-4c3b-a431-8a044a388246.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Premium monochrome ecommerce conversion and performance illustration, portrait 2:3 request native 2560x3840 detail. A beautifully crafted mini online storefront display with immaculate product cards, connected to a small checkout shield, shopping parcel and sculptural ascending revenue bars. Refined sculptural fine-art black-and-white product photography aesthetic, tactile off-white ceramic, brushed graphite and clear glass. Warm ivory studio backdrop with long soft architectural window shadows. Singular coherent composition, fine raytraced details, central subject with generous crop-safe margins. Communicate completed orders instead of clicks. No text, no letters, no logos, no watermark, no human model."
+    },
+    {
+      "name": "platforms",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-bdf316f1-9d00-48f8-bd41-900f5430ec33.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Luxury 3D ecommerce marketing technology stack illustration. Portrait 2:3 request 2560x3840 native detail. One central elegant storefront screen with miniature neutral product cards is connected by precise slender glass lines to a paid advertising target, email envelope, analytics bars, a cloud integration node and checkout shield. Sophisticated sparse organized hub composition with no visual clutter, beautiful tactile ivory ceramic, frosted sage glass and charcoal detailing with muted olive edges. Warm cream architectural studio, exceptional soft daylight, realistic reflections and nuanced shadows, all objects inside central 70 percent for portrait crop. No real platform logos, words, readable numbers, watermark, no website layout or fashion portrait."
+    },
+    {
+      "name": "growth-plan",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-31d3801c-2dc2-469f-bca6-682bdb085c91.png",
+      "width": 2560,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Premium ecommerce four-phase growth roadmap illustration. Portrait 2:3 request maximum native detail 2560x3840. A beautiful ascending four-level ivory stone sculpture with one meaningful object on each step: precise magnifying glass over small store audit card; checked mobile checkout; paid advertising target and an elegant growth curve; repeat purchase loop around a delivery parcel. One continuous restrained sage glass ribbon connects all four stages. Refined tactile architectural product sculpture, muted olive accents and charcoal details, warm cream/sage studio backdrop, soft premium raytraced light, exceptional craft and clean visual hierarchy. Center all objects in crop-safe middle 65 percent, no words, no step numerals, no logos, no watermark, no people."
+    },
+    {
+      "name": "product-page",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-902e99f8-2aed-438e-9e16-81a0653d949a.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium ecommerce marketing detail illustration, square composition request native 3840x3840 detail. An exquisite upright smartphone shows a clear miniature product detail page with a neutral sneaker, tiny colour-option swatches, precise image thumbnails and one restrained purchase button without readable text. A small magnifying glass focuses on the product information. Communicate product page optimization. Exceptionally art-directed tactile ivory ceramic, satin graphite and frosted sage glass with restrained muted olive accents on a warm cream studio background. Clean visually calm composition, complete objects centered in central 70 percent with generous crop-safe margins, expensive studio product photography and sophisticated raytraced 3D sculpture, exquisite materials, fine surface detail, soft window light and precise shadows. No words, no readable letters or numbers, no platform logos, no watermarks, no humans, no fashion lifestyle imagery."
+    },
+    {
+      "name": "cart-recovery",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-5f997976-2e5a-46d7-8db6-709d37541a1e.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium ecommerce marketing detail illustration, square composition request native 3840x3840 detail. A refined frosted glass email envelope opens beside a small elegant shopping cart holding an ivory delivery parcel. A single curved return arrow joins them and a tiny checked badge confirms a recovered order. Communicate abandoned cart email automation. Exceptionally art-directed tactile ivory ceramic, satin graphite and frosted sage glass with restrained muted olive accents on a warm cream studio background. Clean visually calm composition, complete objects centered in central 70 percent with generous crop-safe margins, expensive studio product photography and sophisticated raytraced 3D sculpture, exquisite materials, fine surface detail, soft window light and precise shadows. No words, no readable letters or numbers, no platform logos, no watermarks, no humans, no fashion lifestyle imagery."
+    },
+    {
+      "name": "ad-testing",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-77057cac-c68c-4f06-8d2d-3d8b83d62d1f.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium ecommerce marketing detail illustration, square composition request native 3840x3840 detail. Two neatly paired advertising creative mockup cards each show the same neutral unbranded cosmetic product with thoughtfully different visual arrangements, beside a precise small target and one tasteful upward trend. Communicate testing audiences and creatives. Exceptionally art-directed tactile ivory ceramic, satin graphite and frosted sage glass with restrained muted olive accents on a warm cream studio background. Clean visually calm composition, complete objects centered in central 70 percent with generous crop-safe margins, expensive studio product photography and sophisticated raytraced 3D sculpture, exquisite materials, fine surface detail, soft window light and precise shadows. No words, no readable letters or numbers, no platform logos, no watermarks, no humans, no fashion lifestyle imagery."
+    },
+    {
+      "name": "revenue-analytics",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-8c025920-d171-4a8b-9cba-e34b6f1c0bce.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium ecommerce marketing detail illustration, square composition request native 3840x3840 detail. A refined tilted tablet shows a simple trustworthy ecommerce revenue dashboard with three coherent rising bars, one smooth sales curve and a few minimal neutral UI lines, beside a small verified order parcel. Communicate reporting on completed orders and revenue. Exceptionally art-directed tactile ivory ceramic, satin graphite and frosted sage glass with restrained muted olive accents on a warm cream studio background. Clean visually calm composition, complete objects centered in central 70 percent with generous crop-safe margins, expensive studio product photography and sophisticated raytraced 3D sculpture, exquisite materials, fine surface detail, soft window light and precise shadows. No words, no readable letters or numbers, no platform logos, no watermarks, no humans, no fashion lifestyle imagery."
+    },
+    {
+      "name": "store-rebuild",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-d89646ff-619b-4da6-9ede-cc9b0be518ff.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium conceptual illustration for an ecommerce marketing project case study, square request native 3840x3840 detail. A beautifully reconstructed online storefront screen displays organized miniature product cards, one checked checkout card and a clean connected revenue chart, with a neutral parcel resting on an ivory architectural pedestal. Communicate a full-funnel store rebuild that improves product pages, checkout and paid advertising. Ivory ceramic and muted olive/sage glass with charcoal detailing, cream studio backdrop, sophisticated architectural staging, exceptional luxury studio lighting, precise raytraced soft shadows, detailed surfaces, impeccable visual hierarchy. Keep every meaningful object inside center 65 percent with generous background on all sides for square image cropping. Match a refined editorial cream/charcoal/olive website. No specific client brand, no text, no readable letters or numbers, no logos, no watermarks, no people, no collage. This is a conceptual project illustration, not a claimed client screenshot."
+    },
+    {
+      "name": "marketplace",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-7eda986d-21ce-4ecd-8a55-91f03c00c268.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium conceptual illustration for an ecommerce marketing project case study, square request native 3840x3840 detail. Three small elegant shopfront display cards with distinct neutral product assortments are connected to one central catalogue and precisely arranged delivery parcels. A restrained growth curve links the new sales channels. Communicate marketplace listing optimization and expansion. Ivory ceramic and muted olive/sage glass with charcoal detailing, cream studio backdrop, sophisticated architectural staging, exceptional luxury studio lighting, precise raytraced soft shadows, detailed surfaces, impeccable visual hierarchy. Keep every meaningful object inside center 65 percent with generous background on all sides for square image cropping. Match a refined editorial cream/charcoal/olive website. No specific client brand, no text, no readable letters or numbers, no logos, no watermarks, no people, no collage. This is a conceptual project illustration, not a claimed client screenshot."
+    },
+    {
+      "name": "retention",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16990-15b5-7821-b10f-7723fd1681a4\\exec-e849d59a-f7fb-4d7c-88dd-a29986a1ce96.png",
+      "width": 3840,
+      "height": 3840,
+      "prompt": "Use case: stylized-concept. Single premium conceptual illustration for an ecommerce marketing project case study, square request native 3840x3840 detail. A frosted sage email envelope, a small mobile message card and two beautifully crafted delivery parcels are joined by a single graceful repeat-purchase loop with a checkmark. Communicate email and SMS retention bringing previous customers back. Ivory ceramic and muted olive/sage glass with charcoal detailing, cream studio backdrop, sophisticated architectural staging, exceptional luxury studio lighting, precise raytraced soft shadows, detailed surfaces, impeccable visual hierarchy. Keep every meaningful object inside center 65 percent with generous background on all sides for square image cropping. Match a refined editorial cream/charcoal/olive website. No specific client brand, no text, no readable letters or numbers, no logos, no watermarks, no people, no collage. This is a conceptual project illustration, not a claimed client screenshot."
+    }
+  ]
+}

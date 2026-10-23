@@ -1,0 +1,101 @@
+[
+  {
+    "name": "search-rankings",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 1029616,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\search-rankings.webp"
+  },
+  {
+    "name": "keyword-research",
+    "originalWidth": 1448,
+    "originalHeight": 1086,
+    "width": 3840,
+    "height": 2880,
+    "bytes": 926496,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\keyword-research.webp"
+  },
+  {
+    "name": "strategy",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 792928,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\strategy.webp"
+  },
+  {
+    "name": "technical-audit",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 888792,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\technical-audit.webp"
+  },
+  {
+    "name": "authority-content",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 961454,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\authority-content.webp"
+  },
+  {
+    "name": "audit-strategy",
+    "originalWidth": 1727,
+    "originalHeight": 911,
+    "width": 3840,
+    "height": 2016,
+    "bytes": 495678,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\audit-strategy.webp"
+  },
+  {
+    "name": "local-maps",
+    "originalWidth": 1727,
+    "originalHeight": 911,
+    "width": 3840,
+    "height": 2016,
+    "bytes": 705430,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\local-maps.webp"
+  },
+  {
+    "name": "ecommerce-seo",
+    "originalWidth": 1729,
+    "originalHeight": 910,
+    "width": 3840,
+    "height": 2016,
+    "bytes": 763952,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\ecommerce-seo.webp"
+  },
+  {
+    "name": "seo-team",
+    "originalWidth": 1086,
+    "originalHeight": 1448,
+    "width": 2880,
+    "height": 3840,
+    "bytes": 773790,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\seo\\graphics\\seo-team.webp"
+  }
+]

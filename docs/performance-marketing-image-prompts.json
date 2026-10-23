@@ -1,0 +1,62 @@
+{
+  "mode": "built-in image_gen",
+  "resolutionNote": "Generated originals are below 4K. Delivered WebP exports are resized to 4K dimensions using Lanczos3; not native 4K or 8K generation.",
+  "assets": [
+    {
+      "name": "campaign-growth-hero",
+      "prompt": "Use case: ads-marketing. Asset type: full-bleed photographic hero background for Growthys performance marketing page. Create an exceptionally polished editorial advertising photograph, ultra detailed 4K 3840x2160 landscape if supported, no text, no logos, no watermarks. Subject: a real performance marketing strategy workspace with sophisticated wide desktop screens showing clean abstract paid campaign analytics, conversion funnel charts, growth trend curves, small ad creative thumbnails; a strategist's hands subtly adjusting campaign planning materials on a walnut desk at the right. No legible text, no invented numerical results. Warm golden hour window light, rich muted olive-charcoal shadows, amber highlights, premium modern Indian agency studio, extremely realistic materials, sharp photographed quality, elegant controlled composition rather than a busy sci-fi UI. Left 55 percent is quiet softly lit olive wall and atmospheric negative space for existing large white headline; all interesting workstation objects in right 45 percent and center-right, keep top 15 percent quiet for navbar. Existing page has a golden radial overlay, do not draw any UI page layout or text into the photo. Strong clearly relevant idea: turn ad spend into measured business growth.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-1e2b3dae-5ff0-4a8d-b644-a275dcf36a1e.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "growth-partner",
+      "prompt": "Use case: ads-marketing. Asset type: wide banner background for 'A Growth Partner, Not Just an Agency' on Growthys performance marketing website. Premium editorial photograph of two Indian campaign strategists collaboratively reviewing a paid-ad analytics monitor in an elegant studio, subjects positioned in rightmost 40 percent, left 60 percent calm deep navy-teal shadowed wall negative space for existing white heading. Long-term collaboration, careful campaign monitoring, real leads and conversions, not generic finance. Tasteful teal accent light, natural skin, convincing hands, real matte materials, small minimalist abstract graphs only on monitor, no readable text or numbers or logos. Landscape 3840x2160 4K requested, highest detail. Cinematic but natural, impeccable professional quality. No page design, no frames, no watermarks.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-6c6569d0-a62e-4c68-b20a-d679d34c8ffb.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "budget-optimization",
+      "prompt": "Use case: stylized-concept. Asset type: wide background image for an existing light lavender Better Budget Use website card. Ultra premium photorealistic 3D studio render: a precision glass funnel sorting a small number of satin gold coins toward three ascending lavender performance bars, a subtle targeting ring, symbolizes smarter ad budget allocation and eliminating wasted spend. Composition: all objects grouped in RIGHT 40 percent, LEFT 60 percent perfectly quiet flat pale lavender #d1d0e7 with no objects so dark heading and supporting copy remain clear. Refined frosted optical glass, brushed gold metal, soft ambient occlusion, subtle realistic shadows, elegant editorial CGI. No writing, numbers, currency symbols, logos, watermark, or UI layout. Landscape 3840x2160 requested, best detail.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-081b152d-c00d-471c-9ca5-f673eeb72fee.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "lead-generation",
+      "prompt": "Use case: ads-marketing. Asset type: portrait campaign card photograph for Growthys 'Lead Generation'. Exceptionally polished editorial still life of a floating glass-and-matte-white contact enquiry interface and a smartphone on a pale blue-grey studio pedestal, tasteful small teal user avatar discs flowing through a transparent lead funnel toward a single warm amber confirmation check. Show the idea of qualified enquiries for clinics, real estate, education, and service firms. Clean premium tactile CGI blended with commercial product photography, photoreal materials, crisp edges, delicate shadows. Portrait 2160x3840 4K requested. Primary objects in upper and middle 65 percent, keep bottom 25 percent visually simple for existing overlaid card caption. No readable text, logos, claims, numbers, watermarks, website layout or outer card border. Sophisticated balanced composition, clearly about business leads, not fashion merchandise.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-5cb99f55-371e-4798-b9c1-99b2f22a1e16.png",
+      "width": 2160,
+      "height": 3840
+    },
+    {
+      "name": "ecommerce-sales",
+      "prompt": "Use case: ads-marketing. Asset type: premium portrait image inside an existing Growthys E-Commerce Sales campaign card. Elegant photorealistic commercial CGI still life: a premium smartphone showing a minimalist product shopping grid made from tiny product photographs without words, a small sculptural chrome shopping cart holding a matte cosmetic bottle and neat parcel, floating amber confirmation tick and subtle teal rising revenue curve behind. Pale icy blue and warm ivory studio background, soft directional daylight, fine matte and glass textures, understated luxury, contemporary advertising art direction. Clearly represents product ads, completed online orders, repeat purchases. Portrait 2160x3840 4K requested highest detail. Main subjects centered in upper 65 percent; bottom 25 percent quiet for existing HTML caption overlay. No typography, numbers, claims, logos, watermarks, no drawn website card or border.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-f1d70b49-8572-4599-83bc-2c05a7c48ce9.png",
+      "width": 2160,
+      "height": 3840
+    },
+    {
+      "name": "app-signups",
+      "prompt": "Use case: ads-marketing. Asset type: portrait Growthys App Installs & Sign-Ups campaign graphic. Award-quality photorealistic 3D commercial studio photograph: a graphite smartphone angled slightly backward on a clean lavender plinth, screen with elegant abstract app onboarding UI, large teal completion check and a downward download arrow, subtle small abstract avatar discs in background connecting to the phone, soft violet and cool blue backdrop. Tactile glass and anodized aluminum, beautifully controlled studio reflections, razor-sharp detailed materials, gentle natural shadows. Portrait 2160x3840 4K requested. Main subject in upper 65 percent, calm bottom 25 percent for existing HTML caption. Concept: app downloads, new account registrations and controlled acquisition costs. No readable text, numbers, logos, watermarks, no UI website layout, no outer frame.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-7a4676f1-35a1-4d82-a89c-bd2ea21cb385.png",
+      "width": 2160,
+      "height": 3840
+    },
+    {
+      "name": "brand-awareness",
+      "prompt": "Use case: ads-marketing. Asset type: portrait Brand Awareness campaign card background for a premium performance marketing agency. Beautiful sophisticated commercial 3D still life: a sculptural matte cream megaphone with fine brushed amber metal rim, emanating three delicate translucent teal concentric sound arcs toward a small arrangement of frosted-glass audience avatar discs. A few elegant abstract ad content cards behind with photographic thumbnails but no text. Warm muted apricot and pale ivory studio backdrop, subtle lavender accents linking the rest of the set. Soft directional studio lighting, immaculate materials, professional high-end editorial advertising artwork. Portrait 2160x3840 4K requested highest detail. Composition upper 65 percent, lower 25 percent quiet for existing caption overlay. Relevant to reaching the right audience, repeated brand visibility. No writing, logos, invented metrics, watermark or website layout.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-a4c66169-86d5-4a39-a185-95a0e120df32.png",
+      "width": 2160,
+      "height": 3840
+    },
+    {
+      "name": "campaign-challenges-atlas",
+      "prompt": "Use case: stylized-concept. Asset type: seamless 4-column by 2-row image atlas for seven existing small performance marketing problem cards. Generate exactly 8 equal rectangular tiles, perfectly aligned in a 4x2 grid, no gutters or borders or margins. Overall landscape 3840x1920 requested. Each tile is a premium photoreal 3D studio render on light neutral frosted background, centered compact objects occupying middle 60%, same lighting/materials/style. Row 1 left to right: (1) wasted advertising budget, gold coins falling past an empty glass lead funnel; (2) costly clicks, a polished cursor arrow beside tall gold coin stacks; (3) missing attribution tracking, disconnected translucent glass data nodes; (4) weak landing page, a glass browser panel with an outward exit arrow. Row 2 left to right: (5) wrong ad audience, a teal target with small orange audience discs outside the rings; (6) leads without follow-up, a closed cream envelope and small elegant amber clock; (7) scaling problems, violet rising bars interrupted by a small gap; (8) stable campaign growth, intact teal rising bars with small check. No writing or numerals, no logos, no watermark, no people, no drawn webpage, no decorative clutter. Very refined crisp tiny-use silhouettes, glass, matte lavender, ivory, teal and brushed gold. Equal 4x2 tile alignment is essential for CSS crop positions.",
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-830034db-dae5-4f97-8db1-f7803abdb20c.png",
+      "width": 3840,
+      "height": 1920
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "conversation",
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "width": 3840,
+    "height": 2160,
+    "bytes": 761166,
+    "hasAlpha": false,
+    "upscaled": true,
+    "output": "public\\images\\contact\\graphics\\conversation.webp"
+  },
+  {
+    "name": "communication",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "width": 3840,
+    "height": 3840,
+    "bytes": 1048480,
+    "hasAlpha": true,
+    "upscaled": true,
+    "output": "public\\images\\contact\\graphics\\communication.webp"
+  }
+]

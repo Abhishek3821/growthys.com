@@ -1,0 +1,175 @@
+{
+  "mode": "built-in image_gen",
+  "visualDirection": "Editorial photography, tactile paper cutouts, mixed-media collage and screenprint textures; varied subjects and compositions matched to existing content and image slots.",
+  "resolutionNote": "Original images were generated below 4K. Final WebP files are Lanczos3-upscaled exports with 3840px long edges, not native 4K or 8K.",
+  "assets": [
+    {
+      "name": "campaign-creative-hero",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 editorial commercial photograph. A confident Indian female creative strategist in dark modern clothing standing against a rich warm golden-orange studio background, holding two large printed campaign contact sheets with bright abstract ad layouts and small product photos, looking thoughtfully toward the viewer. Campaign planning and creativity, not a camera or photographer. Full upper body in frame, subject centered slightly right, natural skin, convincing hands, warm directional hard light, subtle editorial grain, premium magazine campaign. Keep top-left quiet for existing decorative script. No text on the prints.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-5aeb85f3-765e-4eae-a6f5-6c5b5383d872.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "business-results",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 photoreal editorial cutout of a smiling Indian small-business owner in a warm terracotta overshirt, holding a neatly packed customer order and checking an unbranded phone. Real sales and customer results, authentic tactile paper packaging, natural realistic hands and skin, controlled studio light. Single subject fully inside frame with head and hands visible; clean isolated cutout on genuinely transparent background. No background, text or logo.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-ef9dfc18-01ae-4ff9-aa61-bb659bcc4cc4.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "adaptive-strategy",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 4:3 hand-crafted editorial paper-cut collage: a bold violet circular arrow around a coral target, small textured cream planning slips and a black drawn pencil, imperfect cut-paper edges, risograph dots, deliberately flat tactile print aesthetic, clear silhouette. Concept of weekly testing, changing strategy and continuous optimization. Main cluster compact, genuine transparent background, no rectangle or drop shadow outside the art.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-e84a5ef0-ee7a-4827-a540-4fd509b3c562.png",
+      "width": 3840,
+      "height": 2880
+    },
+    {
+      "name": "lasting-growth",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 4:3 sophisticated hand-cut paper editorial illustration: three blue ascending steps with an amber sun, a dark ink plant sprouting from the upper step, small dotted timeline tracing steady progress. Tangible paper fibers, screenprinted texture, elegant simple graphic silhouette. Long-term sustainable marketing growth, not quick tricks. True transparent background, main object centered, no words or fake metrics.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-d54f3e70-b311-4c08-98ca-3e0239880c36.png",
+      "width": 3840,
+      "height": 2880
+    },
+    {
+      "name": "service-seo",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 editorial mixed-media cutout collage: photographic oversized magnifying glass over a stack of crisp search-result paper strips with abstract horizontal lines, one coral highlighted strip rising above the others and an ink location pin. Lilac, cream, black, coral details. Highly legible silhouette for a small service card. Genuine transparent background; no text, no border.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-3dfa5913-ff81-4940-84b9-e30509873413.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-conversion",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 bold screenprinted cut-paper illustration: coral pointer cursor pressing a high-contrast round orange action button, leading along a hand-drawn dark line to a small photograph of an order confirmation check on a receipt-like strip. Cream and ink with warm yellow detail, tactile torn paper, sophisticated editorial texture. Clicks into customers and landing-page conversion. Genuine transparent background, no words.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-454727d8-92c7-4221-bf91-6fcf2ee31b76.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-social",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 energetic editorial photographic collage cutout: a smartphone with a small beautiful product video still, two cropped creator hands, layered colorful reel frame corners and magenta conversational speech shapes. Lime, black, warm pink, photographic texture and hand-cut edges, modern Indian brand social content. Compact shape cluster. Genuine transparent background; no letters or logos.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-df910b13-56be-49f5-9431-b5449558fc9e.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-paid-ads",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 premium editorial cutout collage: a camera-style targeting crosshair over a warmly photographed small product package, coral directional arrow, three layered advertising paper tiles, exact audience targeting idea. Ink black, coral, cream and dusty pink. Deliberately physical cut-and-paste style with crisp photographic details; no floating glass or shiny 3D. Transparent background, no lettering.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-07f4c6fb-0646-41ec-b83a-acba329707a5.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-pr",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 striking photographic cutout collage: real chrome broadcast microphone with orange paper speech rays, two overlapping blank newspaper strips with only abstract ink bars, small red amplification arcs. Bold contemporary print editorial art, physically tactile, controlled composition. Content and public relations, making a brand heard. True transparent background, no readable text.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-c27c6db5-d8b9-4bca-8772-f4b4c77bca9a.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-promotions",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 premium studio-photography cutout collage of a vivid coral blank retail promotion tag, a small paper calendar with no digits, wrapped customer parcel and electric yellow urgency ray. Warm editorial lighting, tactile kraft and screenprinted paper, fresh playful composition. Seasonal promotions and limited-time campaigns. Transparent background, no prices, lettering or numbers.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-d78e7580-498f-43bf-b1f4-3ebbbd0256a8.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-analytics",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 editorial data-storytelling collage cutout: folded graph paper with clean cyan and dark ink trend lines, cropped photographic hand holding a yellow highlighter, three circular chart segments and a precise black tracking dot. Restrained cyan, ink, white and yellow, convincing paper grain. Marketing traffic, leads and revenue analytics. No numbers or labels. True transparent background.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-3ae1d001-0e39-453e-8885-4cae2846a9d5.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "service-brand-trust",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Portrait 3:4 sophisticated editorial flat-lay cutout collage: coordinated cobalt and warm cream brand packaging, blank consistent identity cards, ink seal shape and a photographic handshake cropped gracefully at wrist. Trust, consistency and brand recognition across channels. Tactile papers and photography, gentle blue accents, sharply edited silhouette. Transparent background, no text or logos.",
+      "transparent": true,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-de5e3029-9d15-4099-92f1-0194b5bf6c6d.png",
+      "width": 2880,
+      "height": 3840
+    },
+    {
+      "name": "blog-seo",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 8:5 editorial magazine photograph. Overhead close-up of a real marketing researcher desk: hands with pencil marking a printed website hierarchy diagram and simple search-result strips, open notebook, laptop edge only, strong diagonal window light, deep blue and neutral palette with small coral annotations. Clear SEO research subject, natural imperfections and tactile print, premium journalism aesthetic. No legible text or numbers, no large 3D computer mockup.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-2acc2609-803a-424c-a591-dfdada9d6045.png",
+      "width": 3840,
+      "height": 2400
+    },
+    {
+      "name": "blog-ad-spend",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 4:3 conceptual editorial photograph: crumpled advertising printouts and unused paper campaign tiles beside a calculator and an amber magnifying lens, one carefully circled ad thumbnail and pencil on a charcoal studio table. Clearly represents diagnosing wasted ad budget and conversion problems. Sharp photoreal detail, moody side light, coral and ochre accents. No legible text or digits.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-2015f89a-8d07-47a6-bece-762d39865952.png",
+      "width": 3840,
+      "height": 2880
+    },
+    {
+      "name": "blog-social-trends",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 16:9 cinematic editorial photograph of a small Indian brand filming a product reel in an authentic sunlit studio: creator hands adjusting a smartphone on a small tripod, vivid product props and a ring light at side. Charcoal, teal and warm coral tones; focal activity upper 60 percent, lower 35 percent darker quiet tabletop for existing white text. Natural materials and skin, no logos or words.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-8240ed5c-e09b-4f95-93ee-f5e7b8cb3756.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "insight-foundations",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 16:9 conceptual editorial still-life photograph: right side of frame has precariously stacked blank campaign cards, mismatched targeting circles and disconnected tracking string on a slate blue worktable, one hand begins aligning the foundation. Left 65 percent very calm pale neutral surface for existing black heading and paragraph. Strong artistic daylight, tangible paper and ink, clear concept of failed marketing foundations. No words, numbers or software dashboard.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-187ccfce-abc9-4012-9f4c-f2bfd24c6bae.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "insight-what-works",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Landscape 16:9 tactile editorial photographic collage: right third has three neatly aligned cream cards with a simple speech shape, a content calendar grid without numbers, and a dark line chart highlighted in ochre. Precise, consistent, calm and practical. Left 65 percent quiet pale warm surface for existing black text. Hands and paper, soft natural shadow, contemporary magazine art direction. No letters or digits.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-04120930-1f1d-4776-bbbb-877dd666c48f.png",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "name": "process-research",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Square editorial documentary photograph: close-up of an Indian strategist's hands examining competitor printouts and website notes on a table, magnifying glass, simple hand-inked audience circles and a laptop corner. Rich blue-grey and neutral hues, real papers and pen textures. Research and audit before launching marketing. All action in central 70 percent for card crop, no readable words or numbers.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-f318c3cb-fed7-4f23-98bd-0fc28bb404bc.png",
+      "width": 3840,
+      "height": 3840
+    },
+    {
+      "name": "process-planning",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Square premium overhead editorial photograph: tidy real campaign strategy workspace, color-coded channel cards, planning notebook, a hand drawing connecting lines with a black pen, subtle coral and pale yellow swatches. A focused plan with goals, audiences and KPIs conveyed through visual hierarchy, no words or numbers. Elegant hard daylight and tactile paper, central safe framing.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-04f3d3c1-04da-41b0-ac56-0cc210e97f06.png",
+      "width": 3840,
+      "height": 3840
+    },
+    {
+      "name": "process-optimization",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Square editorial documentary photograph: two Indian marketing colleagues at a real desk comparing two printed ad creative variants with different images, one pointing to a simple hand-drawn upward trend, a laptop pushed subtly to the background. Warm natural side light, crisp real skin and paper, visually about testing and improving live campaigns. No legible text or digits. No glassy UI render.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-814e0d10-ef10-470f-bf31-58c4a82a989d.png",
+      "width": 3840,
+      "height": 3840
+    },
+    {
+      "name": "process-reporting",
+      "prompt": "Use case: ads-marketing. Create a premium raster illustration or photograph for the existing Growthys Digital Marketing page. Highest supported native resolution, 4K requested. Crisp professional art direction. This asset must feel different from generic floating laptops and frosted-glass 3D dashboards: use tactile editorial photography, artful paper collage or screenprinted illustration as specified. No words, lettering, numbers, logos, watermark, outer website card or full webpage. Square premium editorial photograph: cropped hands of a strategist and business owner reviewing a clean printed campaign report with a few bold colored chart shapes, a pen marking a rising trend, an invoice-like slip and notebook on a real desk. Transparent reporting, conversion review and careful scaling. Bright neutral daylight, fine tangible textures, coral and ink accents. No readable text or numbers.",
+      "transparent": false,
+      "source": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a168f6-14fd-7e12-8d6d-6054b2dc15e1\\exec-8a233eea-0910-4c04-9652-57051d65a7db.png",
+      "width": 3840,
+      "height": 3840
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { ecommerceContent } from "../data/ecommerce-content";
 import Link from "next/link";
 
 const services = [
@@ -16,12 +17,14 @@ function ServiceIcon({ icon }: { icon: typeof services[number]["icon"] }) {
   );
 }
 
-export default function FitnessServiceCards() {
+export default function FitnessServiceCards({ ecommerce = false }: { ecommerce?: boolean } = {}) {
   return (
     <section aria-labelledby="fitness-service-cards-heading" className="mx-auto max-w-[1800px] bg-[#fffcf8] px-5 py-14 sm:px-9 lg:px-16 lg:py-20">
-      <h2 id="fitness-service-cards-heading" className="sr-only">Fitness and nutrition services</h2>
+      <h2 id="fitness-service-cards-heading" className="sr-only">{ecommerce ? "E-Commerce services" : "Fitness and nutrition services"}</h2>
       <div className="mx-auto grid max-w-[1400px] gap-6 md:grid-cols-3 lg:gap-[clamp(32px,5vw,90px)]">
-        {services.map((service) => (
+        {services.map((original, index) => {
+          const service = ecommerce ? { ...original, ...ecommerceContent.services[index] } : original;
+          return (
           <article key={service.icon} className={`flex min-h-[340px] flex-col rounded-[16px] border p-6 lg:min-h-[410px] lg:p-7 xl:min-h-[440px] xl:p-8 ${service.card}`}>
             <ServiceIcon icon={service.icon} />
             <h3 className="mt-7 font-[Impact,Haettenschweiler,'Arial_Narrow',sans-serif] text-[28px] font-normal leading-tight tracking-[-0.015em] lg:mt-8 lg:text-[32px]">{service.title}</h3>
@@ -30,7 +33,7 @@ export default function FitnessServiceCards() {
               Book Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="size-4" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" /></svg>
             </Link>
           </article>
-        ))}
+        ); })}
       </div>
     </section>
   );
