@@ -3,7 +3,6 @@
 import siteStyles from "../site-styles";
 
 import Link from "next/link";
-import Image from "next/image";
 import logoStyles from "./navbar-logo.module.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -152,7 +151,7 @@ export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "
   const navigation = (
     <>
     <Link ref={logoRef} href="/" aria-label="Growthys home" className={logoStyles.logo} data-hidden={hidden} inert={hidden} onClick={closeMenus}>
-      <Image src="/images/brand/growthys-logo.png" alt="Growthys" width={900} height={251} sizes="(max-width: 700px) 145px, 180px" preload />
+      Growthys
     </Link>
     <nav
       ref={navRef}

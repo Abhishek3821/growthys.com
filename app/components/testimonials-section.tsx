@@ -43,10 +43,10 @@ export default function TestimonialsSection() {
         <div className={styles.content}>
           <span className={styles.badge}>Testimonials</span>
           <h2 id="testimonials-heading">
-            Trusted by leaders
-            <span>from various industries</span>
+            Relied On by Decision
+            <span>Makers Across Every Sector</span>
           </h2>
-          <p>{"Learn why professionals trust Growthys — a professional IT solutions provider in India and full-service digital marketing company — to complete their customer journeys."}</p>
+          <p>{"Discover why companies choose Growthys — a dependable technology partner and complete digital solutions provider — to support their business growth at every stage."}</p>
           <button className={styles.button} type="button" disabled>
             Read Success Stories
             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">

@@ -1,0 +1,55 @@
+{
+  "generator": "Built-in image_gen",
+  "compositionEditPrompt": "Precise composition edit only. Preserve this artwork's exact main sculptural design, glass and metal materials, dark evergreen palette, refined amber lighting, background atmosphere and premium visual quality. Keep landscape 16:9. IMPORTANT: reduce the ENTIRE main sculptural group including plinth by 30% and move it left so its full group is centered at exactly 44% of the canvas width. Every meaningful element, including the highest glowing sphere or cloud and all outermost nodes, must fit inside the vertical strip between 32% and 56% of canvas width. Leave existing generous dark negative space across the far left and top for website white typography. Do not add new objects. Rebuild surrounding dark mossy stone and soft botanical background naturally where needed. This is for an existing full-height mobile crop centered at 44% of the landscape; the highest object must be safely inside that strip. Do not change any text because there is none; add no text, letters, logos or watermarks. Highest available detail.",
+  "resolutionNote": "Final 7680x4320 WebP assets are Lanczos-upscaled exports from the generated source dimensions recorded below. They are not native 8K generation. Existing Next.js responsive image optimization is retained.",
+  "images": [
+    {
+      "key": "hero-build-v11-8k",
+      "prompt": "Use case: stylized-concept. Asset: one finished background artwork for a premium digital-marketing and software studio homepage hero, part of a three-image coordinated set for Growthys. Exact landscape 16:9, edge-to-edge artwork, not a webpage mockup. Keep the existing nature-inspired theme: deep forest green, dark olive, charcoal and restrained warm amber-gold, blurred evergreen botanical silhouettes and a touch of fine moss on dark honed stone. Luxurious physically based 3D editorial photography, extraordinarily refined dark emerald optical glass, brushed champagne-metal details, precise bevels, believable glass refraction, cinematic soft amber rim-light, rich contrast, calm professional atmosphere. No cabins, buildings, people, literal laptops, random clipart pile, neon cyberpunk, purple gradients or white studio backdrop. A single integrated designed sculpture rather than scattered icons. COMPOSITION IS CRITICAL: main artwork visually centered at 44% horizontal canvas position, all important objects kept within the central 28% width, around x=31% to x=57%, with top and bottom margin. It must remain legible and mostly intact in a portrait crop centered at 44% horizontal position. Reserve dark quiet negative space in the left 27%, top 12% and bottom 22% for existing white typography, navigation and footer. No rendered text, logos, letters, numbers or watermarks. Highest available native detail, request native 8K 7680x4320 if supported. BUILD / GROW YOUR BUSINESS FASTER: one beautifully constructed rising staircase made of three substantial translucent emerald-glass blocks on a low charcoal stone plinth. A continuous champagne-metal growth path rises elegantly through the steps and ends at a small glowing glass sphere. A precision circular target ring is integrated into the upper step, with a soft warm focal light. Suggest strategy, measurable marketing and a solid technology foundation through pure form. Quiet majestic confident composition. Keep total sculpture width compact; its point of focus at 44% canvas width. Long soft shadows and delicate reflected amber highlights, no busy analytics wall.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-02e5a598-06fc-463d-87b7-327c22dd6410.png",
+      "outputPath": "public/images/homepage/hero-build-v11-8k.webp",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "exportDimensions": {
+        "width": 7680,
+        "height": 4320
+      },
+      "bytes": 1768730,
+      "upscaled": true
+    },
+    {
+      "key": "hero-scale-v11-8k",
+      "prompt": "Use case: stylized-concept. Asset: one finished background artwork for a premium digital-marketing and software studio homepage hero, part of a three-image coordinated set for Growthys. Exact landscape 16:9, edge-to-edge artwork, not a webpage mockup. Keep the existing nature-inspired theme: deep forest green, dark olive, charcoal and restrained warm amber-gold, blurred evergreen botanical silhouettes and a touch of fine moss on dark honed stone. Luxurious physically based 3D editorial photography, extraordinarily refined dark emerald optical glass, brushed champagne-metal details, precise bevels, believable glass refraction, cinematic soft amber rim-light, rich contrast, calm professional atmosphere. No cabins, buildings, people, literal laptops, random clipart pile, neon cyberpunk, purple gradients or white studio backdrop. A single integrated designed sculpture rather than scattered icons. COMPOSITION IS CRITICAL: main artwork visually centered at 44% horizontal canvas position, all important objects kept within the central 28% width, around x=31% to x=57%, with top and bottom margin. It must remain legible and mostly intact in a portrait crop centered at 44% horizontal position. Reserve dark quiet negative space in the left 27%, top 12% and bottom 22% for existing white typography, navigation and footer. No rendered text, logos, letters, numbers or watermarks. Highest available native detail, request native 8K 7680x4320 if supported. SCALE / TECHNOLOGY MEETS MARKETING: one sophisticated orbital system sculpture, two intersecting broad translucent emerald-glass loops flowing through a central satin-metal hub, with three small glass data nodes physically connected along a single champagne-metal orbit. An elegant clean frosted-glass cloud form is integrated into the upper arc, representing scalable software and CRM. The object reads as one unified purposeful architectural installation, not an atom toy. Fine reflections, dark forest background, light atmospheric haze and exquisite material quality. Match a glass growth-staircase illustration in art direction, camera height and tonal contrast. Keep all loops and the cloud tightly within the compact central composition centered at 44% canvas width.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-ab7eeed9-2038-4fa1-a16b-467ba5be8180.png",
+      "outputPath": "public/images/homepage/hero-scale-v11-8k.webp",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "exportDimensions": {
+        "width": 7680,
+        "height": 4320
+      },
+      "bytes": 1787946,
+      "upscaled": true
+    },
+    {
+      "key": "hero-rise-v11-8k",
+      "prompt": "Use case: stylized-concept. Asset: one finished background artwork for a premium digital-marketing and software studio homepage hero, part of a three-image coordinated set for Growthys. Exact landscape 16:9, edge-to-edge artwork, not a webpage mockup. Keep the existing nature-inspired theme: deep forest green, dark olive, charcoal and restrained warm amber-gold, blurred evergreen botanical silhouettes and a touch of fine moss on dark honed stone. Luxurious physically based 3D editorial photography, extraordinarily refined dark emerald optical glass, brushed champagne-metal details, precise bevels, believable glass refraction, cinematic soft amber rim-light, rich contrast, calm professional atmosphere. No cabins, buildings, people, literal laptops, random clipart pile, neon cyberpunk, purple gradients or white studio backdrop. A single integrated designed sculpture rather than scattered icons. COMPOSITION IS CRITICAL: main artwork visually centered at 44% horizontal canvas position, all important objects kept within the central 28% width, around x=31% to x=57%, with top and bottom margin. It must remain legible and mostly intact in a portrait crop centered at 44% horizontal position. Reserve dark quiet negative space in the left 27%, top 12% and bottom 22% for existing white typography, navigation and footer. No rendered text, logos, letters, numbers or watermarks. Highest available native detail, request native 8K 7680x4320 if supported. RISE / SMARTER GROWTH STARTS HERE: one elegantly ascending sculptural bridge formed from a continuous translucent emerald-glass ribbon that gently twists upward and supports a luminous warm amber crystal sphere at its high end. Along the underside a few precisely connected champagne-metal nodes represent intelligent software systems working together. The upward form should read as calm positive momentum and engineered growth, without an oversized literal arrow or stock-finance icon. Ground the sculpture on the same low dark stone plinth with restrained moss as the coordinated build/scale images. Subtle dawn-like amber light filters through the dark out-of-focus evergreen setting. Match refined glass-and-gold enterprise art direction. Keep the compact sculpture visually centered at 44% canvas width and leave room above the luminous sphere.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-51f4fca5-5999-403b-8996-511fd3b2a8d3.png",
+      "outputPath": "public/images/homepage/hero-rise-v11-8k.webp",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "exportDimensions": {
+        "width": 7680,
+        "height": 4320
+      },
+      "bytes": 1840004,
+      "upscaled": true
+    }
+  ]
+}

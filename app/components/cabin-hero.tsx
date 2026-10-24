@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import SocialIcon from "./social-icon";
 import { socialLinks } from "../data/social-links";
-import forestStudio from "../../public/images/homepage/hero-forest-build-v8.webp";
-import woodlandStudio from "../../public/images/homepage/hero-forest-scale-v8.webp";
-import lakesideStudio from "../../public/images/homepage/hero-lakeside-rise-v8.webp";
+import buildArtwork from "../../public/images/homepage/hero-build-v11-8k.webp";
+import scaleArtwork from "../../public/images/homepage/hero-scale-v11-8k.webp";
+import riseArtwork from "../../public/images/homepage/hero-rise-v11-8k.webp";
 
 const stories = [
   {
@@ -19,8 +19,8 @@ const stories = [
     title: ["Grow Your", "Business Faster"],
     index: "Build Bold. Grow Smart.",
     description: ["A digital marketing company turning attention into revenue — SEO, software, CRM, and HRMS under one roof."],
-    image: forestStudio,
-    imageAlt: "A warmly lit timber work studio among mossy evergreens, with a person approaching along the forest path.",
+    image: buildArtwork,
+    imageAlt: "Emerald-glass steps with a golden growth path, target and glowing sphere, representing a strong foundation for business growth.",
     caption: "Build Bold. Grow Smart.",
   },
   {
@@ -29,8 +29,8 @@ const stories = [
     title: ["Technology", "Meets Marketing"],
     index: "Marketing Meets Real Technology",
     description: ["Growthys connects software development and digital marketing so your business grows without friction."],
-    image: woodlandStudio,
-    imageAlt: "A fern-lined timber walkway leading through an ancient forest toward a warm glass-fronted studio.",
+    image: scaleArtwork,
+    imageAlt: "Connected emerald-glass loops, a cloud and gold data nodes, representing marketing and technology scaling together.",
     caption: "Marketing Meets Real Technology",
   },
   {
@@ -39,8 +39,8 @@ const stories = [
     title: ["Smarter Growth", "Starts Here"],
     index: "Your Growth, Engineered Digitally",
     description: ["An IT solutions company delivering SEO, CRM & management software, and HRMS software development."],
-    image: lakesideStudio,
-    imageAlt: "A warm timber lakeside retreat with a small jetty, mountain reflections, and surrounding evergreen forest.",
+    image: riseArtwork,
+    imageAlt: "An ascending emerald-glass ribbon carrying an amber sphere, representing smarter growth through connected digital systems.",
     caption: "Your Growth, Engineered Digitally",
   },
 ];

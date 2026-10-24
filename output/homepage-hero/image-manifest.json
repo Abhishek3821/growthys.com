@@ -1,0 +1,19 @@
+{
+  "generator": "Built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset: one exceptional full-bleed homepage hero background for Growthys, a digital marketing and software studio. The attached local image is a MOOD AND THEME REFERENCE ONLY: preserve its deep evergreen forest, mossy woodland, natural timber architecture, warm amber interior lighting, quiet cinematic atmosphere and rich realistic photographic treatment. Create a distinct new image, not a webpage mockup, not an illustration of a website. Scene: an exquisitely designed contemporary timber-and-glass creative work studio nestled among ancient evergreen trees, dense fine ferns, wet moss and textured stones. Through the warmly lit glass, show a tasteful shared digital workspace with two minimalist computer workstations, a timber meeting table and subtle shelving; screens are small and subdued with no readable content. One beautifully crafted stepping-stone path leads gently from foreground toward the studio. Architectural photography, restrained luxury, believable construction, authentic timber grain, delicate glass reflections, microdetail on moss and ferns, subtle atmospheric mist and soft late-afternoon shafts of light. Color palette: dark olive, deep forest green, charcoal, weathered wood, restrained warm golden amber. Match the reference's overall darkness and natural realism; no bright white background, neon, oversaturated teal, floating UI, giant technology icons, cartoon art or futuristic fantasy architecture. COMPOSITION: exact landscape 16:9. Place the compact studio near the horizontal center, slightly left of center, fully visible within the central third so the image remains useful for a mobile portrait crop at 43% horizontal position. Keep left third darker and visually calm for existing white headline text; keep upper edge forest canopy and lower quarter darker moss/path so navigation and small footer copy remain legible. Frame with natural overhanging branches at the outer edges, avoid branches crossing the studio facade. No people required. No words, letters, logos, watermarks or text of any kind. Request the highest native resolution available, ideally 8K 7680x4320; prioritize immaculate realistic detail and refined composition.",
+  "referenceRole": "Existing opening hero image used only as a mood, lighting, palette and photographic theme reference.",
+  "referencePath": "public/images/homepage/hero-forest-build-v8.webp",
+  "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-c1cf1288-3a91-4499-b6b7-31dfa361dab2.png",
+  "outputPath": "public/images/homepage/hero-forest-workspace-v9-8k.webp",
+  "resolutionNote": "Generated source is 1672x941. The final 7680x4320 WebP is upscaled using Lanczos resampling, not native 8K generation. Next.js continues to serve responsive image sizes.",
+  "nativeDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "exportDimensions": {
+    "width": 7680,
+    "height": 4320
+  },
+  "bytes": 5162464,
+  "upscaled": true
+}

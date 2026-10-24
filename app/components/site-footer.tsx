@@ -5,7 +5,6 @@ import { socialLinks } from "../data/social-links";
 import Image from "next/image";
 import Link from "next/link";
 import footerSkyline from "../../public/images/homepage/footer-india.webp";
-import growthysLogo from "../../public/images/footer/growthys-logo.jpeg";
 import styles from "./site-footer.styles";
 
 const linkGroups = [
@@ -56,7 +55,7 @@ export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: 
         <div className={styles.top}>
           <div className={styles.brand}>
             <Link href="/" className={styles.logo} aria-label="Growthys home">
-              <Image src={growthysLogo} alt="Growthys" className={styles.logoImage} sizes="320px" />
+              Growthys
             </Link>
             <p>A digital marketing company and IT solutions company in India, helping businesses grow with smart marketing, clean design, and reliable technology. Based in Gurugram, Haryana — serving clients across India and beyond.</p>
           </div>
