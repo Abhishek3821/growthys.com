@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import InsightsHero from "../components/insights-hero";
 import InsightsArticles from "../components/insights-articles";
 import InsightsExperiences from "../components/insights-experiences";
+import CompanyTeam from "../components/company-team";
 import InsightsWhyChoose from "../components/insights-why-choose";
 import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
@@ -53,6 +54,7 @@ export default function InsightsPage() {
         <InsightsArticles />
         <InsightsWhyChoose />
         <InsightsExperiences />
+        <CompanyTeam />
         <BenefitsCta companyOverview />
         <FaqSection items={insightsQuestions} eyebrow="About Growthys" />
       </main>
