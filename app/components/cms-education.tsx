@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./cms-education.module.css";
+import { cmsDesignContent } from "../data/cms-design-content";
 
 function StudentPortrait({ position, label, className }: { position: "top-right" | "bottom-right" | "bottom-left"; label: string; className: string }) {
   const right = position.endsWith("right");
@@ -22,9 +23,9 @@ export default function CmsEducation() {
     <section aria-labelledby="cms-education-heading" className={styles.section}>
       <div className={styles.layout}>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>LEARN YOUR WAY</p>
-          <h2 id="cms-education-heading">Transformative<br className="hidden lg:block" /> education for<br className="hidden lg:block" /> those who learn<br className="hidden lg:block" /> differently.</h2>
-          <p className={styles.description}>Learning opens up new possibilities. With a fresh approach to education, we make space for different perspectives, individual strengths, and the curiosity that helps every learner grow.</p>
+          <p className={styles.eyebrow}>PUBLISH YOUR WAY</p>
+          <h2 id="cms-education-heading">Flexible CMS<br className="hidden lg:block" /> Design for Teams<br className="hidden lg:block" /> That Work<br className="hidden lg:block" /> Differently</h2>
+          <p className={styles.description}>{cmsDesignContent.flexibility.paragraphs.join(" ")}</p>
         </div>
         <div className={styles.collage}>
           <StudentPortrait position="bottom-right" className={styles.mainPortrait} label="A smiling student with glasses holding books" />

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./cms-team-highlight.module.css";
+import { cmsDesignContent } from "../data/cms-design-content";
 
-const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const paragraphs = cmsDesignContent.editors.paragraphs;
 
 export default function CmsTeamHighlight() {
   return (
@@ -16,12 +17,12 @@ export default function CmsTeamHighlight() {
               <Image src="/images/crm-management/team/tablet.webp" alt="Two business professionals reviewing their work on a tablet" fill sizes="(max-width: 767px) 44vw, 31vw" className="object-cover" />
             </div>
           </div>
-          <p className={styles.caption}>{description}</p>
+          <p className={styles.caption}>{paragraphs[0]}</p>
         </div>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>Your Text Here</p>
-          <h2 id="cms-team-highlight-heading">Lorem ipsum<br />dolor sit</h2>
-          <p className={styles.description}>{description}</p>
+          <p className={styles.eyebrow}>EDITOR EXPERIENCE</p>
+          <h2 id="cms-team-highlight-heading">Built for<br />Non-Technical Editors</h2>
+          <p className={styles.description}>{paragraphs[1]}</p>
           <div className={styles.avatars} aria-label="Our team">
             <span className={styles.avatar} style={{ backgroundPosition: "0% 0%" }} role="img" aria-label="Team member portrait" />
             <span className={styles.avatar} style={{ backgroundPosition: "33.333% 100%" }} role="img" aria-label="Team member portrait" />

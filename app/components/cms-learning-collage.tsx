@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./cms-learning-collage.module.css";
+import { cmsDesignContent } from "../data/cms-design-content";
 
 function Student({ lower = false }: { lower?: boolean }) {
   return (
@@ -19,13 +20,13 @@ export default function CmsLearningCollage() {
         </div>
         <div className={styles.logoTile}>
           <svg viewBox="0 0 64 42" fill="none" aria-hidden="true"><path d="m5 15 27-11 27 11-27 11L5 15Z" stroke="#eadc83" strokeWidth="2" /><path d="M16 21v9c10 7 23 7 32 0v-9M58 16v17" stroke="#6a9ca8" strokeWidth="2" strokeLinecap="round" /></svg>
-          <span>Literato.</span>
+          <span>Growthys</span>
         </div>
         <div className={styles.studentTwo}><Student lower /></div>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>LEARNING TOGETHER</p>
-          <h2 id="cms-learning-collage-heading">Education is about<br className="hidden lg:block" /> creating leaders for<br className="hidden lg:block" /> tomorrow.</h2>
-          <p className={styles.description}>Every new perspective brings us forward. We help learners build confidence, explore their potential, and develop the skills to make a meaningful difference in the world around them.</p>
+          <p className={styles.eyebrow}>DESIGNING TOGETHER</p>
+          <h2 id="cms-learning-collage-heading">Great CMS Design<br className="hidden lg:block" /> Is a<br className="hidden lg:block" /> Collaboration</h2>
+          <p className={styles.description}>{cmsDesignContent.collaboration.paragraphs.join(" ")}</p>
         </div>
       </div>
     </section>

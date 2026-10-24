@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { hrmsContent } from "../data/hrms-content";
 import HrmsHero from "../components/hrms-hero";
 import HrmsServices from "../components/hrms-services";
 import HrmsPortfolio from "../components/hrms-portfolio";
@@ -14,7 +15,7 @@ import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
   title: "HRMS Software | Growthys",
-  description: "Discover thoughtful design and HRMS software experiences with Growthys.",
+  description: hrmsContent.hero.description,
 };
 
 export default function HrmsSoftwarePage() {
@@ -30,8 +31,8 @@ export default function HrmsSoftwarePage() {
         <HrmsJennyAbout />
         <HrmsEditorialAbout />
         <HrmsAwards />
-        <BenefitsCta />
-        <FaqSection />
+        <BenefitsCta hrms />
+        <FaqSection items={hrmsContent.faqs} eyebrow={hrmsContent.cta.trusted} />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

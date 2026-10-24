@@ -9,30 +9,40 @@ import SiteFooter from "../components/site-footer";
 
 const insightsQuestions = [
   {
-    id: 0,
-    question: "What can I find on the Growthys Insights page?",
-    answer: "Explore ideas, practical reads and fresh perspectives on design, technology and meaningful experiences. Our insights are here to spark your next idea and help you move forward with confidence.",
+    "id": 0,
+    "question": "What does Growthys do?",
+    "answer": "Growthys is a digital marketing company and IT solutions company in India. We handle SEO, social media, paid ads, web design, custom software development, CRM & management software, and HRMS software development."
   },
   {
-    id: 1,
-    question: "Can Growthys help bring my idea to life?",
-    answer: "Yes. Whether you have a clear brief or an early idea, we can help you explore the possibilities, shape a plan and create a digital experience around your goals. Tell us what you have in mind through our contact form.",
+    "id": 1,
+    "question": "Where is Growthys based?",
+    "answer": "We are based in Gurugram, Haryana, and serve clients across India and internationally."
   },
   {
-    id: 2,
-    question: "How do we get started on a project?",
-    answer: "Start by sharing a little about your project, your goals and your preferred timeline. We will discuss your needs, answer your questions and work with you to define the next steps.",
+    "id": 2,
+    "question": "Who do you work with?",
+    "answer": "Startups, SMEs, and large enterprises. We also work as a professional IT solutions provider in India for businesses that need both marketing and technology support."
   },
   {
-    id: 3,
-    question: "Can I discuss an idea before committing to a project?",
-    answer: "Absolutely. A first conversation is a chance to explore your idea and see how we can help. You do not need a finished brief to reach out—just a starting point and a little curiosity.",
+    "id": 3,
+    "question": "What makes Growthys different?",
+    "answer": "Most businesses hire separate agencies for marketing and development. We combine both as an IT services company in India and a marketing partner — one team, one plan, one report."
   },
+  {
+    "id": 4,
+    "question": "How long has Growthys been operating?",
+    "answer": "Our team brings 10+ years of combined experience across marketing, design, and software development."
+  },
+  {
+    "id": 5,
+    "question": "How do I get started?",
+    "answer": "Fill in the form above or book a call. We review your goals, suggest a plan, and share a clear scope — no obligation."
+  }
 ];
 
 export const metadata: Metadata = {
-  title: "Insights | Growthys",
-  description: "Explore mindfulness, meaningful moments, and a calmer way forward with Growthys.",
+  title: "Company Overview | Growthys",
+  description: "Growthys is a digital marketing company and IT solutions company in Gurugram, Haryana. Discover our approach to marketing, software development, and consulting.",
 };
 
 export default function InsightsPage() {
@@ -43,8 +53,8 @@ export default function InsightsPage() {
         <InsightsArticles />
         <InsightsWhyChoose />
         <InsightsExperiences />
-        <BenefitsCta />
-        <FaqSection items={insightsQuestions} eyebrow="A little more clarity" />
+        <BenefitsCta companyOverview />
+        <FaqSection items={insightsQuestions} eyebrow="About Growthys" />
       </main>
       <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="#faq" />
     </>

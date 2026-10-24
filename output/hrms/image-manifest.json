@@ -1,0 +1,258 @@
+{
+  "generator": "Built-in image_gen",
+  "resolutionNote": "Native generated sources are preserved in the default generated-images location. Website assets are upscaled to a 3840px long edge and exported as high-quality WebP with original transparency. These are upscaled 4K exports, not native 4K or 8K generation.",
+  "images": [
+    {
+      "key": "hero-hr-platform",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5 isolated cutout on a genuinely transparent background. A sophisticated all-in-one HR platform sculpture: one sleek charcoal laptop centered with a clean geometric HR dashboard, three floating frosted-glass employee profile cards connected to a tasteful gold circular workflow, a small calendar tile, payroll stack and check-mark tile. Substantial cohesive composition, a single designed product ecosystem, not a scattered pile of symbols. Entire object and soft shadow inside the frame, generous transparent margins, no opaque background rectangle. This replaces a hero portrait and must sit elegantly over an existing golden yellow organic shape. Visually communicate attendance, payroll, leave and performance in one system.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-1af06c50-60d5-47ae-aff3-827b57415521.png",
+      "outputPath": "public/images/hrms/graphics/hero-hr-platform.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 1017234,
+      "hasAlpha": true,
+      "upscaled": true
+    },
+    {
+      "key": "attendance-tracking",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5. Refined time-and-attendance system still life: a tactile desktop time clock and an employee badge with a small portrait silhouette, a beautifully machined gold-rimmed clock, three shift timeline strips and a location-pin sculpture. Organized cream studio scene with subtle amber glow. Concept: reliable check-in, geo-tracking, shifts and overtime. Main objects centered, preserve negative space around all edges.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-2459b5ac-f595-4fd5-9a32-1d7d805461b8.png",
+      "outputPath": "public/images/hrms/graphics/attendance-tracking.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 769566,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "payroll-management",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 5:4. A sleek charcoal laptop showing geometric payroll rows and a restrained salary-trend chart, neatly stacked cream payslip sheets with no words or numbers, one satin gold calculator and a glass shield with a checkmark. Concept: automated salary processing, deductions, accurate payroll and compliance. Thoughtful premium product photography composition on warm ivory stone, crisp small material details.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-083598c4-575d-4454-8434-e8afe174482e.png",
+      "outputPath": "public/images/hrms/graphics/payroll-management.webp",
+      "nativeDimensions": {
+        "width": 1402,
+        "height": 1122
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 3073
+      },
+      "bytes": 1043290,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "leave-management",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 5:4. A beautifully designed dimensional leave calendar made from matte ivory paper with simple unnumbered day squares, a single softly lit amber selected day, a translucent approval checkmark and one slim mobile device with a clean request-card silhouette. Concept: custom leave policies, balances and approvals from desktop and mobile. Finely crafted warm cream scene, main objects centered, airy quiet space.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-83231c58-7972-4420-8eb2-764c187b25ae.png",
+      "outputPath": "public/images/hrms/graphics/leave-management.webp",
+      "nativeDimensions": {
+        "width": 1402,
+        "height": 1122
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 3073
+      },
+      "bytes": 688860,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "employee-records",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5. A premium frosted-glass employee profile card with a simple inset human avatar silhouette and blank geometric information rows, organized charcoal and ivory digital document folders behind it, an elegant gold padlock and a small contract-sheet corner. Concept: secure digital employee records, contracts, career history and role changes. Tactile immaculate composition, no readable personal information.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-8a79aeca-27b6-4720-8c9d-c5d4d170cbd9.png",
+      "outputPath": "public/images/hrms/graphics/employee-records.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 878554,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "reports-analytics",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 5:4. One beautiful upright glass analytics dashboard with honey-gold and pale-teal bar charts, a clean rising curve and three minimal circular employee-headcount indicators without text. A satin metal magnifying lens rests at its base beside a subtle ivory report stack. Concept: headcount, attrition, salary and attendance reports for leadership. Elegant and legible at thumbnail size.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-1bce09ae-dd93-4fb3-a57a-9719c68fe5df.png",
+      "outputPath": "public/images/hrms/graphics/reports-analytics.webp",
+      "nativeDimensions": {
+        "width": 1402,
+        "height": 1122
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 3073
+      },
+      "bytes": 662014,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "recruitment-onboarding",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5. Three dimensional candidate profile cards with faceless circular avatar icons move along a single elegant honey-gold curved path toward one welcoming open doorway with a small approval checkmark. An ivory onboarding checklist with three check symbols rests in the foreground. Concept: recruitment, applicant tracking, structured onboarding without spreadsheets. Professional premium HR software visual, no toy-like characters.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-48e7dbf8-9fed-4d9a-aa5f-040db94f478a.png",
+      "outputPath": "public/images/hrms/graphics/recruitment-onboarding.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 765742,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "workflow-automation",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Square 1:1 thumbnail. Three substantial frosted-glass tiles—a simple calendar, a payroll-sheet icon and a checkmark—connected by one continuous satin-gold loop. A subtle clock at the center. Strong restrained silhouette legible at 100px, no small clutter. Concept: automate routine HR tasks and save administrative time.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-46632448-d7ce-476a-9fa1-be37e17fbd62.png",
+      "outputPath": "public/images/hrms/graphics/workflow-automation.webp",
+      "nativeDimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 3840
+      },
+      "bytes": 773816,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "hr-operations",
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photo for Growthys, a Gurugram-based HRMS and software company. Realistic Indian business professionals, authentic contemporary workplace, warm ivory and charcoal palette with subtle honey-gold accents matching the existing website. Natural soft light, realistic skin texture, believable hands and body proportions, excellent commercial photography, no glamour fashion posing. No text, logos, numbers, watermarks, fake interface labels or private employee information. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5. A confident Indian female HR operations manager in her early thirties at a modern desk reviewing attendance and payroll with a laptop, wearing a smart neutral blazer. Candid three-quarter view, realistic thoughtful expression. Laptop visible with abstract unlabelled charts, natural plants and glass office background. Keep main person's face in upper half and lower 35% visually quiet for existing website statistic cards. Calm capable workplace scene, not a fashion portrait.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-6480d898-5133-4997-ac25-74d1213efb38.png",
+      "outputPath": "public/images/hrms/graphics/hr-operations.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 795048,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "manufacturing-attendance",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 4:3 project image. A convincing miniature manufacturing floor with two refined ivory production machines and one small conveyor, beside a charcoal attendance terminal, a gold-rimmed clock and three colour-coded shift timeline bars. Balanced high-end industrial product illustration on a warm ivory plinth. Concept: custom manufacturing HRMS for multiple shifts, overtime and plant-level attendance. No worker faces or labels.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-51766ccf-86c8-47ec-a2b0-65e3b2644ffd.png",
+      "outputPath": "public/images/hrms/graphics/manufacturing-attendance.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 883778,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "healthcare-payroll",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 4:3 project image. A refined frosted-glass medical cross and a clean ivory healthcare building silhouette beside a slim payroll dashboard, a stack of payslip sheets and a gold compliance shield with a checkmark. Premium healthcare technology still life, not medical advice or surgery imagery. Concept: hospital salary structures, payroll automation and statutory compliance.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-135155fd-5f9b-432e-81be-85f38936203b.png",
+      "outputPath": "public/images/hrms/graphics/healthcare-payroll.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 722058,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "retail-self-service",
+      "prompt": "Use case: stylized-concept. Create one polished finished asset for the Growthys HRMS Software webpage, not a webpage mockup or a contact sheet. Exceptionally refined photorealistic 3D editorial product illustration. Existing site palette: warm ivory, charcoal, honey-gold, amber-orange, restrained pale teal accents. Materials: satin aluminium, beautifully lit frosted glass, ceramic, tactile cream paper. Physically realistic soft studio lighting, fine bevels, beautiful contact shadows, premium enterprise software art direction. Purposeful, legible central composition with breathing room; key subject inside central 65% to survive object-fit cover crops. No decorative clutter. No words, letters, numbers, fake logos, watermarks or readable private employee data. Abstract interface rows and charts may use clean geometric bars and avatar circles. Highest available resolution, request native 4K with 3840px long edge if supported. Landscape 4:3 project image. A premium smartphone displaying simple geometric employee self-service cards and a highlighted leave calendar, next to a minimal ivory retail storefront and a small shopping bag. A satin-gold checkmark connects phone and calendar. Concept: a retail HRMS self-service portal for staff requests, seasonal leave and payslips. Sophisticated tactile product photography, clean centered composition.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-b0df7643-e71f-4de4-8435-b26d80788184.png",
+      "outputPath": "public/images/hrms/graphics/retail-self-service.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 750800,
+      "hasAlpha": false,
+      "upscaled": true
+    },
+    {
+      "key": "people-first-team",
+      "transparent": true,
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photo for Growthys, a Gurugram-based HRMS and software company. Realistic Indian business professionals, authentic contemporary workplace, warm ivory and charcoal palette with subtle honey-gold accents matching the existing website. Natural soft light, realistic skin texture, believable hands and body proportions, excellent commercial photography, no glamour fashion posing. No text, logos, numbers, watermarks, fake interface labels or private employee information. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5 isolated cutout on genuinely transparent background, no office rectangle. A friendly professional Indian HR manager, early thirties, in a tasteful ivory blouse and a muted amber blazer, standing naturally with a charcoal tablet in her hands. Waist-up framing with whole head, shoulders, elbows and tablet inside frame. Attentive warm expression looking slightly toward viewer's right. This replaces a decorative fashion portrait over an existing amber geometric shape and floating software-skill chips; keep lower waist area simple so chips remain clear. Authentic HR expertise, no sunglasses, caps or fashion modelling.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-d554d2b7-da69-40aa-b460-bbfc906ac347.png",
+      "outputPath": "public/images/hrms/graphics/people-first-team.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 824248,
+      "hasAlpha": true,
+      "upscaled": true
+    },
+    {
+      "key": "hr-technology-experts",
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photo for Growthys, a Gurugram-based HRMS and software company. Realistic Indian business professionals, authentic contemporary workplace, warm ivory and charcoal palette with subtle honey-gold accents matching the existing website. Natural soft light, realistic skin texture, believable hands and body proportions, excellent commercial photography, no glamour fashion posing. No text, logos, numbers, watermarks, fake interface labels or private employee information. Highest available resolution, request native 4K with 3840px long edge if supported. Portrait 4:5 editorial photo. Two Indian colleagues, an HR consultant and a software engineer, collaborating over a laptop at a modern ivory-and-charcoal office desk. One colleague listening thoughtfully while the other points to a clean geometric workflow diagram on the screen without text. Candid balanced composition, faces and hands fully formed, realistic professional attire and contemporary Gurugram office. Main people contained within middle 70% so an existing portrait frame can crop safely. Communicate practical, scalable, people-focused HR software.",
+      "transparent": false,
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-96b6ab00-c487-4e84-b87d-c72f807ba730.png",
+      "outputPath": "public/images/hrms/graphics/hr-technology-experts.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 875052,
+      "hasAlpha": false,
+      "upscaled": true
+    }
+  ]
+}

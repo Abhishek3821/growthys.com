@@ -3,15 +3,9 @@
 import Link from "next/link";
 import { useId, useRef } from "react";
 import styles from "./hrms-services.module.css";
+import { hrmsContent } from "../data/hrms-content";
 
-const services = [
-  { title: "UI/UX Design", color: "#a810cf", kind: "design", href: "/contact#contact-inquiry" },
-  { title: "Web Design", color: "#ffbf00", kind: "web", href: "/website-design" },
-  { title: "Digital Marketing", color: "#ff597e", kind: "marketing", href: "/digital-marketing" },
-  { title: "App Development", color: "#45bdc2", kind: "app", href: "/app-development" },
-  { title: "Graphic Designing", color: "#7962dc", kind: "design", href: "/graphic-designing" },
-  { title: "CMS Design", color: "#f78a33", kind: "web", href: "/cms-design" },
-];
+const services = hrmsContent.modules.items;
 
 function ServiceIcon({ kind }: { kind: string }) {
   return <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -34,9 +28,9 @@ export default function HrmsServices() {
   }
   return <section className={styles.section} aria-labelledby="hrms-services-heading">
     <div className={styles.layout}>
-      <header className={styles.intro}><p>Services</p><h2 id="hrms-services-heading">I Provide Wide Range Of Digital Services</h2><div className={styles.controls}><button type="button" aria-label="Scroll to previous services" aria-controls={trackId} onClick={() => scroll(-1)}>←</button><button type="button" aria-label="Scroll to next services" aria-controls={trackId} onClick={() => scroll(1)}>→</button></div></header>
-      <ul ref={trackRef} id={trackId} className={styles.track} tabIndex={0} aria-label="Digital services, scroll horizontally to explore">
-        {services.map(service => <li key={service.title} className={styles.card}><Link href={service.href}><span className={styles.icon} style={{ backgroundColor: service.color }}><ServiceIcon kind={service.kind}/></span><h3>{service.title}</h3><p>Thoughtful digital experiences designed around your goals, your brand, and the people you want to reach.</p></Link></li>)}
+      <header className={styles.intro}><p>HRMS Modules</p><h2 id="hrms-services-heading">{hrmsContent.modules.title}</h2><div className={styles.controls}><button type="button" aria-label="Scroll to previous HRMS modules" aria-controls={trackId} onClick={() => scroll(-1)}>←</button><button type="button" aria-label="Scroll to next HRMS modules" aria-controls={trackId} onClick={() => scroll(1)}>→</button></div></header>
+      <ul ref={trackRef} id={trackId} className={styles.track} tabIndex={0} aria-label="HRMS modules, scroll horizontally to explore">
+        {services.map(service => <li key={service.title} className={styles.card}><Link href={service.href}><span className={styles.icon} style={{ backgroundColor: service.color }}><ServiceIcon kind={service.kind}/></span><h3>{service.title}</h3><p>{service.description}</p></Link></li>)}
       </ul>
     </div>
   </section>;

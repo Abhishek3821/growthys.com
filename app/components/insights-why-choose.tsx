@@ -4,14 +4,14 @@ const features = [
   {
     icon: "quality",
     title: "Quality in Every Detail",
-    description: "We combine thoughtful design with proven tools to create work that stands the test of time.",
+    description: "Thoughtful design and proven tools — from our best design agency-level creative team to advanced technologies company-grade engineering.",
     value: "10+",
     label: "years of experience",
   },
   {
     icon: "personal",
     title: "Built Around You",
-    description: "Every project starts with your vision, shaped around your goals and the way you work.",
+    description: "Every project starts with your vision, shaped around your goals and the way your team works.",
     value: "100+",
     label: "projects delivered",
   },
@@ -25,7 +25,7 @@ const features = [
   {
     icon: "support",
     title: "Support at Every Step",
-    description: "A friendly team, ready to listen, answer your questions and help whenever you need us.",
+    description: "A friendly team, ready to listen, answer your questions, and help whenever you need us.",
     value: "100%",
     label: "commitment to your success",
   },
@@ -48,8 +48,8 @@ export default function InsightsWhyChoose() {
       <div className={styles.inner}>
         <div className={styles.header}>
           <div>
-            <p className={styles.eyebrow}>Why choose us</p>
-            <h2 id="insights-why-choose-heading">Reliability. Experience.<br />Attention to detail.</h2>
+            <p className={styles.eyebrow}>WHY CHOOSE US</p>
+            <h2 id="insights-why-choose-heading">Reliability. Experience.<br />Attention to Detail.</h2>
           </div>
           <p className={styles.intro}>We bring your ideas to life with care and purpose.<br className={styles.desktopBreak} /> From the first conversation to the final delivery, we take care of every detail.</p>
         </div>

@@ -1,0 +1,199 @@
+{
+  "generator": "Built-in image_gen",
+  "resolutionNote": "Generated at the native resolution provided by image_gen, then upscaled to a 3840-pixel long edge for 4K WebP delivery. These exports are not native 4K or 8K generation.",
+  "images": [
+    {
+      "key": "hero-growth",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait composition 3:4 for the main hero: a sculptural ascending path made of three substantial translucent green glass steps, a sleek open laptop with a refined abstract analytics screen of rising bars and a curved line, connected to a cloud-like sculptural glass form and a minimal target ring. Communicate business growth through integrated marketing, software and strategy. Place objects mostly center and lower right; keep upper-left region quiet for existing website text overlapping the photo. Gallery-quality product photography, not a pile of icons, very high detail, luxurious agency art direction.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-b677ba8e-94b6-4cfc-a623-74fb2c33a1eb.png",
+      "outputPath": "public/images/insights/company-overview/hero-growth.webp",
+      "nativeDimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "exportDimensions": {
+        "width": 2880,
+        "height": 3840
+      },
+      "bytes": 989840,
+      "upscaled": true
+    },
+    {
+      "key": "growth-planning",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait 3:4. A single elegant forest-green glass compass and a small ascending staircase on an ivory strategy desk, with a refined miniature laptop and two interlocking translucent rings. The compass leads toward a warm light, representing clear business goals and a purposeful growth plan. No maps, yoga, landscapes, or random decoration.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-4d7737ed-4d79-4ed6-b40f-fc41f8592f4c.png",
+      "outputPath": "public/images/insights/company-overview/growth-planning.webp",
+      "nativeDimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "exportDimensions": {
+        "width": 2880,
+        "height": 3840
+      },
+      "bytes": 816652,
+      "upscaled": true
+    },
+    {
+      "key": "unified-team",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 4:3. A beautifully composed premium three-dimensional architectural cross-section of a single modern creative studio, three connected workstations for design, marketing and software, one unified flowing glass ribbon connects a laptop, a target sculpture and a cloud. No people, no tiny text, avoid an overly miniature toy look. Concept: one agency, one technology core, strategy and execution under one roof.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-f8183363-165a-4e09-9490-30b1c7f57e96.png",
+      "outputPath": "public/images/insights/company-overview/unified-team.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 1219874,
+      "upscaled": true
+    },
+    {
+      "key": "marketing-technology",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 4:3. A glass magnifying lens focusing on a green target, with a brushed champagne ascending analytics ribbon that flows naturally into an elegant cloud connected to three rounded CRM customer nodes. Minimal dimensional still life, a clear visual of converting marketing and scalable technology, not a busy icon collage.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-6a6604bf-527d-48b4-a10c-a1900d7a2284.png",
+      "outputPath": "public/images/insights/company-overview/marketing-technology.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 778592,
+      "upscaled": true
+    },
+    {
+      "key": "clear-reporting",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 4:3. Premium dimensional product photograph of a beautiful translucent upright reporting dashboard with three rising forest green bars, a simple clean line chart without axes text or numbers, and three structured project milestones represented by subtle champagne ticks on a glass horizontal path. White stone plinth. Concept: measurable KPIs, honest reporting and a clear roadmap.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-43d341ac-89a6-4509-9cb4-ba4b6901ef4d.png",
+      "outputPath": "public/images/insights/company-overview/clear-reporting.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 820048,
+      "upscaled": true
+    },
+    {
+      "key": "connected-growth",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 4:3. Two substantial sculptural arch halves, one matte deep green and one frosted sage glass, meet perfectly to form one bridge. A refined champagne ribbon rises across the connected bridge toward a warm glowing glass sphere. Business editorial concept: marketing and engineering align to create sustainable growth. Extremely refined tactile details, purposeful minimal composition.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-fd69751c-7b4f-4fbb-884c-176ba27bd96c.png",
+      "outputPath": "public/images/insights/company-overview/connected-growth.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 928402,
+      "upscaled": true
+    },
+    {
+      "key": "gurugram-base",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait 4:5. A sophisticated architectural editorial image of Gurugram, Haryana, India: a polished modern office tower cluster inspired by Cyber City with a tree-lined foreground and early morning warm light, intricate realistic glass facades and green landscaping. A clean design and technology company home base. Quiet darker forest-green area at the bottom 35% for existing white card captions. No invented corporate signage, no words or branding.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-a42bfee8-33d0-4903-a100-ebc0b6e923fb.png",
+      "outputPath": "public/images/insights/company-overview/gurugram-base.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 1379224,
+      "upscaled": true
+    },
+    {
+      "key": "company-focus",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait 4:5. A refined dimensional still life showing one luminous glass target ring and a beautifully machined laptop linked by a single flowing green ribbon, with a small brushed metal cloud. Symbolizes digital marketing, software development and IT consulting together. Elegant restrained composition. Keep the main objects in the upper 65%, bottom 35% quiet and darker forest green for existing white card captions.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-db1cdf91-f695-48eb-9556-c300c7125ddc.png",
+      "outputPath": "public/images/insights/company-overview/company-focus.webp",
+      "nativeDimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "exportDimensions": {
+        "width": 3073,
+        "height": 3840
+      },
+      "bytes": 957290,
+      "upscaled": true
+    },
+    {
+      "key": "client-partnerships",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait 3:5. An elegant sculptural arrangement of several distinct rounded translucent green and champagne glass business buildings of different heights on one shared stone foundation, connected with a single fine glowing line, with a subtle globe sphere behind them. Symbolizes startups, SMEs and enterprises in India and abroad. Never a real office photo, architectural product rendering. Main subject upper 65%, bottom 35% quiet dark forest green for white captions.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-b29855e6-c34e-4842-a19c-33d380aa6771.png",
+      "outputPath": "public/images/insights/company-overview/client-partnerships.webp",
+      "nativeDimensions": {
+        "width": 971,
+        "height": 1619
+      },
+      "exportDimensions": {
+        "width": 2303,
+        "height": 3840
+      },
+      "bytes": 671006,
+      "upscaled": true
+    },
+    {
+      "key": "industry-solutions",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 16:9. Six beautiful tactile miniature objects in a cohesive sculptural still life: a shopping bag for ecommerce and D2C, a medical cross on frosted glass for healthcare, an open book for education, an architectural house for real estate, a small cog for manufacturing, all connected by one fine green glass ribbon. Purposefully arranged, refined editorial craft, not a busy infographic. Main subjects in upper two thirds, leave bottom third quiet and deep forest green for existing white captions.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-74aba5c1-a59b-4cdc-832b-2d67d8074ebd.png",
+      "outputPath": "public/images/insights/company-overview/industry-solutions.webp",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2161
+      },
+      "bytes": 627606,
+      "upscaled": true
+    },
+    {
+      "key": "client-rating",
+      "editPrompt": "Use case: precise-object-edit. Edit this generated client-rating illustration for the existing Growthys website image card. Preserve its premium photorealistic green glass star, champagne pedestal, warm lighting, subtle architectural setting, material quality and forest-green palette. Recompose as a SQUARE 1:1 finished image. The ENTIRE star must fit inside the central 60% of the canvas, with its top point at least 20% below the top edge and both outer points at least 18% from the left and right edges. Reduce the star and pedestal about 25% and place their center slightly above the image center. Keep lower 30% as quiet darker forest-green negative space for an existing white website caption. This image must survive a square crop and a 4:5 crop without clipping any point of the star. No text, no logos, no numbers, no watermark. Highest available native resolution; request 4K if available.",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Portrait 4:5. One exquisite faceted sage-green crystal five-point star floating just above a brushed champagne pedestal, with a subtle curved ring behind it. Symbolizes an excellent client rating and reliable service. Beautiful refracted light, microscopic material detail, elegant premium award photography. One star, no text or numbers. Main subject upper 65%, bottom 35% quiet darker forest-green for white captions.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-d75735de-027b-4f48-bcab-383c31b32ecb.png",
+      "outputPath": "public/images/insights/company-overview/client-rating.webp",
+      "nativeDimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 3840
+      },
+      "bytes": 960176,
+      "upscaled": true
+    },
+    {
+      "key": "multidisciplinary-team",
+      "prompt": "Use case: stylized-concept. Asset: premium Growthys company overview website image, replacing an unrelated placeholder inside an existing image frame. Create one finished image, not a mockup or contact sheet. Exceptional art direction, sophisticated photorealistic 3D editorial still life, physically based glass, brushed champagne metal, deep forest green ceramic and matte ivory stone, cool sage and pale blue backdrop, subtle warm peach highlights. Refined realistic softbox lighting, beautiful shadows, impeccable polished edges, fine material detail. Visually grounded and legible, restrained purposeful composition, generous breathing room. A unified premium digital marketing and technology brand in Gurugram, India. No text, no letters, no numbers, no logos, no watermarks. Do not show a webpage or outer card frame. Request highest available resolution, ideally native 4K, 3840 pixels on the long edge. Keep key subject in central 65% so object-fit cover crops on mobile remain beautiful. Landscape 4:3. A sophisticated isometric creative technology desk, three carefully designed workstations linked by a continuous translucent forest-green ribbon: a designer's color swatches and stylus tablet, a marketer's abstract chart on a monitor, a developer's minimal laptop with geometric code blocks without letters. One unified shared studio workspace, balanced premium editorial still life. Main subject upper 65%, bottom 35% quiet dark forest green for existing white captions.",
+      "sourcePath": "C:\\Users\\Flip-Rentals\\.codex\\generated_images\\01a16c35-fe41-77c2-acd1-aa3563cdedce\\exec-655ccb80-130b-47ca-a5c0-95261e9eceff.png",
+      "outputPath": "public/images/insights/company-overview/multidisciplinary-team.webp",
+      "nativeDimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "exportDimensions": {
+        "width": 3840,
+        "height": 2880
+      },
+      "bytes": 822502,
+      "upscaled": true
+    }
+  ]
+}
