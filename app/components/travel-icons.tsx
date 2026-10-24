@@ -1,4 +1,4 @@
-type IconName = "map" | "calendar" | "headset" | "smile" | "badge" | "pin" | "instagram" | "twitter" | "facebook";
+type IconName = "map" | "calendar" | "headset" | "smile" | "badge" | "pin";
 
 export default function TravelIcon({ name, title }: { name: IconName; title?: string }) {
   return (
@@ -18,9 +18,6 @@ export default function TravelIcon({ name, title }: { name: IconName; title?: st
       {name === "smile" && <g stroke="currentColor" strokeWidth="3.5" strokeLinecap="round"><circle cx="32" cy="32" r="20" /><path d="M22 35c3 10 17 10 20 0M23 25h1M40 25h1" /></g>}
       {name === "badge" && <><path d="m32 7 5 5 7-1 2 7 7 3-1 7 5 5-5 5 1 7-7 3-2 7-7-1-5 5-5-5-7 1-2-7-7-3 1-7-5-5 5-5-1-7 7-3 2-7 7 1z" fill="currentColor" /><path d="m23 32 6 6 13-14" stroke="#364641" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" /></>}
       {name === "pin" && <g stroke="currentColor" strokeWidth="3.5" strokeLinejoin="round"><path d="M46 24c0 11-14 24-14 24S18 35 18 24a14 14 0 0 1 28 0Z" /><circle cx="32" cy="24" r="4.5" /><path d="m19 39-8 14h42l-8-14" /></g>}
-      {name === "instagram" && <g stroke="currentColor" strokeWidth="6"><rect x="9" y="9" width="46" height="46" rx="12" /><circle cx="32" cy="32" r="11" /><circle cx="46" cy="18" r="2" fill="currentColor" strokeWidth="2" /></g>}
-      {name === "twitter" && <path d="M59 15a22 22 0 0 1-6 2 11 11 0 0 0 5-6 22 22 0 0 1-7 3 11 11 0 0 0-19 10A31 31 0 0 1 10 13a11 11 0 0 0 3 14 11 11 0 0 1-5-1c0 5 4 10 9 11a11 11 0 0 1-5 0 11 11 0 0 0 10 8A22 22 0 0 1 5 50a31 31 0 0 0 48-26v-2a22 22 0 0 0 6-7Z" fill="currentColor" />}
-      {name === "facebook" && <><circle cx="32" cy="32" r="27" fill="currentColor" /><path d="M36 58V35h8l1-9h-9v-5c0-3 1-4 5-4h5V9l-7-1c-8 0-13 5-13 13v5h-7v9h7v23Z" fill="#fff" /></>}
     </svg>
   );
 }

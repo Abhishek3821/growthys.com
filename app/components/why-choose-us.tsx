@@ -1,4 +1,6 @@
 import TravelIcon from "./travel-icons";
+import SocialIcon from "./social-icon";
+import { socialLinks } from "../data/social-links";
 import styles from "./why-choose-us.styles";
 
 const stats = [
@@ -41,9 +43,9 @@ export default function WhyChooseUs() {
               itineraries and round-the-clock support.
             </p>
             <div className={styles.socials} aria-label="Social media">
-              <TravelIcon name="instagram" title="Instagram" />
-              <TravelIcon name="twitter" title="Twitter" />
-              <TravelIcon name="facebook" title="Facebook" />
+              {socialLinks.map(({ name, href }) => (
+                <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`Growthys on ${name}`}><SocialIcon name={name} /></a>
+              ))}
             </div>
           </div>
 

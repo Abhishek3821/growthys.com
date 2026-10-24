@@ -1,3 +1,5 @@
+import SocialIcon from "./social-icon";
+import { socialLinks } from "../data/social-links";
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "../data/blog-posts";
@@ -23,16 +25,6 @@ function AuthorPortrait({ index, small = false }: { index: number; small?: boole
   );
 }
 
-function SocialIcon({ name }: { name: string }) {
-  return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      {name === "Facebook" && <><circle cx="10" cy="10" r="8" fill="currentColor" /><path d="M11 17v-6h2l.3-2H11V7.6c0-.7.4-1.1 1.2-1.1h1.2V4.6h-1.7C9.9 4.6 9 5.7 9 7.5V9H7v2h2v6" fill="#fff" /></>}
-      {name === "Twitter" && <path d="m4 4 12 12M15.5 4 4.5 16M4 4h3l9 12h-3L4 4Z" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />}
-      {name === "Instagram" && <><rect x="3" y="3" width="14" height="14" rx="4" stroke="currentColor" strokeWidth="1.5" /><circle cx="10" cy="10" r="3.2" stroke="currentColor" strokeWidth="1.5" /><circle cx="14.3" cy="5.7" r=".9" fill="currentColor" /></>}
-      {name === "Youtube" && <><rect x="2" y="4.5" width="16" height="11" rx="3" fill="currentColor" /><path d="m8 7 5 3-5 3V7Z" fill="#fff" /></>}
-    </svg>
-  );
-}
 
 export default function BlogFeed() {
   return (
@@ -94,7 +86,7 @@ export default function BlogFeed() {
             <section className={styles.sidebarSection} aria-labelledby="follow-us-heading">
               <h2 id="follow-us-heading" className={styles.sidebarHeading}>Follow us</h2>
               <div className={styles.socials}>
-                {["Facebook", "Twitter", "Instagram", "Youtube"].map((name) => <span className={styles.social} key={name}><SocialIcon name={name} /><span>{name}</span></span>)}
+                {socialLinks.map(({ name, href }) => <a className={styles.social} key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`Growthys on ${name}`}><SocialIcon name={name} /><span>{name}</span></a>)}
               </div>
             </section>
 

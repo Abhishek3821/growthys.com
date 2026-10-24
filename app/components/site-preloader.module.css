@@ -1,0 +1,95 @@
+﻿.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  isolation: isolate;
+  color: #243c30;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(50% + 1px);
+  z-index: -1;
+  background: #f0efe7;
+  transition: transform 1000ms cubic-bezier(.76, 0, .24, 1) 180ms;
+}
+
+.loader::before { top: 0; }
+.loader::after { bottom: 0; }
+
+.loader[data-leaving="true"] {
+  pointer-events: none;
+}
+
+.loader[data-leaving="true"]::before { transform: translateY(-101%); }
+.loader[data-leaving="true"]::after { transform: translateY(101%); }
+
+.loader[data-leaving="true"] .brand {
+  opacity: 0;
+  transform: translateY(-8px) scale(1.04);
+  letter-spacing: .04em;
+}
+
+.loader[data-leaving="true"] .track {
+  opacity: 0;
+  transform: scaleX(1.4);
+}
+
+.loader[data-leaving="true"] ~ :global(#site-content) {
+  transform-origin: 50% 0;
+  animation: pageReveal 1250ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes pageReveal {
+  from { opacity: .65; transform: scale(1.045); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.brand {
+  font-size: clamp(36px, 8vw, 52px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.065em;
+  transition: opacity 220ms ease, transform 350ms ease, letter-spacing 350ms ease;
+}
+
+.brand > span { color: #82956a; }
+
+.track {
+  width: 120px;
+  height: 2px;
+  overflow: hidden;
+  background: #243c3020;
+  border-radius: 2px;
+  transition: opacity 180ms ease, transform 300ms ease;
+}
+
+.track > span {
+  display: block;
+  width: 45%;
+  height: 100%;
+  background: #425d36;
+  animation: loading 1.1s ease-in-out infinite;
+}
+
+@keyframes loading {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(330%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader::before, .loader::after, .brand, .track { transition: none; }
+  .loader[data-leaving="true"] ~ :global(#site-content) { animation: none; }
+  .track > span { animation: none; width: 100%; }
+}

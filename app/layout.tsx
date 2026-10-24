@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import "./globals.css";
 import siteStyles from "./site-styles";
+import SitePreloader from "./components/site-preloader";
 
 export const metadata: Metadata = {
   title: "CABIN&WILD — Lost in the Woods",
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="en" className={siteStyles.document}><body>{children}</body></html>;
+  return <html lang="en" className={siteStyles.document}><body><SitePreloader /><div id="site-content">{children}</div></body></html>;
 }
