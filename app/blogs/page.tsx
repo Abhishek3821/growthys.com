@@ -5,8 +5,8 @@ import BenefitsCta from "../components/benefits-cta";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Blogs | Growthys — Quietly Thinking",
-  description: "A calm space for thoughtful reads on nature, design, technology and the ideas in between. Explore the Growthys journal.",
+  title: "Blogs | Growthys — Digital Marketing & Business Growth",
+  description: "Practical guides from Growthys on SEO, digital marketing, website development and growing your business online.",
 };
 
 export default function BlogsPage() {

@@ -4,12 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import Navbar from "./navbar";
-import fox from "../../public/images/blogs/arctic-fox.webp";
-import mountain from "../../public/images/blogs/mountain-dream.webp";
+import { blogArticles, getReadingTime } from "../data/blog-articles";
 import styles from "./blog-hero.styles";
 
 export default function BlogHero() {
   const [subscribeNotice, setSubscribeNotice] = useState(false);
+  const featured = blogArticles[0];
+  const secondary = blogArticles[1] ?? featured;
+  const secondaryHref = `/blogs/${secondary.id}${secondary === featured ? "#section-3" : ""}`;
+  const secondaryTitle = secondary === featured ? "Start With Local SEO" : secondary.title;
 
   function handleSubscribe(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -25,9 +28,9 @@ export default function BlogHero() {
 
       <section className={styles.hero} aria-labelledby="blog-heading">
         <div className={styles.masthead}>
-          <h1 id="blog-heading">Quietly Thinking</h1>
+          <h1 id="blog-heading">Growthys Journal</h1>
           <div className={styles.introduction}>
-            <p>A calm space for slow thoughts. No noise — just reflection, meaning, and quiet curiosity.</p>
+            <p>Practical ideas for digital growth. Explore SEO, marketing and technology with Growthys.</p>
             <details className={styles.subscribe}>
               <summary>Subscribe now <span className={styles.arrow} aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M5 10h10m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg></span></summary>
               <form className={styles.subscribeForm} onSubmit={handleSubscribe}>
@@ -44,33 +47,33 @@ export default function BlogHero() {
 
         <div className={styles.stories}>
           <article className={`${styles.featured} relative`}>
-            <Link href="/blogs/unnamed-wild" aria-label="Read Returning to the unnamed wild beyond the maps" className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
+            <Link href={`/blogs/${featured.id}`} aria-label={`Read ${featured.title}`} className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
             <div className={styles.featuredCopy}>
-              <span className={styles.category}><i aria-hidden="true" /> Lifestyle</span>
-              <h2>Returning to the unnamed wild beyond the maps</h2>
-              <p className={styles.description}>These are places that refuse to be mapped — not because they’re lost, but because they’re alive.</p>
+              <span className={styles.category}><i aria-hidden="true" /> {featured.category}</span>
+              <h2>{featured.title}</h2>
+              <p className={styles.description}>{featured.excerpt}</p>
               <div className={styles.featuredMeta}>
                 <div className={styles.authorRow}>
                   <span className={styles.author}><span className={styles.avatar} aria-hidden="true">G</span> Growthys</span>
-                  <span>2 min read</span>
+                  <span>{getReadingTime(featured)} min read</span>
                 </div>
-                <div className={styles.tags} aria-label="Article topics"><span>Wildness</span><span>Nature</span><span>Stillness</span><span>Technology</span><span>Mindfulness</span></div>
+                <div className={styles.tags} aria-label="Article topics"><span>{featured.category}</span><span>Small Business</span><span>Local Search</span><span>Content</span><span>Growth</span></div>
               </div>
             </div>
             <div className={styles.featuredImage}>
-              <Image src={fox} alt="A white arctic fox with amber eyes resting in fresh snow" fill preload placeholder="blur" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 65vw, 50vw" />
+              <Image src={featured.image} alt={featured.imageAlt} fill preload sizes="(max-width: 600px) 100vw, (max-width: 1000px) 65vw, 50vw" />
             </div>
           </article>
 
           <article className={`${styles.sideStory} relative`}>
-            <Link href="/blogs/machines-dream" aria-label="Read When machines begin to dream of trees" className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
+            <Link href={secondaryHref} aria-label={`Read ${secondaryTitle}`} className="absolute inset-0 z-10 rounded focus-visible:outline-2 focus-visible:outline-offset-4" />
             <div className={styles.sideImage}>
-              <Image src={mountain} alt="A distant mountain glowing coral pink above blue ridges at dawn" fill placeholder="blur" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 35vw, 25vw" />
+              <Image src={secondary.image} alt={secondary.imageAlt} fill sizes="(max-width: 600px) 100vw, (max-width: 1000px) 35vw, 25vw" />
             </div>
             <div className={styles.sideCopy}>
-              <h2>When machines begin to dream of trees</h2>
-              <p>A calm space for ideas that move in nature — part reflection, part possibility. Where technology and the living world meet.</p>
-              <span className={styles.sideMeta}>2 min read <span aria-hidden="true">·</span> Journal</span>
+              <h2>{secondaryTitle}</h2>
+              <p>{secondary === featured ? "Serving customers in a particular city or area? Make local SEO your first focus. Local searches often carry the strongest buying intent." : secondary.excerpt}</p>
+              <span className={styles.sideMeta}>{getReadingTime(secondary)} min read <span aria-hidden="true">·</span> {secondary.category}</span>
             </div>
           </article>
         </div>

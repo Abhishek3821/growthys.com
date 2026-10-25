@@ -34,10 +34,22 @@ export default async function BlogArticlePage({ params }: Props) {
           </header>
           <div className={styles.readingLayout}>
             <aside className={styles.contents}><nav aria-label="In this article"><p>In this article</p><ol>{post.sections.map((section, index) => <li key={section.heading}><a href={`#section-${index + 1}`}>{section.heading}</a></li>)}</ol></nav><Link href="/blogs">Explore the journal ↗</Link></aside>
-            <div className={styles.body}><p className={styles.lead}>{post.excerpt}</p>{post.sections.map((section, index) => <section key={section.heading} id={`section-${index + 1}`}><h2>{section.heading}</h2>{section.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</section>)}<div className={styles.articleEnd}><span>Words by <strong>{post.author}</strong></span><Link href="/blogs">← Back to all articles</Link></div></div>
+            <div className={styles.body}>
+              <p className={styles.lead}>{post.introduction[0]}</p>
+              {post.introduction.slice(1).map(paragraph => <p key={paragraph} className="mb-9">{paragraph}</p>)}
+              {post.sections.map((section, index) => <section key={section.heading} id={`section-${index + 1}`}>
+                <h2>{section.heading}</h2>
+                {section.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+                {section.items && <ul className="my-5 list-disc space-y-2 pl-6">{section.items.map(item => <li key={item.text}>{item.label && <><strong>{item.label}:</strong>{" "}</>}{item.text}</li>)}</ul>}
+                {section.groups?.map(group => <div key={group.heading} className="mt-5"><p><strong>{group.heading}</strong></p><ul className="my-5 list-disc space-y-2 pl-6">{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}
+                {section.questions?.map((item, questionIndex) => <div key={item.question} className="mb-6"><h3 className="font-bold">{questionIndex + 1}. {item.question}</h3><p>{item.answer}</p></div>)}
+                {section.after?.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+              </section>)}
+              <div className={styles.articleEnd}><span>Words by <strong>{post.author}</strong></span><Link href="/blogs">← Back to all articles</Link></div>
+            </div>
           </div>
         </article>
-        <section className={styles.related} aria-labelledby="related-articles-heading"><div className={styles.relatedHeading}><h2 id="related-articles-heading">Keep exploring.</h2><Link href="/blogs">View all articles →</Link></div><div className={styles.relatedGrid}>{related.map(article => <Link href={`/blogs/${article.id}`} className={styles.relatedCard} key={article.id}><div className={styles.relatedImage}><Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 760px) 92vw, 30vw" /></div><div><span>{article.category} · {getReadingTime(article)} min read</span><h3>{article.title}</h3><p>{article.excerpt}</p><b>Read story ↗</b></div></Link>)}</div></section>
+        {related.length > 0 && <section className={styles.related} aria-labelledby="related-articles-heading"><div className={styles.relatedHeading}><h2 id="related-articles-heading">Keep exploring.</h2><Link href="/blogs">View all articles →</Link></div><div className={styles.relatedGrid}>{related.map(article => <Link href={`/blogs/${article.id}`} className={styles.relatedCard} key={article.id}><div className={styles.relatedImage}><Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 760px) 92vw, 30vw" /></div><div><span>{article.category} · {getReadingTime(article)} min read</span><h3>{article.title}</h3><p>{article.excerpt}</p><b>Read story ↗</b></div></Link>)}</div></section>}
       </main>
     </div>
     <SiteFooter onHomePage={false} contactHref="/contact#contact-inquiry" faqHref="/insights#faq" />

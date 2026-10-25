@@ -1,52 +1,520 @@
 import { blogPosts, type BlogPost } from "./blog-posts";
 
-type Section = { heading: string; paragraphs: string[] };
-export type BlogArticle = BlogPost & { sections: Section[] };
+type Section = {
+  heading: string;
+  paragraphs: string[];
+  items?: { label?: string; text: string }[];
+  groups?: { heading: string; items: string[] }[];
+  after?: string[];
+  questions?: { question: string; answer: string }[];
+};
+export type BlogArticle = BlogPost & { introduction: string[]; sections: Section[] };
 
-const content: Record<string, Section[]> = {
-  "nature-return": [
-    { heading: "A world that carries on", paragraphs: ["We often describe the outdoors as a place waiting for our arrival. A trail waits to be walked, a shoreline waits to be discovered, a mountain waits to be climbed. But stand beside the water long enough and that familiar story begins to loosen. The tide has its own work to do. It never needed an audience.", "Imagine the glass towers in this landscape as a question rather than an answer. Their reflections belong to the same water as the cliffs, yet their straight edges speak a different language. The scene asks how we might build a life alongside the world without assuming we are its centre."] },
-    { heading: "The quiet after our footsteps", paragraphs: ["On a walk, the first sounds we notice are usually our own: shoes against gravel, a jacket catching the wind, a conversation carried uphill. Stopping changes the balance. Other sounds move forward. Water slips beneath a rock. A bird calls from somewhere we cannot see. The place becomes more detailed as we become less busy.", "This is a small practice in attention. Put away the camera for a few minutes. Notice the shapes that do not fit neatly into a photograph. Follow a shadow instead of a route. Nothing needs to happen for the time to be worthwhile."] },
-    { heading: "Returning with a different intention", paragraphs: ["A return does not have to mean reclaiming something. It can mean becoming a more thoughtful guest. Stay on the path where a path exists. Carry out what you brought in. Give wildlife distance. These ordinary choices turn admiration into a little practical care.", "We can bring that attitude home, too. Leave a corner of the day unfilled. Learn the name of a tree you pass often. Pay attention to a patch of sky from the same window across a week. Connection is not always a grand journey; sometimes it is simply repeated notice."] },
-    { heading: "Let the landscape remain itself", paragraphs: ["The wild does not need to remember our names for our lives to be changed by it. There is relief in that thought. We can visit without making a mark, listen without finding a lesson, and leave without turning every experience into a story about ourselves.", "Perhaps the most generous way to return is to accept that the world continued while we were away. The water moved. The light changed. And for a little while, we get to be here with it."] },
-  ],
-  "seeds-whisper": [
-    { heading: "What we cannot see yet", paragraphs: ["A planted seed offers very little immediate reassurance. The surface of the pot looks almost exactly as it did yesterday. We water it, move it nearer the light, and wait. It is a familiar kind of uncertainty: the feeling of caring for something before we can measure its progress.", "The image above is an abstract companion to that feeling. Warm colour meets a cold surface, suggesting a possibility held inside a quiet season. It is an invitation to think about beginnings, rather than a literal picture of them."] },
-    { heading: "Care is a repeated action", paragraphs: ["Patient work is rarely dramatic. It is checking the soil instead of watering by habit, making room on a windowsill, and noticing when a tiny shoot starts leaning toward the light. The reward comes partly from the plant and partly from learning to look closely.", "Creative projects can ask for a similar rhythm. A first draft may not look promising. A skill may feel awkward for weeks. Small, regular sessions give an idea somewhere to grow without requiring it to become impressive immediately."] },
-    { heading: "Make space for a slower beginning", paragraphs: ["Choose one thing this week that deserves attention without constant evaluation. Give it a little time each day. Record what you actually notice rather than what you hoped would happen. If the approach needs to change, change it gently.", "Waiting is not a guarantee that everything will work. Some seeds do not sprout and some plans need another season. But we can still learn from tending them. Another day arrives, and with it another chance to begin with care."] },
-  ],
-  "stone-stories": [
-    { heading: "A different measure of time", paragraphs: ["A stone picked up beside a path can feel wonderfully ordinary. It sits in the palm without explaining itself. Its surface holds lines, colours and small irregularities that make our urgent calendars seem briefly less important.", "We do not need to invent a precise history for it to feel curious. Looking is enough. The pleasure comes from meeting something that cannot be hurried into a reply."] },
-    { heading: "Learning from texture", paragraphs: ["Designers often begin with a polished reference, but a weathered surface offers another kind of vocabulary. A muted colour beside a sharp vein. A rounded edge against a rough break. A pattern that repeats without becoming perfectly identical.", "Try making a small collection of observations instead of objects. Photograph three textures on an ordinary walk, or sketch them in a notebook. Note the relationships between colours. Leave the stones where they are, especially in protected places, and take the attention home with you."] },
-    { heading: "What a landscape leaves with us", paragraphs: ["Memory is selective. We may forget the name of a viewpoint while remembering the warmth of a rock in the afternoon sun. Those modest details can become the most durable part of a journey because they belong to a moment we actually inhabited.", "The stories stones keep do not have to become facts we claim to know. They can remain questions: what shaped this edge, why does this colour stand out, what have I walked past without seeing? Curiosity is a generous way to finish a walk."] },
-  ],
-  "mountain-breath": [
-    { heading: "Before the day becomes crowded", paragraphs: ["Dawn changes a mountain slowly enough that we can miss it while looking for a spectacular moment. A ridge separates from the sky. A patch of mist becomes visible. The same view seems to arrive in layers, asking for nothing more than a little time.", "Early quiet is not a competition to wake before everyone else. It is simply an opportunity to begin a day with fewer demands on our attention, whether we are outdoors or sitting beside a window."] },
-    { heading: "Solitude without a performance", paragraphs: ["We sometimes give even our restful moments a job: become calmer, find inspiration, come back transformed. That can make stillness feel like another task. A gentler approach is to let a few minutes pass without asking them to improve us.", "On a morning walk, choose a safe, familiar route and dress for the conditions. Pause where you can comfortably stand aside. Notice the light and the temperature. You do not need a remote summit to experience a change in pace."] },
-    { heading: "Carry a little of it forward", paragraphs: ["The rest of the day will bring messages, decisions and interruptions. Quiet cannot prevent them, but it can give us a different starting point. Before opening the next app or rushing into the next meeting, we can remember what it felt like to notice one thing at a time.", "The mountain does not literally breathe. We do, and perhaps that is why the image stays with us: a reminder to make room for the ordinary rhythm that continues beneath a busy life."] },
-  ],
-  "earth-listening": [
-    { heading: "The space between one thing and another", paragraphs: ["After a storm, familiar places can seem newly arranged. A pavement reflects the sky. Leaves gather in a different corner. Sounds return gradually. The pause gives us a chance to see details that were present all along but hidden beneath our momentum.", "Listening, in this sense, is wider than hearing. It is noticing the mood of a room, the changing light on a desk, or the moment our attention starts to wander. It begins with being available to what is already here."] },
-    { heading: "Choose what enters your day", paragraphs: ["Headphones can create a welcome pocket of privacy, but it is useful to choose that pocket deliberately. Sometimes music helps us settle into work. Sometimes a few minutes without another voice leaves more room for our own thoughts.", "Try a short transition between activities. Close the finished document before opening a new one. Stand up, look away from the screen, and notice your surroundings. This is not a productivity trick to optimise every minute; it is a way of letting one moment end before the next begins."] },
-    { heading: "A practice you can return to", paragraphs: ["There is no perfect state of attention to achieve. Some days are noisy, and some responsibilities leave little room for a long pause. Start with something small enough to fit the day you actually have: one quiet cup of tea, a minute at the window, a walk around the block.", "Listening to the earth between storms is a metaphor for that kind of return. We cannot schedule every calm interval, but when one appears, we can meet it with a little less hurry."] },
-  ],
-  "unnamed-wild": [
-    { heading: "Beyond the pin on a map", paragraphs: ["Maps help us find a route, but they cannot hold the whole experience of a place. They do not tell us how the air feels beneath a stand of trees, or how a distant sound changes when we turn a corner. There is always something left to discover through attention.", "The unnamed wild is not a secret destination. It is the part of any landscape that refuses to become just a location we have visited. Even a familiar park can surprise us when we stop treating the walk as a task to finish."] },
-    { heading: "Arrive as a guest", paragraphs: ["Curiosity works best alongside care. Research access before travelling, respect local guidance, and give animals plenty of space. A memorable encounter does not require approaching closely. Often the quieter experience is the more generous one.", "Make a little room in your plans for an unremarkable moment. Sit somewhere permitted. Watch the weather move. Notice what catches your eye after the first few minutes, when the obvious view has become familiar."] },
-    { heading: "Bring back attention", paragraphs: ["A journey can leave us with photographs, but it can also change how we look at home. The habit of noticing travels well. A bird on a roof, an unfamiliar plant beside a bus stop, a shifting reflection in a puddle: small discoveries are available between bigger adventures.", "We do not have to give everything a name immediately. Sometimes it is enough to recognise that there is more here than our map could show, and to keep looking with care."] },
-  ],
-  "machines-dream": [
-    { heading: "An image, and a question", paragraphs: ["A machine dreaming of trees is a metaphor. It invites us to ask what we want from the tools we create, and what might be lost when we confuse an image of the living world with the world itself. A beautiful landscape on a screen can spark curiosity, but it cannot replace the experience of being outdoors.", "The interesting question is not whether technology can make something that looks natural. It is whether our use of it can leave more room for care, attention and contact with the places around us."] },
-    { heading: "Build tools that make room", paragraphs: ["A useful digital product does not always need to keep us looking at it. Clear directions, readable information and settings we can understand may help us finish what we came to do and move on. Restraint can be a design choice, not a missing feature.", "When evaluating a tool, ask simple questions. Does it make the next step clearer? Can I control the notifications? Does it explain where its information comes from? These questions keep the conversation grounded in experience rather than spectacle."] },
-    { heading: "Keep the living world in view", paragraphs: ["There is room for imagination and practical judgement together. We can enjoy an invented landscape while recognising it as invented. We can use digital tools to plan a walk, then put them away long enough to notice the walk itself.", "Perhaps the most hopeful relationship between technology and nature is one that keeps directing our attention outward. The screen becomes a doorway rather than a destination, and the tree remains something we can meet on its own terms."] },
-  ],
+const content: Record<string, Pick<BlogArticle, "introduction" | "sections">> = {
+  "digital-marketing-for-startups-90-day-plan": {
+    introduction: [
+      "Startups often ask where marketing should begin. The answer is straightforward: start small, focus on one or two channels and measure everything.",
+      "We’re Growthys, a digital marketing company in Gurugram, and we’ve helped startups build their first marketing systems. This 90-day plan is realistic, practical and based on what actually works for early-stage businesses.",
+    ],
+    sections: [
+      {
+        heading: "Days 1–30: Build the Foundation",
+        paragraphs: ["Month one is about getting the basics right. Without a solid foundation, campaigns waste money."],
+        items: [
+          { text: "Set up a clear business website design that explains what you do and who it’s for" },
+          { text: "Create and complete a Google Business Profile" },
+          { text: "Set up Google Analytics and Search Console" },
+          { text: "Define your target audience and one core offer" },
+          { text: "Start basic SEO services with keyword research and on-page fixes" },
+          { text: "Set up a simple CRM or lead tracking system" },
+        ],
+        after: ["Don’t try to have everything ready on day one. Focus on what lets you launch campaigns cleanly."],
+      },
+      {
+        heading: "Days 31–60: Drive First Traffic",
+        paragraphs: ["With the foundation in place, start bringing visitors in."],
+        items: [
+          { text: "Launch small performance marketing campaigns on Google or Meta" },
+          { text: "Post consistently on one social platform" },
+          { text: "Collect early reviews and testimonials" },
+          { text: "Build 2–3 landing pages for specific offers" },
+          { text: "Track every lead source carefully" },
+        ],
+        after: ["Keep budgets small. The aim is to learn what works, not to spend big."],
+      },
+      {
+        heading: "Days 61–90: Measure and Improve",
+        paragraphs: ["Month three is for learning from data."],
+        items: [
+          { text: "Review traffic, leads and conversion rates" },
+          { text: "Cut campaigns that don’t convert" },
+          { text: "Scale what works" },
+          { text: "Add content marketing, such as blog posts and guides" },
+          { text: "Plan the next quarter using real numbers" },
+        ],
+        after: ["Many startups go wrong at this stage. They keep funding campaigns that don’t work because they never review the data. Don’t repeat that mistake."],
+      },
+      {
+        heading: "Why Startups Need the Right Partner",
+        paragraphs: [
+          "Plenty of startups waste money on scattered tactics. A good IT consulting company partner helps you avoid that. Growthys works as both a marketing partner and a technology advisor, so your website, systems and campaigns move together.",
+          "We help startups pick the right channels, set realistic budgets and measure honestly.",
+        ],
+      },
+      {
+        heading: "Common Startup Marketing Mistakes",
+        paragraphs: [],
+        items: [
+          { text: "Trying to be on every platform at once" },
+          { text: "Spending on ads before the website is ready" },
+          { text: "Ignoring lead tracking" },
+          { text: "Chasing vanity metrics instead of revenue" },
+          { text: "Changing strategy every few weeks" },
+        ],
+        after: ["Avoid these and you’ll be ahead of most early-stage businesses."],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["Digital marketing for startups isn’t about doing everything. It’s about doing the right things first. Follow this 90-day plan, measure honestly and adjust as you learn."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "How much should a startup spend on marketing?", answer: "Start small, with a modest monthly budget focused on one or two channels." },
+          { question: "Should startups focus on SEO or Ads first?", answer: "Usually Ads first for quick feedback, then SEO for long-term growth." },
+          { question: "How long before I see results?", answer: "Ads can bring traffic within days. SEO usually takes 3–6 months." },
+          { question: "Do I need a website before marketing?", answer: "Yes. A clear, fast website is the foundation of every campaign." },
+          { question: "Can Growthys help with limited budgets?", answer: "Yes. We offer flexible plans for startups and early-stage businesses." },
+          { question: "What industries does Growthys serve?", answer: "Finance, healthcare, retail, education, manufacturing and startups." },
+        ],
+      },
+    ],
+  },
+  "web-design-that-converts-7-practical-rules": {
+    introduction: [
+      "A beautiful website isn’t automatically a successful one. What counts is whether visitors act: filling in forms, calling or buying.",
+      "At Growthys, our best design agency-level team follows seven practical rules for business website design. They apply whether you run a service business, an online store or a B2B company, and they’re based on real user behavior rather than looks alone.",
+    ],
+    sections: [
+      {
+        heading: "Rule 1: Clarity Beats Creativity",
+        paragraphs: [
+          "Visitors should grasp what you do within five seconds. A clear headline and a simple layout beat clever design that confuses.",
+          "Ask yourself: if a stranger lands on this page, will they know what I offer and who it’s for? If not, the design needs work.",
+        ],
+      },
+      {
+        heading: "Rule 2: One Main Action Per Page",
+        paragraphs: [
+          "Give every page one clear goal, whether that’s booking a call, downloading a guide or buying a product. Several competing buttons lower conversions because visitors aren’t sure what to do next.",
+          "Pick one primary action per page and make it stand out. Secondary actions can stay visible but less prominent.",
+        ],
+      },
+      {
+        heading: "Rule 3: Mobile-First Design",
+        paragraphs: [
+          "Most visitors arrive on phones, and a site that isn’t mobile-friendly loses them. Our web design services start with mobile layouts and then expand to desktop.",
+          "Mobile-first means:",
+        ],
+        items: [
+          { text: "Large, easy-to-tap buttons" },
+          { text: "Readable text without zooming" },
+          { text: "Short forms" },
+          { text: "Fast loading on mobile networks" },
+        ],
+      },
+      {
+        heading: "Rule 4: Fast Loading Speed",
+        paragraphs: [
+          "Each extra second of load time cuts conversions. Compress images, use clean code and test speed regularly.",
+          "One simple rule: if your homepage takes more than three seconds to load on mobile, fix that before adding any new features.",
+        ],
+      },
+      {
+        heading: "Rule 5: Trust Signals",
+        paragraphs: [
+          "Show reviews, client logos, certifications and contact details. Visitors trust businesses that prove they’re real and reliable.",
+          "Trust signals include:",
+        ],
+        items: [
+          { text: "Customer testimonials with names and photos" },
+          { text: "Client logos" },
+          { text: "Certifications or awards" },
+          { text: "A clear physical address and phone number" },
+        ],
+      },
+      {
+        heading: "Rule 6: Simple Navigation",
+        paragraphs: [
+          "Keep menus short and put important pages within two clicks. Use clear labels, not clever ones.",
+          "Visitors who can’t find what they need quickly will leave. Build your menu around what customers want, not around how your business is organized internally.",
+        ],
+      },
+      {
+        heading: "Rule 7: Clear Contact Options",
+        paragraphs: [
+          "Offer a way to reach you on every page, whether that’s phone, WhatsApp or a short form. Keep it easy and visible.",
+          "A sticky contact button, a short form and a clickable phone number all help conversion rates.",
+        ],
+      },
+      {
+        heading: "How Growthys Builds Converting Websites",
+        paragraphs: [
+          "We’re a digital marketing company with a design and development team, so our websites look good and convert well. Our process starts with your business goals, not just aesthetics.",
+          "We also link design with SEO and marketing, so your website is attractive, easy to find and built to convert.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["Great design isn’t decoration. It’s about guiding visitors toward action. Follow these seven rules and your website will do its job."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "How long does a business website take to build?", answer: "Usually 4–8 weeks, depending on pages and features." },
+          { question: "Do I need a mobile-friendly website?", answer: "Yes. Most traffic is mobile, and Google ranks mobile-friendly sites higher." },
+          { question: "How much does a business website cost?", answer: "It depends on pages, features and design complexity. Growthys offers flexible packages." },
+          { question: "Can you redesign my existing website?", answer: "Yes. We audit your current site and recommend improvements." },
+          { question: "Do you provide content writing too?", answer: "Yes. We write clear, SEO-friendly content for your site." },
+          { question: "Does Growthys provide maintenance?", answer: "Yes. We offer ongoing support and updates." },
+        ],
+      },
+    ],
+  },
+  "hrms-software-what-it-is-and-why-your-business-needs-it": {
+    introduction: [
+      "Managing people is among the hardest parts of running a business. Attendance, leaves, payroll and performance reviews can swallow hours every month, and mistakes cost both money and trust.",
+      "HRMS software development puts all HR tasks into a single system. We’re Growthys, an IT solutions company in Gurugram, and we build HRMS platforms for businesses ranging from 20-person teams to 500+ employees.",
+    ],
+    sections: [
+      {
+        heading: "What Is an HRMS?",
+        paragraphs: ["HRMS stands for Human Resource Management System. It’s software that handles:"],
+        items: [
+          { text: "Attendance and leave tracking" },
+          { text: "Payroll processing" },
+          { text: "Employee records and documents" },
+          { text: "Recruitment and onboarding" },
+          { text: "Performance reviews" },
+          { text: "Reports for management" },
+        ],
+        after: ["Spreadsheets and WhatsApp approvals give way to one place with a clear audit trail."],
+      },
+      {
+        heading: "Why Custom HRMS Beats Generic Tools",
+        paragraphs: [
+          "Generic HRMS tools handle standard processes well. But every business has its own rules: different leave policies, payroll structures, approval chains and compliance needs.",
+          "Custom HRMS software development is built around your exact policies. Errors drop, processing speeds up and compliance with local labor rules improves.",
+          "A custom system also grows with you. Add locations or employees and it keeps up, with no need to switch platforms.",
+        ],
+      },
+      {
+        heading: "Automation Saves Time",
+        paragraphs: ["Business automation tools inside an HRMS can take over repetitive tasks:"],
+        items: [
+          { text: "Auto-calculating payroll from attendance data" },
+          { text: "Sending leave approval requests to the right manager" },
+          { text: "Generating monthly reports automatically" },
+          { text: "Alerting HR about missing documents or expiring contracts" },
+        ],
+        after: ["Work that took days now takes minutes, with fewer errors."],
+      },
+      {
+        heading: "How Growthys Builds HRMS Platforms",
+        paragraphs: [
+          "Our custom software development team starts with a workflow audit and then designs a system around your HR process. We connect payroll, biometric attendance and accounting tools so data flows without manual entry.",
+          "We’re an IT solutions company, so we also provide training and ongoing support. Your HR team gets full value from the system.",
+          "During design and testing, we work closely with your HR team, which keeps the final system true to how people actually work.",
+        ],
+      },
+      {
+        heading: "Security and Compliance",
+        paragraphs: ["HR data is sensitive. A good HRMS protects it with:"],
+        items: [
+          { text: "Encryption for employee data" },
+          { text: "Role-based access control" },
+          { text: "Audit logs of every change" },
+          { text: "Secure backup and recovery" },
+        ],
+        after: ["Compliance with local labor laws is built into the payroll and leave modules."],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["An HRMS isn’t only for large companies. Even a 30-person business saves hours each month with the right system. If your HR tasks are still manual, it’s time to automate."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "What is the difference between HRMS and HR software?", answer: "They’re often the same thing. HRMS is the broader term that covers all HR functions." },
+          { question: "How long does HRMS development take?", answer: "Usually 8–16 weeks, depending on modules and integrations." },
+          { question: "Can HRMS handle payroll for multiple locations?", answer: "Yes. Custom systems can handle multi-state and multi-country payroll rules." },
+          { question: "Does it integrate with biometric attendance?", answer: "Yes. We integrate with common biometric devices." },
+          { question: "Is HRMS secure?", answer: "Yes. We use encryption and role-based access to protect employee data." },
+          { question: "Does Growthys provide HRMS support after launch?", answer: "Yes. Ongoing support and updates are included." },
+        ],
+      },
+    ],
+  },
+  "why-your-business-needs-custom-crm-software": {
+    introduction: [
+      "Tracking leads across spreadsheets, WhatsApp chats and email threads costs your sales team money every single day. Leads get forgotten, follow-ups slip and managers can’t see what’s going on.",
+      "Custom CRM & management software fixes this by keeping every lead, call and deal in one place, built around how your team really works. We’re Growthys, a software development company in Gurugram, and we build CRMs for businesses of every size.",
+    ],
+    sections: [
+      {
+        heading: "What a CRM Does",
+        paragraphs: [
+          "A CRM (Customer Relationship Management) system keeps all customer data and interactions in one place. A custom CRM goes a step further. It’s built around your exact sales process rather than a generic template.",
+          "Typical features include:",
+        ],
+        items: [
+          { text: "Lead tracking with clear status stages" },
+          { text: "Call and email logs" },
+          { text: "Follow-up reminders and alerts" },
+          { text: "Reports and dashboards for managers" },
+          { text: "Role-based access for team members" },
+          { text: "Integration with WhatsApp, email and accounting tools" },
+        ],
+      },
+      {
+        heading: "Why Not Buy an Off-the-Shelf CRM?",
+        paragraphs: [
+          "Off-the-shelf tools cost less upfront, but they make your team change how they work. Adoption usually suffers, and people drift back to spreadsheets because the system doesn’t fit their process.",
+          "Custom CRM & management software adapts to your workflow instead. You get higher adoption, cleaner data and better visibility for managers.",
+          "Custom systems also connect to the tools you already use. Rather than juggling five apps, your team works in one connected system.",
+        ],
+      },
+      {
+        heading: "The Role of Business Automation Tools",
+        paragraphs: ["Pair a CRM with business automation tools and it becomes far more powerful. Simple automations can save hours each week:"],
+        items: [
+          { text: "Auto-assigning leads to the right salesperson" },
+          { text: "Sending follow-up emails after a call" },
+          { text: "Alerting managers when a deal is stuck" },
+          { text: "Generating daily sales reports automatically" },
+        ],
+        after: ["Automation doesn’t replace people. It clears the repetitive work so your team can concentrate on selling."],
+      },
+      {
+        heading: "How Growthys Builds CRMs",
+        paragraphs: [
+          "Growthys handles the whole process: requirement gathering, design, development, testing and ongoing support. Our custom software development team builds systems that are fast, secure and easy to use.",
+          "We’re a reliable IT solutions company in India, so we also connect CRMs with HRMS, accounting and marketing tools. Your systems talk to each other and data moves without manual entry.",
+          "We work in phases, so you can launch with core features and add more as the business grows.",
+        ],
+      },
+      {
+        heading: "What to Expect During the Project",
+        paragraphs: ["A typical CRM project includes:"],
+        items: [
+          { text: "Discovery and requirement workshops" },
+          { text: "Wireframes and UI design" },
+          { text: "Development in stages" },
+          { text: "Testing with real users" },
+          { text: "Training for your team" },
+          { text: "Launch and post-launch support" },
+        ],
+        after: ["Most projects take 6–12 weeks, depending on features and integrations."],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["A custom CRM isn’t a luxury. It’s a practical tool that saves time, cuts errors and helps your team close more deals. If spreadsheets are slowing you down, it’s time to upgrade."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "How long does a custom CRM take to build?", answer: "Usually 6–12 weeks, depending on features and integrations." },
+          { question: "Is a custom CRM more expensive than off-the-shelf?", answer: "Upfront, yes. Long-term costs are often lower because it fits your process." },
+          { question: "Can a custom CRM integrate with WhatsApp?", answer: "Yes. We connect CRMs with WhatsApp, email and other tools." },
+          { question: "Will my team need training?", answer: "Yes, though a CRM built around your workflow needs less of it." },
+          { question: "Can I start small and add features later?", answer: "Yes. We build in phases so you can start quickly and grow." },
+          { question: "Does Growthys provide support after launch?", answer: "Yes. Ongoing support and maintenance come with every project." },
+        ],
+      },
+    ],
+  },
+  "google-ads-vs-seo": {
+    introduction: [
+      "Sooner or later, every business owner wonders whether to pay for Google Ads or invest in SEO. Both work. They just work for different reasons and on different timelines.",
+      "At Growthys, a digital marketing company in Gurugram, we run both for clients across industries. We’ve watched businesses burn money on the wrong channel and succeed with the right mix. This article lays out the difference clearly so you can choose with confidence.",
+    ],
+    sections: [
+      {
+        heading: "What Google Ads Actually Do",
+        paragraphs: ["Google Ads put your business at the top of search results almost immediately. You pay per click, and a campaign can go live within a day of setup."],
+        groups: [
+          { heading: "The upside:", items: ["Fast results", "Highly targeted traffic", "Full control over budget", "Easy to measure return per rupee"] },
+          { heading: "The downside:", items: ["Traffic stops the moment you stop paying", "Competition can push click prices up", "Poorly managed campaigns waste money quickly"] },
+        ],
+        after: ["Google Ads services work best when you need leads now: a new clinic, a seasonal sale, a product launch or a service area you want to test."],
+      },
+      {
+        heading: "What SEO Actually Does",
+        paragraphs: ["SEO services build traffic over time. There’s no cost per click, and a page that ranks well can bring visitors for years with little ongoing spend."],
+        groups: [
+          { heading: "The upside:", items: ["Long-term compounding returns", "Lower cost per lead over time", "Stronger brand credibility", "Traffic that continues even when ads pause"] },
+          { heading: "The downside:", items: ["Slower results, usually 3–6 months", "Needs consistent content and technical care", "Rankings can fluctuate with Google updates"] },
+        ],
+      },
+      {
+        heading: "Which One Should You Choose?",
+        paragraphs: ["Three practical questions can settle it."],
+        questions: [
+          { question: "How fast do you need results?", answer: "Need leads this month? Start with Ads. If you can wait a quarter, SEO may be the better first investment." },
+          { question: "What is your budget?", answer: "Ads need ongoing spend. SEO needs upfront investment in content and technical work. Pick whichever you can keep up." },
+          { question: "How competitive is your industry?", answer: "Highly competitive industries often need both. Less competitive niches can win with SEO alone." },
+        ],
+        after: ["Most successful businesses use both. Ads bring traffic now while SEO quietly builds a long-term asset."],
+      },
+      {
+        heading: "How the Two Work Together",
+        paragraphs: ["A strong performance marketing setup often runs like this:"],
+        items: [
+          { text: "Ads capture high-intent traffic right away" },
+          { text: "SEO builds organic visibility over time" },
+          { text: "Ads data shows which keywords actually convert" },
+          { text: "SEO then targets those proven keywords for long-term gain" },
+        ],
+        after: ["Together, each channel makes the other stronger."],
+      },
+      {
+        heading: "How Growthys Approaches This",
+        paragraphs: [
+          "Growthys doesn’t push one service over the other. We first learn your goals, timeline and budget, then recommend the mix that makes sense. Many clients start with Ads for quick wins and add SEO once revenue is stable.",
+          "We’re also an IT solutions company in India, so we make sure your website is technically ready for both: fast, mobile-friendly and built to convert.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["Google Ads and SEO aren’t rivals. They’re tools for different jobs. The right mix depends on your goals, timeline and budget, and a good digital marketing company will tell you so honestly."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "Can I run Google Ads without SEO?", answer: "Yes, but you may pay more per lead over time. SEO lowers long-term acquisition costs." },
+          { question: "Can I do SEO without Google Ads?", answer: "Yes. Many businesses grow on SEO alone, though it takes patience." },
+          { question: "Which gives better ROI?", answer: "SEO usually has the higher long-term ROI. Ads give faster returns." },
+          { question: "How much should I spend on Ads?", answer: "Start small, measure results and then scale. Growthys helps set budgets based on your goals." },
+          { question: "Do I need a landing page for Ads?", answer: "Yes. A dedicated page improves conversion rates and lowers cost per lead." },
+          { question: "Does Growthys manage both?", answer: "Yes. We run Google Ads and SEO as one connected strategy." },
+        ],
+      },
+    ],
+  },
+  "seo-for-small-businesses": {
+    introduction: [
+      "When customers search for your services on Google and you don’t show up, a big chunk of your market never sees you. SEO, short for search engine optimization, fixes that. It isn’t magic, and it isn’t only for big brands with deep pockets. Small businesses can win at SEO too, often faster than larger rivals, because they can zero in on a specific local audience.",
+      "We’re Growthys, a digital marketing company based in Gurugram, Haryana. We’ve helped dozens of small businesses move up the search results and turn that visibility into real leads. This guide covers what SEO is, how it works and how to begin without wasting money.",
+    ],
+    sections: [
+      {
+        heading: "What SEO Actually Means",
+        paragraphs: ["SEO is the work of getting your website to rank higher for the terms your customers type into search. It has three main parts:"],
+        items: [
+          { label: "On-page SEO", text: "the content, titles, headings and internal links on your pages" },
+          { label: "Technical SEO", text: "site speed, mobile-friendliness, clean code and proper indexing" },
+          { label: "Off-page SEO", text: "links and brand mentions from other trustworthy websites" },
+        ],
+        after: ["A solid SEO strategy ties all three together. Fix content but ignore technical problems and your rankings stall. Build links on slow pages and Google holds you back."],
+      },
+      {
+        heading: "Why SEO Matters More Than Ever",
+        paragraphs: [
+          "Millions of people search Google for products and services every day, and most of them click one of the top results. Land on page two or three and you’re practically invisible.",
+          "SEO brings free traffic that keeps coming. Ads stop delivering the moment you stop paying, but a page that ranks well can bring visitors for years. That makes SEO one of the best-return investments a small business can make.",
+        ],
+      },
+      {
+        heading: "Start With Local SEO",
+        paragraphs: [
+          "Serving customers in a particular city or area? Make local SEO your first focus. Local searches often carry the strongest buying intent. Someone typing “best web design near me” is ready to hire.",
+          "The basics of local SEO:",
+        ],
+        items: [
+          { text: "Create a Google Business Profile and fill it in completely" },
+          { text: "List your correct address, phone number and hours" },
+          { text: "Collect reviews from real customers" },
+          { text: "Use location-based keywords naturally on your site" },
+          { text: "Get listed in relevant local directories" },
+        ],
+        after: ["Good business website design helps local SEO directly. Fast loading, clean navigation and mobile-friendly pages let Google crawl and understand your site more quickly."],
+      },
+      {
+        heading: "Technical SEO for Small Businesses",
+        paragraphs: ["You don’t need a developer for every technical fix, but a few basics matter a great deal:"],
+        items: [
+          { label: "Page speed", text: "compress images and remove unnecessary scripts" },
+          { label: "Mobile-friendliness", text: "most searches happen on phones" },
+          { label: "Clean URLs", text: "short, readable page addresses" },
+          { label: "SSL certificate", text: "the padlock icon in the browser" },
+          { label: "Sitemap and robots.txt", text: "they help Google find your pages" },
+        ],
+        after: ["These fixes alone can lift rankings within weeks."],
+      },
+      {
+        heading: "Content That Ranks",
+        paragraphs: ["Content tells Google what your site is about. Good SEO content:"],
+        items: [
+          { text: "Answers real questions your customers ask" },
+          { text: "Uses keywords naturally instead of stuffing them in" },
+          { text: "Has clear headings and short paragraphs" },
+          { text: "Links to related pages on your site" },
+          { text: "Gets updated when information changes" },
+        ],
+        after: ["A blog is one of the best ways to keep adding fresh, keyword-rich content over time."],
+      },
+      {
+        heading: "How Growthys Helps Small Businesses",
+        paragraphs: [
+          "Growthys offers complete SEO services for small and mid-sized businesses. We begin with a full site audit and then build a plan around your market, competitors and goals. As a reliable IT solutions company in India, we also fix the technical problems that block rankings: slow pages, broken links, messy code and poor structure.",
+          "Marketing and technology sit under one roof in our team, so your SEO plan doesn’t stop at advice. It gets fully implemented.",
+        ],
+      },
+      {
+        heading: "Common SEO Mistakes to Avoid",
+        paragraphs: [],
+        items: [
+          { text: "Targeting keywords that are too broad or too competitive" },
+          { text: "Ignoring local SEO while chasing national keywords" },
+          { text: "Stuffing keywords into content instead of writing naturally" },
+          { text: "Buying cheap backlinks that damage trust" },
+          { text: "Skipping analytics and guessing at results" },
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: ["SEO isn’t a quick fix. It’s steady, structured work that compounds over time. Start with local SEO, get your website basics right and add useful content regularly. If you’d like a team to handle it end to end, Growthys is here to help."],
+      },
+      {
+        heading: "FAQs",
+        paragraphs: [],
+        questions: [
+          { question: "How long does SEO take to show results?", answer: "Meaningful ranking movement usually takes 3–6 months. Competitive keywords can take longer." },
+          { question: "Is SEO expensive for small businesses?", answer: "Not necessarily. Small business packages are affordable and scale with your needs." },
+          { question: "Can I do SEO myself?", answer: "For basic local SEO, yes. Advanced technical SEO usually calls for expert help." },
+          { question: "Does social media help SEO?", answer: "Indirectly. Social signals and traffic can support rankings, but they aren’t a direct ranking factor." },
+          { question: "Do I need a blog for SEO?", answer: "It helps a lot. Fresh content aimed at the right keywords brings steady traffic." },
+          { question: "How does Growthys measure SEO results?", answer: "We track rankings, traffic, leads and conversions, the same numbers you see." },
+        ],
+      },
+    ],
+  },
 };
 
-const featured: BlogPost[] = [
-  { id: "unnamed-wild", title: "Returning to the unnamed wild beyond the maps", category: "Lifestyle", excerpt: "These are places that refuse to be mapped — not because they’re lost, but because they’re alive.", image: "/images/blogs/arctic-fox.webp", imageAlt: "An arctic fox resting in fresh snow", author: "Growthys", authorPortrait: 0, publishedAt: "2026-06-18" },
-  { id: "machines-dream", title: "When machines begin to dream of trees", category: "Journal", excerpt: "A calm space for ideas that move in nature — part reflection, part possibility. Where technology and the living world meet.", image: "/images/blogs/mountain-dream.webp", imageAlt: "A mountain glowing pink above blue ridges at dawn", author: "Growthys", authorPortrait: 1, publishedAt: "2026-06-18" },
-];
-
-export const blogArticles: BlogArticle[] = [...blogPosts, ...featured].map(post => ({ ...post, sections: content[post.id] }));
+export const blogArticles: BlogArticle[] = blogPosts.map(post => ({ ...post, ...content[post.id] }));
 export function getBlogArticle(slug: string) { return blogArticles.find(post => post.id === slug); }
-export function getReadingTime(post: BlogArticle) { return Math.max(1, Math.ceil([post.excerpt, ...post.sections.flatMap(section => [section.heading, ...section.paragraphs])].join(" ").split(/\s+/).length / 200)); }
+export function getReadingTime(post: BlogArticle) {
+  const words = [post.title, ...post.introduction, ...post.sections.flatMap(section => [
+    section.heading, ...section.paragraphs,
+    ...(section.items ?? []).map(item => `${item.label ?? ""} ${item.text}`),
+    ...(section.groups ?? []).flatMap(group => [group.heading, ...group.items]),
+    ...(section.after ?? []),
+    ...(section.questions ?? []).map(item => `${item.question} ${item.answer}`),
+  ])].join(" ").split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+}
