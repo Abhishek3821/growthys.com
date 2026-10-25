@@ -40,7 +40,6 @@ export default function CompanyTeam() {
                   <p className={styles.joined}>{member.joined ? `Joined ${member.joined}` : "Growthys team"}</p>
                   <h3>{member.name}</h3>
                   <p className={styles.role}>{member.role}</p>
-                  <p className={styles.department}>{member.department}</p>
                   {!member.photo && <span className={styles.sample}>MEMBER PLACEHOLDER</span>}
                 </div>
               </article>

@@ -24,7 +24,6 @@
 .joined { margin: 0 0 8px; font-size: 11px; font-weight: 500; color: #464646; }
 .caption h3 { font-size: clamp(23px, 2.35vw, 34px); line-height: 1.08; font-weight: 750; letter-spacing: -.045em; margin: 0 0 13px; text-wrap: balance; }
 .role { font-size: 12px; line-height: 1.55; font-weight: 600; margin: 0; }
-.department { margin: 7px 0 0; font-size: 9px; font-weight: 500; letter-spacing: .08em; color: #666; }
 .sample { display: block; font-size: 8px; letter-spacing: .14em; color: #858a83; margin-top: 13px; }
 .footer { display: flex; justify-content: space-between; align-items: center; padding-top: 25px; border-top: 1px solid #dedfd9; margin-top: 22px; }
 .footer p { font-size: 12px; color: #6e736c; margin: 0; }
@@ -72,7 +71,7 @@
     transform-origin: left;
     transition: transform 550ms cubic-bezier(.2,.75,.2,1) 80ms;
   }
-  .role, .department, .vertical {
+  .role, .vertical {
     transition: transform 650ms cubic-bezier(.2,.75,.2,1), color 400ms ease;
   }
   .card:is(:hover, :focus-visible) {
@@ -95,7 +94,6 @@
   .card:is(:hover, :focus-visible) .caption h3 { color: var(--accent); text-shadow: 0 5px 16px #e9163218; }
   .card:is(:hover, :focus-visible) .caption h3::after { transform: scaleX(1); }
   .card:is(:hover, :focus-visible) .role { transform: translateY(3px); color: #181818; }
-  .card:is(:hover, :focus-visible) .department { transform: translateY(4px); }
   .card:is(:hover, :focus-visible) .vertical { transform: translateZ(35px) translateY(-5px); }
 }
 @media (min-width: 1450px) { .card { height: 610px; } }
