@@ -1,14 +1,17 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
-export function GET() {
+export async function GET() {
+  const logo = await readFile(path.join(process.cwd(), "public/images/brand/growthys-logo.png"));
+  const logoSource = `data:image/png;base64,${logo.toString("base64")}`;
   return new ImageResponse(
-    <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "100%", height: "100%", padding: "70px 78px", background: "#10213b", color: "#fffaf7", fontFamily: "sans-serif" }}>
-      <div style={{ display: "flex", fontSize: 52, fontWeight: 700, letterSpacing: -2 }}>growthys<span style={{ color: "#ff99be" }}>.</span></div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-        <div style={{ display: "flex", flexDirection: "column", fontSize: 68, fontWeight: 700, lineHeight: 1.12, letterSpacing: -2 }}><span>Good ideas.</span><span>Unforgettable execution.</span></div>
-        <div style={{ display: "flex", color: "#ffbad2", fontSize: 26 }}>Design. Technology. Digital growth.</div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "space-between", fontSize: 22, color: "#c9d2dd" }}><span>Gurugram, India</span><span>www.growthys.com</span></div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", padding: "70px", background: "#ffffff", color: "#080d55", fontFamily: "sans-serif", borderBottom: "12px solid #ff7900" }}>
+      {/* Native image is required by ImageResponse; this is not page UI. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={logoSource} alt="Growthys logo" width={900} height={251} style={{ objectFit: "contain" }} />
+      <div style={{ display: "flex", marginTop: 38, fontSize: 28 }}>Design. Technology. Digital growth.</div>
+      <div style={{ display: "flex", marginTop: 32, fontSize: 21, color: "#62657a" }}>www.growthys.com</div>
     </div>,
     { width: 1200, height: 630, headers: { "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800" } },
   );
