@@ -9,6 +9,7 @@ import { createPortal } from "react-dom";
 
 const links = [
   { label: "Company overview", href: "/insights" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact", href: "/contact" },
 ];
@@ -38,7 +39,7 @@ const servicePages: Record<string, "/performance-marketing" | "/website-design" 
   "Content Marketing": "/content-marketing",
 };
 
-export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "/" : "/contact" }: { onHomePage?: boolean; currentPage?: "/terms-conditions" | "/privacy-policy" | "/help-support" | "/" | "/contact" | "/insights" | "/blogs" | "/performance-marketing" | "/website-design" | "/digital-marketing" | "/e-commerce-solutions" | "/crm-management-software" | "/graphic-designing" | "/cms-design" | "/ecommerce-marketing" | "/web-development" | "/app-development" | "/search-engine-optimization" | "/hrms-software" | "/social-media-marketing" | "/ui-ux-design" | "/content-marketing" }) {
+export default function Navbar({ onHomePage = true, currentPage = onHomePage ? "/" : "/contact" }: { onHomePage?: boolean; currentPage?: "/portfolio" | "/terms-conditions" | "/privacy-policy" | "/help-support" | "/" | "/contact" | "/insights" | "/blogs" | "/performance-marketing" | "/website-design" | "/digital-marketing" | "/e-commerce-solutions" | "/crm-management-software" | "/graphic-designing" | "/cms-design" | "/ecommerce-marketing" | "/web-development" | "/app-development" | "/search-engine-optimization" | "/hrms-software" | "/social-media-marketing" | "/ui-ux-design" | "/content-marketing" }) {
   const slotRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const logoRef = useRef<HTMLAnchorElement>(null);

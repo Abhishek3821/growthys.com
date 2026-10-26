@@ -1,0 +1,20 @@
+.section { position: relative; margin: 0 -24px; background: #fff0f5; color: #101342; }
+.inner { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 48px; max-width: 1320px; margin: 0 auto; padding: 12px 48px 52px; }
+.copy { position: relative; z-index: 1; }
+.heading { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(32px, 3.3vw, 46px); line-height: 1.06; letter-spacing: -0.035em; font-weight: 700; }
+.heading > span { position: relative; display: inline-block; color: #df1863; }
+.heading > span > svg { position: absolute; right: 0; bottom: -10px; width: 52%; height: 12px; fill: none; stroke: #e85b8b; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.section .button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 44px; margin-top: 24px; padding: 12px 19px; border-radius: 7px; background: #101342; color: #fff; font-size: 13px; font-weight: 700; }
+.section .button:hover { background: #282d69; }
+.section .button:focus-visible { outline: 3px solid #df1863; outline-offset: 5px; }
+.illustration { display: block; width: 100%; height: auto; }
+.wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 44px; pointer-events: none; }
+@media (max-width: 1000px) {
+  .inner { gap: 24px; padding-inline: 34px; }
+}
+@media (max-width: 700px) {
+  .section { margin-inline: -20px; }
+  .inner { grid-template-columns: 1fr; gap: 18px; max-width: 590px; padding: 20px 28px 48px; }
+  .heading { font-size: clamp(31px, 6.8vw, 42px); }
+  .illustration { max-width: 480px; margin: 0 auto; }
+}
