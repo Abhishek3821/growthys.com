@@ -1,4 +1,6 @@
 import { performanceQuestions } from "../data/performance-marketing-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import { performanceFeatures as features } from "../data/performance-marketing-content";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -15,10 +17,10 @@ import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 import campaignGrowth from "../../public/images/services/performance-marketing/campaign-growth-hero.webp";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/performance-marketing" },
   title: "Performance Marketing | Growthys",
   description: "We plan, launch, and optimize paid campaigns that bring you leads and sales — not just traffic. Every rupee you spend is tracked, tested, and pushed toward a result you can measure.",
-};
+}, "/performance-marketing");
 
 
 
@@ -33,7 +35,7 @@ function FeatureIcon({ icon }: { icon: typeof features[number]["icon"] }) {
 export default function PerformanceMarketingPage() {
   return (
     <>
-    <main className="min-h-svh bg-[#fffefa] p-2 text-[#252823] sm:p-3 lg:p-4">
+    <main className="min-h-svh bg-[#fffefa] p-2 text-[#252823] sm:p-3 lg:p-4"><PageStructuredData path="/performance-marketing" metadata={metadata} />
       <section className="relative mx-auto max-w-[1800px] lg:h-[calc(100svh-32px)] lg:[--feature-height:clamp(210px,30svh,264px)]" aria-labelledby="performance-heading">
         <div className="relative isolate flex min-h-[620px] flex-col overflow-hidden rounded-[26px] bg-[#626954] px-6 pb-7 pt-5 sm:px-9 lg:h-[calc(100%-100px)] lg:min-h-0 lg:px-10 lg:pb-7 lg:[clip-path:polygon(0_0,100%_0,100%_calc(100%_-_var(--feature-height)_+_84px),44%_calc(100%_-_var(--feature-height)_+_84px),34%_100%,0_100%)]">
           <Image src={campaignGrowth} alt="Performance marketing workspace with paid campaign analytics, conversion funnels, and ad creatives" fill quality={95} preload placeholder="blur" sizes="100vw" className="-z-30 object-cover object-bottom" />

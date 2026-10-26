@@ -1,4 +1,6 @@
 import { websiteDesignQuestions } from "../data/website-design-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import WebsiteDesignHero from "../components/website-design-hero";
 import DesignClasses from "../components/design-classes";
@@ -11,15 +13,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/website-design" },
   title: "Website Design | Growthys",
   description: "Websites built to look beautiful, load fast, and turn visitors into customers.",
-};
+}, "/website-design");
 
 export default function WebsiteDesignPage() {
   return (
     <>
-      <main className="bg-white">
+      <main className="bg-white"><PageStructuredData path="/website-design" metadata={metadata} />
         <WebsiteDesignHero />
         <DesignClasses />
         <DesignToolsShowcase />

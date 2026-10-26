@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { withSocialMetadata } from "../../lib/social-metadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "../../components/navbar";
 import SiteFooter from "../../components/site-footer";
 import { blogArticles, getBlogArticle, getReadingTime } from "../../data/blog-articles";
 import styles from "./article.module.css";
+import { JsonLd } from "../../components/structured-data";
+import { absoluteUrl, breadcrumbSchema, ORGANIZATION_ID, WEBSITE_ID } from "../../lib/structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
 const dateFormat = new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
@@ -15,7 +18,7 @@ export function generateStaticParams() { return blogArticles.map(post => ({ slug
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogArticle((await params).slug);
   if (!post) return { title: "Article not found | Growthys" };
-  return { title: `${post.title} | Growthys Journal`, description: post.excerpt, openGraph: { title: post.title, description: post.excerpt, type: "article", publishedTime: post.publishedAt, authors: [post.author], images: [{ url: post.image, alt: post.imageAlt }] } };
+  return withSocialMetadata({ alternates: { canonical: `/blogs/${post.id}` }, title: `${post.title} | Growthys Journal`, description: post.excerpt }, `/blogs/${post.id}`, { image: post.image, imageAlt: post.imageAlt, publishedTime: post.publishedAt, author: post.author });
 }
 
 export default async function BlogArticlePage({ params }: Props) {
@@ -23,6 +26,11 @@ export default async function BlogArticlePage({ params }: Props) {
   if (!post) notFound();
   const related = blogArticles.filter(article => article.id !== post.id).slice(0, 3);
   return <>
+    <JsonLd data={{ "@context": "https://schema.org", "@graph": [
+      { "@type": "BlogPosting", "@id": `${absoluteUrl(`/blogs/${post.id}`)}#article`, url: absoluteUrl(`/blogs/${post.id}`), headline: post.title, description: post.excerpt, image: [absoluteUrl(post.image)], datePublished: post.publishedAt, author: { "@type": "Organization", "@id": ORGANIZATION_ID, name: post.author, url: absoluteUrl("/insights") }, publisher: { "@id": ORGANIZATION_ID }, mainEntityOfPage: { "@id": `${absoluteUrl(`/blogs/${post.id}`)}#webpage` }, articleSection: post.category, inLanguage: "en" },
+      { "@type": "WebPage", "@id": `${absoluteUrl(`/blogs/${post.id}`)}#webpage`, url: absoluteUrl(`/blogs/${post.id}`), name: post.title, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${absoluteUrl(`/blogs/${post.id}`)}#article` } },
+      breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Blogs", path: "/blogs" }, { name: post.title, path: `/blogs/${post.id}` }]),
+    ] }} />
     <div className={styles.page}>
       <header className={styles.navigation}><Navbar onHomePage={false} currentPage="/blogs" /></header>
       <main className={styles.main}>

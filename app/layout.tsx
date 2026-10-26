@@ -2,12 +2,16 @@
 import "./globals.css";
 import siteStyles from "./site-styles";
 import SitePreloader from "./components/site-preloader";
+import { withSocialMetadata } from "./lib/social-metadata";
+import { JsonLd } from "./components/structured-data";
+import { businessGraph } from "./lib/structured-data";
 
-export const metadata: Metadata = {
-  title: "CABIN&WILD — Lost in the Woods",
-  description: "A collection of one of a kind stays in the woods. From the simple and understated to unexpected grandeur.",
-};
+export const metadata: Metadata = withSocialMetadata({
+  metadataBase: new URL("https://www.growthys.com"),
+  title: "Growthys | Digital Marketing & IT Solutions",
+  description: "Growthys brings digital marketing, design, and software development together to help businesses grow.",
+}, "/");
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="en" className={siteStyles.document}><body><SitePreloader /><div id="site-content">{children}</div></body></html>;
+  return <html lang="en" className={siteStyles.document}><body><JsonLd data={businessGraph} /><SitePreloader /><div id="site-content">{children}</div></body></html>;
 }

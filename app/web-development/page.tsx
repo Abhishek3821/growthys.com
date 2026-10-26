@@ -1,4 +1,6 @@
 import { webDevelopmentContent } from "../data/web-development-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import WebDevelopmentHero from "../components/web-development-hero";
 import WebDevelopmentWelcome from "../components/web-development-welcome";
@@ -12,15 +14,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/web-development" },
   title: "Web Development | Growthys",
   description: webDevelopmentContent.hero.description,
-};
+}, "/web-development");
 
 export default function WebDevelopmentPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/web-development" metadata={metadata} />
         <WebDevelopmentHero />
         <WebDevelopmentWelcome />
         <WebDevelopmentCurrentWork />

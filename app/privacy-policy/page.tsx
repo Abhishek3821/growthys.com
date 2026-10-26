@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import Navbar from "../components/navbar";
 import SiteFooter from "../components/site-footer";
 import shared from "../help-support/support.module.css";
 import styles from "./privacy.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/privacy-policy" },
   title: "Privacy Policy | Growthys",
   description: "Learn what information Growthys collects, how we use and protect it, and the choices you have about your personal information.",
-};
+}, "/privacy-policy");
 
 const sections = [
   { id: "introduction", title: "Introduction" },
@@ -27,7 +29,7 @@ const sections = [
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <main className={shared.page}>
+      <main className={shared.page}><PageStructuredData path="/privacy-policy" metadata={metadata} />
         <div className={shared.hero}>
           <header className={shared.nav}><Navbar onHomePage={false} currentPage="/privacy-policy" /></header>
           <section className={shared.heroContent} aria-labelledby="privacy-heading">

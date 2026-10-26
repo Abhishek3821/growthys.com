@@ -1,4 +1,6 @@
 import { crmContent } from "../data/crm-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import CrmHero from "../components/crm-hero";
 import CrmProcess from "../components/crm-process";
@@ -11,15 +13,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/crm-management-software" },
   title: "CRM Management Software | Growthys",
   description: crmContent.hero.description,
-};
+}, "/crm-management-software");
 
 export default function CrmManagementSoftwarePage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/crm-management-software" metadata={metadata} />
         <CrmHero />
         <CrmProcess />
         <CrmTeamCollage />

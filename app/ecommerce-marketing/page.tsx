@@ -1,4 +1,6 @@
 import { ecommerceMarketingContent } from "../data/ecommerce-marketing-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import EcommerceMarketingHero from "../components/ecommerce-marketing-hero";
 import EcommerceMarketingAbout from "../components/ecommerce-marketing-about";
@@ -11,15 +13,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/ecommerce-marketing" },
   title: "Ecommerce Marketing | Growthys",
   description: ecommerceMarketingContent.about.paragraphs[0],
-};
+}, "/ecommerce-marketing");
 
 export default function EcommerceMarketingPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/ecommerce-marketing" metadata={metadata} />
         <EcommerceMarketingHero />
         <EcommerceMarketingAbout />
         <EcommerceMarketingPosition />

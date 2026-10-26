@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import Navbar from "../components/navbar";
 import SiteFooter from "../components/site-footer";
 import shared from "../help-support/support.module.css";
 import styles from "../privacy-policy/privacy.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/terms-conditions" },
   title: "Terms & Conditions | Growthys",
   description: "Read the terms for using the Growthys website and services, including project scope, payments, intellectual property and client responsibilities.",
-};
+}, "/terms-conditions");
 
 const sections = [
   { id: "acceptance", title: "Acceptance of Terms", paragraphs: ["By accessing our website or using our services, you agree to these Terms & Conditions. If you do not agree, please do not use our website or services."] },
@@ -28,7 +30,7 @@ const sections = [
 export default function TermsConditionsPage() {
   return (
     <>
-      <main className={shared.page}>
+      <main className={shared.page}><PageStructuredData path="/terms-conditions" metadata={metadata} />
         <div className={shared.hero}>
           <header className={shared.nav}><Navbar onHomePage={false} currentPage="/terms-conditions" /></header>
           <section className={shared.heroContent} aria-labelledby="terms-heading">

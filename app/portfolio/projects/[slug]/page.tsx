@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Image from "next/image";
+import { withSocialMetadata } from "../../../lib/social-metadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "../../../components/navbar";
 import SiteFooter from "../../../components/site-footer";
 import { getProject, projects } from "../../projects-data";
 import styles from "./case-study.module.css";
+import { JsonLd } from "../../../components/structured-data";
+import { absoluteUrl, breadcrumbSchema, ORGANIZATION_ID, WEBSITE_ID } from "../../../lib/structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,11 +20,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = getProject((await params).slug);
   if (!project) return { title: "Project not found | Growthys" };
-  return {
+  return withSocialMetadata({
+    alternates: { canonical: `/portfolio/projects/${project.slug}` },
     title: `${project.name} — App Concept Case Study | Growthys`,
     description: project.overview,
-    openGraph: { title: `${project.name} | Growthys`, description: project.overview, images: [{ url: `/images/portfolio/${project.slug}.webp`, alt: `${project.name} app concept` }] },
-  };
+  }, `/portfolio/projects/${project.slug}`, { image: `/images/portfolio/${project.slug}.webp`, imageAlt: `${project.name} app concept` });
 }
 
 export default async function ProjectCaseStudy({ params }: Props) {
@@ -31,6 +34,11 @@ export default async function ProjectCaseStudy({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={{ "@context": "https://schema.org", "@graph": [
+        { "@type": "WebPage", "@id": `${absoluteUrl(`/portfolio/projects/${project.slug}`)}#webpage`, url: absoluteUrl(`/portfolio/projects/${project.slug}`), name: `${project.name} — App Concept Case Study`, description: project.overview, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${absoluteUrl(`/portfolio/projects/${project.slug}`)}#concept` } },
+        { "@type": "CreativeWork", "@id": `${absoluteUrl(`/portfolio/projects/${project.slug}`)}#concept`, name: `${project.name} — App Concept`, description: project.overview, image: absoluteUrl(`/images/portfolio/${project.slug}.webp`), genre: "App concept design", creator: { "@id": ORGANIZATION_ID } },
+        breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Portfolio", path: "/portfolio" }, { name: "All Projects", path: "/portfolio/projects" }, { name: project.name, path: `/portfolio/projects/${project.slug}` }]),
+      ] }} />
       <div className={styles.page} style={{ "--project-color": project.color } as CSSProperties}>
         <header className={styles.navigation}><Navbar onHomePage={false} currentPage="/portfolio" /></header>
         <main className={styles.main}>

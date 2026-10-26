@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 5,
+  "triggerReason": "misleading-error",
+  "title": "Intentional not-found responses produce an instant-validation error during prefetch",
+  "setup": {
+    "mode": "development",
+    "bundler": "turbopack",
+    "relevantFeatures": [
+      "Cache Components",
+      "Partial prefetching"
+    ]
+  },
+  "steps": [
+    "Run a development server with Cache Components and partial prefetching enabled.",
+    "Visit a dynamic route with an unknown parameter whose page uses the standard not-found API.",
+    "Inspect the HTTP response and development diagnostics."
+  ],
+  "observed": [
+    "The HTTP response correctly returns 404 with noindex.",
+    "Development output also reports an instant-validation failure caused by the intentional not-found response."
+  ],
+  "expected": "An intentional not-found response should return 404 without being reported as an instant-validation failure.",
+  "frequency": "reproduced",
+  "outcome": "worked-around",
+  "nextVersion": "16.4.0",
+  "agent": "Codex"
+}

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import { hrmsContent } from "../data/hrms-content";
 import HrmsHero from "../components/hrms-hero";
 import HrmsServices from "../components/hrms-services";
@@ -13,15 +15,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/hrms-software" },
   title: "HRMS Software | Growthys",
   description: hrmsContent.hero.description,
-};
+}, "/hrms-software");
 
 export default function HrmsSoftwarePage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/hrms-software" metadata={metadata} />
         <HrmsHero />
         <HrmsServices />
         <HrmsPortfolio />

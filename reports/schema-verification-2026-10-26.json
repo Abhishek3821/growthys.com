@@ -1,0 +1,370 @@
+{
+  "passed": true,
+  "pages": 34,
+  "results": [
+    {
+      "route": "/app-development",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs",
+      "types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/cms-design",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/contact",
+      "types": [
+        "Organization",
+        "WebSite",
+        "ContactPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/content-marketing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/crm-management-software",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/digital-marketing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/e-commerce-solutions",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/ecommerce-marketing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/graphic-designing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/help-support",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/hrms-software",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/insights",
+      "types": [
+        "Organization",
+        "WebSite",
+        "AboutPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/performance-marketing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio",
+      "types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio/projects",
+      "types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/privacy-policy",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/search-engine-optimization",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/social-media-marketing",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/terms-conditions",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/ui-ux-design",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/web-development",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/website-design",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/seo-for-small-businesses",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/google-ads-vs-seo",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/why-your-business-needs-custom-crm-software",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/hrms-software-what-it-is-and-why-your-business-needs-it",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/web-design-that-converts-7-practical-rules",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/blogs/digital-marketing-for-startups-90-day-plan",
+      "types": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio/projects/foodly",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "CreativeWork",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio/projects/shopio",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "CreativeWork",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio/projects/walletwise",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "CreativeWork",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    },
+    {
+      "route": "/portfolio/projects/fittrack",
+      "types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "CreativeWork",
+        "BreadcrumbList"
+      ],
+      "valid": true
+    }
+  ]
+}

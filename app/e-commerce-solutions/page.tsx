@@ -1,4 +1,6 @@
 import { ecommerceContent } from "../data/ecommerce-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import EcommerceHero from "../components/ecommerce-hero";
 import FitnessServiceCards from "../components/fitness-service-cards";
@@ -11,15 +13,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/e-commerce-solutions" },
   title: "E-Commerce Solutions | Growthys",
   description: ecommerceContent.hero.description,
-};
+}, "/e-commerce-solutions");
 
 export default function EcommerceSolutionsPage() {
   return (
     <>
-      <main className="bg-[#fffcf8]">
+      <main className="bg-[#fffcf8]"><PageStructuredData path="/e-commerce-solutions" metadata={metadata} />
         <EcommerceHero />
         <FitnessServiceCards ecommerce />
         <GymAmenities ecommerce />

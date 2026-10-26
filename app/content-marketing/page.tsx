@@ -1,4 +1,6 @@
 import { contentMarketingContent } from "../data/content-marketing-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import ContentMarketingHero from "../components/content-marketing-hero";
 import ContentMarketingAbout from "../components/content-marketing-about";
@@ -12,11 +14,11 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "Content Marketing | Growthys", description: contentMarketingContent.hero.description };
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/content-marketing" }, title: "Content Marketing | Growthys", description: contentMarketingContent.hero.description }, "/content-marketing");
 export default function ContentMarketingPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/content-marketing" metadata={metadata} />
         <ContentMarketingHero />
         <ContentMarketingAbout />
         <ContentMarketingExperience />

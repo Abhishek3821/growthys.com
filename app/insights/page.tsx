@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import InsightsHero from "../components/insights-hero";
 import InsightsArticles from "../components/insights-articles";
 import InsightsExperiences from "../components/insights-experiences";
@@ -41,15 +43,15 @@ const insightsQuestions = [
   }
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/insights" },
   title: "Company Overview | Growthys",
   description: "Growthys is a digital marketing company and IT solutions company in Gurugram, Haryana. Discover our approach to marketing, software development, and consulting.",
-};
+}, "/insights");
 
 export default function InsightsPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/insights" metadata={metadata} />
         <InsightsHero />
         <InsightsArticles />
         <InsightsWhyChoose />

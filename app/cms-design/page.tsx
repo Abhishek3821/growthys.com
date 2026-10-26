@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import { cmsDesignContent } from "../data/cms-design-content";
 import CmsDesignHero from "../components/cms-design-hero";
 import CmsAgenda from "../components/cms-agenda";
@@ -11,15 +13,15 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/cms-design" },
   title: "CMS Design | Growthys",
   description: cmsDesignContent.hero.description,
-};
+}, "/cms-design");
 
 export default function CmsDesignPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/cms-design" metadata={metadata} />
         <CmsDesignHero />
         <CmsAgenda />
         <CmsTeamSection />

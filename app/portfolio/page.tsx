@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/navbar";
@@ -11,15 +13,15 @@ import PortfolioCta from "./portfolio-cta";
 import SiteFooter from "../components/site-footer";
 import { growthysShowcaseContent as content } from "../data/growthys-showcase-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/portfolio" },
   title: "Portfolio | Growthys",
   description: content.hero.description,
-};
+}, "/portfolio");
 
 export default function PortfolioPage() {
   return (
     <>
-    <main className={styles.page}>
+    <main className={styles.page}><PageStructuredData path="/portfolio" metadata={metadata} />
       <header className={styles.header}>
         <Navbar onHomePage={false} currentPage="/portfolio" />
       </header>

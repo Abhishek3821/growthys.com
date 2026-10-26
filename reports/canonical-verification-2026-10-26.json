@@ -1,0 +1,176 @@
+{
+  "pages": 34,
+  "passed": true,
+  "results": [
+    {
+      "route": "/app-development",
+      "canonical": "https://www.growthys.com/app-development",
+      "status": 200
+    },
+    {
+      "route": "/blogs",
+      "canonical": "https://www.growthys.com/blogs",
+      "status": 200
+    },
+    {
+      "route": "/cms-design",
+      "canonical": "https://www.growthys.com/cms-design",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "canonical": "https://www.growthys.com/contact",
+      "status": 200
+    },
+    {
+      "route": "/content-marketing",
+      "canonical": "https://www.growthys.com/content-marketing",
+      "status": 200
+    },
+    {
+      "route": "/crm-management-software",
+      "canonical": "https://www.growthys.com/crm-management-software",
+      "status": 200
+    },
+    {
+      "route": "/digital-marketing",
+      "canonical": "https://www.growthys.com/digital-marketing",
+      "status": 200
+    },
+    {
+      "route": "/e-commerce-solutions",
+      "canonical": "https://www.growthys.com/e-commerce-solutions",
+      "status": 200
+    },
+    {
+      "route": "/ecommerce-marketing",
+      "canonical": "https://www.growthys.com/ecommerce-marketing",
+      "status": 200
+    },
+    {
+      "route": "/graphic-designing",
+      "canonical": "https://www.growthys.com/graphic-designing",
+      "status": 200
+    },
+    {
+      "route": "/help-support",
+      "canonical": "https://www.growthys.com/help-support",
+      "status": 200
+    },
+    {
+      "route": "/hrms-software",
+      "canonical": "https://www.growthys.com/hrms-software",
+      "status": 200
+    },
+    {
+      "route": "/insights",
+      "canonical": "https://www.growthys.com/insights",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "canonical": "https://www.growthys.com",
+      "status": 200
+    },
+    {
+      "route": "/performance-marketing",
+      "canonical": "https://www.growthys.com/performance-marketing",
+      "status": 200
+    },
+    {
+      "route": "/portfolio",
+      "canonical": "https://www.growthys.com/portfolio",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/projects",
+      "canonical": "https://www.growthys.com/portfolio/projects",
+      "status": 200
+    },
+    {
+      "route": "/privacy-policy",
+      "canonical": "https://www.growthys.com/privacy-policy",
+      "status": 200
+    },
+    {
+      "route": "/search-engine-optimization",
+      "canonical": "https://www.growthys.com/search-engine-optimization",
+      "status": 200
+    },
+    {
+      "route": "/social-media-marketing",
+      "canonical": "https://www.growthys.com/social-media-marketing",
+      "status": 200
+    },
+    {
+      "route": "/terms-conditions",
+      "canonical": "https://www.growthys.com/terms-conditions",
+      "status": 200
+    },
+    {
+      "route": "/ui-ux-design",
+      "canonical": "https://www.growthys.com/ui-ux-design",
+      "status": 200
+    },
+    {
+      "route": "/web-development",
+      "canonical": "https://www.growthys.com/web-development",
+      "status": 200
+    },
+    {
+      "route": "/website-design",
+      "canonical": "https://www.growthys.com/website-design",
+      "status": 200
+    },
+    {
+      "route": "/blogs/seo-for-small-businesses",
+      "canonical": "https://www.growthys.com/blogs/seo-for-small-businesses",
+      "status": 200
+    },
+    {
+      "route": "/blogs/google-ads-vs-seo",
+      "canonical": "https://www.growthys.com/blogs/google-ads-vs-seo",
+      "status": 200
+    },
+    {
+      "route": "/blogs/why-your-business-needs-custom-crm-software",
+      "canonical": "https://www.growthys.com/blogs/why-your-business-needs-custom-crm-software",
+      "status": 200
+    },
+    {
+      "route": "/blogs/hrms-software-what-it-is-and-why-your-business-needs-it",
+      "canonical": "https://www.growthys.com/blogs/hrms-software-what-it-is-and-why-your-business-needs-it",
+      "status": 200
+    },
+    {
+      "route": "/blogs/web-design-that-converts-7-practical-rules",
+      "canonical": "https://www.growthys.com/blogs/web-design-that-converts-7-practical-rules",
+      "status": 200
+    },
+    {
+      "route": "/blogs/digital-marketing-for-startups-90-day-plan",
+      "canonical": "https://www.growthys.com/blogs/digital-marketing-for-startups-90-day-plan",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/projects/foodly",
+      "canonical": "https://www.growthys.com/portfolio/projects/foodly",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/projects/shopio",
+      "canonical": "https://www.growthys.com/portfolio/projects/shopio",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/projects/walletwise",
+      "canonical": "https://www.growthys.com/portfolio/projects/walletwise",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/projects/fittrack",
+      "canonical": "https://www.growthys.com/portfolio/projects/fittrack",
+      "status": 200
+    }
+  ]
+}

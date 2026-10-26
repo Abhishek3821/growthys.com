@@ -1,4 +1,6 @@
 import { seoContent } from "../data/seo-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import SeoHero from "../components/seo-hero";
 import SeoServices from "../components/seo-services";
@@ -11,11 +13,11 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "Search Engine Optimization | Growthys", description: seoContent.hero.description };
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/search-engine-optimization" }, title: "Search Engine Optimization | Growthys", description: seoContent.hero.description }, "/search-engine-optimization");
 export default function SeoPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/search-engine-optimization" metadata={metadata} />
         <SeoHero />
         <SeoServices />
         <SeoMarketing />

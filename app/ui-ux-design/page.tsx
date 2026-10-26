@@ -1,4 +1,6 @@
 import { uiUxContent } from "../data/ui-ux-content";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import UiUxHero from "../components/ui-ux-hero";
 import UiUxBenefits from "../components/ui-ux-benefits";
@@ -13,11 +15,11 @@ import BenefitsCta from "../components/benefits-cta";
 import FaqSection from "../components/faq-section";
 import SiteFooter from "../components/site-footer";
 
-export const metadata: Metadata = { title: "UI/UX Design | Growthys", description: uiUxContent.hero.description };
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/ui-ux-design" }, title: "UI/UX Design | Growthys", description: uiUxContent.hero.description }, "/ui-ux-design");
 export default function UiUxDesignPage() {
   return (
     <>
-      <main>
+      <main><PageStructuredData path="/ui-ux-design" metadata={metadata} />
         <UiUxHero />
         <UiUxBenefits />
         <UiUxPlatform />

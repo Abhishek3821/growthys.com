@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { withSocialMetadata } from "../lib/social-metadata";
+import { PageStructuredData } from "../components/structured-data";
 import Link from "next/link";
 import Navbar from "../components/navbar";
 import SiteFooter from "../components/site-footer";
 import styles from "./support.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialMetadata({ alternates: { canonical: "/help-support" },
   title: "Help & Support | Growthys",
   description: "Find quick answers and reach the Growthys support team for website, marketing, software, billing and account queries.",
-};
+}, "/help-support");
 
 const topics = [
   { title: "Website & Design", description: "Issues with your website, design changes, or hosting queries." },
@@ -32,7 +34,7 @@ const responseTimes = [
 export default function HelpSupportPage() {
   return (
     <>
-      <main className={styles.page}>
+      <main className={styles.page}><PageStructuredData path="/help-support" metadata={metadata} />
         <div className={styles.hero}>
           <header className={styles.nav}><Navbar onHomePage={false} currentPage="/help-support" /></header>
           <section className={styles.heroContent} aria-labelledby="support-heading">
