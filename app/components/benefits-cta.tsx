@@ -16,19 +16,12 @@ import { ecommerceMarketingContent } from "../data/ecommerce-marketing-content";
 import { graphicDesignContent } from "../data/graphic-design-content";
 import { crmContent } from "../data/crm-content";
 import { ecommerceContent } from "../data/ecommerce-content";
-import { useState, type FormEvent } from "react";
+import WhatsAppForm from "./whatsapp-form";
 import styles from "./benefits-cta.styles";
 
 type BenefitsCtaProps = { hrms?: boolean; cmsDesign?: boolean; companyOverview?: boolean; contentMarketing?: boolean; uiUx?: boolean; socialMedia?: boolean; seo?: boolean; appDevelopment?: boolean; webDevelopment?: boolean; ecommerceMarketing?: boolean; graphicDesign?: boolean; crm?: boolean; ecommerce?: boolean; homepage?: boolean; performanceMarketing?: boolean; websiteDesign?: boolean; digitalMarketing?: boolean };
 
 export default function BenefitsCta({ hrms = false, cmsDesign = false, companyOverview = false, contentMarketing = false, uiUx = false, socialMedia = false, seo = false, appDevelopment = false, webDevelopment = false, ecommerceMarketing = false, graphicDesign = false, crm = false, ecommerce = false, homepage = false, performanceMarketing = false, websiteDesign = false, digitalMarketing = false }: BenefitsCtaProps = {}) {
-  const [showNotice, setShowNotice] = useState(false);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    // Keep submissions local until a signup destination is configured.
-    setShowNotice(true);
-  }
 
   return (
     <section className={styles.section} id="contact" aria-labelledby="benefits-cta-heading">
@@ -53,18 +46,18 @@ export default function BenefitsCta({ hrms = false, cmsDesign = false, companyOv
           </>}
         </h2>
         <p className={styles.description}>{hrms ? hrmsContent.cta.description : cmsDesign ? cmsDesignContent.cta.description : companyOverview ? "Work with a reliable IT company in India that also knows how to market. Flexible plans, budget-friendly pricing, and no hidden fees." : contentMarketing ? contentMarketingContent.cta.description : uiUx ? uiUxContent.cta.description : socialMedia ? socialMediaContent.cta.description : seo ? seoContent.cta.description : appDevelopment ? appDevelopmentContent.cta.description : webDevelopment ? webDevelopmentContent.cta.description : ecommerceMarketing ? ecommerceMarketingContent.cta.description : graphicDesign ? graphicDesignContent.cta.description : crm ? crmContent.cta.description : ecommerce ? ecommerceContent.cta.description : digitalMarketing ? "Get SEO, ads, social media, and content — in any combination, fully flexible, with no painful agency back-and-forth. Budget-friendly. No hidden fees. No surprises." : websiteDesign ? "A website that works, looks right, and loads fast — without back-and-forth with multiple agencies. Clear pricing. No hidden fees. No surprises." : performanceMarketing ? "Get paid ads, SEO, landing pages, and tracking — in one flexible partnership. Clear pricing. No hidden charges. No surprises." : homepage ? "Get SEO, ads, design, and software — in any combination, fully flexible, all without painful agency back-and-forth. Budget-friendly. No hidden fees. No surprises." : "Get any benefit, in any country, and make it flexible, all without the painful admin. Budget-friendly. No hidden fees. No surprises."}</p>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <WhatsAppForm className={styles.form} introduction="Hi Growthys! I am interested in your services. Please help me get started." aria-describedby="benefits-whatsapp-note">
           <div className={styles.formRow}>
             <div className={styles.emailField}>
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" strokeWidth="1.6" /><path d="m4 7 8 6 8-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               <label className={styles.srOnly} htmlFor="benefits-email">Your email address</label>
-              <input id="benefits-email" name="email" type="email" autoComplete="email" placeholder="Enter your email" required aria-describedby="benefits-privacy" onChange={() => setShowNotice(false)} />
+              <input id="benefits-email" name="email" type="email" autoComplete="email" placeholder="Enter your email" required aria-describedby="benefits-privacy" />
             </div>
             <button className={styles.submitButton} type="submit">{hrms ? "Book a Free Demo" : contentMarketing ? "Get a Free Content Audit" : uiUx ? "Book a Free UX Review" : seo ? "Book a Free SEO Audit" : appDevelopment ? "Book a Free Consultation" : webDevelopment ? "Book a Call" : ecommerceMarketing ? "Book a Free Store Audit" : crm ? "Book a Demo" : homepage ? "Contact Us" : "Get started"}</button>
           </div>
           <p className={styles.privacy} id="benefits-privacy">By submitting you agree to our privacy policy.</p>
-          {showNotice && <p className={styles.notice} role="status">Online sign-up is coming soon.</p>}
-        </form>
+          <p className={styles.notice} id="benefits-whatsapp-note">Continue to WhatsApp with your email filled in, then tap Send.</p>
+        </WhatsAppForm>
       </div>
     </section>
   );

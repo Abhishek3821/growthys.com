@@ -6,7 +6,7 @@
 .heading svg { position: absolute; left: 0; bottom: -15px; width: 112px; height: 14px; fill: none; stroke: #e85b8b; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .description { margin: 0; color: #303344; font-size: 15px; line-height: 1.65; }
 .description span { color: #ed1265; }
-.grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
 .card { display: flex; flex-direction: column; overflow: hidden; min-width: 0; border-radius: 12px; background: #fff; }
 .preview { display: block; width: 100%; height: auto; aspect-ratio: 1.7; object-fit: cover; object-position: center top; }
 .cardBody { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 16px 18px 14px; }

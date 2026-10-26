@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import WhatsAppForm from "./whatsapp-form";
 import styles from "./contact-details.styles";
 
 const contactCards = [
@@ -24,12 +24,6 @@ function HoursIcon({ closed = false }: { closed?: boolean }) {
 }
 
 export default function ContactDetails() {
-  const [showNotice, setShowNotice] = useState(false);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setShowNotice(true);
-  }
 
   return (
     <section className={styles.section} id="contact-details" aria-label="Contact details and inquiry form">
@@ -65,13 +59,13 @@ export default function ContactDetails() {
           <div className={styles.inquiry} id="contact-inquiry">
             <span className={styles.badge}>Big Results Begin With a Small Hello</span>
             <h2>A Few Details, and We’re Off</h2>
-            <form className={styles.form} onSubmit={handleSubmit} onChange={() => setShowNotice(false)}>
+            <WhatsAppForm className={styles.form} introduction="Hi Growthys! I would like to discuss a project." aria-describedby="inquiry-whatsapp-note">
               <label htmlFor="inquiry-email">Email<input id="inquiry-email" name="email" type="email" autoComplete="email" placeholder="Email" required /></label>
               <label htmlFor="inquiry-name">Name<input id="inquiry-name" name="name" autoComplete="name" placeholder="Name" required maxLength={100} /></label>
               <label htmlFor="inquiry-message">Message<textarea id="inquiry-message" name="message" placeholder="Message" rows={5} required maxLength={3000} /></label>
               <button className={styles.submitButton} type="submit">Submit <span aria-hidden="true">↗</span></button>
-              {showNotice && <p className={styles.notice} role="status">Message sending will be available soon. Your message has not been sent.</p>}
-            </form>
+              <p className={styles.notice} id="inquiry-whatsapp-note">Opens WhatsApp with your details ready. Review the message and tap Send.</p>
+            </WhatsAppForm>
           </div>
         </div>
       </div>

@@ -1,6 +1,16 @@
 .section { position: relative; margin: 0 -24px; background: #fff0f5; color: #101342; }
 .inner { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 48px; max-width: 1320px; margin: 0 auto; padding: 12px 48px 52px; }
 .copy { position: relative; z-index: 1; }
+.eyebrow { margin: 0 0 14px; color: #c52b66; font-size: 14px; font-weight: 700; }
+.description { max-width: 470px; margin: 22px 0 0; color: #5c5263; font-size: 15px; line-height: 1.8; }
+.closing { margin: 0 -24px; padding: 60px 28px 74px; background: #10213b; color: #fffaf7; text-align: center; }
+.closingInner { max-width: 760px; margin: 0 auto; }
+.sparkle { display: inline-block; margin-bottom: 20px; color: #ffb7d0; font-size: 48px; line-height: 1; }
+.closing h2 { margin: 0 0 24px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(32px, 4vw, 52px); line-height: 1.12; letter-spacing: -.035em; }
+.closing p { margin: 10px 0; color: #ced3df; font-size: 16px; line-height: 1.7; }
+.closing a { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 48px; margin-top: 24px; padding: 13px 22px; border-radius: 8px; background: #ffc6dc; color: #10213b; font-size: 12px; font-weight: 700; letter-spacing: .06em; }
+.closing a:hover { background: #ffe0ec; }
+.closing a:focus-visible { outline: 3px solid #ffc6dc; outline-offset: 5px; }
 .heading { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(32px, 3.3vw, 46px); line-height: 1.06; letter-spacing: -0.035em; font-weight: 700; }
 .heading > span { position: relative; display: inline-block; color: #df1863; }
 .heading > span > svg { position: absolute; right: 0; bottom: -10px; width: 52%; height: 12px; fill: none; stroke: #e85b8b; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -14,6 +24,7 @@
 }
 @media (max-width: 700px) {
   .section { margin-inline: -20px; }
+  .closing { margin-inline: -20px; padding: 42px 28px 54px; }
   .inner { grid-template-columns: 1fr; gap: 18px; max-width: 590px; padding: 20px 28px 48px; }
   .heading { font-size: clamp(31px, 6.8vw, 42px); }
   .illustration { max-width: 480px; margin: 0 auto; }

@@ -1,4 +1,6 @@
-export const projects = [
+import { growthysShowcaseContent } from "../data/growthys-showcase-content";
+
+const projectConcepts = [
   {
     slug: "foodly", name: "Foodly", category: "Food & Delivery", color: "#dcebcf",
     description: "A food delivery app with real-time tracking and secure payments.",
@@ -52,6 +54,11 @@ export const projects = [
     journey: ["Check daily goals", "Choose a workout", "Record activity", "Review progress"],
   },
 ];
+
+export const projects = projectConcepts.map((project) => {
+  const copy = growthysShowcaseContent.work.items.find((item) => item.slug === project.slug);
+  return { ...project, description: copy?.description ?? project.description, overview: copy?.description ?? project.overview };
+});
 
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);

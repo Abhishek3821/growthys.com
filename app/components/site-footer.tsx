@@ -39,9 +39,10 @@ type SiteFooterProps = {
   onHomePage?: boolean;
   contactHref?: string;
   faqHref?: string;
+  brandCopy?: { name: string; title: string; paragraphs: readonly string[] };
 };
 
-export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: SiteFooterProps) {
+export default function SiteFooter({ onHomePage = true, contactHref, faqHref, brandCopy }: SiteFooterProps) {
   function resolveHref(href: string) {
     if (href === "#contact" && contactHref) return contactHref;
     if (href === "#faq" && faqHref) return faqHref;
@@ -55,9 +56,9 @@ export default function SiteFooter({ onHomePage = true, contactHref, faqHref }: 
         <div className={styles.top}>
           <div className={styles.brand}>
             <Link href="/" className={styles.logo} aria-label="Growthys home">
-              Growthys
+              {brandCopy?.name ?? "Growthys"}
             </Link>
-            <p>A digital marketing company and IT solutions company in India, helping businesses grow with smart marketing, clean design, and reliable technology. Based in Gurugram, Haryana — serving clients across India and beyond.</p>
+            {brandCopy ? <><h2>{brandCopy.title}</h2>{brandCopy.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</> : <p>A digital marketing company and IT solutions company in India, helping businesses grow with smart marketing, clean design, and reliable technology. Based in Gurugram, Haryana — serving clients across India and beyond.</p>}
           </div>
           <div className={styles.newsletter}>
             <h2>Follow Us</h2>

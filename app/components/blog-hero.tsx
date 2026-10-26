@@ -2,22 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import WhatsAppForm from "./whatsapp-form";
 import Navbar from "./navbar";
 import { blogArticles, getReadingTime } from "../data/blog-articles";
 import styles from "./blog-hero.styles";
 
 export default function BlogHero() {
-  const [subscribeNotice, setSubscribeNotice] = useState(false);
   const featured = blogArticles[0];
   const secondary = blogArticles[1] ?? featured;
   const secondaryHref = `/blogs/${secondary.id}${secondary === featured ? "#section-3" : ""}`;
   const secondaryTitle = secondary === featured ? "Start With Local SEO" : secondary.title;
 
-  function handleSubscribe(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSubscribeNotice(true);
-  }
 
   return (
     <div className={styles.page}>
@@ -33,14 +28,14 @@ export default function BlogHero() {
             <p>Practical ideas for digital growth. Explore SEO, marketing and technology with Growthys.</p>
             <details className={styles.subscribe}>
               <summary>Subscribe now <span className={styles.arrow} aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M5 10h10m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg></span></summary>
-              <form className={styles.subscribeForm} onSubmit={handleSubscribe}>
+              <WhatsAppForm className={styles.subscribeForm} introduction="Hi Growthys! I would like to request Growthys Journal updates at the email below." aria-describedby="blog-whatsapp-note">
                 <label htmlFor="blog-subscribe-email">A little inspiration in your inbox</label>
                 <div>
-                  <input id="blog-subscribe-email" name="email" type="email" autoComplete="email" placeholder="Your email address" required onChange={() => setSubscribeNotice(false)} />
+                  <input id="blog-subscribe-email" name="email" type="email" autoComplete="email" placeholder="Your email address" required />
                   <button type="submit">Join</button>
                 </div>
-                {subscribeNotice && <p role="status">Newsletter subscriptions are coming soon.</p>}
-              </form>
+                <p id="blog-whatsapp-note">Request updates through WhatsApp. Your email will be filled in; tap Send to share it.</p>
+              </WhatsAppForm>
             </details>
           </div>
         </div>

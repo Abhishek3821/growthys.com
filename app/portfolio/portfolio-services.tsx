@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./portfolio.module.css";
+import { growthysShowcaseContent as content } from "../data/growthys-showcase-content";
 
 const icons = {
   target: <><circle cx="20" cy="20" r="15" /><circle cx="20" cy="20" r="9" /><circle cx="20" cy="20" r="3" /><path d="m22 18 13-13m-7 0h7v7" /></>,
@@ -16,23 +17,13 @@ const icons = {
   grid: <><rect x="5" y="5" width="12" height="12" rx="3" /><rect x="23" y="5" width="12" height="12" rx="3" /><rect x="5" y="23" width="12" height="12" rx="3" /><rect x="23" y="23" width="12" height="12" rx="3" /></>,
 };
 
-const services = [
-  { title: "Performance Marketing", description: "Google and Meta ad campaigns focused on reaching the right audience and generating leads.", href: "/performance-marketing", icon: "target" },
-  { title: "Web Development", description: "Custom websites and web applications built around your business needs.", href: "/web-development", icon: "code" },
-  { title: "Website Design", description: "Responsive website designs that bring your brand to life across every screen.", href: "/website-design", icon: "design" },
-  { title: "App Development", description: "Web and mobile app experiences with intuitive interfaces and practical features.", href: "/app-development", icon: "phone" },
-  { title: "Digital Marketing", description: "Connected digital strategies across search, social media, content, and paid campaigns.", href: "/digital-marketing", icon: "growth" },
-  { title: "Search Engine Optimization (SEO)", description: "Technical, on-page, and content optimization to improve your search visibility.", href: "/search-engine-optimization", icon: "search" },
-  { title: "E-Commerce Solutions", description: "Online stores with product catalogues, shopping carts, and checkout experiences.", href: "/e-commerce-solutions", icon: "cart" },
-  { title: "HRMS Software", description: "HR software for attendance, payroll, leave management, and employee records.", href: "/hrms-software", icon: "people" },
-  { title: "CRM & Management Software", description: "Custom systems to manage leads, customer relationships, and business workflows.", href: "/crm-management-software", icon: "workflow" },
-  { title: "Social Media Marketing", description: "Social strategies, creative content, and campaigns to connect with your audience.", href: "/social-media-marketing", icon: "message" },
-  { title: "Graphic Designing", description: "Brand identities, marketing creatives, and visual assets that tell your story.", href: "/graphic-designing", icon: "pen" },
-  { title: "UI/UX Design", description: "User-focused interfaces and thoughtful experiences for websites and applications.", href: "/ui-ux-design", icon: "grid" },
-  { title: "CMS Design", description: "Flexible, easy-to-manage websites that make publishing and updating content simpler.", href: "/cms-design", icon: "design" },
-  { title: "Content Marketing", description: "Audience-focused articles, website copy, and content strategies for your brand.", href: "/content-marketing", icon: "pen" },
-  { title: "Ecommerce Marketing", description: "Marketing campaigns and store optimization to support your online business.", href: "/ecommerce-marketing", icon: "growth" },
-] satisfies Array<{ title: string; description: string; href: string; icon: keyof typeof icons }>;
+const serviceIcons: Record<string, keyof typeof icons> = {
+  "/performance-marketing": "target", "/web-development": "code", "/website-design": "design", "/app-development": "phone",
+  "/digital-marketing": "growth", "/search-engine-optimization": "search", "/e-commerce-solutions": "cart", "/hrms-software": "people",
+  "/crm-management-software": "workflow", "/social-media-marketing": "message", "/graphic-designing": "pen", "/ui-ux-design": "grid",
+  "/cms-design": "design", "/content-marketing": "pen", "/ecommerce-marketing": "growth",
+};
+const services = content.services.items;
 
 const colors = [styles.lavender, styles.pink, styles.yellow, styles.green];
 
@@ -42,27 +33,29 @@ export default function PortfolioServices() {
       <div className={styles.servicesInner}>
         <div className={styles.servicesIntro}>
           <div>
-            <p className={styles.servicesEyebrow}>What we do</p>
-            <h2 id="services-heading" className={styles.servicesHeading}>Services we provide <svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 1 26M4 10l24 12M5 24 27 7" /></svg></h2>
+            <p className={styles.servicesEyebrow}>{content.services.eyebrow}</p>
+            <h2 id="services-heading" className={styles.servicesHeading}>{content.services.title} <svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 1 26M4 10l24 12M5 24 27 7" /></svg></h2>
           </div>
-          <p className={styles.servicesDescription}>From design and development to marketing and business software, we help your business build, connect, and grow.</p>
+          <p className={styles.servicesDescription}>{content.services.description}</p>
         </div>
         <div className={styles.serviceGrid}>
           {services.map((service, index) => (
             <article className={styles.serviceCard} key={service.href}>
               <div className={`${styles.serviceIcon} ${colors[index % colors.length]}`} aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">{icons[service.icon]}</svg>
+                <svg viewBox="0 0 40 40" fill="none">{icons[serviceIcons[service.href]]}</svg>
               </div>
               <h3>{service.title}</h3>
+              <p className={styles.serviceTagline}>{service.tagline}</p>
               <p>{service.description}</p>
               <Link href={service.href} className={styles.serviceLink} aria-label={`Read more about ${service.title}`}>
-                Read more <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                {service.action} <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
             </article>
           ))}
         </div>
+        <div className={styles.servicesBottom}><div><p>{content.services.cta.eyebrow}</p><h3>{content.services.cta.title}</h3><p>{content.services.cta.description}</p></div><Link href="/contact#contact-inquiry">{content.services.cta.action} <span aria-hidden="true">↗</span></Link></div>
       </div>
-      <svg className={styles.bottomWave} viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 42C180-5 240 78 430 40S660 8 850 39 1100 4 1280 30 1400 38 1440 30V60H0Z" fill="#fffaf7" /></svg>
+      <svg className={styles.bottomWave} viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 42C180-5 240 78 430 40S660 8 850 39 1100 4 1280 30 1400 38 1440 30V60H0Z" fill="#fff0f5" /></svg>
     </section>
   );
 }
